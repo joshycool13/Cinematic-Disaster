@@ -1,0 +1,144 @@
+Cinematic Disaster: Player Units
+
+
+Director (Main Character)
+
+Skill: “Action!”
+0 TP cost.
+Infinite PP.
+Hit the closest grounded enemy with a clapboard for 1 damage.
+
+
+Skill: “Cut!”
+1 TP cost.
+Infinite PP.
+Yell with a megaphone. Hit an enemy of your choice for 2 damage. Works on both aerial and grounded enemies.
+
+
+Skill: “Take 5!”
+infinite PP.
+For every 5 enemy attacks consecutively dodged without getting hit, gain 1 TP.
+
+---------------------------------------------------------------------------------------------------------------
+
+Hires:
+
+Janitor
+Skill: Disinfectant
+2TP
+10PP
+Sprays the enemy’s eyes directly with toxic chemicals. 100% chance to poison the enemy if they arent immune.
+
+Skill: Bucket
+6PP
+Makes yourself Immune to poison
+(Simply throw up the toxic substance into the bucket)
+
+
+
+Casting Agent
+1 TP
+ 25PP
+Skill: Scouting
+Attacks the nearest enemy, deals 2 damage, and their health bar’s visibility is enabled for the rest of the battle.
+
+
+Set Builder
+
+
+Prop Master  
+
+Celebrity Comedian
+Skill: Joke about World Events
+4 PP
+Has 2 possible effects, based on whether the enemy finds the joke funny or not.
+
+75%: Successful Joke.  The enemy attack becomes twice as easy, and if your director currently has a status effect, pass a copy of that same effect to ALL non-immune enemies.
+
+25%: Failed joke. The enemies are offended, and the enemy attack becomes twice as hard.
+
+
+
+Singer
+	Skill: High Note
+	3TP
+	4PP
+	Does 4 damage normally, but deals double damage against airborne enemies. 
+	
+	Skill: Vocal Warmup
+	4PP
+		Note shaped pickups will appear randomly during an enemy’s attack. Heal 1 HP for each one collected.
+		
+
+Cameraman
+Skill: Security Camera
+	7PP
+		Fails on enemies that dwell in dark areas, or are too fast to capture.  When successfully activated, it will keep a record of the first enemy that lands a hit on you. On the following turn, that specific offending enemy’s opportunity for action will be skipped entirely.
+
+
+ Light Technician
+
+Skill: Blinding Flash
+1TP
+12PP
+Has 2 effects depending on how well lit the battle stage is. A flashlight is  the primary “weapon” used.
+
+While well lit, only does 1 damage but has a 40% chance to stun the enemy you choose.
+While dark, deals 10 damage to the enemy you choose.  Has an 80% chance to stun, and also changes the stage’s state to “well lit” immediately afterward. This makes it a fantastic “opening move” against enemies that thrive in darkness.
+
+
+	Skill: Rear Exposure 
+	2TP
+	6PP
+	Use an especially hot spotlight to deal 3 damage to the enemy furthest back, and has a 100% chance to inflict them with the burn status. 
+
+
+VFX Guys (Costco Reference)
+Skill:  (Big Boom) 
+10 TP
+2 PP
+Create an explosion that deals 8 damage to all enemies. Has a 70% chance to inflict the burn status.
+
+
+
+Foley Artist
+Skill: (Crash Box)
+2TP
+6PP
+Large metal cube falls from above, making a loud car-crash like sound effect while crushing 1 enemy of your choice.  Does 4 damage normally, but deals double damage against grounded enemies.
+
+
+
+Makeup Master
+	
+Skill: (Mimic)
+5 TP
+10PP
+  Change your player sprite to match the enemy you targeted. You will then hit the enemy with the exact same attack animation they normally use- and deal equal damage to that enemy’s base attack strength stat. This is fixed and unaffected by stat buffs AND debuffs.
+
+
+
+
+Stunt Double 
+	11PP
+Skill: (Risky Maneuver) 
+
+- This is a unique and valuable shield-like unit that can only be activated in battle once per time being hired. Since it costs 1 PP to initialize, the actual utility lies in the remaining 10.  
+
+-It stays out on the field indefinitely during the battle it is used, unless the PP runs out. The player’s choice of a different defense skill is automatically skipped while active.
+
+-When the player gets hit, each time they will receive no damage but instead spend 1 PP assigned to the Stunt Double. Upon reaching 0 PP, the Stunt Double will instantly leave your team.
+
+-If any PP still remains when the battle ends, they will still leave regardless. HOWEVER, the price of hiring Stunt Doubles in the future will be discounted by a percentage equal to your PP remaining.
+
+10PP from doing a no-hit fight= 10% for example. 
+This effect may stack during the course of a run, but caps at 50% maximum.
+
+
+
+
+Extra
+Skill: (Anything Goes)
+1TP
+3PP
+Very cheap to hire, and somewhat common. Activates the effects of a random attack skill OTHER than itself- while spending their OWN pp instead of the one selected.
