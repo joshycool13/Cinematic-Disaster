@@ -19,8 +19,10 @@
   },
   "name":"Cinematic Disaster",
   "resources":[
+    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_combat_enemy","path":"objects/obj_combat_enemy/obj_combat_enemy.yy",},},
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
+    {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
     {"id":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
     {"id":{"name":"Roaming_Room","path":"rooms/Roaming_Room/Roaming_Room.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
