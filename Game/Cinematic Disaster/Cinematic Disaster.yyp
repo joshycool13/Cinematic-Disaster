@@ -23,6 +23,7 @@
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
     {"id":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
     {"id":{"name":"Roaming_Room","path":"rooms/Roaming_Room/Roaming_Room.yy",},},
+    {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_temp_enemy","path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},},
     {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},},
   ],
