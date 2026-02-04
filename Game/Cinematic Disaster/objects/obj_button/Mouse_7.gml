@@ -1,0 +1,1 @@
+obj_combat_state.start_player_turn()
