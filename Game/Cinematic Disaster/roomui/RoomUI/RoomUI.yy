@@ -29,7 +29,7 @@
                 {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"propertyId":{"name":"button_id","path":"objects/obj_button/obj_button.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
               ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":3,"value":32.0,},"justifyContent":1,"name":"ItemButton","nodeColour":4285286642,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":32.0,},},
-      ],"flexDirection":0,"gapRow":10.0,"gridX":32,"gridY":32,"justifyContent":1,"name":"AttackMenu","nodeColour":4283822664,"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":0,"gapRow":10.0,"gridX":32,"gridY":32,"justifyContent":1,"name":"AttackMenu","nodeColour":4283822664,"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
     {"$GMRUILayer":"v1","%Name":"DefenseMenu","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"DefenseButton","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"Text","alignItems":2,"children":[
