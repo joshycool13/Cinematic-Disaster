@@ -29,6 +29,7 @@
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
     {"id":{"name":"obj_temp2_player","path":"objects/obj_temp2_player/obj_temp2_player.yy",},},
+    {"id":{"name":"obj_test_combat_trigger","path":"objects/obj_test_combat_trigger/obj_test_combat_trigger.yy",},},
     {"id":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
     {"id":{"name":"Roaming_Room","path":"rooms/Roaming_Room/Roaming_Room.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},

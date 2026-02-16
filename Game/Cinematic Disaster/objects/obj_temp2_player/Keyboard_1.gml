@@ -10,11 +10,11 @@ if keyboard_check(vk_right)
 {
 	movement_direction_hori += 1
 }
-if keyboard_check(vk_down)
+if keyboard_check(vk_up)
 {
 	movement_direction_vert -= 1
 }
-if keyboard_check(vk_up)
+if keyboard_check(vk_down)
 {
 	movement_direction_vert += 1
 }
