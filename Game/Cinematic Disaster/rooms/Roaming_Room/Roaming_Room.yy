@@ -13,8 +13,8 @@
   ],
   "name":"Roaming_Room",
   "parent":{
-    "name":"Cinematic Disaster",
-    "path":"Cinematic Disaster.yyp",
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

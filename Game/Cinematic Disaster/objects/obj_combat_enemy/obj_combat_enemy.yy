@@ -6,8 +6,8 @@
   "name":"obj_combat_enemy",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cinematic Disaster",
-    "path":"Cinematic Disaster.yyp",
+    "name":"Combat",
+    "path":"folders/Combat.yy",
   },
   "parentObjectId":null,
   "persistent":false,

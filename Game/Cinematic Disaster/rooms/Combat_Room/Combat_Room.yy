@@ -24,8 +24,8 @@
   ],
   "name":"Combat_Room",
   "parent":{
-    "name":"Cinematic Disaster",
-    "path":"Cinematic Disaster.yyp",
+    "name":"Combat",
+    "path":"folders/Combat.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

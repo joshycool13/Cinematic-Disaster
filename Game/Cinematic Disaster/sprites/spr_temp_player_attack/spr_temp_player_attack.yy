@@ -35,8 +35,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Cinematic Disaster",
-    "path":"Cinematic Disaster.yyp",
+    "name":"Combat",
+    "path":"folders/Combat.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
