@@ -1,1 +1,16 @@
-obj_combat_state.start_player_turn()
+
+switch (button_id)
+{
+	case 0: // Attack
+		obj_combat_state.hide_attack_menu()
+		obj_combat_player.start_player_temp_attack()
+	break;
+	
+	case 1: // Item
+		obj_combat_state.use_item_temp()
+	break;
+	
+	case 2: // Defense
+		obj_combat_state.start_player_defending()
+	break;
+}
