@@ -1,4 +1,9 @@
 
+
+layer_set_visible("RoamingUI", false)
+layer_set_visible("AttackMenu", true)
+
+
 use_item_temp = function()
 {
 	layer_set_visible("AttackMenu", false)
