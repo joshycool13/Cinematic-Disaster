@@ -8,10 +8,7 @@
   "instanceCreationOrder":[
     {"name":"inst_7FCA4702","path":"rooms/Combat_Room/Combat_Room.yy",},
     {"name":"inst_58C272F8","path":"rooms/Combat_Room/Combat_Room.yy",},
-    {"name":"inst_43BAE9D3","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_76CF1563","path":"rooms/Combat_Room/Combat_Room.yy",},
-    {"name":"inst_2CDD0CF0","path":"roomui/RoomUI/RoomUI.yy",},
-    {"name":"inst_1751862F","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
