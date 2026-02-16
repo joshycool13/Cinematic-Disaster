@@ -10,8 +10,8 @@
   "name":"obj_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Cinematic Disaster",
-    "path":"Cinematic Disaster.yyp",
+    "name":"Universal",
+    "path":"folders/Universal.yy",
   },
   "parentObjectId":null,
   "persistent":false,

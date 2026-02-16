@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Cinematic Disaster",
-    "path":"Cinematic Disaster.yyp",
+    "name":"Universal",
+    "path":"folders/Universal.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
