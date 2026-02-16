@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Combat","folderPath":"folders/Combat.yy","name":"Combat","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Roaming","folderPath":"folders/Roaming.yy","name":"Roaming","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Universal","folderPath":"folders/Universal.yy","name":"Universal","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -34,6 +35,8 @@
     {"id":{"name":"Roaming_Room","path":"rooms/Roaming_Room/Roaming_Room.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
+    {"id":{"name":"spr_player_attack","path":"sprites/spr_player_attack/spr_player_attack.yy",},},
+    {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_temp_enemy","path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},},
     {"id":{"name":"spr_temp_player_attack","path":"sprites/spr_temp_player_attack/spr_temp_player_attack.yy",},},
     {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},},
