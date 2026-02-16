@@ -28,6 +28,8 @@
     {"id":{"name":"obj_combat_enemy","path":"objects/obj_combat_enemy/obj_combat_enemy.yy",},},
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
+    {"id":{"name":"obj_temp2_player","path":"objects/obj_temp2_player/obj_temp2_player.yy",},},
+    {"id":{"name":"obj_test_combat_trigger","path":"objects/obj_test_combat_trigger/obj_test_combat_trigger.yy",},},
     {"id":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
     {"id":{"name":"Roaming_Room","path":"rooms/Roaming_Room/Roaming_Room.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
@@ -35,12 +37,13 @@
     {"id":{"name":"spr_temp_enemy","path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",},},
     {"id":{"name":"spr_temp_player_attack","path":"sprites/spr_temp_player_attack/spr_temp_player_attack.yy",},},
     {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},},
+    {"id":{"name":"spr_temp2_player","path":"sprites/spr_temp2_player/spr_temp2_player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
     {"roomId":{"name":"Roaming_Room","path":"rooms/Roaming_Room/Roaming_Room.yy",},},
+    {"roomId":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
