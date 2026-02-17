@@ -1,26 +1,24 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_combat_player_clapperboard_ready",
+  "%Name":"spr_combat_player_dodge",
   "bboxMode":0,
   "bbox_bottom":127,
-  "bbox_left":4,
-  "bbox_right":127,
-  "bbox_top":4,
+  "bbox_left":9,
+  "bbox_right":77,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"cf618b16-61a2-4d8e-80dd-3f25aa7c9147","name":"cf618b16-61a2-4d8e-80dd-3f25aa7c9147","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"68ec8cd4-199c-48d5-b9d2-492e09bf3708","name":"68ec8cd4-199c-48d5-b9d2-492e09bf3708","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ad25795c-29a0-4f1e-b2c5-309b6b2e7f3e","name":"ad25795c-29a0-4f1e-b2c5-309b6b2e7f3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"98a345ee-6316-4454-9570-0be7ec03cfdf","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"98a345ee-6316-4454-9570-0be7ec03cfdf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"05428061-8070-4e0f-8a0d-a59cf1104a5f","blendMode":0,"displayName":"face","isLocked":false,"name":"05428061-8070-4e0f-8a0d-a59cf1104a5f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"08b14ccc-2d08-413b-b8fb-40db28ce3f69","blendMode":0,"displayName":"head","isLocked":false,"name":"08b14ccc-2d08-413b-b8fb-40db28ce3f69","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"6137fff2-d49d-4a0c-a8ca-0b0ab833d852","blendMode":0,"displayName":"arms","isLocked":false,"name":"6137fff2-d49d-4a0c-a8ca-0b0ab833d852","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -28,7 +26,7 @@
     {"$GMImageLayer":"","%Name":"2fedc9ce-d32b-4d49-a583-2a9a15685224","blendMode":0,"displayName":"body","isLocked":false,"name":"2fedc9ce-d32b-4d49-a583-2a9a15685224","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"a33a684e-c686-472b-ad18-819b1358d878","blendMode":0,"displayName":"bg","isLocked":false,"name":"a33a684e-c686-472b-ad18-819b1358d878","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_combat_player_clapperboard_ready",
+  "name":"spr_combat_player_dodge",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -40,7 +38,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_combat_player_clapperboard_ready",
+    "%Name":"spr_combat_player_dodge",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -56,7 +54,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":2.0,
+    "length":1.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -64,7 +62,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_combat_player_clapperboard_ready",
+    "name":"spr_combat_player_dodge",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -76,11 +74,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cf618b16-61a2-4d8e-80dd-3f25aa7c9147","path":"sprites/spr_combat_player_clapperboard_ready/spr_combat_player_clapperboard_ready.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"54aafd24-4db7-4d58-82d0-a75200798815","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"68ec8cd4-199c-48d5-b9d2-492e09bf3708","path":"sprites/spr_combat_player_clapperboard_ready/spr_combat_player_clapperboard_ready.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"da7c338f-79db-4ff9-874a-7070f1b46ced","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ad25795c-29a0-4f1e-b2c5-309b6b2e7f3e","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9fee3df7-cd85-416a-94a6-1f262b09ad08","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
