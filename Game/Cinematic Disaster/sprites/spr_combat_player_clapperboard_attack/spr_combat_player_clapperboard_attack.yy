@@ -3,7 +3,7 @@
   "%Name":"spr_combat_player_clapperboard_attack",
   "bboxMode":0,
   "bbox_bottom":127,
-  "bbox_left":15,
+  "bbox_left":4,
   "bbox_right":127,
   "bbox_top":0,
   "collisionKind":1,
@@ -12,7 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"9b0e61c8-da06-402a-a95f-750ce32b1495","name":"9b0e61c8-da06-402a-a95f-750ce32b1495","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e1df1822-507b-4832-bd4c-e982939d0020","name":"e1df1822-507b-4832-bd4c-e982939d0020","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"03275cac-b24b-47f9-8a13-c2edc0dbc209","name":"03275cac-b24b-47f9-8a13-c2edc0dbc209","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"59b6a231-e83e-4df3-a8ad-09f39dc673ba","name":"59b6a231-e83e-4df3-a8ad-09f39dc673ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cb082415-b7bf-4f84-9d90-7e1b7e57364c","name":"cb082415-b7bf-4f84-9d90-7e1b7e57364c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cae2611b-507a-4c2b-8101-541ab9488ee1","name":"cae2611b-507a-4c2b-8101-541ab9488ee1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a28ed13f-8c77-4056-9a1b-c74fe8626dec","name":"a28ed13f-8c77-4056-9a1b-c74fe8626dec","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -55,7 +60,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -75,8 +80,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9b0e61c8-da06-402a-a95f-750ce32b1495","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b619d4d2-62e8-4f52-bfab-af371e239622","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e1df1822-507b-4832-bd4c-e982939d0020","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8ed20204-a65b-409b-ae43-acf8c274beca","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03275cac-b24b-47f9-8a13-c2edc0dbc209","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"11f365b4-3dfa-404d-8eb9-76f36702f35f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"59b6a231-e83e-4df3-a8ad-09f39dc673ba","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5354b2c1-c3ad-4f62-a86f-55cd37ded424","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cb082415-b7bf-4f84-9d90-7e1b7e57364c","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f9fb94a1-288f-4858-ad76-b47d458c846d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cae2611b-507a-4c2b-8101-541ab9488ee1","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9f40e950-c18c-48c8-ac1b-b6d3d2e4c23a","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a28ed13f-8c77-4056-9a1b-c74fe8626dec","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"73db7f0e-3644-4425-b8ee-bca587ae6fa3","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
