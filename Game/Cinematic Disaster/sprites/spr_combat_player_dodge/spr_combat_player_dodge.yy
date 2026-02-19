@@ -3,8 +3,8 @@
   "%Name":"spr_combat_player_dodge",
   "bboxMode":0,
   "bbox_bottom":127,
-  "bbox_left":9,
-  "bbox_right":77,
+  "bbox_left":2,
+  "bbox_right":91,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,7 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
+    {"$GMSpriteFrame":"v1","%Name":"06f8971c-88a1-4b62-923a-4c50195b788b","name":"06f8971c-88a1-4b62-923a-4c50195b788b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"ad25795c-29a0-4f1e-b2c5-309b6b2e7f3e","name":"ad25795c-29a0-4f1e-b2c5-309b6b2e7f3e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bc05913b-e1c9-492a-aee5-0b38f9668407","name":"bc05913b-e1c9-492a-aee5-0b38f9668407","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"59544ee7-44d1-46c5-a175-5e41d409b185","name":"59544ee7-44d1-46c5-a175-5e41d409b185","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8826d1a8-ff1d-4f51-93b0-972087e983c0","name":"8826d1a8-ff1d-4f51-93b0-972087e983c0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7a91f79e-cfc9-417d-9ad0-5fcd556961ab","name":"7a91f79e-cfc9-417d-9ad0-5fcd556961ab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"512cf717-4573-4623-9c27-acdc89201050","name":"512cf717-4573-4623-9c27-acdc89201050","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"8dbba8ab-229d-4ab1-bc37-ef86e33267a3","name":"8dbba8ab-229d-4ab1-bc37-ef86e33267a3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -54,7 +61,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -74,8 +81,29 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"06f8971c-88a1-4b62-923a-4c50195b788b","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"652cc543-1c96-426c-bf3c-2a3c2c6fa6c0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ad25795c-29a0-4f1e-b2c5-309b6b2e7f3e","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9fee3df7-cd85-416a-94a6-1f262b09ad08","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"9fee3df7-cd85-416a-94a6-1f262b09ad08","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc05913b-e1c9-492a-aee5-0b38f9668407","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d20e270f-75cb-4d06-b370-85a354e40706","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"59544ee7-44d1-46c5-a175-5e41d409b185","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a755aac1-be80-4186-a45b-dce34300f67e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8826d1a8-ff1d-4f51-93b0-972087e983c0","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5c9b2de7-a7d2-4341-a366-c4ff73f693af","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7a91f79e-cfc9-417d-9ad0-5fcd556961ab","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cf9b9f88-abea-4ade-bc67-b6dccef81d9b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"512cf717-4573-4623-9c27-acdc89201050","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d815d10a-c1bf-4069-9471-ec6c11eb7a28","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8dbba8ab-229d-4ab1-bc37-ef86e33267a3","path":"sprites/spr_combat_player_dodge/spr_combat_player_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a0f32c11-1b74-4f76-8495-5a64246ae360","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
