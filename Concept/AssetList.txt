@@ -26,4 +26,5 @@ Item Assets:
 - spr_item_rag
 - spr_item_coffee
 
-Reminder: don't forget about the background (combat background, idk if it should also be a sprite)
+Background Assets:
+- spr_background_combat_action
