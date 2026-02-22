@@ -3,14 +3,15 @@
 starting_x = x
 starting_y = y
 run_speed = 4
-start_attack_frame = 13
-end_attack_frame = 15
-attack_hit_frame = 4
+start_attack_frame = 12
+end_attack_frame = 14
+attack_hit_frame = 3
 
 // Variables
-inst_target_id = false // id of enemy to walk to
+inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
+pressed_space = 0
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -20,14 +21,24 @@ anim_dodge = spr_combat_player_dodge
 anim_ready = spr_combat_player_clapperboard_ready
 anim_attack = spr_combat_player_clapperboard_attack
 
-start_player_attack = function(inst_enemy_id)
+start_attack = function(inst_enemy_id)
 {
 	inst_target_id = inst_enemy_id
 	sprite_index = anim_run
+	image_index = 0
 	move_towards_target = true
 }
 
 play_hit_anim = function()
 {
-	sprite_index = anim_hit
+	if pressed_space != 0
+	{
+		sprite_index = anim_dodge
+		image_index = 0
+	}
+	else
+	{
+		sprite_index = anim_hit
+		image_index = 0
+	}
 }

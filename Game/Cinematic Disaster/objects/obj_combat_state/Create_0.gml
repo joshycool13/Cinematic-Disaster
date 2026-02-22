@@ -20,7 +20,7 @@ player_attack = function() // start player's attack
 {
 	layer_set_visible("AttackMenu", false)
 	cur_attacked = inst_enemy_id
-	inst_player_id.start_player_attack(inst_enemy_id)
+	inst_player_id.start_attack(inst_enemy_id)
 }
 
 finish_player_attack = function() // when player's attack is over
@@ -38,6 +38,18 @@ use_item_temp = function() // pressing item button
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("PlayerTurn", true)
 	alarm[0] = 120
+}
+
+player_defend = function()
+{
+	layer_set_visible("DefenseMenu", false)
+	cur_attacked = inst_player_id
+	inst_enemy_id.start_attack(inst_player_id)
+}
+
+finish_player_defend = function()
+{
+	layer_set_visible("AttackMenu", true)
 }
 
 start_player_defending = function()

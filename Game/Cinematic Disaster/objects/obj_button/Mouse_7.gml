@@ -10,6 +10,6 @@ switch (button_id)
 	break;
 	
 	case 2: // Defense
-		obj_combat_state.start_player_defending()
+		obj_combat_state.player_defend()
 	break;
 }
