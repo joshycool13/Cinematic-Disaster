@@ -1,7 +1,6 @@
 
 
-if sprite_index == anim_attack
+if sprite_index == anim_ready and image_index >= start_attack_frame and image_index <= end_attack_frame
 {
-	sprite_index = anim_idle
-	obj_combat_state.finish_attack()
+	sprite_index = anim_attack
 }
