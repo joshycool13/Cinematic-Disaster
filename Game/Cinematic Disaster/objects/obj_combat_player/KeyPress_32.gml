@@ -1,7 +1,7 @@
 
 
-if sprite_index == player_attack
+if sprite_index == anim_attack
 {
-	sprite_index = player_idle
+	sprite_index = anim_idle
 	obj_combat_state.finish_attack()
 }
