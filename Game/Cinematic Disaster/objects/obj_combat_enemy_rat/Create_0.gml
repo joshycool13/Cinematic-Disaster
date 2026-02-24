@@ -9,6 +9,7 @@ attack_hit_frame = 4
 inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
+has_already_hit = false
 
 // Animations
 anim_idle = spr_enemy_rat_idle

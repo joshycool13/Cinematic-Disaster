@@ -12,6 +12,7 @@ inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
 pressed_space = 0
+has_already_hit = false
 
 // Animations
 anim_idle = spr_combat_player_idle
