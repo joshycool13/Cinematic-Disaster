@@ -30,6 +30,12 @@ player_attack = function() // start player's attack
 
 finish_player_attack = function() // when player's attack is over
 {
+	if enemy_hp <= 0
+	{
+		layer_set_visible("CombatVictory", true)
+		alarm[2] = 120
+		return
+	}
 	layer_set_visible("DefenseMenu", true)
 }
 
@@ -38,12 +44,12 @@ attacked_is_hit = function() // when something is hit
 	cur_attacked.play_hit_anim()
 	if cur_attacked == inst_player_id and inst_player_id.pressed_space == 0
 	{
-		player_hp -= 4
+		player_hp -= 12
 		layer_text_text(player_hp_text, "HP: " + string(player_hp))
 	}
 	if cur_attacked == inst_enemy_id
 	{
-		enemy_hp -= 10
+		enemy_hp -= 4
 		layer_text_text(enemy_hp_text, "HP: " + string(enemy_hp))
 	}
 }
@@ -64,6 +70,12 @@ player_defend = function()
 
 finish_player_defend = function()
 {
+	if player_hp <= 0
+	{
+		layer_set_visible("CombatGameOver", true)
+		alarm[2] = 120
+		return
+	}
 	layer_set_visible("AttackMenu", true)
 }
 
