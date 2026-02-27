@@ -2,19 +2,19 @@
 movement_direction_hori = 0
 movement_direction_vert = 0
 
-if keyboard_check(vk_left)
+if keyboard_check(ord("A"))
 {
 	movement_direction_hori -= 1
 }
-if keyboard_check(vk_right)
+if keyboard_check(ord("D"))
 {
 	movement_direction_hori += 1
 }
-if keyboard_check(vk_up)
+if keyboard_check(ord("W"))
 {
 	movement_direction_vert -= 1
 }
-if keyboard_check(vk_down)
+if keyboard_check(ord("S"))
 {
 	movement_direction_vert += 1
 }
