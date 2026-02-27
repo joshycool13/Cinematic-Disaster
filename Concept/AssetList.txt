@@ -1,14 +1,6 @@
 Note: Every animation has to be a separate sprite
 
-Roaming Player Assets:
-- spr_roaming_player_idle_frontside
-- spr_roaming_player_idle_backside
-- spr_roaming_player_walk_frontside
-- spr_roaming_player_walk_backside
-
 Combat Player Assets:
-- spr_combat_player_clapperboard_ready // add frames at the end for "breaks if misses attack" (in concept for attack)
-- spr_combat_player_hold_item // hand open as if showing and holding an item
 - spr_combat_player_megaphone_use // look up director megaphone for reference image / this is for default defense skill
 
 Enemy Dog in Car Assets:
@@ -18,13 +10,4 @@ Enemy Dog in Car Assets:
 - spr_enemy_dogcar_hit // got hit by an attack
 
 Item Assets:
-- spr_item_rotten_tomato
-- spr_item_line_change
-- spr_item_flashbang
 - spr_item_reel
-- spr_item_corporate_drink
-- spr_item_rag
-- spr_item_coffee
-
-Background Assets:
-- spr_background_combat_action
