@@ -26,6 +26,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
+    {"id":{"name":"obj_combat_enemy_rat","path":"objects/obj_combat_enemy_rat/obj_combat_enemy_rat.yy",},},
     {"id":{"name":"obj_combat_enemy","path":"objects/obj_combat_enemy/obj_combat_enemy.yy",},},
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},

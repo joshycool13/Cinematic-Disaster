@@ -32,5 +32,8 @@
     "path":"sprites/spr_temp_enemy/spr_temp_enemy.yy",
   },
   "spriteMaskId":null,
+  "tags":[
+    "enemy",
+  ],
   "visible":true,
 }
