@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_enemy_dogcar_idle",
   "bboxMode":0,
-  "bbox_bottom":124,
-  "bbox_left":17,
-  "bbox_right":104,
-  "bbox_top":56,
+  "bbox_bottom":127,
+  "bbox_left":11,
+  "bbox_right":114,
+  "bbox_top":55,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -13,15 +13,27 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"0aa75783-5d7d-40a6-927c-091fd6a5614e","name":"0aa75783-5d7d-40a6-927c-091fd6a5614e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"04dc9cf1-0c9e-48a1-8643-953cb066b653","name":"04dc9cf1-0c9e-48a1-8643-953cb066b653","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b78aa172-8492-46da-a595-dac372415562","name":"b78aa172-8492-46da-a595-dac372415562","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1321173f-9a0e-41ef-a4d8-e4232094f7a8","name":"1321173f-9a0e-41ef-a4d8-e4232094f7a8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e0a6a3d6-2fb2-4e18-a319-0f6d23325e69","name":"e0a6a3d6-2fb2-4e18-a319-0f6d23325e69","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"342b57f0-8b2e-4b29-ae74-9c118e20a0e5","name":"342b57f0-8b2e-4b29-ae74-9c118e20a0e5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6d7a9489-9d0d-46e8-9f67-14a646d4b573","name":"6d7a9489-9d0d-46e8-9f67-14a646d4b573","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"03acb2a9-0934-472f-8ae7-02a172c41dde","name":"03acb2a9-0934-472f-8ae7-02a172c41dde","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"bc91d6b6-aa6b-4376-bfe7-66e99b989881","name":"bc91d6b6-aa6b-4376-bfe7-66e99b989881","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"77a6922b-5c97-4fcb-bbba-bb1d21d3c244","name":"77a6922b-5c97-4fcb-bbba-bb1d21d3c244","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7efcaf9b-8714-4e66-a07f-0384e1b22868","name":"7efcaf9b-8714-4e66-a07f-0384e1b22868","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6f85db9c-539c-4005-807a-318ac2145cca","name":"6f85db9c-539c-4005-807a-318ac2145cca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":128,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"3ef0f735-b565-4aeb-92f7-9ea3563858a8","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"3ef0f735-b565-4aeb-92f7-9ea3563858a8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d42dc09e-5da3-482d-858e-9f59111c712b","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"d42dc09e-5da3-482d-858e-9f59111c712b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"427c6a2e-b338-4da9-a95e-92d8c141847c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"427c6a2e-b338-4da9-a95e-92d8c141847c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"44438023-0095-40cb-8d81-6c51d97abf63","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"44438023-0095-40cb-8d81-6c51d97abf63","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"f8d3e230-f22f-4d4d-ba1c-e227aa4ca3da","blendMode":0,"displayName":"default","isLocked":false,"name":"f8d3e230-f22f-4d4d-ba1c-e227aa4ca3da","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"b6ce0e9c-2c58-4a3c-abe2-b2ad5fb54808","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"b6ce0e9c-2c58-4a3c-abe2-b2ad5fb54808","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_enemy_dogcar_idle",
   "nineSlice":null,
@@ -51,7 +63,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":12.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -61,7 +73,7 @@
     },
     "name":"spr_enemy_dogcar_idle",
     "playback":1,
-    "playbackSpeed":4.0,
+    "playbackSpeed":8.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -73,6 +85,39 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0aa75783-5d7d-40a6-927c-091fd6a5614e","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"8e93c40e-e260-467e-bff7-c46bded3d6bd","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"04dc9cf1-0c9e-48a1-8643-953cb066b653","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0d97d746-55af-4f6e-a6c8-e458bc945049","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b78aa172-8492-46da-a595-dac372415562","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5bfb2162-2d3a-4312-8d7f-ebf030d2c42f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1321173f-9a0e-41ef-a4d8-e4232094f7a8","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b757be3d-63a1-4bab-8b90-581c20e3720f","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e0a6a3d6-2fb2-4e18-a319-0f6d23325e69","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"33f5b2c7-85e6-4c0d-8ad1-9413b3445af5","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"342b57f0-8b2e-4b29-ae74-9c118e20a0e5","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f645cf94-dead-4084-9e52-e6d32c3f065c","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d7a9489-9d0d-46e8-9f67-14a646d4b573","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a4754019-5109-4870-8bd7-83c600d1cb91","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03acb2a9-0934-472f-8ae7-02a172c41dde","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"64c265c3-d90a-46fe-aebe-75c7a5a3c9d4","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bc91d6b6-aa6b-4376-bfe7-66e99b989881","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9afae76d-519d-4728-a04b-fabb5a3679ea","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"77a6922b-5c97-4fcb-bbba-bb1d21d3c244","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"328c0f3c-ebe4-4634-aeb5-f11bcb227bf1","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7efcaf9b-8714-4e66-a07f-0384e1b22868","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a7721c45-1596-4f7a-a9e5-e19acbb05dd7","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6f85db9c-539c-4005-807a-318ac2145cca","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5f25b382-8603-4972-be76-13d650fafaa6","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

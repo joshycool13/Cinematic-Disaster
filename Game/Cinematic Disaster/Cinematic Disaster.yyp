@@ -46,6 +46,7 @@
     {"id":{"name":"spr_combat_player_megaphone_use","path":"sprites/spr_combat_player_megaphone_use/spr_combat_player_megaphone_use.yy",},},
     {"id":{"name":"spr_combat_player_run","path":"sprites/spr_combat_player_run/spr_combat_player_run.yy",},},
     {"id":{"name":"spr_enemy_dogcar_idle","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},},
+    {"id":{"name":"spr_enemy_dogcar_run","path":"sprites/spr_enemy_dogcar_run/spr_enemy_dogcar_run.yy",},},
     {"id":{"name":"spr_enemy_rat_attack","path":"sprites/spr_enemy_rat_attack/spr_enemy_rat_attack.yy",},},
     {"id":{"name":"spr_enemy_rat_hit","path":"sprites/spr_enemy_rat_hit/spr_enemy_rat_hit.yy",},},
     {"id":{"name":"spr_enemy_rat_idle","path":"sprites/spr_enemy_rat_idle/spr_enemy_rat_idle.yy",},},
