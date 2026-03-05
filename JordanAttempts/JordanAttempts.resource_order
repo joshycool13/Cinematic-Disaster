@@ -7,6 +7,7 @@
   "ResourceOrderSettings":[
     {"name":"SpriteTestRoom","order":1,"path":"rooms/SpriteTestRoom/SpriteTestRoom.yy",},
     {"name":"Chair","order":32,"path":"sprites/Chair/Chair.yy",},
+    {"name":"Road","order":35,"path":"sprites/Road/Road.yy",},
     {"name":"spr_flowerfloor_1","order":10,"path":"sprites/spr_flowerfloor_1/spr_flowerfloor_1.yy",},
     {"name":"spr_grass","order":11,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"spr_grasstemplate","order":12,"path":"sprites/spr_grasstemplate/spr_grasstemplate.yy",},
@@ -41,6 +42,7 @@
     {"name":"WoodTest_1","order":9,"path":"sprites/WoodTest_1/WoodTest_1.yy",},
     {"name":"WoodTest","order":8,"path":"sprites/WoodTest/WoodTest.yy",},
     {"name":"Gravel","order":34,"path":"tilesets/Gravel/Gravel.yy",},
+    {"name":"gravelroad","order":36,"path":"tilesets/gravelroad/gravelroad.yy",},
     {"name":"Path","order":33,"path":"tilesets/Path/Path.yy",},
     {"name":"TileSet2","order":7,"path":"tilesets/TileSet2/TileSet2.yy",},
     {"name":"TileSet3","order":17,"path":"tilesets/TileSet3/TileSet3.yy",},
