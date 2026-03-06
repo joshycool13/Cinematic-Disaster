@@ -1,13 +1,16 @@
 Note: Every animation has to be a separate sprite
 
-Combat Player Assets:
-- spr_combat_player_megaphone_use // look up director megaphone for reference image / this is for default defense skill
+Dialogue Illustration Assets:
+- spr_dialogue_player
 
-Enemy Dog in Car Assets:
-- spr_enemy_dogcar_idle
-- spr_enemy_dogcar_run
-- spr_enemy_dogcar_attack
-- spr_enemy_dogcar_hit // got hit by an attack
+Combat Hires Assets:
+- spr_combat_hire_castagent_idle
+- spr_combat_hire_castagent_pulllaptop (pull out laptop to start attack)
+- spr_combat_hire_castagent_laptopidle (just looking at laptop during attack)
+- spr_combat_hire_castagent_putuplaptop (puts up laptop after doing attack)
 
-Item Assets:
-- spr_item_reel
+Background Assets:
+- spr_background_combat_action (I believe there is still stuff needed to be finished?)
+
+Miscellaneous
+- spr_combat_smokepuff
