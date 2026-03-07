@@ -15,7 +15,7 @@ pressed_space = 0
 has_already_hit = false
 
 // Animations
-anim_idle = spr_combat_player_idle
+anim_idle = spr_combat_player_hold_item
 anim_run = spr_combat_player_run
 anim_hit = spr_combat_player_hit
 anim_dodge = spr_combat_player_dodge
