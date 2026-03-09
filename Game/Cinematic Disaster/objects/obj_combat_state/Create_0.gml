@@ -16,9 +16,8 @@ enemy_hp = 20
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
 inst_enemy_id = instance_create_layer(enemy_x, enemy_y, "Instances", obj_combat_enemy_rat)
 
-layer_set_visible("RoamingUI", false)
-layer_set_visible("CombatHealth", true)
-layer_set_visible("AttackMenu", true)
+layer_set_visible("CombatHP", true)
+layer_set_visible("PlayerMenu", true)
 
 // Functions
 player_attack = function() // start player's attack
