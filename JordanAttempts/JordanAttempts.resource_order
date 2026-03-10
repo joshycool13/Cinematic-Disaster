@@ -1,13 +1,16 @@
 {
   "FolderOrderSettings":[
-    {"name":"UIBubbles","order":22,"path":"folders/Sprites/UIBubbles.yy",},
     {"name":"RoamSpriteTests","order":21,"path":"folders/Sprites/RoamSpriteTests.yy",},
+    {"name":"UIBubbles","order":22,"path":"folders/Sprites/UIBubbles.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"SpriteTestRoom","order":1,"path":"rooms/SpriteTestRoom/SpriteTestRoom.yy",},
+    {"name":"obj_door","order":2,"path":"objects/obj_door/obj_door.yy",},
+    {"name":"Green_Room","order":3,"path":"rooms/Green_Room/Green_Room.yy",},
+    {"name":"Studio_Lot","order":1,"path":"rooms/Studio_Lot/Studio_Lot.yy",},
     {"name":"Chair","order":32,"path":"sprites/Chair/Chair.yy",},
     {"name":"Road","order":35,"path":"sprites/Road/Road.yy",},
+    {"name":"spr_door","order":24,"path":"sprites/spr_door/spr_door.yy",},
     {"name":"spr_flowerfloor_1","order":10,"path":"sprites/spr_flowerfloor_1/spr_flowerfloor_1.yy",},
     {"name":"spr_grass","order":11,"path":"sprites/spr_grass/spr_grass.yy",},
     {"name":"spr_grasstemplate","order":12,"path":"sprites/spr_grasstemplate/spr_grasstemplate.yy",},
