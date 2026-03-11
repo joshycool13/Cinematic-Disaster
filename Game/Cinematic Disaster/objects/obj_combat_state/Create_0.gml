@@ -33,6 +33,12 @@ player_menu = function() // go to player menu
 	layer_set_visible("PlayerMenu", true)
 }
 
+enemy_menu = function() // go to enemy menu
+{
+	layer_set_visible("DefendMenu", false)
+	layer_set_visible("EnemyMenu", true)
+}
+
 item_menu = function() // go to item menu
 {
 	layer_set_visible("PlayerMenu", false)
@@ -48,6 +54,7 @@ defend_menu = function() // go to defend menu
 player_attack = function() // start player's attack
 {
 	layer_set_visible("AttackMenu", false)
+	layer_set_visible("Clipboard", false)
 	cur_attacked = inst_enemy_id
 	inst_player_id.start_attack(inst_enemy_id)
 }
@@ -60,7 +67,8 @@ finish_player_attack = function() // when player's attack is over
 		alarm[2] = 120
 		return
 	}
-	layer_set_visible("DefenseMenu", true)
+	layer_set_visible("Clipboard", true)
+	layer_set_visible("EnemyMenu", true)
 }
 
 attacked_is_hit = function() // when something is hit
@@ -68,13 +76,12 @@ attacked_is_hit = function() // when something is hit
 	cur_attacked.play_hit_anim()
 	if cur_attacked == inst_player_id and inst_player_id.pressed_space == 0
 	{
-		player_hp -= 12
+		player_hp -= 4
 		layer_text_text(player_hp_text, "HP: " + string(player_hp))
 	}
 	if cur_attacked == inst_enemy_id
 	{
 		enemy_hp -= 4
-		layer_text_text(enemy_hp_text, "HP: " + string(enemy_hp))
 	}
 }
 
@@ -87,7 +94,8 @@ use_item_temp = function() // pressing item button
 
 player_defend = function()
 {
-	layer_set_visible("DefenseMenu", false)
+	layer_set_visible("DefendMenu", false)
+	layer_set_visible("Clipboard", false)
 	cur_attacked = inst_player_id
 	inst_enemy_id.start_attack(inst_player_id)
 }
@@ -100,7 +108,8 @@ finish_player_defend = function()
 		alarm[2] = 120
 		return
 	}
-	layer_set_visible("AttackMenu", true)
+	layer_set_visible("Clipboard", true)
+	layer_set_visible("PlayerMenu", true)
 }
 
 start_player_defending = function()

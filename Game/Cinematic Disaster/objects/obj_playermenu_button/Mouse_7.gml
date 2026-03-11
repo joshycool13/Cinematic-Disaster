@@ -15,4 +15,12 @@ switch (button_name)
 	case "Back":
 		obj_combat_state.player_menu()
 	break;
+	
+	case "default_attack":
+		obj_combat_state.player_attack()
+	break;
+	
+	case "default_defend":
+		obj_combat_state.player_defend()
+	break;
 }
