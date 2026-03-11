@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_temp2_player",
-    "path":"sprites/spr_temp2_player/spr_temp2_player.yy",
+    "name":"spr_roaming_player_idle_front",
+    "path":"sprites/spr_roaming_player_idle_front/spr_roaming_player_idle_front.yy",
   },
   "spriteMaskId":null,
   "visible":true,

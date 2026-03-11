@@ -1,14 +1,14 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"TileSet9",
+  "%Name":"TileSet11",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"TileSet9",
-  "out_columns":14,
+  "name":"TileSet11",
+  "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_woodfloor_3",
-    "path":"sprites/spr_woodfloor_3/spr_woodfloor_3.yy",
+    "name":"spr_street",
+    "path":"sprites/spr_street/spr_street.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":200,
+  "tile_count":25,
 }
