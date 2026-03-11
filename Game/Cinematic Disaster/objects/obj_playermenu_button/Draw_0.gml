@@ -5,6 +5,19 @@ draw_set_font(Font1)
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
 
+button_text = button_name
+
+switch (button_name)
+{
+	case "default_attack":
+		button_text = "Clapperboard"
+	break;
+	
+	case "default_defend":
+		button_text = "Megaphone"
+	break;
+}
+
 draw_text(x, y, button_text)
 
 if draw_underline
