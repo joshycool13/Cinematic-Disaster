@@ -4,8 +4,7 @@ player_x = 192
 player_y = 384
 enemy_x = 832
 enemy_y = 416
-player_hp_text = layer_text_get_id("CombatHealth", "player_hp")
-enemy_hp_text = layer_text_get_id("CombatHealth", "enemy_hp")
+player_hp_text = layer_text_get_id("CombatHP", "player_hp")
 
 // Variables
 cur_attacked = false
@@ -38,6 +37,12 @@ item_menu = function() // go to item menu
 {
 	layer_set_visible("PlayerMenu", false)
 	layer_set_visible("ItemMenu", true)
+}
+
+defend_menu = function() // go to defend menu
+{
+	layer_set_visible("EnemyMenu", false)
+	layer_set_visible("DefendMenu", true)
 }
 
 player_attack = function() // start player's attack
