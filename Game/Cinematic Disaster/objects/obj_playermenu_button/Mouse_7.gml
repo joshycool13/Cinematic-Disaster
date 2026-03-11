@@ -13,7 +13,15 @@ switch (button_name)
 	break;
 	
 	case "Back":
-		obj_combat_state.player_menu()
+		if obj_combat_state.is_player_turn == true
+		{
+			obj_combat_state.player_menu()
+		}
+		else if obj_combat_state.is_player_turn == false
+		{
+			obj_combat_state.enemy_menu()
+		}
+		
 	break;
 	
 	case "default_attack":

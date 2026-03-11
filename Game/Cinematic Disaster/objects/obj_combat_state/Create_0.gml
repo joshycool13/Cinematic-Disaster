@@ -10,6 +10,7 @@ player_hp_text = layer_text_get_id("CombatHP", "player_hp")
 cur_attacked = false
 player_hp = 20
 enemy_hp = 6
+is_player_turn = true
 
 // On Room Start
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
@@ -18,6 +19,8 @@ inst_enemy_id = instance_create_layer(enemy_x, enemy_y, "Instances", obj_combat_
 layer_set_visible("CombatHP", true)
 layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
+
+layer_text_text(player_hp_text, "HP: " + string(player_hp))
 
 // Functions
 attack_menu = function() // go to attack menu
@@ -69,6 +72,7 @@ finish_player_attack = function() // when player's attack is over
 	}
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("EnemyMenu", true)
+	is_player_turn = false
 }
 
 attacked_is_hit = function() // when something is hit
@@ -110,6 +114,7 @@ finish_player_defend = function()
 	}
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("PlayerMenu", true)
+	is_player_turn = true
 }
 
 start_player_defending = function()
