@@ -17,9 +17,29 @@ inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_comb
 inst_enemy_id = instance_create_layer(enemy_x, enemy_y, "Instances", obj_combat_enemy_rat)
 
 layer_set_visible("CombatHP", true)
+layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
 
 // Functions
+attack_menu = function() // go to attack menu
+{
+	layer_set_visible("PlayerMenu", false)
+	layer_set_visible("AttackMenu", true)
+}
+
+player_menu = function() // go to player menu
+{
+	layer_set_visible("AttackMenu", false)
+	layer_set_visible("ItemMenu", false)
+	layer_set_visible("PlayerMenu", true)
+}
+
+item_menu = function() // go to item menu
+{
+	layer_set_visible("PlayerMenu", false)
+	layer_set_visible("ItemMenu", true)
+}
+
 player_attack = function() // start player's attack
 {
 	layer_set_visible("AttackMenu", false)
