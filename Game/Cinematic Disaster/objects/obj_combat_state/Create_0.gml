@@ -9,7 +9,7 @@ player_hp_text = layer_text_get_id("CombatHP", "player_hp")
 // Variables
 cur_attacked = false
 player_hp = 20
-enemy_hp = 20
+enemy_hp = 6
 
 // On Room Start
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
