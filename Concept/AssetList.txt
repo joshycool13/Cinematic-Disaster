@@ -4,15 +4,12 @@ Dialogue Illustration Assets:
 - spr_dialogue_player
 
 Combat Hires Assets:
-- spr_combat_hire_castagent_idle
-- spr_combat_hire_castagent_pulllaptop (pull out laptop to start attack)
-- spr_combat_hire_castagent_laptopidle (just looking at laptop during attack)
-- spr_combat_hire_castagent_laptopsuccess (when attack hits, can add putuplaptop afterwards)
-- spr_combat_hire_castagent_laptopfail (when attack misses, can add putuplaptop afterwards)
-- spr_combat_hire_castagent_putuplaptop (puts up laptop after doing attack, don't have to make if it's in laptopsuccess/laptopfail)
+- spr_hire_castagent_idle
+- spr_hire_castagent_pulllaptop (pull out laptop to start attack)
+- spr_hire_castagent_laptopidle (just looking at laptop during attack)
+- spr_hire_castagent_laptopsuccess (when attack hits, can add putuplaptop afterwards)
+- spr_hire_castagent_laptopfail (when attack misses, can add putuplaptop afterwards)
+- spr_hire_castagent_putuplaptop (puts up laptop after doing attack, don't have to make if it's in laptopsuccess/laptopfail)
 
 Background Assets:
 - spr_background_combat_action (I believe there is still stuff needed to be finished?)
-
-Miscellaneous
-- spr_combat_smokepuff
