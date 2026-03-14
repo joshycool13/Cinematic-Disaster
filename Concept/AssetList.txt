@@ -45,3 +45,39 @@ Combat Hires Assets:
 --- Boom Crew Defense Skill ---
 - spr_hire_boomcrew_shield_place (place shield in front of director)
 - spr_shield (blast shield)
+--- Dog Car ---
+- spr_enemy_dogcar_attack (change so it revvs up the car then it drive real fast, run over director)
+--- Riot Shield Guy --- (he also look like Flint Lockwood dad)
+- spr_enemy_shield_idle
+- spr_enemy_shield_run
+- spr_enemy_shield_hit
+- spr_enemy_shield_attack (charge up shield to then attack, should be easy to dodge)
+--- Hover Jetski --- (he in speedo)
+- spr_enemy_jetski_idle
+- (maybe) spr_enemy_jetski_run (I could just use idle, cause he fly)
+- spr_enemy_jetski_hit
+- spr_enemy_jetski_cutengine (so he can start falling)
+- spr_enemy_jetski_fall (attack where he fall on director, basically just a no engine idle)
+- spr_enemy_jetski_attack (jetski lands on director then transfers to idle)
+--- Jewelry Thief Cat ---
+- spr_enemy_thiefcat_idle
+- spr_enemy_thiefcat_run
+- spr_enemy_thiefcat_hit
+- spr_enemy_thiefcat_attack (two hit scratch attack, needs to be hard to dodge)
+--- Martial Artist Cyborg --- (a woman)
+- spr_enemy_cyborg_idle
+- spr_enemy_cyborg_hit
+- spr_enemy_cyborg_run
+- spr_enemy_cyborg_block (block first attack)
+- spr_enemy_cyborg_idle_charge
+- spr_enemy_cyborg_hit_charge
+- spr_enemy_cyborg_run_charge
+- spr_enemy_cyborg_block_charge (block first attack but arm glow)
+- spr_enemy_cyborg_charge (charge arm to attack next turn, turn arm a color or something for all other animations)
+- spr_enemy_cyborg_attack (big giant arm punch, maybe make it epic and slow or something cause funny, medium dodge though)
+--- Detective Monkey --- (wild monkey)
+- spr_enemy_monkey_idle
+- spr_enemy_monkey_hit
+- spr_enemy_monkey_attack (throw bananas at player)
+- spr_banana (the banana)
+- spr_enemy_monkey_screech (prepare and screech, another attack, I think this is blockable?)
