@@ -108,6 +108,7 @@
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_woodfloor_1","path":"sprites/spr_woodfloor_1/spr_woodfloor_1.yy",},},
     {"id":{"name":"spr_woodfloor","path":"sprites/spr_woodfloor/spr_woodfloor.yy",},},
+    {"id":{"name":"Sprite70","path":"sprites/Sprite70/Sprite70.yy",},},
     {"id":{"name":"WoodTest_1","path":"sprites/WoodTest_1/WoodTest_1.yy",},},
     {"id":{"name":"WoodTest","path":"sprites/WoodTest/WoodTest.yy",},},
     {"id":{"name":"tl_grass","path":"tilesets/tl_grass/tl_grass.yy",},},
