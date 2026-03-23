@@ -24,12 +24,17 @@ anim_attack = spr_combat_player_clapperboard_attack
 anim_defend = spr_combat_player_megaphone_use
 anim_item = spr_combat_player_hold_item
 
-start_attack = function(inst_enemy_id)
+start_attack = function(inst_enemy_id, attack_name)
 {
 	inst_target_id = inst_enemy_id
-	sprite_index = anim_run
-	image_index = 0
-	move_towards_target = true
+	
+	switch attack_name
+	{
+		case "default_attack":
+			sprite_index = anim_run
+			image_index = 0
+			move_towards_target = true
+	}
 }
 
 play_hit_anim = function()

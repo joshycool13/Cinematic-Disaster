@@ -66,7 +66,7 @@ player_attack = function(attack_name) // start player's attack
 	switch (attack_name)
 	{
 		case "default_attack":
-			inst_player_id.start_attack(inst_enemy_id)
+			inst_player_id.start_attack(inst_enemy_id, attack_name)
 	}
 }
 
