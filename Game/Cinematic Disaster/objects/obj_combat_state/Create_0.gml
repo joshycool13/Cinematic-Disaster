@@ -22,7 +22,9 @@ layer_set_visible("PlayerMenu", true)
 
 layer_text_text(player_hp_text, "HP: " + string(player_hp))
 
-// Functions
+// ---------- Functions ----------
+
+// Clipboard Menus
 attack_menu = function() // go to attack menu
 {
 	layer_set_visible("PlayerMenu", false)
@@ -54,12 +56,18 @@ defend_menu = function() // go to defend menu
 	layer_set_visible("DefendMenu", true)
 }
 
-player_attack = function() // start player's attack
+// Player Attacks
+player_attack = function(attack_name) // start player's attack
 {
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("Clipboard", false)
 	cur_attacked = inst_enemy_id
-	inst_player_id.start_attack(inst_enemy_id)
+	
+	switch (attack_name)
+	{
+		case "default_attack":
+			inst_player_id.start_attack(inst_enemy_id)
+	}
 }
 
 finish_player_attack = function() // when player's attack is over
@@ -75,36 +83,21 @@ finish_player_attack = function() // when player's attack is over
 	is_player_turn = false
 }
 
-attacked_is_hit = function() // when something is hit
-{
-	cur_attacked.play_hit_anim()
-	if cur_attacked == inst_player_id and inst_player_id.pressed_space == 0
-	{
-		player_hp -= 4
-		layer_text_text(player_hp_text, "HP: " + string(player_hp))
-	}
-	if cur_attacked == inst_enemy_id
-	{
-		enemy_hp -= 4
-	}
-}
-
-use_item_temp = function() // pressing item button
-{
-	layer_set_visible("AttackMenu", false)
-	layer_set_visible("PlayerTurn", true)
-	alarm[0] = 120
-}
-
-player_defend = function()
+// Player Defend
+player_defend = function(defend_name) // start player's defend
 {
 	layer_set_visible("DefendMenu", false)
 	layer_set_visible("Clipboard", false)
 	cur_attacked = inst_player_id
-	inst_enemy_id.start_attack(inst_player_id)
+	
+	switch (defend_name)
+	{
+		case "default_defend":
+			inst_enemy_id.start_attack(inst_player_id)
+	}
 }
 
-finish_player_defend = function()
+finish_player_defend = function() // when player's defend is over
 {
 	if player_hp <= 0
 	{
@@ -117,9 +110,25 @@ finish_player_defend = function()
 	is_player_turn = true
 }
 
-start_player_defending = function()
+// Player Item
+use_item_temp = function() // pressing item button
 {
-	layer_set_visible("DefenseMenu", false)
-	layer_set_visible("EnemyTurn", true)
-	alarm[1] = 120
+	layer_set_visible("AttackMenu", false)
+	layer_set_visible("PlayerTurn", true)
+	alarm[0] = 120
+}
+
+// Misc Functions
+attacked_is_hit = function() // when something is hit
+{
+	cur_attacked.play_hit_anim()
+	if cur_attacked == inst_player_id and inst_player_id.pressed_space == 0
+	{
+		player_hp -= 4
+		layer_text_text(player_hp_text, "HP: " + string(player_hp))
+	}
+	if cur_attacked == inst_enemy_id
+	{
+		enemy_hp -= 4
+	}
 }

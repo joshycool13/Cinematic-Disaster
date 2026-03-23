@@ -25,7 +25,7 @@ switch (button_name)
 	break;
 	
 	case "default_attack":
-		obj_combat_state.player_attack()
+		obj_combat_state.player_attack(button_name)
 	break;
 	
 	case "default_defend":

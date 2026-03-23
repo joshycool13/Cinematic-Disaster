@@ -15,12 +15,14 @@ pressed_space = 0
 has_already_hit = false
 
 // Animations
-anim_idle = spr_combat_player_hold_item
+anim_idle = spr_combat_player_idle
 anim_run = spr_combat_player_run
 anim_hit = spr_combat_player_hit
 anim_dodge = spr_combat_player_dodge
 anim_ready = spr_combat_player_clapperboard_ready
 anim_attack = spr_combat_player_clapperboard_attack
+anim_defend = spr_combat_player_megaphone_use
+anim_item = spr_combat_player_hold_item
 
 start_attack = function(inst_enemy_id)
 {
