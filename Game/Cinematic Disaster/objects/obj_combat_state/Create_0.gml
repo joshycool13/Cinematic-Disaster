@@ -13,6 +13,26 @@ enemy_hp = 6
 is_player_turn = true
 
 // On Room Start
+for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
+{
+	show_debug_message("enemy")
+}
+
+for (var i = 0; i < array_length(global.combat_player_attacks); i += 1) // put correct attacks as options
+{
+	show_debug_message("attack")
+}
+
+for (var i = 0; i < array_length(global.combat_player_defends); i += 1) // put correct defends as options
+{
+	show_debug_message("defend")
+}
+
+for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put correct items
+{
+	show_debug_message("item")
+}
+
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
 inst_enemy_id = instance_create_layer(enemy_x, enemy_y, "Instances", obj_combat_enemy_rat)
 
@@ -21,11 +41,6 @@ layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
 
 layer_text_text(player_hp_text, "HP: " + string(player_hp))
-
-for (var i = 0; i < array_length(global.combat_enemies); i += 1)
-{
-	show_debug_message("hello")
-}
 
 // ---------- Functions ----------
 
