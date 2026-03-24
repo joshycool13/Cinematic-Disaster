@@ -22,6 +22,11 @@ layer_set_visible("PlayerMenu", true)
 
 layer_text_text(player_hp_text, "HP: " + string(player_hp))
 
+for (var i = 0; i < array_length(global.combat_enemies); i += 1)
+{
+	show_debug_message("hello")
+}
+
 // ---------- Functions ----------
 
 // Clipboard Menus
