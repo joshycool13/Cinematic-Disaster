@@ -1,9 +1,9 @@
 
 // Constants
 player_x = 192
-player_y = 384
-enemy_x = 832
-enemy_y = 416
+player_y = 448
+enemy_x = [800, 672, 928]
+enemy_y = 448
 player_hp_text = layer_text_get_id("CombatHP", "player_hp")
 
 // Variables
@@ -15,7 +15,11 @@ is_player_turn = true
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
 {
-	show_debug_message("enemy")
+	switch global.combat_enemies[i]
+	{
+		case "rat":
+			inst_enemy_id = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
+	}
 }
 
 for (var i = 0; i < array_length(global.combat_player_attacks); i += 1) // put correct attacks as options
@@ -34,7 +38,6 @@ for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put cor
 }
 
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
-inst_enemy_id = instance_create_layer(enemy_x, enemy_y, "Instances", obj_combat_enemy_rat)
 
 layer_set_visible("CombatHP", true)
 layer_set_visible("Clipboard", true)
