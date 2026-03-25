@@ -18,7 +18,7 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 	switch global.combat_enemies[i]
 	{
 		case "rat":
-			inst_enemy_id = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
+			inst_enemy_id[0] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
 	}
 }
 
