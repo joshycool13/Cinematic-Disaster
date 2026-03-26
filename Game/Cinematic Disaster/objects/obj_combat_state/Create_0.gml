@@ -11,6 +11,7 @@ cur_attacked = false
 player_hp = 20
 enemy_hp = 6
 is_player_turn = true
+player_attack_name = ""
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -56,9 +57,13 @@ attack_menu = function() // go to attack menu
 
 player_menu = function() // go to player menu
 {
+	layer_set_visible("Clipboard", true)
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("ItemMenu", false)
 	layer_set_visible("PlayerMenu", true)
+	layer_set_visible("SelectMenu", false)
+	
+	remove_selectors()
 }
 
 enemy_menu = function() // go to enemy menu
@@ -79,17 +84,46 @@ defend_menu = function() // go to defend menu
 	layer_set_visible("DefendMenu", true)
 }
 
+select_menu = function(button_name) // go to select menu
+{
+	player_attack_name = button_name
+	
+	layer_set_visible("AttackMenu", false)
+	layer_set_visible("Clipboard", false)
+	layer_set_visible("SelectMenu", true)
+	
+	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	{
+		if (instance_exists(inst_enemy_id[i]))
+		{
+			inst_selector_id[i] = instance_create_layer(inst_enemy_id[i].x, inst_enemy_id[i].y, "Selectors", obj_selector)
+			inst_selector_id[i].button_number = i
+		}
+	}
+}
+
+remove_selectors = function() // remove selectors
+{
+	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	{
+		instance_destroy(inst_selector_id[i])
+	}
+}
+
 // Player Attacks
-player_attack = function(attack_name) // start player's attack
+player_attack = function(target) // start player's attack
 {
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("Clipboard", false)
-	cur_attacked = inst_enemy_id
+	layer_set_visible("SelectMenu", false)
+	remove_selectors()
 	
-	switch (attack_name)
+	cur_attacked = inst_enemy_id[target]
+	
+	switch (player_attack_name)
 	{
 		case "default_attack":
-			inst_player_id.start_attack(inst_enemy_id, attack_name)
+			inst_player_id.start_attack(cur_attacked, player_attack_name)
 	}
 }
 
@@ -116,7 +150,7 @@ player_defend = function(defend_name) // start player's defend
 	switch (defend_name)
 	{
 		case "default_defend":
-			inst_enemy_id.start_attack(inst_player_id)
+			inst_enemy_id[0].start_attack(inst_player_id)
 	}
 }
 

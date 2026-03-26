@@ -43,6 +43,7 @@
     {"name":"defend_button9","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_4D501B14","path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"inst_1A719E97","path":"rooms/Roaming_Room/Roaming_Room.yy",},
+    {"name":"inst_30CFF572","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[
