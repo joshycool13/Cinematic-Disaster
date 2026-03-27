@@ -37,7 +37,7 @@
   ],
   "name":"spr_combat_player_megaphone_use",
   "nineSlice":null,
-  "origin":7,
+  "origin":4,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -117,7 +117,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":64,
-    "yorigin":128,
+    "yorigin":64,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
