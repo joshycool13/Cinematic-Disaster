@@ -4,15 +4,80 @@ Dialogue Illustration Assets:
 - spr_dialogue_player
 
 Combat Hires Assets:
-- spr_combat_hire_castagent_idle
-- spr_combat_hire_castagent_pulllaptop (pull out laptop to start attack)
-- spr_combat_hire_castagent_laptopidle (just looking at laptop during attack)
-- spr_combat_hire_castagent_laptopsuccess (when attack hits, can add putuplaptop afterwards)
-- spr_combat_hire_castagent_laptopfail (when attack misses, can add putuplaptop afterwards)
-- spr_combat_hire_castagent_putuplaptop (puts up laptop after doing attack, don't have to make if it's in laptopsuccess/laptopfail)
-
-Background Assets:
-- spr_background_combat_action (I believe there is still stuff needed to be finished?)
-
-Miscellaneous
-- spr_combat_smokepuff
+(changes to names)
+- spr_combat_hire_castagent_laptopidle -> spr_hire_castagent_laptop_idle
+- spr_combat_hire_castagent_laptopsuccess -> spr_hire_castagent_laptop_success
+- spr_combat_hire_castagent_laptopfail -> spr_hire_castagent_laptop_fail
+- spr_combat_hire_castagent_idle -> spr_hire_castagent_laptop (probably never using this one, now it's just a reference sprite)
+(new assets)
+--- Casting Agent Defense Skill ---
+- spr_hire_castagent_file (casting agent reads a file, and something happens?)
+--- Janitor Attack Skill ---
+- spr_hire_janitor_broom_ready (similar to clapperboard ready anim)
+- spr_hire_janitor_broom_attack (similar to clapperboard attack anim)
+--- Janitor Defense Skill ---
+- spr_hire_janitor_cleaning (he clean the director)
+--- Jane Wick Attack Skill --- (dive punch to enemy)
+- spr_hire_janewick_punch_dive (she dives diagonally down-right)
+- spr_hire_janewick_punch_diveidle (while she's diving diagonally)
+- spr_hire_janewick_punch_success (she hits enemy)
+- spr_hire_janewick_punch_fail (she misses enemy)
+--- Jane Wick Attack Skill --- (mashing button attack)
+- spr_hire_janewick_gun_idle (when the player doesn't press anything)
+- spr_hire_janewick_gun_fire (plays whenever player shoot)
+- (maybe) spr_hire_janewick_gun_finished (signifies the player is finished attacking before they disappear)
+--- Jane Wick Defense Skill --- (they replace director)
+- spr_hire_janewick_guard_idle
+- spr_hire_janewick_guard_hit (really they block)
+- spr_hire_janewick_guard_dodge
+--- Make-up Artist Attack Skill --- (attack as enemy)
+- spr_hire_makeup_copy (she make-up's herself to be enemy)
+--- Make-up Artist Defense Skill --- (random defend)
+- spr_hire_makeup_defend (we didn't decide what she should do, uh, figure it out or something)
+--- Boom Crew Attack Skill ---
+- spr_hire_boomcrew_bomb_aiming (idle while action command is happening, aim up right)
+- spr_hire_boomcrew_bomb_throw
+- spr_bomb (the bomb)
+- (maybe) spr_hire_boomcrew_bomb_missthrow (I could just have bomb miss, don't know if you want guy be sad or something)
+--- Boom Crew Defense Skill ---
+- spr_hire_boomcrew_mine_place (he places a mine nearby)
+- spr_mine (the mine)
+--- Boom Crew Defense Skill ---
+- spr_hire_boomcrew_shield_place (place shield in front of director)
+- spr_shield (blast shield)
+--- Dog Car ---
+- spr_enemy_dogcar_attack (change so it revvs up the car then it drive real fast, run over director)
+--- Riot Shield Guy --- (he also look like Flint Lockwood dad)
+- spr_enemy_shield_idle
+- spr_enemy_shield_run
+- spr_enemy_shield_hit
+- spr_enemy_shield_attack (charge up shield to then attack, should be easy to dodge)
+--- Hover Jetski --- (he in speedo)
+- spr_enemy_jetski_idle
+- (maybe) spr_enemy_jetski_run (I could just use idle, cause he fly)
+- spr_enemy_jetski_hit
+- spr_enemy_jetski_cutengine (so he can start falling)
+- spr_enemy_jetski_fall (attack where he fall on director, basically just a no engine idle)
+- spr_enemy_jetski_attack (jetski lands on director then transfers to idle)
+--- Jewelry Thief Cat ---
+- spr_enemy_thiefcat_idle
+- spr_enemy_thiefcat_run
+- spr_enemy_thiefcat_hit
+- spr_enemy_thiefcat_attack (two hit scratch attack, needs to be hard to dodge)
+--- Martial Artist Cyborg --- (a woman)
+- spr_enemy_cyborg_idle
+- spr_enemy_cyborg_hit
+- spr_enemy_cyborg_run
+- spr_enemy_cyborg_block (block first attack)
+- spr_enemy_cyborg_idle_charge
+- spr_enemy_cyborg_hit_charge
+- spr_enemy_cyborg_run_charge
+- spr_enemy_cyborg_block_charge (block first attack but arm glow)
+- spr_enemy_cyborg_charge (charge arm to attack next turn, turn arm a color or something for all other animations)
+- spr_enemy_cyborg_attack (big giant arm punch, maybe make it epic and slow or something cause funny, medium dodge though)
+--- Detective Monkey --- (wild monkey)
+- spr_enemy_monkey_idle
+- spr_enemy_monkey_hit
+- spr_enemy_monkey_attack (throw bananas at player)
+- spr_banana (the banana)
+- spr_enemy_monkey_screech (prepare and screech, another attack, I think this is blockable?)
