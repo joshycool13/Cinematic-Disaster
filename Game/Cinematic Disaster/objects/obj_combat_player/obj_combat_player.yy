@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_combat_player_hold_item",
-    "path":"sprites/spr_combat_player_hold_item/spr_combat_player_hold_item.yy",
+    "name":"spr_combat_player_idle",
+    "path":"sprites/spr_combat_player_idle/spr_combat_player_idle.yy",
   },
   "spriteMaskId":null,
   "tags":[
