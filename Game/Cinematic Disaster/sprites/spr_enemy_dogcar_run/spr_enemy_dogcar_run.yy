@@ -37,7 +37,7 @@
   ],
   "name":"spr_enemy_dogcar_run",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -123,7 +123,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":64,
-    "yorigin":64,
+    "yorigin":128,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
