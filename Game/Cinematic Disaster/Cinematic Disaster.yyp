@@ -38,6 +38,7 @@
     {"id":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},},
     {"id":{"name":"obj_selector","path":"objects/obj_selector/obj_selector.yy",},},
     {"id":{"name":"obj_temp2_player","path":"objects/obj_temp2_player/obj_temp2_player.yy",},},
+    {"id":{"name":"obj_temp2_player1","path":"objects/obj_temp2_player1/obj_temp2_player1.yy",},},
     {"id":{"name":"obj_test_combat_trigger","path":"objects/obj_test_combat_trigger/obj_test_combat_trigger.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
