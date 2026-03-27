@@ -22,7 +22,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Cinematic Disaster",
   "resources":[
@@ -38,9 +38,7 @@
     {"id":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},},
     {"id":{"name":"obj_selector","path":"objects/obj_selector/obj_selector.yy",},},
     {"id":{"name":"obj_temp2_player","path":"objects/obj_temp2_player/obj_temp2_player.yy",},},
-    {"id":{"name":"obj_temp2_player1","path":"objects/obj_temp2_player1/obj_temp2_player1.yy",},},
     {"id":{"name":"obj_test_combat_trigger","path":"objects/obj_test_combat_trigger/obj_test_combat_trigger.yy",},},
-    {"id":{"name":"obj_test_combat_trigger1","path":"objects/obj_test_combat_trigger1/obj_test_combat_trigger1.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
     {"id":{"name":"Combat_Room","path":"rooms/Combat_Room/Combat_Room.yy",},},
     {"id":{"name":"Roaming_Room_Update","path":"rooms/Roaming_Room_Update/Roaming_Room_Update.yy",},},
@@ -163,7 +161,6 @@
     {"id":{"name":"spr_temp_player_attack","path":"sprites/spr_temp_player_attack/spr_temp_player_attack.yy",},},
     {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},},
     {"id":{"name":"spr_temp2_player","path":"sprites/spr_temp2_player/spr_temp2_player.yy",},},
-    {"id":{"name":"spr_temp2_player1","path":"sprites/spr_temp2_player1/spr_temp2_player1.yy",},},
     {"id":{"name":"spr_tutorial_doublekey","path":"sprites/spr_tutorial_doublekey/spr_tutorial_doublekey.yy",},},
     {"id":{"name":"spr_tutorial_key","path":"sprites/spr_tutorial_key/spr_tutorial_key.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
