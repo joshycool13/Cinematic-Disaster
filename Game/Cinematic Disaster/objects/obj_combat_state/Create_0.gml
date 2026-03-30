@@ -7,7 +7,6 @@ enemy_y = 448
 player_hp_text = layer_text_get_id("CombatHP", "player_hp")
 
 // Variables
-cur_attacked = false
 player_hp = 20
 enemy_hp = 6
 is_player_turn = true
@@ -118,12 +117,10 @@ player_attack = function(target) // start player's attack
 	layer_set_visible("SelectMenu", false)
 	remove_selectors()
 	
-	cur_attacked = inst_enemy_id[target]
-	
 	switch (player_attack_name)
 	{
 		case "default_attack":
-			inst_player_id.start_attack(cur_attacked, player_attack_name)
+			inst_player_id.start_attack(inst_enemy_id[target], player_attack_name)
 	}
 }
 
@@ -145,7 +142,6 @@ player_defend = function(defend_name) // start player's defend
 {
 	layer_set_visible("DefendMenu", false)
 	layer_set_visible("Clipboard", false)
-	cur_attacked = inst_player_id
 	
 	switch (defend_name)
 	{
@@ -176,16 +172,27 @@ use_item_temp = function() // pressing item button
 }
 
 // Misc Functions
-attacked_is_hit = function() // when something is hit
+attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hit
+{	
+	if is_aoe
+	{
+		for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+		{
+			if instance_exists(inst_enemy_id[i])
+			{
+				inst_enemy_id.get_hit(damage)
+			}
+		}
+	}
+	else
+	{
+		cur_attacked.get_hit(damage)
+	}
+	
+	update_hud_text()
+}
+
+update_hud_text = function()
 {
-	cur_attacked.play_hit_anim()
-	if cur_attacked == inst_player_id and inst_player_id.pressed_space == 0
-	{
-		player_hp -= 4
-		layer_text_text(player_hp_text, "HP: " + string(player_hp))
-	}
-	if cur_attacked == inst_enemy_id
-	{
-		enemy_hp -= 4
-	}
+	layer_text_text(player_hp_text, "HP: " + string(inst_player_id.health_num))
 }

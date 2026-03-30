@@ -6,6 +6,7 @@ run_speed = 4
 start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
+default_attack_damage = 4
 
 // Variables
 inst_target_id = false
@@ -13,6 +14,7 @@ move_towards_target = false
 move_towards_idle = false
 pressed_space = 0
 has_already_hit = false
+health_num = 20
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -37,7 +39,7 @@ start_attack = function(inst_enemy_id, attack_name)
 	}
 }
 
-play_hit_anim = function()
+get_hit = function(damage_taken)
 {
 	if pressed_space != 0
 	{
@@ -46,7 +48,13 @@ play_hit_anim = function()
 	}
 	else
 	{
+		health_num -= damage_taken
 		sprite_index = anim_hit
 		image_index = 0
 	}
+}
+
+finish_attack = function()
+{
+	obj_combat_state.finish_player_attack()
 }
