@@ -31,6 +31,7 @@
     {"id":{"name":"obj_combat_enemy_rat","path":"objects/obj_combat_enemy_rat/obj_combat_enemy_rat.yy",},},
     {"id":{"name":"obj_combat_enemy","path":"objects/obj_combat_enemy/obj_combat_enemy.yy",},},
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
+    {"id":{"name":"obj_combat_smokepuff","path":"objects/obj_combat_smokepuff/obj_combat_smokepuff.yy",},},
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
     {"id":{"name":"obj_frame","path":"objects/obj_frame/obj_frame.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},

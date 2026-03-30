@@ -126,7 +126,26 @@ player_attack = function(target) // start player's attack
 
 finish_player_attack = function() // when player's attack is over
 {
-	if enemy_hp <= 0
+	var is_there_enemies = false
+	
+	// delete enemies when 
+	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	{
+		if instance_exists(inst_enemy_id[i])
+		{
+			if inst_enemy_id[i].health_num <= 0
+			{
+				instance_create_layer(inst_enemy_id[i].x, inst_enemy_id[i].y, "Smoke", obj_combat_smokepuff)
+				inst_enemy_id[i].alarm[0] = 15
+			}
+			else
+			{
+				is_there_enemies = true
+			}
+		}
+	}
+	
+	if is_there_enemies == false
 	{
 		layer_set_visible("CombatVictory", true)
 		alarm[2] = 120
