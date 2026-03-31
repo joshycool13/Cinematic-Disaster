@@ -5,12 +5,14 @@ player_y = 448
 enemy_x = [800, 672, 928]
 enemy_y = 448
 player_hp_text = layer_text_get_id("CombatHP", "player_hp_num")
+attack_button_ids = [attack_button2, attack_button3, attack_button4, attack_button5, attack_button6, attack_button7, attack_button8, attack_button9]
+defend_button_ids = [defend_button2, defend_button3, defend_button4, defend_button5, defend_button6, defend_button7, defend_button8, defend_button9]
+item_button_ids = [item_button1, item_button2, item_button3, item_button4, item_button5, item_button6, item_button7, item_button8, item_button9]
 
 // Variables
-player_hp = 20
-enemy_hp = 6
 is_player_turn = true
 player_attack_name = ""
+inst_selector_id = []
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -19,6 +21,7 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 	{
 		case "rat":
 			inst_enemy_id[0] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
+		break;
 	}
 }
 
@@ -34,7 +37,12 @@ for (var i = 0; i < array_length(global.combat_player_defends); i += 1) // put c
 
 for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put correct items
 {
-	show_debug_message("item")
+	switch global.combat_player_items[i]
+	{
+		case "corp drink":
+			item_button_ids[i].button_name = "corp drink"
+		break;
+	}
 }
 
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
@@ -104,7 +112,7 @@ select_menu = function(button_name) // go to select menu
 
 remove_selectors = function() // remove selectors
 {
-	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	for (var i = 0; i < array_length(inst_selector_id); i += 1)
 	{
 		instance_destroy(inst_selector_id[i])
 	}
