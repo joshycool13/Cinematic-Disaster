@@ -68,13 +68,10 @@ finish_attack = function()
 
 use_item = function(item_name)
 {
-	switch item_name
-	{
-		case "corp_drink":
-			current_item_name = item_name
-			sprite_index = anim_item
-			image_index = 0
-	}
+	current_item_name = item_name
+	sprite_index = anim_item
+	image_index = 0
+
 }
 
 finish_using_item = function()
