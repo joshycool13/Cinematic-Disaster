@@ -211,7 +211,7 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hi
 	update_hud_text()
 }
 
-update_hud_text = function()
+update_hud_text = function() // updated hud numbers
 {
 	layer_text_text(player_hp_text, "HP: " + string(inst_player_id.health_num))
 }
