@@ -49,6 +49,10 @@ get_hit = function(damage_taken)
 	else
 	{
 		health_num -= damage_taken
+		if health_num < 0
+		{
+			health_num = 0
+		}
 		sprite_index = anim_hit
 		image_index = 0
 	}

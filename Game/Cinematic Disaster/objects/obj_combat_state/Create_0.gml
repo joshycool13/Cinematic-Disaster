@@ -171,15 +171,24 @@ player_defend = function(defend_name) // start player's defend
 
 finish_player_defend = function() // when player's defend is over
 {
-	if player_hp <= 0
+	if check_if_player_dead()
 	{
-		layer_set_visible("CombatGameOver", true)
-		alarm[2] = 120
 		return
 	}
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("PlayerMenu", true)
 	is_player_turn = true
+}
+
+check_if_player_dead = function()
+{
+	if inst_player_id.health_num <= 0
+	{
+		layer_set_visible("CombatGameOver", true)
+		alarm[2] = 120
+		return true
+	}
+	return false
 }
 
 // Player Item

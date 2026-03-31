@@ -4,7 +4,7 @@ starting_x = x
 starting_y = y
 run_speed = 4
 attack_hit_frame = 4
-attack_damage = 4
+attack_damage = 12
 
 // Variables
 inst_target_id = false
