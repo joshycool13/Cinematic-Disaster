@@ -4,7 +4,7 @@ player_x = 192
 player_y = 448
 enemy_x = [800, 672, 928]
 enemy_y = 448
-player_hp_text = layer_text_get_id("CombatHP", "player_hp")
+player_hp_text = layer_text_get_id("CombatHP", "player_hp_num")
 
 // Variables
 player_hp = 20
@@ -43,7 +43,8 @@ layer_set_visible("CombatHP", true)
 layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
 
-layer_text_text(player_hp_text, "HP: " + string(player_hp))
+inst_player_id.health_num = global.combat_player_hp
+layer_text_text(player_hp_text, string(inst_player_id.health_num))
 
 // ---------- Functions ----------
 
@@ -222,5 +223,5 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hi
 
 update_hud_text = function() // updated hud numbers
 {
-	layer_text_text(player_hp_text, "HP: " + string(inst_player_id.health_num))
+	layer_text_text(player_hp_text, string(inst_player_id.health_num))
 }
