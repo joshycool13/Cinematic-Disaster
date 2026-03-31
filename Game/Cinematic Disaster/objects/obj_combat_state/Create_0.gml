@@ -39,8 +39,8 @@ for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put cor
 {
 	switch global.combat_player_items[i]
 	{
-		case "corp drink":
-			item_button_ids[i].button_name = "corp drink"
+		case "corp_drink":
+			item_button_ids[i].button_name = "corp_drink"
 		break;
 	}
 }
@@ -189,7 +189,7 @@ finish_player_defend = function() // when player's defend is over
 	is_player_turn = true
 }
 
-check_if_player_dead = function()
+check_if_player_dead = function() // end game if player dead
 {
 	if inst_player_id.health_num <= 0
 	{
@@ -201,11 +201,39 @@ check_if_player_dead = function()
 }
 
 // Player Item
-use_item_temp = function() // pressing item button
+player_item = function(item_name) // pressing item button
 {
-	layer_set_visible("AttackMenu", false)
-	layer_set_visible("PlayerTurn", true)
-	alarm[0] = 120
+	layer_set_visible("ItemMenu", false)
+	layer_set_visible("Clipboard", false)
+	
+	reorganize_item_list()
+	
+	inst_player_id.use_item(item_name)
+}
+
+finish_player_item = function() // when player's item is over
+{
+	update_hud_text()
+	
+	layer_set_visible("Clipboard", true)
+	layer_set_visible("EnemyMenu", true)
+	is_player_turn = false
+}
+
+reorganize_item_list = function() // moves up any items when an item button is pressed
+{
+	for (var i = 0; i < array_length(item_button_ids); i += 1)
+	{
+		if item_button_ids[i].button_name == ""
+		{
+			for (var j = i+1; j < array_length(item_button_ids); j += 1)
+			{
+				item_button_ids[j-1].button_name = item_button_ids[j].button_name
+				item_button_ids[j].button_name = ""
+			}
+			return
+		}
+	}
 }
 
 // Misc Functions

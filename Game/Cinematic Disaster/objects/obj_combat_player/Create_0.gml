@@ -7,6 +7,7 @@ start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
 default_attack_damage = 4
+max_health_num = 20
 
 // Variables
 inst_target_id = false
@@ -15,6 +16,8 @@ move_towards_idle = false
 pressed_space = 0
 has_already_hit = false
 health_num = 20
+current_item = 0
+current_item_name = ""
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -61,4 +64,20 @@ get_hit = function(damage_taken)
 finish_attack = function()
 {
 	obj_combat_state.finish_player_attack()
+}
+
+use_item = function(item_name)
+{
+	switch item_name
+	{
+		case "corp_drink":
+			current_item_name = item_name
+			sprite_index = anim_item
+			image_index = 0
+	}
+}
+
+finish_using_item = function()
+{
+	obj_combat_state.finish_player_item()
 }
