@@ -73,6 +73,7 @@
     {"id":{"name":"spr_enemy_cyborg_hit","path":"sprites/spr_enemy_cyborg_hit/spr_enemy_cyborg_hit.yy",},},
     {"id":{"name":"spr_enemy_cyborg_idle","path":"sprites/spr_enemy_cyborg_idle/spr_enemy_cyborg_idle.yy",},},
     {"id":{"name":"spr_enemy_cyborg_run","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},},
+    {"id":{"name":"spr_enemy_dogcar_attack_old","path":"sprites/spr_enemy_dogcar_attack_old/spr_enemy_dogcar_attack_old.yy",},},
     {"id":{"name":"spr_enemy_dogcar_attack","path":"sprites/spr_enemy_dogcar_attack/spr_enemy_dogcar_attack.yy",},},
     {"id":{"name":"spr_enemy_dogcar_hit","path":"sprites/spr_enemy_dogcar_hit/spr_enemy_dogcar_hit.yy",},},
     {"id":{"name":"spr_enemy_dogcar_idle","path":"sprites/spr_enemy_dogcar_idle/spr_enemy_dogcar_idle.yy",},},

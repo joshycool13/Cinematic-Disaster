@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_roaming_player_idle_front",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":63,
   "bbox_left":19,
   "bbox_right":44,
-  "bbox_top":0,
+  "bbox_top":32,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
