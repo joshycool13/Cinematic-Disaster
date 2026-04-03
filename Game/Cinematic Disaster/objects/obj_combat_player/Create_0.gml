@@ -6,6 +6,8 @@ run_speed = 4
 start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
+default_attack_damage = 4
+max_health_num = 20
 
 // Variables
 inst_target_id = false
@@ -13,6 +15,9 @@ move_towards_target = false
 move_towards_idle = false
 pressed_space = 0
 has_already_hit = false
+health_num = 20
+current_item = 0
+current_item_name = ""
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -37,7 +42,7 @@ start_attack = function(inst_enemy_id, attack_name)
 	}
 }
 
-play_hit_anim = function()
+get_hit = function(damage_taken)
 {
 	if pressed_space != 0
 	{
@@ -46,7 +51,30 @@ play_hit_anim = function()
 	}
 	else
 	{
+		health_num -= damage_taken
+		if health_num < 0
+		{
+			health_num = 0
+		}
 		sprite_index = anim_hit
 		image_index = 0
 	}
+}
+
+finish_attack = function()
+{
+	obj_combat_state.finish_player_attack()
+}
+
+use_item = function(item_name)
+{
+	current_item_name = item_name
+	sprite_index = anim_item
+	image_index = 0
+
+}
+
+finish_using_item = function()
+{
+	obj_combat_state.finish_player_item()
 }

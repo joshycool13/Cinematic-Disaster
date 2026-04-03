@@ -26,3 +26,16 @@ if sprite_index = anim_dodge
 	sprite_index = anim_idle
 	image_index = 0
 }
+
+if sprite_index = anim_item
+{
+	switch current_item_name
+	{
+		case "corp_drink":
+			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_corporate_drink)
+		break;
+	}
+	image_speed = 0
+	image_index = image_number-1
+	alarm[0] = 60
+}

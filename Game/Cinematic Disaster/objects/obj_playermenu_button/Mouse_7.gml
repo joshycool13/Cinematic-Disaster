@@ -31,4 +31,10 @@ switch (button_name)
 	case "default_defend":
 		obj_combat_state.player_defend(button_name)
 	break;
+	
+	case "corp_drink":
+		var temp_button_name = button_name
+		button_name = ""
+		obj_combat_state.player_item(temp_button_name)
+	break;
 }

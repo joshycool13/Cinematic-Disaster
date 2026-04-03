@@ -16,6 +16,10 @@ switch (button_name)
 	case "default_defend":
 		button_text = "Megaphone"
 	break;
+	
+	case "corp_drink":
+		button_text = "Corporate Drink"
+	break;
 }
 
 draw_text(x, y, button_text)
