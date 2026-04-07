@@ -2,7 +2,7 @@
 // Constants
 starting_x = x
 starting_y = y
-run_speed = 4
+run_speed = 6
 start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
