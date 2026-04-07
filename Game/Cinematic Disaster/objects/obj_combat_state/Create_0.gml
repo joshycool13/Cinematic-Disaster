@@ -185,11 +185,12 @@ player_defend = function(defend_name) // start player's defend
 	layer_set_visible("DefendMenu", false)
 	layer_set_visible("Clipboard", false)
 	
-	switch (defend_name)
-	{
-		case "default_defend":
-			inst_enemy_id[0].start_attack(inst_player_id)
-	}
+	inst_player_id.start_defend(defend_name)
+}
+
+enemy_attack = function() // start enemy attacks
+{
+	inst_enemy_id[0].start_attack(inst_player_id)
 }
 
 finish_player_defend = function() // when player's defend is over

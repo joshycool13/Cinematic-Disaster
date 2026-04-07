@@ -9,7 +9,7 @@ attack_hit_frame = 3
 default_attack_damage = 4
 max_health_num = 20
 input_lockout_time = 60
-input_buffer = 20
+default_input_buffer = 20
 
 // Variables
 inst_target_id = false
@@ -21,6 +21,7 @@ has_already_hit = false
 health_num = 20
 current_item = 0
 current_item_name = ""
+input_buffer = default_input_buffer
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -42,6 +43,18 @@ start_attack = function(inst_enemy_id, attack_name)
 			sprite_index = anim_run
 			image_index = 0
 			move_towards_target = true
+	}
+}
+
+start_defend = function(defend_name)
+{
+	switch defend_name
+	{
+		case "default_defend":
+			input_buffer = 10
+			sprite_index = anim_defend
+			image_index = 0
+		break;
 	}
 }
 

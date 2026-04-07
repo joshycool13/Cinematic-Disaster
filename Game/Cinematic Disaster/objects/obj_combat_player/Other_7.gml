@@ -15,6 +15,13 @@ if sprite_index == anim_attack
 	move_towards_idle = true
 }
 
+if sprite_index == anim_defend
+{
+	sprite_index = anim_idle
+	image_index = 0
+	obj_combat_state.enemy_attack()
+}
+
 if sprite_index == anim_hit
 {
 	sprite_index = anim_idle
