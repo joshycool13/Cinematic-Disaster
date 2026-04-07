@@ -13,6 +13,7 @@ item_button_ids = [item_button1, item_button2, item_button3, item_button4, item_
 is_player_turn = true
 player_attack_name = ""
 inst_selector_id = []
+temp_inst_button_id = noone
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -41,6 +42,10 @@ for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put cor
 	{
 		case "corp_drink":
 			item_button_ids[i].button_name = "corp_drink"
+		break;
+		
+		case "rotten_tomato":
+			item_button_ids[i].button_name = "rotten_tomato"
 		break;
 	}
 }
@@ -72,6 +77,7 @@ player_menu = function() // go to player menu
 	layer_set_visible("SelectMenu", false)
 	
 	remove_selectors()
+	temp_inst_button_id = noone
 }
 
 enemy_menu = function() // go to enemy menu
@@ -92,11 +98,13 @@ defend_menu = function() // go to defend menu
 	layer_set_visible("DefendMenu", true)
 }
 
-select_menu = function(button_name) // go to select menu
+select_menu = function(button_name, item_button_id = noone) // go to select menu
 {
 	player_attack_name = button_name
+	temp_inst_button_id = item_button_id
 	
 	layer_set_visible("AttackMenu", false)
+	layer_set_visible("ItemMenu", false)
 	layer_set_visible("Clipboard", false)
 	layer_set_visible("SelectMenu", true)
 	
@@ -121,6 +129,12 @@ remove_selectors = function() // remove selectors
 // Player Attacks
 player_attack = function(target) // start player's attack
 {
+	if (temp_inst_button_id) {
+		var temp_item_button_name = temp_inst_button_id.button_name
+		temp_inst_button_id.button_name = ""
+		player_item(temp_item_button_name)
+	}
+	
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("Clipboard", false)
 	layer_set_visible("SelectMenu", false)
@@ -205,6 +219,7 @@ player_item = function(item_name) // pressing item button
 {
 	layer_set_visible("ItemMenu", false)
 	layer_set_visible("Clipboard", false)
+	remove_selectors()
 	
 	reorganize_item_list()
 	

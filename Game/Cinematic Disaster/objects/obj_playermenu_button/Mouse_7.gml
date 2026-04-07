@@ -37,4 +37,8 @@ switch (button_name)
 		button_name = ""
 		obj_combat_state.player_item(temp_button_name)
 	break;
+	
+	case "rotten_tomato":
+		obj_combat_state.select_menu(button_name, self)
+	break;
 }

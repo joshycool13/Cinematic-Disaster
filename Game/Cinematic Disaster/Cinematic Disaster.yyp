@@ -36,6 +36,7 @@
     {"id":{"name":"obj_frame","path":"objects/obj_frame/obj_frame.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_item_corporate_drink","path":"objects/obj_item_corporate_drink/obj_item_corporate_drink.yy",},},
+    {"id":{"name":"obj_item_rotten_tomato","path":"objects/obj_item_rotten_tomato/obj_item_rotten_tomato.yy",},},
     {"id":{"name":"obj_playermenu_button","path":"objects/obj_playermenu_button/obj_playermenu_button.yy",},},
     {"id":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},},
     {"id":{"name":"obj_selector","path":"objects/obj_selector/obj_selector.yy",},},

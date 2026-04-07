@@ -20,6 +20,10 @@ switch (button_name)
 	case "corp_drink":
 		button_text = "Corporate Drink"
 	break;
+	
+	case "rotten_tomato":
+		button_text = "Rotten Tomato"
+	break;
 }
 
 draw_text(x, y, button_text)
