@@ -8,12 +8,15 @@ end_attack_frame = 14
 attack_hit_frame = 3
 default_attack_damage = 4
 max_health_num = 20
+input_lockout_time = 60
+input_buffer = 20
 
 // Variables
 inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
 pressed_space = 0
+lockout_space = 0
 has_already_hit = false
 health_num = 20
 current_item = 0
