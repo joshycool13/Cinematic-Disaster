@@ -28,31 +28,17 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 
 for (var i = 0; i < array_length(global.combat_player_attacks); i += 1) // put correct attacks as options
 {
-	switch global.combat_attacks[i]
-	{
-		case "identify":
-			attack_button_ids[i].button_name = "identify"
-		break;
-	}
+	attack_button_ids[i].button_name = global.combat_player_attacks[i]
 }
 
 for (var i = 0; i < array_length(global.combat_player_defends); i += 1) // put correct defends as options
 {
-	show_debug_message("defend")
+	defend_button_ids[i].button_name = global.combat_player_defends[i]
 }
 
 for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put correct items
 {
-	switch global.combat_player_items[i]
-	{
-		case "corp_drink":
-			item_button_ids[i].button_name = "corp_drink"
-		break;
-		
-		case "rotten_tomato":
-			item_button_ids[i].button_name = "rotten_tomato"
-		break;
-	}
+	item_button_ids[i].button_name = global.combat_player_items[i]
 }
 
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
@@ -149,6 +135,11 @@ player_attack = function(target) // start player's attack
 	{
 		case "default_attack":
 			inst_player_id.start_attack(inst_enemy_id[target], player_attack_name)
+		break;
+		
+		case "identify":
+			inst_player_id.start_attack(inst_enemy_id[target], player_attack_name)
+		break
 	}
 }
 

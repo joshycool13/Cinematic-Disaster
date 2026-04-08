@@ -41,4 +41,8 @@ switch (button_name)
 	case "rotten_tomato":
 		obj_combat_state.select_menu(button_name, self)
 	break;
+	
+	case "identify":
+		obj_combat_state.select_menu(button_name)
+	break;
 }

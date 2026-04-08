@@ -43,6 +43,13 @@ start_attack = function(inst_enemy_id, attack_name)
 			sprite_index = anim_run
 			image_index = 0
 			move_towards_target = true
+		break;
+		
+		case "identify":
+			sprite_index = anim_run
+			image_index = 0
+			move_towards_target = true
+		break;
 	}
 }
 
