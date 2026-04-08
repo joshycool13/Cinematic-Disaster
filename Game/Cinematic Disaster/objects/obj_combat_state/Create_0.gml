@@ -28,7 +28,12 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 
 for (var i = 0; i < array_length(global.combat_player_attacks); i += 1) // put correct attacks as options
 {
-	show_debug_message("attack")
+	switch global.combat_attacks[i]
+	{
+		case "identify":
+			attack_button_ids[i].button_name = "identify"
+		break;
+	}
 }
 
 for (var i = 0; i < array_length(global.combat_player_defends); i += 1) // put correct defends as options

@@ -24,6 +24,10 @@ switch (button_name)
 	case "rotten_tomato":
 		button_text = "Rotten Tomato"
 	break;
+	
+	case "identify":
+		button_text = "Identify"
+	break;
 }
 
 draw_text(x, y, button_text)
