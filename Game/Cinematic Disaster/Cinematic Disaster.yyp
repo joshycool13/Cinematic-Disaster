@@ -141,6 +141,7 @@
     {"id":{"name":"spr_item_rotten_tomato","path":"sprites/spr_item_rotten_tomato/spr_item_rotten_tomato.yy",},},
     {"id":{"name":"spr_mine","path":"sprites/spr_mine/spr_mine.yy",},},
     {"id":{"name":"spr_money","path":"sprites/spr_money/spr_money.yy",},},
+    {"id":{"name":"spr_npc1","path":"sprites/spr_npc1/spr_npc1.yy",},},
     {"id":{"name":"spr_playermenu_button","path":"sprites/spr_playermenu_button/spr_playermenu_button.yy",},},
     {"id":{"name":"spr_plus","path":"sprites/spr_plus/spr_plus.yy",},},
     {"id":{"name":"spr_roaming_clapperboard","path":"sprites/spr_roaming_clapperboard/spr_roaming_clapperboard.yy",},},
