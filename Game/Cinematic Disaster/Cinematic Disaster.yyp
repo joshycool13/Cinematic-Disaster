@@ -34,6 +34,7 @@
     {"id":{"name":"obj_combat_smokepuff","path":"objects/obj_combat_smokepuff/obj_combat_smokepuff.yy",},},
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
     {"id":{"name":"obj_frame","path":"objects/obj_frame/obj_frame.yy",},},
+    {"id":{"name":"obj_hire_castagent","path":"objects/obj_hire_castagent/obj_hire_castagent.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_item_corporate_drink","path":"objects/obj_item_corporate_drink/obj_item_corporate_drink.yy",},},
     {"id":{"name":"obj_item_rotten_tomato","path":"objects/obj_item_rotten_tomato/obj_item_rotten_tomato.yy",},},

@@ -10,6 +10,7 @@ default_attack_damage = 4
 max_health_num = 20
 input_lockout_time = 60
 default_input_buffer = 20
+actor_x_plus = 64
 
 // Variables
 inst_target_id = false
@@ -22,6 +23,8 @@ health_num = 20
 current_item = 0
 current_item_name = ""
 input_buffer = default_input_buffer
+inst_actor = noone
+actor_attack_name = ""
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -36,6 +39,7 @@ anim_item = spr_combat_player_hold_item
 start_attack = function(inst_enemy_id, attack_name)
 {
 	inst_target_id = inst_enemy_id
+	actor_attack_name = attack_name
 	
 	switch attack_name
 	{
@@ -45,10 +49,9 @@ start_attack = function(inst_enemy_id, attack_name)
 			move_towards_target = true
 		break;
 		
-		case "identify":
-			sprite_index = anim_run
-			image_index = 0
-			move_towards_target = true
+		default:
+			instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 	}
 }
