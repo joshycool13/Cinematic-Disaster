@@ -1,4 +1,1 @@
-
-
-actor_price = [100, 100, 100, 100, 100]
-item_price = [100, 100, 100, 100, 100, 100, 100]
+//this object only exists to be where the camera points at
