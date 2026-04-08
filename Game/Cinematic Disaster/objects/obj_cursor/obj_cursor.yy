@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_hire_castagent",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_cursor",
+  "eventList":[],
   "managed":true,
-  "name":"obj_hire_castagent",
+  "name":"obj_cursor",
   "overriddenProperties":[],
   "parent":{
     "name":"Combat",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_hire_castagent_laptopidle",
-    "path":"sprites/spr_hire_castagent_laptopidle/spr_hire_castagent_laptopidle.yy",
+    "name":"spr_plus",
+    "path":"sprites/spr_plus/spr_plus.yy",
   },
   "spriteMaskId":null,
   "visible":true,
