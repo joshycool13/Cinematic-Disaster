@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plus",
-    "path":"sprites/spr_plus/spr_plus.yy",
+    "name":"spr_cursor",
+    "path":"sprites/spr_cursor/spr_cursor.yy",
   },
   "spriteMaskId":null,
   "visible":true,
