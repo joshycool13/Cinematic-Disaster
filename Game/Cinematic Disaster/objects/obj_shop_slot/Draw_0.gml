@@ -34,7 +34,7 @@ if (product = "coffee") {
 	draw_sprite(spr_item_rag, 0, x, y-16)
 	
 } else if (product = "reel") {
-	draw_sprite(spr_item_rag, 0, x, y-16)
+	draw_sprite(spr_item_reel, 0, x, y-16)
 	
 } else if (product = "tomato") {
 	draw_sprite(spr_item_rotten_tomato, 0, x, y-16)	
