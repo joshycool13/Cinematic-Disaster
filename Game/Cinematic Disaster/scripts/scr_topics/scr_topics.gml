@@ -29,7 +29,7 @@ TEXT("I was uh.. asked to record snoring sounds. For ambience purposes."),
 
 
 global.topics[$ "Motion"] = [
-TEXT("How did Jane Wick gun down the evil jetski driver?"),
+TEXT("How did Jane Wick snipe the evil jetski driver?"),
 TEXT("Using a rotorscope!"),
 ];
 
@@ -75,6 +75,29 @@ TEXT("It's a shame they're too shy to show them!"),
 ];
 
 global.topics[$ "Rat"] = [
-TEXT("Ugh. These rats are so boring. There's no flavor here. They all squeak the same language!")
+TEXT("Do you think all rats squeak the same language?")
 ];
 
+global.topics[$ "Screech"] = [
+TEXT("Watch out for evil monkey Henchmen."),
+TEXT("Their banana peels are as dirty as they are deadly."),
+];
+
+
+global.topics[$ "Jane"] = [
+TEXT("I heard Jane has a soft spot for puppies."),
+TEXT("You should probably think twice before asking her to fight one!"),
+];
+
+
+global.topics[$ "Important"] = [
+TEXT("Facing some legal troubles?"),
+TEXT("Don't ask ME what to do."),
+TEXT("I just get paid to stand here and look important!"),
+];
+
+
+
+global.topics[$ "Keanu"] = [
+TEXT("Keanu.... Leaves....")
+];
