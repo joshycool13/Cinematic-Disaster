@@ -8,6 +8,7 @@ end_attack_frame = 14
 attack_hit_frame = 3
 default_attack_damage = 4
 max_health_num = 20
+max_tp_num = 10
 input_lockout_time = 60
 default_input_buffer = 20
 actor_x_plus = 64
@@ -59,8 +60,14 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 	}
 }
 
-start_defend = function(defend_name)
+start_defend = function(defend_name, tp_gain)
 {
+	tp_num += tp_gain
+	if tp_num > max_tp_num
+	{
+		tp_num = max_tp_num
+	}
+	
 	switch defend_name
 	{
 		case "default_defend":
