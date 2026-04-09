@@ -121,14 +121,8 @@ remove_selectors = function() // remove selectors
 }
 
 // Player Attacks
-player_attack = function(target) // start player's attack
-{
-	if (temp_inst_button_id) {
-		var temp_item_button_name = temp_inst_button_id.button_name
-		temp_inst_button_id.button_name = ""
-		player_item(temp_item_button_name)
-	}
-	
+player_attack = function(attack_name, target) // start player's attack
+{	
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("Clipboard", false)
 	layer_set_visible("SelectMenu", false)
@@ -137,11 +131,11 @@ player_attack = function(target) // start player's attack
 	switch (player_attack_name)
 	{
 		case "default_attack":
-			inst_player_id.start_attack(inst_enemy_id[target], player_attack_name)
+			inst_player_id.start_attack(inst_enemy_id[target], attack_name)
 		break;
 		
 		case "identify":
-			inst_player_id.start_attack(inst_enemy_id[target], player_attack_name)
+			inst_player_id.start_attack(inst_enemy_id[target], attack_name)
 		break
 	}
 }
@@ -215,7 +209,7 @@ check_if_player_dead = function() // end game if player dead
 }
 
 // Player Item
-player_item = function(item_name) // pressing item button
+player_item = function(item_name, target) // pressing item button
 {
 	layer_set_visible("ItemMenu", false)
 	layer_set_visible("Clipboard", false)
@@ -223,7 +217,7 @@ player_item = function(item_name) // pressing item button
 	
 	reorganize_item_list()
 	
-	inst_player_id.use_item(item_name)
+	inst_player_id.use_item(inst_enemy_id[target], item_name)
 }
 
 finish_player_item = function() // when player's item is over
@@ -252,6 +246,20 @@ reorganize_item_list = function() // moves up any items when an item button is p
 }
 
 // Misc Functions
+finished_selector = function(target)
+{
+	if (temp_inst_button_id)
+	{
+		var temp_item_button_name = temp_inst_button_id.button_name
+		temp_inst_button_id.button_name = ""
+		player_item(temp_item_button_name, target)
+	}
+	else
+	{
+		player_attack(player_attack_name, target)
+	}
+}
+
 attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hit
 {	
 	if is_aoe

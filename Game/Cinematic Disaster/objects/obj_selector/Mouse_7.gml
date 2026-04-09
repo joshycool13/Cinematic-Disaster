@@ -1,1 +1,1 @@
-obj_combat_state.player_attack(button_number)
+obj_combat_state.finished_selector(button_number)

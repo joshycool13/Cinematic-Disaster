@@ -99,9 +99,11 @@ kill_actor = function()
 	alarm[2] = 15
 }
 
-use_item = function(item_name)
+use_item = function(inst_enemy_id, item_name)
 {
+	inst_target_id = inst_enemy_id
 	current_item_name = item_name
+	
 	sprite_index = anim_item
 	image_index = 0
 

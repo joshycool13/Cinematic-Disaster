@@ -35,7 +35,7 @@ switch (button_name)
 	case "corp_drink":
 		var temp_button_name = button_name
 		button_name = ""
-		obj_combat_state.player_item(temp_button_name)
+		obj_combat_state.player_item(temp_button_name, 0)
 	break;
 	
 	case "rotten_tomato":
