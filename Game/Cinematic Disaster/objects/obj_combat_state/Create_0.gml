@@ -15,6 +15,7 @@ is_player_turn = true
 player_attack_name = ""
 inst_selector_id = []
 temp_inst_button_id = noone
+player_tp_cost = 0
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -92,10 +93,11 @@ defend_menu = function() // go to defend menu
 	layer_set_visible("DefendMenu", true)
 }
 
-select_menu = function(button_name, item_button_id = noone) // go to select menu
+select_menu = function(button_name, tp_cost, item_button_id = noone) // go to select menu
 {
 	player_attack_name = button_name
 	temp_inst_button_id = item_button_id
+	player_tp_cost = tp_cost
 	
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("ItemMenu", false)
@@ -121,8 +123,14 @@ remove_selectors = function() // remove selectors
 }
 
 // Player Attacks
-player_attack = function(attack_name, target) // start player's attack
+player_attack = function(attack_name, tp_cost, target) // start player's attack
 {	
+	if inst_player_id.tp_num - tp_cost < 0
+	{
+		player_menu()
+		return
+	}
+	
 	layer_set_visible("AttackMenu", false)
 	layer_set_visible("Clipboard", false)
 	layer_set_visible("SelectMenu", false)
@@ -131,13 +139,15 @@ player_attack = function(attack_name, target) // start player's attack
 	switch (player_attack_name)
 	{
 		case "default_attack":
-			inst_player_id.start_attack(inst_enemy_id[target], attack_name)
+			inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
 		break;
 		
 		case "identify":
-			inst_player_id.start_attack(inst_enemy_id[target], attack_name)
+			inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
 		break
 	}
+	
+	update_hud_text()
 }
 
 finish_player_attack = function() // when player's attack is over
@@ -256,7 +266,7 @@ finished_selector = function(target)
 	}
 	else
 	{
-		player_attack(player_attack_name, target)
+		player_attack(player_attack_name, player_tp_cost, target)
 	}
 }
 

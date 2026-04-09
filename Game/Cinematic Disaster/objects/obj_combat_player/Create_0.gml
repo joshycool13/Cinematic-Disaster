@@ -37,8 +37,10 @@ anim_attack = spr_combat_player_clapperboard_attack
 anim_defend = spr_combat_player_megaphone_use
 anim_item = spr_combat_player_hold_item
 
-start_attack = function(inst_enemy_id, attack_name)
+start_attack = function(inst_enemy_id, attack_name, tp_cost)
 {
+	tp_num -= tp_cost
+	
 	inst_target_id = inst_enemy_id
 	actor_attack_name = attack_name
 	

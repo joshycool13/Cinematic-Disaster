@@ -25,7 +25,7 @@ switch (button_name)
 	break;
 	
 	case "default_attack":
-		obj_combat_state.select_menu(button_name)
+		obj_combat_state.select_menu(button_name, tp_cost)
 	break;
 	
 	case "default_defend":
@@ -43,6 +43,6 @@ switch (button_name)
 	break;
 	
 	case "identify":
-		obj_combat_state.select_menu(button_name)
+		obj_combat_state.select_menu(button_name, tp_cost)
 	break;
 }
