@@ -20,6 +20,7 @@ pressed_space = 0
 lockout_space = 0
 has_already_hit = false
 health_num = 20
+tp_num = 10
 current_item = 0
 current_item_name = ""
 input_buffer = default_input_buffer

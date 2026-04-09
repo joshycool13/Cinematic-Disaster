@@ -11,10 +11,14 @@ switch (button_name)
 {
 	case "default_attack":
 		button_text = "Clapperboard"
+		draw_sprite(spr_tp_icon, 0, x - 120, y)
+		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "default_defend":
 		button_text = "Megaphone"
+		draw_sprite(spr_tp_icon, 0, x - 120, y)
+		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "corp_drink":
@@ -26,7 +30,10 @@ switch (button_name)
 	break;
 	
 	case "identify":
+		tp_cost = 2
 		button_text = "Identify"
+		draw_sprite(spr_tp_icon, 0, x - 120, y)
+		draw_text(x - 120, y, string(tp_cost))
 	break;
 }
 

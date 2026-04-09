@@ -5,6 +5,7 @@ player_y = 448
 enemy_x = [800, 672, 928]
 enemy_y = 448
 player_hp_text = layer_text_get_id("CombatHP", "player_hp_num")
+player_tp_text = layer_text_get_id("CombatHP", "player_tp_num")
 attack_button_ids = [attack_button2, attack_button3, attack_button4, attack_button5, attack_button6, attack_button7, attack_button8, attack_button9]
 defend_button_ids = [defend_button2, defend_button3, defend_button4, defend_button5, defend_button6, defend_button7, defend_button8, defend_button9]
 item_button_ids = [item_button1, item_button2, item_button3, item_button4, item_button5, item_button6, item_button7, item_button8, item_button9]
@@ -48,7 +49,9 @@ layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
 
 inst_player_id.health_num = global.combat_player_hp
+inst_player_id.tp_num = global.combat_player_tp
 layer_text_text(player_hp_text, string(inst_player_id.health_num))
+layer_text_text(player_tp_text, string(inst_player_id.tp_num))
 
 // ---------- Functions ----------
 
@@ -272,4 +275,5 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hi
 update_hud_text = function() // updated hud numbers
 {
 	layer_text_text(player_hp_text, string(inst_player_id.health_num))
+	layer_text_text(player_tp_text, string(inst_player_id.tp_num))
 }
