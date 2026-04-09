@@ -92,6 +92,12 @@ finish_attack = function()
 	obj_combat_state.finish_player_attack()
 }
 
+kill_actor = function()
+{
+	instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
+	alarm[2] = 15
+}
+
 use_item = function(item_name)
 {
 	current_item_name = item_name

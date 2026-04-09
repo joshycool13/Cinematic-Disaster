@@ -3,9 +3,9 @@ if sprite_index == anim_idle
 	image_index = 2
 }
 
-if not started_attack
+if sprite_index == anim_fail or sprite_index == anim_success
 {
-	started_attack = true
-	inst_target = instance_create_layer(inst_target_id.x, inst_target_id.y, "Instances", obj_target)
-	inst_cursor = instance_create_layer(0, inst_target_id.y, "Instances", obj_cursor)
+	image_speed = 0
+	image_index = image_number - 1
+	inst_player_id.kill_actor()
 }
