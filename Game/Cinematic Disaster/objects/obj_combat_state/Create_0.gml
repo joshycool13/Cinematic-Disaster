@@ -16,6 +16,7 @@ player_attack_name = ""
 inst_selector_id = []
 temp_inst_button_id = noone
 player_tp_cost = 0
+current_enemy_attacking = 0
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -23,7 +24,7 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 	switch global.combat_enemies[i]
 	{
 		case "rat":
-			inst_enemy_id[0] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
 		break;
 	}
 }
@@ -195,7 +196,25 @@ player_defend = function(defend_name, tp_gain) // start player's defend
 
 enemy_attack = function() // start enemy attacks
 {
-	inst_enemy_id[0].start_attack(inst_player_id)
+	if current_enemy_attacking >= array_length(inst_enemy_id)
+	{
+		current_enemy_attacking = 0
+		finish_player_defend()
+		return
+	}
+	
+	if (instance_exists(inst_enemy_id[current_enemy_attacking]))
+	{
+		inst_enemy_id[current_enemy_attacking].start_attack(inst_player_id)
+	}
+	else
+	{
+		current_enemy_attacking += 1
+		enemy_attack()
+		return
+	}
+	
+	current_enemy_attacking += 1
 }
 
 finish_player_defend = function() // when player's defend is over

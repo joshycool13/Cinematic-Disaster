@@ -18,7 +18,7 @@ if move_towards_idle
 		image_xscale = 1
 		sprite_index = anim_idle
 		image_index = 0
-		obj_combat_state.finish_player_defend()
+		obj_combat_state.enemy_attack()
 	}
 }
 
