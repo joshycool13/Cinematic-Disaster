@@ -2,22 +2,31 @@
 // Constants
 starting_x = x
 starting_y = y
-run_speed = 4
+run_speed = 6
 start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
 default_attack_damage = 4
 max_health_num = 20
+max_tp_num = 10
+input_lockout_time = 60
+default_input_buffer = 20
+actor_x_plus = 64
 
 // Variables
 inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
 pressed_space = 0
+lockout_space = 0
 has_already_hit = false
 health_num = 20
+tp_num = 10
 current_item = 0
 current_item_name = ""
+input_buffer = default_input_buffer
+inst_actor = noone
+actor_attack_name = ""
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -29,9 +38,12 @@ anim_attack = spr_combat_player_clapperboard_attack
 anim_defend = spr_combat_player_megaphone_use
 anim_item = spr_combat_player_hold_item
 
-start_attack = function(inst_enemy_id, attack_name)
+start_attack = function(inst_enemy_id, attack_name, tp_cost)
 {
+	tp_num -= tp_cost
+	
 	inst_target_id = inst_enemy_id
+	actor_attack_name = attack_name
 	
 	switch attack_name
 	{
@@ -39,6 +51,30 @@ start_attack = function(inst_enemy_id, attack_name)
 			sprite_index = anim_run
 			image_index = 0
 			move_towards_target = true
+		break;
+		
+		default:
+			instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
+		break;
+	}
+}
+
+start_defend = function(defend_name, tp_gain)
+{
+	tp_num += tp_gain
+	if tp_num > max_tp_num
+	{
+		tp_num = max_tp_num
+	}
+	
+	switch defend_name
+	{
+		case "default_defend":
+			input_buffer = 10
+			sprite_index = anim_defend
+			image_index = 0
+		break;
 	}
 }
 
@@ -66,9 +102,17 @@ finish_attack = function()
 	obj_combat_state.finish_player_attack()
 }
 
-use_item = function(item_name)
+kill_actor = function()
 {
+	instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
+	alarm[2] = 15
+}
+
+use_item = function(inst_enemy_id, item_name)
+{
+	inst_target_id = inst_enemy_id
 	current_item_name = item_name
+	
 	sprite_index = anim_item
 	image_index = 0
 

@@ -38,3 +38,8 @@ if pressed_space != 0
 {
 	pressed_space -= 1
 }
+
+if lockout_space != 0
+{
+	lockout_space -= 1
+}

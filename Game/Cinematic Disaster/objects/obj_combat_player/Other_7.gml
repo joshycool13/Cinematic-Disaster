@@ -15,6 +15,13 @@ if sprite_index == anim_attack
 	move_towards_idle = true
 }
 
+if sprite_index == anim_defend
+{
+	sprite_index = anim_idle
+	image_index = 0
+	obj_combat_state.enemy_attack()
+}
+
 if sprite_index == anim_hit
 {
 	sprite_index = anim_idle
@@ -33,6 +40,10 @@ if sprite_index = anim_item
 	{
 		case "corp_drink":
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_corporate_drink)
+		break;
+		
+		case "rotten_tomato":
+			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_rotten_tomato)
 		break;
 	}
 	image_speed = 0
