@@ -189,6 +189,8 @@ player_defend = function(defend_name, tp_gain) // start player's defend
 	layer_set_visible("Clipboard", false)
 	
 	inst_player_id.start_defend(defend_name, tp_gain)
+	
+	update_hud_text()
 }
 
 enemy_attack = function() // start enemy attacks

@@ -27,6 +27,7 @@ current_item_name = ""
 input_buffer = default_input_buffer
 inst_actor = noone
 actor_attack_name = ""
+actor_was_attack = true
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -110,8 +111,15 @@ finish_attack = function()
 	obj_combat_state.finish_player_attack()
 }
 
-kill_actor = function()
+finish_defend = function()
 {
+	obj_combat_state.enemy_attack()
+}
+
+
+kill_actor = function(is_attack)
+{
+	actor_was_attack = is_attack
 	instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
 	alarm[2] = 15
 }

@@ -19,7 +19,7 @@ if sprite_index == anim_defend
 {
 	sprite_index = anim_idle
 	image_index = 0
-	obj_combat_state.enemy_attack()
+	finish_defend()
 }
 
 if sprite_index == anim_hit

@@ -1,2 +1,10 @@
 instance_destroy(inst_actor)
-finish_attack()
+
+if actor_was_attack
+{
+	finish_attack()
+}
+else if not actor_was_attack
+{
+	finish_defend()
+}
