@@ -1,3 +1,10 @@
+// camera - alternate states
+if (go_to_actor_shop) {
+	camera_set_view_target(view_camera[0], obj_shop_shop)
+}
+if (go_to_item_shop) {
+	camera_set_view_target(view_camera[0], obj_shop_shop)
+}
 
 // movement
 

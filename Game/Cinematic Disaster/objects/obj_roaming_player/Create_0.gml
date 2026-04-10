@@ -16,12 +16,14 @@ horizontal_facing = 0; // -1 left, 0 neutral, 1 down
 
 
 //inventory var
-money = 0; 
-hp = 0;
-tp = 0;
+money = global.player_money; 
+hp = global.combat_player_hp;
+tp = global.combat_player_tp;
 
 
 //states var
 active = true; // lock player movement when this is false
+go_to_item_shop = false // make the camera look at the item shop when this is true
+go_to_actor_shop = false //ditto for the actor shop
 
 
