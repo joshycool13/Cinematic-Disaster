@@ -45,4 +45,8 @@ switch (button_name)
 	case "identify":
 		obj_combat_state.select_menu(button_name, tp_cost)
 	break;
+	
+	case "prediction":
+		obj_combat_state.player_defend(button_name, tp_cost)
+	break;
 }

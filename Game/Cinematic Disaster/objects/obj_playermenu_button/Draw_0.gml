@@ -35,6 +35,13 @@ switch (button_name)
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
+	
+	case "prediction":
+		tp_cost = 1
+		button_text = "Prediction"
+		draw_sprite(spr_tp_icon, 0, x - 120, y)
+		draw_text(x - 120, y, string(tp_cost))
+	break;
 }
 
 draw_text(x, y, button_text)

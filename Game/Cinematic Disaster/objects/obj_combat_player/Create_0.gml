@@ -63,10 +63,13 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 start_defend = function(defend_name, tp_gain)
 {
 	tp_num += tp_gain
+	
 	if tp_num > max_tp_num
 	{
 		tp_num = max_tp_num
 	}
+	
+	actor_attack_name = defend_name
 	
 	switch defend_name
 	{
@@ -74,6 +77,11 @@ start_defend = function(defend_name, tp_gain)
 			input_buffer = 10
 			sprite_index = anim_defend
 			image_index = 0
+		break;
+		
+		default:
+			instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 	}
 }
