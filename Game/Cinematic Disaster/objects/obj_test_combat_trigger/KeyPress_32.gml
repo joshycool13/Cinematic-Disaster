@@ -4,10 +4,12 @@ if place_meeting(x, y, obj_roaming_player)
 	layer_set_visible("RoamingUI", false)
 	layer_set_visible("TutorialRoaming", false)
 	
+	
+	// Enemies "rat", "dogcar", "shield", "jetski", "thief_cat", "cyborg", "monkey"
 	global.combat_enemies = ["rat", "dogcar"]
-	global.combat_player_items = ["corp_drink", "rotten_tomato"]
-	global.combat_player_attacks = ["identify"]
-	global.combat_player_defends = ["prediction"]
+	global.combat_player_items = ["corp_drink", "coffee", "rag", "line_change", "rotten_tomato", "flashbang"]
+	global.combat_player_attacks = ["identify", "broom", "flying_elbow", "gun", "disguise", "bomb"]
+	global.combat_player_defends = ["prediction", "cleanse", "protect", "imitate", "landmine", "blast_shield"]
 	
 	room_goto_next()
 }
