@@ -141,16 +141,18 @@ player_attack = function(attack_name, tp_cost, target) // start player's attack
 	layer_set_visible("SelectMenu", false)
 	remove_selectors()
 	
-	switch (player_attack_name)
-	{
-		case "default_attack":
-			inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
-		break;
+	inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
+	
+	//switch (player_attack_name)
+	//{
+		//case "default_attack":
+			//inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
+		//break;
 		
-		case "identify":
-			inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
-		break
-	}
+		//case "identify":
+			//inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
+		//break
+	//}
 	
 	update_hud_text()
 }
