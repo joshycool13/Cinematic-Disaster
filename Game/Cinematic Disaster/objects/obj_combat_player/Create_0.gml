@@ -59,6 +59,26 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
 			alarm[1] = 15
 		break;
+		
+		case "broom":
+			
+		break;
+		
+		case "flying_elbow":
+			
+		break;
+		
+		case "gun":
+			
+		break;
+		
+		case "disguise":
+			
+		break;
+		
+		case "bomb":
+			
+		break;
 	}
 }
 
@@ -84,6 +104,26 @@ start_defend = function(defend_name, tp_gain)
 		case "prediction":
 			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
 			alarm[1] = 15
+		break;
+		
+		case "cleanse":
+			
+		break;
+		
+		case "protect":
+			
+		break;
+		
+		case "imitate":
+			
+		break;
+		
+		case "landmine":
+			
+		break;
+		
+		case "blast_shield":
+			
 		break;
 	}
 }
