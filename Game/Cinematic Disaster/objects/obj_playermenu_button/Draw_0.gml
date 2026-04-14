@@ -9,6 +9,7 @@ button_text = button_name
 
 switch (button_name)
 {
+	// Defaults
 	case "default_attack":
 		button_text = "Clapperboard"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
@@ -21,14 +22,7 @@ switch (button_name)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
-	case "corp_drink":
-		button_text = "Corporate Drink"
-	break;
-	
-	case "rotten_tomato":
-		button_text = "Rotten Tomato"
-	break;
-	
+	// Attacks
 	case "identify":
 		tp_cost = 2
 		button_text = "Identify"
@@ -36,11 +30,21 @@ switch (button_name)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
+	// Defends
 	case "prediction":
 		tp_cost = 1
 		button_text = "Prediction"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
+	break;
+	
+	// Items
+	case "corp_drink":
+		button_text = "Corporate Drink"
+	break;
+	
+	case "rotten_tomato":
+		button_text = "Rotten Tomato"
 	break;
 }
 

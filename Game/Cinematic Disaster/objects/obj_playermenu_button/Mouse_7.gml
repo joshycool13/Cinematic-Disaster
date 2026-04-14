@@ -1,5 +1,6 @@
 switch (button_name)
 {
+	// UI Buttons
 	case "Attack":
 		obj_combat_state.attack_menu()
 	break;
@@ -24,6 +25,7 @@ switch (button_name)
 		
 	break;
 	
+	// Defaults
 	case "default_attack":
 		obj_combat_state.select_menu(button_name, tp_cost)
 	break;
@@ -32,6 +34,17 @@ switch (button_name)
 		obj_combat_state.player_defend(button_name, tp_cost)
 	break;
 	
+	// Attacks
+	case "identify":
+		obj_combat_state.select_menu(button_name, tp_cost)
+	break;
+	
+	// Defends
+	case "prediction":
+		obj_combat_state.player_defend(button_name, tp_cost)
+	break;
+	
+	// Items
 	case "corp_drink":
 		var temp_button_name = button_name
 		button_name = ""
@@ -40,13 +53,5 @@ switch (button_name)
 	
 	case "rotten_tomato":
 		obj_combat_state.select_menu(button_name, self)
-	break;
-	
-	case "identify":
-		obj_combat_state.select_menu(button_name, tp_cost)
-	break;
-	
-	case "prediction":
-		obj_combat_state.player_defend(button_name, tp_cost)
 	break;
 }
