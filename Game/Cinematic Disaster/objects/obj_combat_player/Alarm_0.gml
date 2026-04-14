@@ -9,6 +9,30 @@ switch current_item_name
 			health_num = max_health_num
 		}
 	break;
+	
+	case "coffee":
+		tp_num += 5
+		if tp_num > max_tp_num
+		{
+			tp_num = max_tp_num
+		}
+	break;
+	
+	case "rag":
+		
+	break;
+	
+	case "line_change":
+		
+	break;
+	
+	case "rotten_tomato":
+		
+	break;
+	
+	case "flashbang":
+		
+	break;
 }
 
 sprite_index = anim_idle
