@@ -28,6 +28,7 @@ input_buffer = default_input_buffer
 inst_actor = noone
 actor_attack_name = ""
 actor_was_attack = true
+inst_smokepuff = noone
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -54,8 +55,8 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 			move_towards_target = true
 		break;
 		
-		default:
-			instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+		case "identify":
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
 			alarm[1] = 15
 		break;
 	}
@@ -80,8 +81,8 @@ start_defend = function(defend_name, tp_gain)
 			image_index = 0
 		break;
 		
-		default:
-			instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+		case "prediction":
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
 			alarm[1] = 15
 		break;
 	}
