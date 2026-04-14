@@ -23,7 +23,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Cinematic Disaster",
   "resources":[
@@ -44,6 +44,8 @@
     {"id":{"name":"obj_npcdemo","path":"objects/obj_npcdemo/obj_npcdemo.yy",},},
     {"id":{"name":"obj_npcdemo2","path":"objects/obj_npcdemo2/obj_npcdemo2.yy",},},
     {"id":{"name":"obj_npcdemo3","path":"objects/obj_npcdemo3/obj_npcdemo3.yy",},},
+    {"id":{"name":"obj_npcdemo4","path":"objects/obj_npcdemo4/obj_npcdemo4.yy",},},
+    {"id":{"name":"obj_npcdemo5","path":"objects/obj_npcdemo5/obj_npcdemo5.yy",},},
     {"id":{"name":"obj_playermenu_button","path":"objects/obj_playermenu_button/obj_playermenu_button.yy",},},
     {"id":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},},
     {"id":{"name":"obj_selector","path":"objects/obj_selector/obj_selector.yy",},},
@@ -190,6 +192,8 @@
     {"id":{"name":"spr_woodfloor_1","path":"sprites/spr_woodfloor_1/spr_woodfloor_1.yy",},},
     {"id":{"name":"spr_woodfloor","path":"sprites/spr_woodfloor/spr_woodfloor.yy",},},
     {"id":{"name":"Sprite122","path":"sprites/Sprite122/Sprite122.yy",},},
+    {"id":{"name":"Sprite130","path":"sprites/Sprite130/Sprite130.yy",},},
+    {"id":{"name":"Sprite131","path":"sprites/Sprite131/Sprite131.yy",},},
     {"id":{"name":"WoodTest_1","path":"sprites/WoodTest_1/WoodTest_1.yy",},},
     {"id":{"name":"WoodTest","path":"sprites/WoodTest/WoodTest.yy",},},
     {"id":{"name":"tl_grass","path":"tilesets/tl_grass/tl_grass.yy",},},
