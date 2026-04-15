@@ -18,11 +18,9 @@ TEXT("If your movie breaks it, I'll turn my body 180 degrees and walk out of the
 ];
 
 global.topics[$ "Pranav4"] = [
-TEXT("Pirating may be immoral, but it usually indicates whether or not a movie is good."),
-TEXT("With the risk of getting caught, you have to ask... Is this movie worth it?"),
-TEXT("Someone uploaded the first 30 minutes of your movie to YouTube.."),
-TEXT("All they did was speed it up 4x, and apply a piss yellow filter at 90% opacity."),
-TEXT("But just think. If your movie was peak, people would put a lot more effort into their degenerate acts to ruin it for you."),
+TEXT("Your movie isn't perfect, but it's pretty good!")
+TEXT("I might even pay to see it!"),
+TEXT("Don't ask me how I watch the rest."),
 ];
 
 
@@ -83,6 +81,21 @@ TEXT("But they're always hiding them. It's a real shame."),
 
 
 
+//Neil Cording
+
+global.topics[$ "Neil1"] = [
+TEXT("Those bubs with the riot shields have such pretty eyes."),
+TEXT("But they're always hiding them. It's a real shame."),
+];
+
+
+
+//Granny Smith
+
+
+
+//Baby Driver
+
 
 
 
@@ -93,8 +106,14 @@ TEXT("But they're always hiding them. It's a real shame."),
 
 
 //Keanu Leaves
-global.topics[$ "Keanu"] = [
+global.topics[$ "Keanu1"] = [
 TEXT("Keanu.... Leaves....")
+];
+
+global.topics[$ "Keanu2"] = [
+TEXT("Keanu.... Leaves....")
+TEXT("...Jane behind! This motivates Jane."),
+TEXT("Reason why Jane go big bang!"),
 ];
 
 
