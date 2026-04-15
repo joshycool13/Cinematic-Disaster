@@ -1,5 +1,120 @@
 global.topics = {};
 
+//Pranav
+global.topics[$ "Pranav1"] = [
+TEXT("So you're the director of this film?"),
+TEXT("Neat. I now know who to blame when it inevitably flops!"),
+];
+
+global.topics[$ "Pranav2"] = [
+TEXT("The existence of child actors confuses me."),
+ TEXT("Did the director invest so much of their life savings that they can only afford to hire babies?"),
+];
+
+
+global.topics[$ "Pranav3"] = [
+TEXT("Ever heard of the 180 rule?"),
+TEXT("If your movie breaks it, I'll turn my body 180 degrees and walk out of the theater."),
+];
+
+global.topics[$ "Pranav4"] = [
+TEXT("Pirating may be immoral, but it usually indicates whether or not a movie is good."),
+TEXT("With the risk of getting caught, you have to ask... Is this movie worth it?"),
+TEXT("Someone uploaded the first 30 minutes of your movie to YouTube.."),
+TEXT("All they did was speed it up 4x, and apply a piss yellow filter at 90% opacity."),
+TEXT("But just think. If your movie was peak, people would put a lot more effort into their degenerate acts to ruin it for you."),
+];
+
+
+
+//Officer Laurie
+global.topics[$ "Laurie1"] = [
+TEXT("Don't worry. My handcuffs are fake! I can't getcha with em'."),
+TEXT("But if a real crook appears on set, please avoid disclosing that information!"),
+];
+
+global.topics[$ "Laurie2"] = [
+TEXT("All crimes commited here... real or fake. Must be reported to me!"),
+];
+
+global.topics[$ "Laurie3"] = [
+TEXT("I'm a short queen."),
+TEXT("Instead of telling crooks to put their hands up where I can see them, I prefer they pop a squat."),
+];
+
+
+//Brooke Business
+
+global.topics[$ "Brooke1"] = [
+TEXT("I'm a peppy girl with acting chops and an angel's gift of song!~"),
+TEXT("If that writer gives me 50 lines, we might just get along!~"),
+];
+
+global.topics[$ "Brooke2"] = [
+TEXT("I've totally got main character energy."),
+TEXT("I hate that nepo baby Jane Wick. I think I should be wielding the pistol!"),
+];
+
+
+global.topics[$ "Brooke3"] = [
+TEXT("I've once been compared to Holly Clinton, Marin Monroe, and even a queen of the snow!"),
+TEXT("Methinks you look like a... Spealburger."),
+];
+
+
+//Buddy A.
+
+global.topics[$ "Buddy1"] = [
+TEXT("Seen those puppies in the red rides? Those are my associates."),
+TEXT("They fetch the bones of anyone who gets on my family's bad side!")
+];
+
+global.topics[$ "Buddy2"] = [
+TEXT("Those puppies' cars weren't red when they first came out of the factory."),
+TEXT("Someone betrayed us once. And you know what we do to traitors?"),
+TEXT("We make em' do our chores! Like painting!"),
+];
+
+
+global.topics[$ "Buddy3"] = [
+TEXT("Those bubs with the riot shields have such pretty eyes."),
+TEXT("But they're always hiding them. It's a real shame."),
+];
+
+
+
+
+
+
+
+
+
+
+
+
+//Keanu Leaves
+global.topics[$ "Keanu"] = [
+TEXT("Keanu.... Leaves....")
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Extra Topics
 global.topics[$ "Example"] = [
 TEXT("This is a cinematic disaster."),
 TEXT("And it's all your fault."),
@@ -98,6 +213,4 @@ TEXT("I just get paid to stand here and look important!"),
 
 
 
-global.topics[$ "Keanu"] = [
-TEXT("Keanu.... Leaves....")
-];
+
