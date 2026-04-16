@@ -61,7 +61,7 @@
     },
     "name":"spr_enemy_shield_idle",
     "playback":1,
-    "playbackSpeed":8.0,
+    "playbackSpeed":12.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

@@ -13,8 +13,9 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"ba3ec18e-2100-4aea-be93-8aedffbf35f0","name":"ba3ec18e-2100-4aea-be93-8aedffbf35f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"1a2efd4b-11ae-4886-beb3-75856e7a26a8","name":"1a2efd4b-11ae-4886-beb3-75856e7a26a8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"214c34d8-e9a3-4cda-8298-f2c6758532fb","name":"214c34d8-e9a3-4cda-8298-f2c6758532fb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"dd50c676-c55d-4d09-a87c-b5b2b503d3b1","name":"dd50c676-c55d-4d09-a87c-b5b2b503d3b1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c49c6aac-37e3-4adc-bc6a-737fc0905831","name":"c49c6aac-37e3-4adc-bc6a-737fc0905831","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"ae65425b-0a91-4f43-9dc7-013e2c1a2d2a","name":"ae65425b-0a91-4f43-9dc7-013e2c1a2d2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
@@ -58,7 +59,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -81,14 +82,17 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ba3ec18e-2100-4aea-be93-8aedffbf35f0","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3d4e913a-d27e-4e24-b21f-a6dbacf267a0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"214c34d8-e9a3-4cda-8298-f2c6758532fb","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"72eb609a-511e-429f-98a4-c4bd0db91725","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1a2efd4b-11ae-4886-beb3-75856e7a26a8","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b572a883-bd48-4aef-a342-47fbf601a187","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dd50c676-c55d-4d09-a87c-b5b2b503d3b1","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"160d5709-3beb-4259-9cea-76a8e77851f8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"214c34d8-e9a3-4cda-8298-f2c6758532fb","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"72eb609a-511e-429f-98a4-c4bd0db91725","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c49c6aac-37e3-4adc-bc6a-737fc0905831","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"aee33c19-2f30-4d37-bf4b-1731df8b205e","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae65425b-0a91-4f43-9dc7-013e2c1a2d2a","path":"sprites/spr_hire_janewick_guard_dodge/spr_hire_janewick_guard_dodge.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8c8d9c96-b841-48be-8f09-3d2e85ce0732","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"8c8d9c96-b841-48be-8f09-3d2e85ce0732","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
