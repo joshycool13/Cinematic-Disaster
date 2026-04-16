@@ -82,24 +82,40 @@ TEXT("But they're always hiding them. It's a real shame."),
 
 
 //Neil Cording
-
 global.topics[$ "Neil1"] = [
-TEXT("Those bubs with the riot shields have such pretty eyes."),
-TEXT("But they're always hiding them. It's a real shame."),
+TEXT("If you screw up on camera, don't apologize."),
+TEXT("Just pretend you're alright, and the audience won't suspect a thing!"),
 ];
 
+
+global.topics[$ "Neil2"] = [
+TEXT("Look, man. I know fighting these enemies is painful, but you should smile more!"),
+TEXT("Try to make the audience BELIEVE you're having fun."),
+];
+
+
+global.topics[$ "Neil3"] = [
+TEXT("I know how little you sleep at night."),
+TEXT("..."),
+TEXT("This camera's always rolling. So I'm basically Santa."),
+];
 
 
 //Granny Smith
 
+global.topics[$ "Granny1"] = [
+TEXT("Baked goods are my specialty!"),
+TEXT("Pie or sword? I have recipes for both."),
+];
 
+global.topics[$ "Granny2"] = [
+TEXT("An apple a day keeps the health inspector away."),
+];
 
-//Baby Driver
-
-
-
-
-
+global.topics[$ "Granny3"] = [
+TEXT("I'd love to participate in a heist movie."),
+TEXT("I could use my metal hip to disrupt the alarms!"),
+a];
 
 
 
@@ -111,9 +127,8 @@ TEXT("Keanu.... Leaves....")
 ];
 
 global.topics[$ "Keanu2"] = [
-TEXT("Keanu.... Leaves....")
-TEXT("...Jane behind! This motivates Jane."),
-TEXT("Reason why Jane go big bang!"),
+TEXT("Keanu Leaves..")
+TEXT("...Jane behind! ;.;"),
 ];
 
 
