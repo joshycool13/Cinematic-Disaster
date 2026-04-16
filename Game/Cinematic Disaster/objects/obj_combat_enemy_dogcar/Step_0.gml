@@ -26,6 +26,7 @@ if x < starting_x and finished_round_trip
 	finished_round_trip = false
 	is_go_speed = false
 	player_attacked = false
+	x = starting_x
 	image_index = attack_speed_frame
 	image_speed = -1
 }

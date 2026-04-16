@@ -12,6 +12,7 @@ move_towards_target = false
 move_towards_idle = false
 has_already_hit = false
 health_num = 6
+health_reel = noone
 
 // Animations
 anim_idle = spr_enemy_rat_idle
@@ -20,8 +21,24 @@ anim_hit = spr_enemy_rat_hit
 anim_attack = spr_enemy_rat_attack
 
 get_hit = function(damage_taken, status_effect)
-{
+{	
 	health_num -= damage_taken
+	
+	if instance_exists(health_reel)
+	{
+		health_reel.health_num = health_num
+	}
+	
+	switch (status_effect)
+	{
+		case "reveal":
+			if not instance_exists(health_reel)
+			{
+				health_reel = instance_create_layer(x,y+32,"Instances",obj_enemy_health)
+				health_reel.health_num = health_num
+			}
+		break;
+	}
 	
 	sprite_index = anim_hit
 	image_index = 0

@@ -13,6 +13,7 @@ health_num = 8
 is_go_speed = false
 finished_round_trip = false
 player_attacked = false
+health_reel = noone
 
 // Animations
 anim_idle = spr_enemy_dogcar_idle
@@ -23,6 +24,22 @@ anim_attack = spr_enemy_dogcar_attack
 get_hit = function(damage_taken, status_effect)
 {
 	health_num -= damage_taken
+	
+	if instance_exists(health_reel)
+	{
+		health_reel.health_num = health_num
+	}
+	
+	switch (status_effect)
+	{
+		case "reveal":
+			if not instance_exists(health_reel)
+			{
+				health_reel = instance_create_layer(x,y+32,"Instances",obj_enemy_health)
+				health_reel.health_num = health_num
+			}
+		break;
+	}
 	
 	sprite_index = anim_hit
 	image_index = 0
