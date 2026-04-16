@@ -1,3 +1,5 @@
+var temp_button_name = noone
+
 switch (button_name)
 {
 	// UI Buttons
@@ -86,19 +88,19 @@ switch (button_name)
 	
 	// Items
 	case "corp_drink":
-		var temp_button_name = button_name
+		temp_button_name = button_name
 		button_name = ""
 		obj_combat_state.player_item(temp_button_name, 0)
 	break;
 	
 	case "coffee":
-		var temp_button_name = button_name
+		temp_button_name = button_name
 		button_name = ""
 		obj_combat_state.player_item(temp_button_name, 0)
 	break;
 	
 	case "rag":
-		var temp_button_name = button_name
+		temp_button_name = button_name
 		button_name = ""
 		obj_combat_state.player_item(temp_button_name, 0)
 	break;
