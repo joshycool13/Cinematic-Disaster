@@ -305,13 +305,13 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // 
 		{
 			if instance_exists(inst_enemy_id[i])
 			{
-				inst_enemy_id.get_hit(damage)
+				inst_enemy_id.get_hit(damage, status_effect)
 			}
 		}
 	}
 	else
 	{
-		cur_attacked.get_hit(damage)
+		cur_attacked.get_hit(damage, status_effect)
 	}
 	
 	update_hud_text()

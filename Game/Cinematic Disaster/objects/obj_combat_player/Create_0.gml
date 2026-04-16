@@ -128,7 +128,7 @@ start_defend = function(defend_name, tp_gain)
 	}
 }
 
-get_hit = function(damage_taken)
+get_hit = function(damage_taken, status_effect)
 {
 	if pressed_space != 0
 	{

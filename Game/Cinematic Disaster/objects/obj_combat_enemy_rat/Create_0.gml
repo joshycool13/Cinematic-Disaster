@@ -19,7 +19,7 @@ anim_run = spr_enemy_rat_run
 anim_hit = spr_enemy_rat_hit
 anim_attack = spr_enemy_rat_attack
 
-get_hit = function(damage_taken)
+get_hit = function(damage_taken, status_effect)
 {
 	health_num -= damage_taken
 	

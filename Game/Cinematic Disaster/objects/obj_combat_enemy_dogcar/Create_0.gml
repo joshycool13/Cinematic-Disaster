@@ -20,7 +20,7 @@ anim_hit = spr_enemy_dogcar_hit
 anim_attack = spr_enemy_dogcar_attack
 
 // Functions
-get_hit = function(damage_taken)
+get_hit = function(damage_taken, status_effect)
 {
 	health_num -= damage_taken
 	
