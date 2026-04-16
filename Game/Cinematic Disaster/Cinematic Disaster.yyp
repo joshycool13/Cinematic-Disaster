@@ -88,6 +88,7 @@
     {"id":{"name":"spr_enemy_cat_run","path":"sprites/spr_enemy_cat_run/spr_enemy_cat_run.yy",},},
     {"id":{"name":"spr_enemy_cyborg_attack","path":"sprites/spr_enemy_cyborg_attack/spr_enemy_cyborg_attack.yy",},},
     {"id":{"name":"spr_enemy_cyborg_block","path":"sprites/spr_enemy_cyborg_block/spr_enemy_cyborg_block.yy",},},
+    {"id":{"name":"spr_enemy_cyborg_charge_idle","path":"sprites/spr_enemy_cyborg_charge_idle/spr_enemy_cyborg_charge_idle.yy",},},
     {"id":{"name":"spr_enemy_cyborg_hit","path":"sprites/spr_enemy_cyborg_hit/spr_enemy_cyborg_hit.yy",},},
     {"id":{"name":"spr_enemy_cyborg_idle","path":"sprites/spr_enemy_cyborg_idle/spr_enemy_cyborg_idle.yy",},},
     {"id":{"name":"spr_enemy_cyborg_run","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},},
