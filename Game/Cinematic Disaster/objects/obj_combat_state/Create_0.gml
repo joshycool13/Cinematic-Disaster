@@ -297,7 +297,7 @@ finished_selector = function(target)
 	}
 }
 
-attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hit
+attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // when something is hit
 {	
 	if is_aoe
 	{
