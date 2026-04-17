@@ -13,6 +13,7 @@ move_towards_idle = false
 has_already_hit = false
 health_num = 6
 health_reel = noone
+has_poison_status_effect = 0
 
 // Animations
 anim_idle = spr_enemy_rat_idle
@@ -38,6 +39,10 @@ get_hit = function(damage_taken, status_effect)
 				health_reel.health_num = health_num
 			}
 		break;
+		
+		case "poison":
+			has_poison_status_effect = 3
+		break;
 	}
 	
 	sprite_index = anim_hit
@@ -50,4 +55,13 @@ start_attack = function(inst_player_id)
 	sprite_index = anim_run
 	image_index = 0
 	move_towards_target = true
+}
+
+take_poison_damage = function()
+{
+	if has_poison_status_effect > 0
+	{
+		has_poison_status_effect -= 1
+		get_hit(2,"")
+	}
 }

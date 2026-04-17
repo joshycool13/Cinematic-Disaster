@@ -130,6 +130,12 @@ remove_selectors = function() // remove selectors
 // Player Attacks
 player_attack = function(attack_name, tp_cost, target) // start player's attack
 {	
+	if temp_inst_button_id != noone
+	{
+		player_item(attack_name, target)
+		return
+	}
+	
 	if inst_player_id.tp_num - tp_cost < 0
 	{
 		player_menu()
@@ -166,6 +172,8 @@ finish_player_attack = function() // when player's attack is over
 	{
 		if instance_exists(inst_enemy_id[i])
 		{
+			inst_enemy_id[i].take_poison_damage()
+			
 			if inst_enemy_id[i].health_num <= 0
 			{
 				instance_create_layer(inst_enemy_id[i].x, inst_enemy_id[i].y, "Smoke", obj_combat_smokepuff)
@@ -225,6 +233,8 @@ enemy_attack = function() // start enemy attacks
 
 finish_player_defend = function() // when player's defend is over
 {
+	inst_player_id.take_poison_damage()
+	
 	if check_if_player_dead()
 	{
 		return
@@ -248,6 +258,8 @@ check_if_player_dead = function() // end game if player dead
 // Player Item
 player_item = function(item_name, target) // pressing item button
 {
+	temp_inst_button_id = noone
+	
 	layer_set_visible("ItemMenu", false)
 	layer_set_visible("Clipboard", false)
 	remove_selectors()
@@ -259,6 +271,14 @@ player_item = function(item_name, target) // pressing item button
 
 finish_player_item = function() // when player's item is over
 {
+	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	{
+		if instance_exists(inst_enemy_id[i])
+		{
+			inst_enemy_id[i].take_poison_damage()
+		}
+	}
+	
 	update_hud_text()
 	
 	layer_set_visible("Clipboard", true)

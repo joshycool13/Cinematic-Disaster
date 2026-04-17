@@ -27,7 +27,7 @@ switch current_item_name
 	break;
 	
 	case "rotten_tomato":
-		
+		obj_combat_state.attacked_is_hit(inst_target_id,0,false,"poison")
 	break;
 	
 	case "flashbang":

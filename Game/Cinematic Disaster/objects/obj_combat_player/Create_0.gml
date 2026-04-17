@@ -29,6 +29,7 @@ inst_actor = noone
 actor_attack_name = ""
 actor_was_attack = true
 inst_smokepuff = noone
+has_poison_status_effect = 0
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -144,6 +145,15 @@ get_hit = function(damage_taken, status_effect)
 		}
 		sprite_index = anim_hit
 		image_index = 0
+	}
+}
+
+take_poison_damage = function()
+{
+	if has_poison_status_effect > 0
+	{
+		has_poison_status_effect -= 1
+		get_hit(2,"")
 	}
 }
 

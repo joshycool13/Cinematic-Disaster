@@ -106,14 +106,14 @@ switch (button_name)
 	break;
 	
 	case "line_change":
-		obj_combat_state.select_menu(button_name, self)
+		obj_combat_state.select_menu(button_name, 0, self)
 	break;
 	
 	case "rotten_tomato":
-		obj_combat_state.select_menu(button_name, self)
+		obj_combat_state.select_menu(button_name, 0, self)
 	break;
 	
 	case "flashbang":
-		obj_combat_state.select_menu(button_name, self)
+		obj_combat_state.select_menu(button_name, 0, self)
 	break;
 }
