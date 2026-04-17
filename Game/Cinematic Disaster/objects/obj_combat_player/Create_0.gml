@@ -30,6 +30,8 @@ actor_attack_name = ""
 actor_was_attack = true
 inst_smokepuff = noone
 has_poison_status_effect = 0
+is_stunned = false
+is_deafened = 0
 
 // Animations
 anim_idle = spr_combat_player_idle

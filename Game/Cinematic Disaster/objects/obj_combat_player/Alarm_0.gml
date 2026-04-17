@@ -19,7 +19,8 @@ switch current_item_name
 	break;
 	
 	case "rag":
-		
+		has_poison_status_effect = 0
+		is_deafened = 0
 	break;
 	
 	case "line_change":
