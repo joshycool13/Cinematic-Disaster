@@ -19,7 +19,7 @@ if sprite_index == anim_defend
 {
 	sprite_index = anim_idle
 	image_index = 0
-	obj_combat_state.enemy_attack()
+	finish_defend()
 }
 
 if sprite_index == anim_hit
@@ -42,8 +42,24 @@ if sprite_index = anim_item
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_corporate_drink)
 		break;
 		
+		case "coffee":
+			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_coffee)
+		break;
+		
+		case "rag":
+			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_rag)
+		break;
+		
+		case "line_change":
+			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_line_change)
+		break;
+		
 		case "rotten_tomato":
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_rotten_tomato)
+		break;
+		
+		case "flashbang":
+			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_flashbang)
 		break;
 	}
 	image_speed = 0

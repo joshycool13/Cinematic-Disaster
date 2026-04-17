@@ -16,6 +16,7 @@ player_attack_name = ""
 inst_selector_id = []
 temp_inst_button_id = noone
 player_tp_cost = 0
+current_enemy_attacking = 0
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -23,7 +24,11 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 	switch global.combat_enemies[i]
 	{
 		case "rat":
-			inst_enemy_id[0] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_rat)
+		break;
+		
+		case "dogcar":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_dogcar)
 		break;
 	}
 }
@@ -136,16 +141,18 @@ player_attack = function(attack_name, tp_cost, target) // start player's attack
 	layer_set_visible("SelectMenu", false)
 	remove_selectors()
 	
-	switch (player_attack_name)
-	{
-		case "default_attack":
-			inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
-		break;
+	inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
+	
+	//switch (player_attack_name)
+	//{
+		//case "default_attack":
+			//inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
+		//break;
 		
-		case "identify":
-			inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
-		break
-	}
+		//case "identify":
+			//inst_player_id.start_attack(inst_enemy_id[target], attack_name, tp_cost)
+		//break
+	//}
 	
 	update_hud_text()
 }
@@ -189,11 +196,31 @@ player_defend = function(defend_name, tp_gain) // start player's defend
 	layer_set_visible("Clipboard", false)
 	
 	inst_player_id.start_defend(defend_name, tp_gain)
+	
+	update_hud_text()
 }
 
 enemy_attack = function() // start enemy attacks
 {
-	inst_enemy_id[0].start_attack(inst_player_id)
+	if current_enemy_attacking >= array_length(inst_enemy_id)
+	{
+		current_enemy_attacking = 0
+		finish_player_defend()
+		return
+	}
+	
+	if (instance_exists(inst_enemy_id[current_enemy_attacking]))
+	{
+		inst_enemy_id[current_enemy_attacking].start_attack(inst_player_id)
+	}
+	else
+	{
+		current_enemy_attacking += 1
+		enemy_attack()
+		return
+	}
+	
+	current_enemy_attacking += 1
 }
 
 finish_player_defend = function() // when player's defend is over
@@ -270,7 +297,7 @@ finished_selector = function(target)
 	}
 }
 
-attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hit
+attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // when something is hit
 {	
 	if is_aoe
 	{
@@ -278,13 +305,13 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe) // when something is hi
 		{
 			if instance_exists(inst_enemy_id[i])
 			{
-				inst_enemy_id.get_hit(damage)
+				inst_enemy_id.get_hit(damage, status_effect)
 			}
 		}
 	}
 	else
 	{
-		cur_attacked.get_hit(damage)
+		cur_attacked.get_hit(damage, status_effect)
 	}
 	
 	update_hud_text()

@@ -27,6 +27,8 @@ current_item_name = ""
 input_buffer = default_input_buffer
 inst_actor = noone
 actor_attack_name = ""
+actor_was_attack = true
+inst_smokepuff = noone
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -53,9 +55,29 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 			move_towards_target = true
 		break;
 		
-		default:
-			instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+		case "identify":
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
 			alarm[1] = 15
+		break;
+		
+		case "broom":
+			
+		break;
+		
+		case "flying_elbow":
+			
+		break;
+		
+		case "gun":
+			
+		break;
+		
+		case "disguise":
+			
+		break;
+		
+		case "bomb":
+			
 		break;
 	}
 }
@@ -63,10 +85,13 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 start_defend = function(defend_name, tp_gain)
 {
 	tp_num += tp_gain
+	
 	if tp_num > max_tp_num
 	{
 		tp_num = max_tp_num
 	}
+	
+	actor_attack_name = defend_name
 	
 	switch defend_name
 	{
@@ -75,10 +100,35 @@ start_defend = function(defend_name, tp_gain)
 			sprite_index = anim_defend
 			image_index = 0
 		break;
+		
+		case "prediction":
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
+		break;
+		
+		case "cleanse":
+			
+		break;
+		
+		case "protect":
+			
+		break;
+		
+		case "imitate":
+			
+		break;
+		
+		case "landmine":
+			
+		break;
+		
+		case "blast_shield":
+			
+		break;
 	}
 }
 
-get_hit = function(damage_taken)
+get_hit = function(damage_taken, status_effect)
 {
 	if pressed_space != 0
 	{
@@ -102,8 +152,15 @@ finish_attack = function()
 	obj_combat_state.finish_player_attack()
 }
 
-kill_actor = function()
+finish_defend = function()
 {
+	obj_combat_state.enemy_attack()
+}
+
+
+kill_actor = function(is_attack)
+{
+	actor_was_attack = is_attack
 	instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
 	alarm[2] = 15
 }
