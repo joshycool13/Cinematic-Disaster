@@ -14,6 +14,7 @@ has_already_hit = false
 health_num = 6
 health_reel = noone
 has_poison_status_effect = 0
+is_stunned = false
 
 // Animations
 anim_idle = spr_enemy_rat_idle
@@ -43,6 +44,10 @@ get_hit = function(damage_taken, status_effect)
 		case "poison":
 			has_poison_status_effect = 3
 		break;
+		
+		case "stun":
+			is_stunned = true
+		break;
 	}
 	
 	sprite_index = anim_hit
@@ -51,6 +56,13 @@ get_hit = function(damage_taken, status_effect)
 
 start_attack = function(inst_player_id)
 {
+	if is_stunned
+	{
+		is_stunned = false
+		obj_combat_state.enemy_attack()
+		return
+	}
+	
 	inst_target_id = inst_player_id
 	sprite_index = anim_run
 	image_index = 0

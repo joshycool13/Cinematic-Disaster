@@ -125,6 +125,7 @@ remove_selectors = function() // remove selectors
 	{
 		instance_destroy(inst_selector_id[i])
 	}
+	layer_set_visible("SelectMenu", false)
 }
 
 // Player Attacks
@@ -217,18 +218,17 @@ enemy_attack = function() // start enemy attacks
 		return
 	}
 	
-	if (instance_exists(inst_enemy_id[current_enemy_attacking]))
+	current_enemy_attacking += 1
+	
+	if (instance_exists(inst_enemy_id[current_enemy_attacking-1]))
 	{
-		inst_enemy_id[current_enemy_attacking].start_attack(inst_player_id)
+		inst_enemy_id[current_enemy_attacking-1].start_attack(inst_player_id)
 	}
 	else
 	{
-		current_enemy_attacking += 1
 		enemy_attack()
 		return
 	}
-	
-	current_enemy_attacking += 1
 }
 
 finish_player_defend = function() // when player's defend is over
