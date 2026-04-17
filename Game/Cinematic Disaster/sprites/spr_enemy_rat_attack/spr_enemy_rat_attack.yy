@@ -68,7 +68,7 @@
     },
     "name":"spr_enemy_rat_attack",
     "playback":1,
-    "playbackSpeed":8.0,
+    "playbackSpeed":12.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
