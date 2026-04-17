@@ -8,7 +8,7 @@ TEXT("Neat. I now know who to blame when it inevitably flops!"),
 
 global.topics[$ "Pranav2"] = [
 TEXT("The existence of child actors confuses me."),
- TEXT("Did the director invest so much of their life savings that they can only afford to hire babies?"),
+TEXT("Did the director invest so much of their life savings that they can only afford to hire babies?"),
 ];
 
 
@@ -18,7 +18,7 @@ TEXT("If your movie breaks it, I'll turn my body 180 degrees and walk out of the
 ];
 
 global.topics[$ "Pranav4"] = [
-TEXT("Your movie isn't perfect, but it's pretty good!")
+TEXT("Your movie isn't perfect, but it's pretty good!"),
 TEXT("I might even pay to see it!"),
 TEXT("Don't ask me how I watch the rest."),
 ];
@@ -115,7 +115,7 @@ TEXT("An apple a day keeps the health inspector away."),
 global.topics[$ "Granny3"] = [
 TEXT("I'd love to participate in a heist movie."),
 TEXT("I could use my metal hip to disrupt the alarms!"),
-a];
+];
 
 
 
@@ -127,7 +127,7 @@ TEXT("Keanu.... Leaves....")
 ];
 
 global.topics[$ "Keanu2"] = [
-TEXT("Keanu Leaves..")
+TEXT("Keanu Leaves.."),
 TEXT("...Jane behind! ;.;"),
 ];
 
