@@ -15,6 +15,7 @@ health_num = 6
 health_reel = noone
 has_poison_status_effect = 0
 is_stunned = false
+is_wet = 0
 
 // Animations
 anim_idle = spr_enemy_rat_idle
@@ -25,6 +26,11 @@ anim_attack = spr_enemy_rat_attack
 get_hit = function(damage_taken, status_effect)
 {	
 	health_num -= damage_taken
+	
+	if damage_taken > 0 and is_wet
+	{
+		health_num -= 2
+	}
 	
 	if instance_exists(health_reel)
 	{
@@ -47,6 +53,10 @@ get_hit = function(damage_taken, status_effect)
 		
 		case "stun":
 			is_stunned = true
+		break;
+		
+		case "wet":
+			is_wet = 2
 		break;
 	}
 	
@@ -75,5 +85,10 @@ take_poison_damage = function()
 	{
 		has_poison_status_effect -= 1
 		get_hit(2,"")
+	}
+	
+	if is_wet > 0
+	{
+		is_wet -= 1
 	}
 }

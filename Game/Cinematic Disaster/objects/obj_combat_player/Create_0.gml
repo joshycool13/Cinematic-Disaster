@@ -64,7 +64,8 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 		break;
 		
 		case "broom":
-			
+			inst_smokepuff = instance_create_layer(inst_target_id.x - 48, inst_target_id.y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "flying_elbow":

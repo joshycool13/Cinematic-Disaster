@@ -40,6 +40,7 @@
     {"id":{"name":"obj_frame","path":"objects/obj_frame/obj_frame.yy",},},
     {"id":{"name":"obj_gui_money","path":"objects/obj_gui_money/obj_gui_money.yy",},},
     {"id":{"name":"obj_hire_castagent","path":"objects/obj_hire_castagent/obj_hire_castagent.yy",},},
+    {"id":{"name":"obj_hire_janitor","path":"objects/obj_hire_janitor/obj_hire_janitor.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_item_coffee","path":"objects/obj_item_coffee/obj_item_coffee.yy",},},
     {"id":{"name":"obj_item_corporate_drink","path":"objects/obj_item_corporate_drink/obj_item_corporate_drink.yy",},},
