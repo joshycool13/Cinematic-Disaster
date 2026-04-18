@@ -326,7 +326,7 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // 
 		{
 			if instance_exists(inst_enemy_id[i])
 			{
-				inst_enemy_id.get_hit(damage, status_effect)
+				inst_enemy_id[i].get_hit(damage, status_effect)
 			}
 		}
 	}
@@ -336,6 +336,20 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // 
 	}
 	
 	update_hud_text()
+}
+
+attacked_is_hit_random = function(damage)
+{	
+	var attacked = irandom(array_length(inst_enemy_id)-1)
+	
+	if instance_exists(inst_enemy_id[attacked])
+	{
+		inst_enemy_id[attacked].get_hit(damage,"")
+	}
+	else
+	{
+		attacked_is_hit_random(damage)
+	}
 }
 
 update_hud_text = function() // updated hud numbers

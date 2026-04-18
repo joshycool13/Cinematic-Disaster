@@ -18,9 +18,21 @@ if sprite_index = anim_punch_dive
 	}
 }
 
-
+if attacking_timer <= 0 and not finished_attacking_gun
+{
+	finished_attacking_gun = true
+	sprite_index = anim_gun_idle
+	image_speed = 0
+	image_index = image_number - 1
+	inst_player_id.kill_actor(true)
+}
 
 if current_lockout_time != 0
 {
 	lockout_time -= 1
+}
+
+if started_attacking_gun and attacking_timer > 0
+{
+	attacking_timer -= 1
 }

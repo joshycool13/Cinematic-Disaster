@@ -9,8 +9,10 @@ inst_target_id = noone
 current_lockout_time = 0
 inst_player_id = noone
 defend_input_buffer = 20
-has_already_hit = false
 hit_timing_window = false
+attacking_timer = 60
+started_attacking_gun = false
+finished_attacking_gun = false
 
 // Animations
 anim_guard_dodge = spr_hire_janewick_guard_dodge

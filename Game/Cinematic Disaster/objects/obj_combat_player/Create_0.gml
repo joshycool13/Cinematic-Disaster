@@ -70,12 +70,13 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 		break;
 		
 		case "flying_elbow":
-			inst_smokepuff = instance_create_layer(x - actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
 			alarm[1] = 15
 		break;
 		
 		case "gun":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "disguise":

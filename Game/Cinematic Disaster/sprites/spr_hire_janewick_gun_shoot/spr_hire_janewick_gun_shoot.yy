@@ -12,16 +12,9 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"ae65425b-0a91-4f43-9dc7-013e2c1a2d2a","name":"ae65425b-0a91-4f43-9dc7-013e2c1a2d2a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"fac7af1d-106f-466e-9e83-21a354070bf2","name":"fac7af1d-106f-466e-9e83-21a354070bf2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"405a7ee4-977a-4352-9c52-b1fa0e02b7ae","name":"405a7ee4-977a-4352-9c52-b1fa0e02b7ae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"52be7af5-54e6-4ddd-afcf-0f4227f669ee","name":"52be7af5-54e6-4ddd-afcf-0f4227f669ee","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"e225ab2d-d2fd-4a16-a892-f9af9b28453b","name":"e225ab2d-d2fd-4a16-a892-f9af9b28453b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"66079a9a-959a-471a-9efe-c21baa45021a","name":"66079a9a-959a-471a-9efe-c21baa45021a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"f33caed0-293c-4adf-8854-5641f1a3375f","name":"f33caed0-293c-4adf-8854-5641f1a3375f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"dd1322ea-6cf4-4631-a35a-a410e86be929","name":"dd1322ea-6cf4-4631-a35a-a410e86be929","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"f6419b3e-8586-4f4b-ae69-21d7b641a3c4","name":"f6419b3e-8586-4f4b-ae69-21d7b641a3c4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"3370266c-6699-45ed-93b2-9b7611f1573f","name":"3370266c-6699-45ed-93b2-9b7611f1573f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -36,7 +29,7 @@
   ],
   "name":"spr_hire_janewick_gun_shoot",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -62,7 +55,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":10.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -82,41 +75,20 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ae65425b-0a91-4f43-9dc7-013e2c1a2d2a","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"8c8d9c96-b841-48be-8f09-3d2e85ce0732","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fac7af1d-106f-466e-9e83-21a354070bf2","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4b9fc868-af59-4eef-a209-4c33dd057ee2","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"4b9fc868-af59-4eef-a209-4c33dd057ee2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"405a7ee4-977a-4352-9c52-b1fa0e02b7ae","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"65c13f5f-ea90-4eaf-88a9-f49517a14403","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"65c13f5f-ea90-4eaf-88a9-f49517a14403","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"52be7af5-54e6-4ddd-afcf-0f4227f669ee","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9a556746-4f81-416b-9e2d-9cd6ed480ef5","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e225ab2d-d2fd-4a16-a892-f9af9b28453b","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d245eac0-93d4-4ff2-acfb-12f7a94c0955","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"66079a9a-959a-471a-9efe-c21baa45021a","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"bd55bedd-9942-4f2e-b71a-fd3c5b24a356","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f33caed0-293c-4adf-8854-5641f1a3375f","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1979a6d1-2639-4b1f-aeef-c2b880435c40","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"dd1322ea-6cf4-4631-a35a-a410e86be929","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"49b204a3-201e-4266-9a40-f2f584627ea4","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6419b3e-8586-4f4b-ae69-21d7b641a3c4","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1ea74c71-82d9-48ad-97be-1ef0d782e67d","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3370266c-6699-45ed-93b2-9b7611f1573f","path":"sprites/spr_hire_janewick_gun_shoot/spr_hire_janewick_gun_shoot.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"ad004fbc-65cb-432b-bb93-458a9dbce2f3","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"9a556746-4f81-416b-9e2d-9cd6ed480ef5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
     "xorigin":64,
-    "yorigin":64,
+    "yorigin":128,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
