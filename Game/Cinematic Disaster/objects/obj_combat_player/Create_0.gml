@@ -112,7 +112,8 @@ start_defend = function(defend_name, tp_gain)
 		break;
 		
 		case "cleanse":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus + 45, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "protect":
