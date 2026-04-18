@@ -19,11 +19,8 @@ if sprite_index = anim_gun_shoot
 	image_index = 0
 }
 
-if sprite_index = anim_guard_idle
+if sprite_index = anim_guard_dodge or sprite_index = anim_guard_hit
 {
 	sprite_index = anim_guard_idle
-	image_speed = 0
 	image_index = 0
-	inst_player_id.has_bucket = true
-	inst_player_id.kill_actor(false)
 }

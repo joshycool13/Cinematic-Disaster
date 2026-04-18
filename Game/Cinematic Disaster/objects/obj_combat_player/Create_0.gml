@@ -119,7 +119,8 @@ start_defend = function(defend_name, tp_gain)
 		break;
 		
 		case "protect":
-			
+			inst_smokepuff = instance_create_layer(x, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "imitate":
@@ -138,10 +139,25 @@ start_defend = function(defend_name, tp_gain)
 
 get_hit = function(damage_taken, status_effect)
 {
+	if instance_exists(inst_actor) and inst_actor.object_index == obj_hire_janewick
+	{
+		damage_taken -= inst_actor.defend_damage_reduction
+		if damage_taken < 0
+		{
+			damage_taken = 0
+		}
+	}
+	
 	if pressed_space != 0
 	{
 		sprite_index = anim_dodge
 		image_index = 0
+		
+		if instance_exists(inst_actor)
+		{
+			inst_actor.sprite_index = inst_actor.anim_guard_dodge
+			inst_actor.image_index = 0
+		}
 	}
 	else
 	{
@@ -152,6 +168,12 @@ get_hit = function(damage_taken, status_effect)
 		}
 		sprite_index = anim_hit
 		image_index = 0
+		
+		if instance_exists(inst_actor)
+		{
+			inst_actor.sprite_index = inst_actor.anim_guard_hit
+			inst_actor.image_index = 0
+		}
 	}
 	
 	if not has_bucket
@@ -180,11 +202,27 @@ finish_defend = function()
 }
 
 
-kill_actor = function(is_attack)
-{
+kill_actor = function(is_attack, is_janewick_defend = false)
+{	
 	actor_was_attack = is_attack
-	instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
-	alarm[2] = 15
+	if not is_janewick_defend
+	{
+		instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
+		alarm[2] = 15
+	}
+	else
+	{
+		finish_defend()
+	}
+}
+
+kill_janewick = function()
+{
+	if instance_exists(inst_actor)
+	{
+		instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
+		alarm[3] = 15
+	}
 }
 
 use_item = function(inst_enemy_id, item_name)

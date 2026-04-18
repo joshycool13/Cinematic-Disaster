@@ -3,6 +3,7 @@ lockout_time = 60
 attack_damage_punch = 10
 attack_damage_gun = 1
 dive_fall_speed = 24
+defend_damage_reduction = 2
 
 // Variables
 inst_target_id = noone
@@ -43,4 +44,5 @@ start_defend = function()
 	sprite_index = anim_guard_idle
 	image_index = 0
 	inst_player_id.input_buffer = defend_input_buffer
+	inst_player_id.kill_actor(false,true)
 }
