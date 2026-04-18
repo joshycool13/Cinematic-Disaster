@@ -61,7 +61,10 @@ switch actor_attack_name
 	break;
 	
 	case "imitate":
-		
+		inst_actor = instance_create_layer(inst_smokepuff.x, inst_smokepuff.y, "Instances", obj_hire_makeup)
+		inst_actor.inst_player_id = self
+		inst_actor.inst_target_id = inst_target_id
+		inst_actor.start_defend()
 	break;
 	
 	case "landmine":

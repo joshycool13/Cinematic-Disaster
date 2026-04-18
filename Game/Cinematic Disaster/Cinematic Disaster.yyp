@@ -42,6 +42,7 @@
     {"id":{"name":"obj_hire_castagent","path":"objects/obj_hire_castagent/obj_hire_castagent.yy",},},
     {"id":{"name":"obj_hire_janewick","path":"objects/obj_hire_janewick/obj_hire_janewick.yy",},},
     {"id":{"name":"obj_hire_janitor","path":"objects/obj_hire_janitor/obj_hire_janitor.yy",},},
+    {"id":{"name":"obj_hire_makeup","path":"objects/obj_hire_makeup/obj_hire_makeup.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
     {"id":{"name":"obj_item_coffee","path":"objects/obj_item_coffee/obj_item_coffee.yy",},},
     {"id":{"name":"obj_item_corporate_drink","path":"objects/obj_item_corporate_drink/obj_item_corporate_drink.yy",},},
