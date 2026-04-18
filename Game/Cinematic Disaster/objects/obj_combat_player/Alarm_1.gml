@@ -16,7 +16,10 @@ switch actor_attack_name
 	break;
 	
 	case "flying_elbow":
-		
+		inst_actor = instance_create_layer(inst_smokepuff.x, inst_smokepuff.y, "Front_Instances", obj_hire_janewick)
+		inst_actor.inst_player_id = self
+		inst_actor.inst_target_id = inst_target_id
+		inst_actor.start_attack_punch()
 	break;
 	
 	case "gun":
