@@ -5,7 +5,8 @@ if sprite_index = anim_copy
 	
 	if is_attack
 	{
-		
+		instance_create_layer(x, y, "Smoke", obj_combat_smokepuff)
+		alarm[1] = 15
 	}
 	else
 	{

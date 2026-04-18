@@ -1,13 +1,12 @@
 // Constants
 defend_options = ["default_defend", "prediction", "cleanse", "protect", "landmine", "blast_shield"]
+enemy_options = ["rat", "dogcar"]
 
 // Variables
 inst_target_id = noone
-current_lockout_time = 0
 inst_player_id = noone
-defend_input_buffer = 20
-has_already_hit = false
 is_attack = false
+inst_enemy_id = noone
 
 // Animations
 anim_copy = spr_hire_makeup_copy
@@ -25,4 +24,9 @@ start_defend = function()
 	sprite_index = anim_copy
 	image_index = 0
 	is_attack = false
+}
+
+finish_attack = function()
+{
+	inst_player_id.kill_actor(true)
 }
