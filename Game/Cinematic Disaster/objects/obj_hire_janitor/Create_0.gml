@@ -26,7 +26,7 @@ start_attack = function()
 
 start_defend = function()
 {
-	sprite_index = anim_ready
+	sprite_index = anim_clean
 	image_index = 0
 	inst_player_id.input_buffer = defend_input_buffer
 }

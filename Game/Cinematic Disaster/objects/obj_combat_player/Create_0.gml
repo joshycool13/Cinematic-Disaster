@@ -32,6 +32,7 @@ inst_smokepuff = noone
 has_poison_status_effect = 0
 is_stunned = false
 is_deafened = 0
+has_bucket = false
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -149,6 +150,11 @@ get_hit = function(damage_taken, status_effect)
 		sprite_index = anim_hit
 		image_index = 0
 	}
+	
+	if not has_bucket
+	{
+		
+	}
 }
 
 take_poison_damage = function()
@@ -191,4 +197,9 @@ use_item = function(inst_enemy_id, item_name)
 finish_using_item = function()
 {
 	obj_combat_state.finish_player_item()
+}
+
+clear_bucket = function()
+{
+	has_bucket = false
 }

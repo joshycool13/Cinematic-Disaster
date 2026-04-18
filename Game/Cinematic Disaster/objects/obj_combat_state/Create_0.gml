@@ -234,6 +234,7 @@ enemy_attack = function() // start enemy attacks
 finish_player_defend = function() // when player's defend is over
 {
 	inst_player_id.take_poison_damage()
+	inst_player_id.clear_bucket()
 	
 	if check_if_player_dead()
 	{
