@@ -37,7 +37,10 @@ switch actor_attack_name
 	break;
 	
 	case "bomb":
-		
+		inst_actor = instance_create_layer(inst_smokepuff.x, inst_smokepuff.y, "Front_Instances", obj_hire_boomcrew)
+		inst_actor.inst_player_id = self
+		inst_actor.inst_target_id = inst_target_id
+		inst_actor.start_attack()
 	break;
 
 	// Defends
