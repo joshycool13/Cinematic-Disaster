@@ -33,6 +33,7 @@ has_poison_status_effect = 0
 is_stunned = false
 is_deafened = 0
 has_bucket = false
+inst_landmine = noone
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -131,7 +132,8 @@ start_defend = function(defend_name, tp_gain)
 		break;
 		
 		case "landmine":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "blast_shield":
@@ -177,6 +179,11 @@ get_hit = function(damage_taken, status_effect)
 			inst_actor.sprite_index = inst_actor.anim_guard_hit
 			inst_actor.image_index = 0
 		}
+	}
+	
+	if instance_exists(inst_landmine)
+	{
+		inst_landmine.spawn_explosion()
 	}
 	
 	if not has_bucket
@@ -225,6 +232,10 @@ kill_janewick = function()
 	{
 		instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
 		alarm[3] = 15
+	}
+	if instance_exists(inst_landmine)
+	{
+		inst_landmine.kill_self()
 	}
 }
 

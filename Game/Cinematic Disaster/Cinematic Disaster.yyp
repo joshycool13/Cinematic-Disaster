@@ -57,6 +57,8 @@
     {"id":{"name":"obj_item_line_change","path":"objects/obj_item_line_change/obj_item_line_change.yy",},},
     {"id":{"name":"obj_item_rag","path":"objects/obj_item_rag/obj_item_rag.yy",},},
     {"id":{"name":"obj_item_rotten_tomato","path":"objects/obj_item_rotten_tomato/obj_item_rotten_tomato.yy",},},
+    {"id":{"name":"obj_mine_explosion","path":"objects/obj_mine_explosion/obj_mine_explosion.yy",},},
+    {"id":{"name":"obj_mine","path":"objects/obj_mine/obj_mine.yy",},},
     {"id":{"name":"obj_npcBrooke","path":"objects/obj_npcBrooke/obj_npcBrooke.yy",},},
     {"id":{"name":"obj_npcBuddy","path":"objects/obj_npcBuddy/obj_npcBuddy.yy",},},
     {"id":{"name":"obj_npcGranny","path":"objects/obj_npcGranny/obj_npcGranny.yy",},},

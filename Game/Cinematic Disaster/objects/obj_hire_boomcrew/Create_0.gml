@@ -9,11 +9,13 @@ green_bar_x_end = 78
 green_bar_x_begin = 182
 bomb_x = 50
 bomb_y = -140
+mine_x = 17
+mine_y = 3
 
 // Variables
 inst_target_id = noone
 inst_player_id = noone
-defend_input_buffer = 20
+defend_input_buffer = 0
 inst_slider = noone
 inst_bar = noone
 h_speed = 8
