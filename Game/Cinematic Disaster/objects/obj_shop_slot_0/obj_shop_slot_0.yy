@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shop_slot",
+  "%Name":"obj_shop_slot_0",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_shop_slot",
+  "name":"obj_shop_slot_0",
   "overriddenProperties":[],
   "parent":{
     "name":"Shop",
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shop_item",
-    "path":"sprites/spr_shop_item/spr_shop_item.yy",
+    "name":"spr_shop_slot",
+    "path":"sprites/spr_shop_slot/spr_shop_slot.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -40,4 +40,18 @@ if (product = "coffee") {
 	draw_sprite(spr_item_rotten_tomato, 0, x, y-16)	
 } 
 
-//add the actors when the corresponding sprites are ready
+if (product = "castagent") {
+	draw_sprite(spr_hire_castagent_idle, 0, x+32, y+16)
+	
+} else if (product = "janitor") {
+	draw_sprite(spr_hire_janitor_broom_ready, 0, x+32, y+16)
+	
+} else if (product = "makeup") {
+	draw_sprite(spr_hire_makeup_copy, 0, x+32, y+16)
+	
+} else if (product = "boomcrew") {
+	draw_sprite(spr_hire_boomcrew_bomb_aiming, 0, x+32, y+16)
+	
+} else if (product = "janewick") {
+	draw_sprite(spr_hire_janewick_gun_idle, 0, x+32, y+16) 
+}

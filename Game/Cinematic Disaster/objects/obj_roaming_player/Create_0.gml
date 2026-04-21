@@ -1,5 +1,5 @@
 //constants
-walkspeed = 2.5; // how fast the player moves
+walkspeed = 5; // how fast the player moves
 
 
 //movement var
