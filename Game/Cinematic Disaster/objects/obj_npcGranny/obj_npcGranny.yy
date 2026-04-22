@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite130",
-    "path":"sprites/Sprite130/Sprite130.yy",
+    "name":"spr_granny",
+    "path":"sprites/spr_granny/spr_granny.yy",
   },
   "spriteMaskId":null,
   "visible":true,
