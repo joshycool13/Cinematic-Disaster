@@ -19,6 +19,7 @@
   "height":512,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"f828ad79-b600-45b1-ab67-9a0acac50b27","blendMode":0,"displayName":"transparent wall","isLocked":false,"name":"f828ad79-b600-45b1-ab67-9a0acac50b27","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"969d70e3-7bc9-4915-ac94-454851cbacb9","blendMode":0,"displayName":"workshop+greenroom","isLocked":false,"name":"969d70e3-7bc9-4915-ac94-454851cbacb9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"b9f112fe-4ab4-48e5-a881-d00ba50c084e","blendMode":0,"displayName":"catwalk","isLocked":false,"name":"b9f112fe-4ab4-48e5-a881-d00ba50c084e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"f7fdbe4d-d78e-4853-929d-ae4772951ede","blendMode":0,"displayName":"parking","isLocked":false,"name":"f7fdbe4d-d78e-4853-929d-ae4772951ede","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
