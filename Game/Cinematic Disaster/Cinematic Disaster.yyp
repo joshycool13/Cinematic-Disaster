@@ -33,6 +33,7 @@
     {"id":{"name":"obj_bombbar","path":"objects/obj_bombbar/obj_bombbar.yy",},},
     {"id":{"name":"obj_bombslider","path":"objects/obj_bombslider/obj_bombslider.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
+    {"id":{"name":"obj_combat_enemy_cyborg","path":"objects/obj_combat_enemy_cyborg/obj_combat_enemy_cyborg.yy",},},
     {"id":{"name":"obj_combat_enemy_dogcar","path":"objects/obj_combat_enemy_dogcar/obj_combat_enemy_dogcar.yy",},},
     {"id":{"name":"obj_combat_enemy_rat","path":"objects/obj_combat_enemy_rat/obj_combat_enemy_rat.yy",},},
     {"id":{"name":"obj_combat_enemy_shield","path":"objects/obj_combat_enemy_shield/obj_combat_enemy_shield.yy",},},
