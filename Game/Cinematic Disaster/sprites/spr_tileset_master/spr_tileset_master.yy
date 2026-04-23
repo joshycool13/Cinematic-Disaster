@@ -2,7 +2,7 @@
   "$GMSprite":"v2",
   "%Name":"spr_tileset_master",
   "bboxMode":0,
-  "bbox_bottom":351,
+  "bbox_bottom":479,
   "bbox_left":0,
   "bbox_right":511,
   "bbox_top":0,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"348f752a-5fa0-418b-98fb-1869a77d3b6b","name":"348f752a-5fa0-418b-98fb-1869a77d3b6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":8,
-  "gridY":8,
+  "gridX":32,
+  "gridY":32,
   "height":512,
   "HTile":false,
   "layers":[
