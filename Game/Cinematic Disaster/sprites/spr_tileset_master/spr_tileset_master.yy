@@ -14,11 +14,12 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"348f752a-5fa0-418b-98fb-1869a77d3b6b","name":"348f752a-5fa0-418b-98fb-1869a77d3b6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":16,
-  "gridY":16,
+  "gridX":8,
+  "gridY":8,
   "height":512,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"ec51cde3-2d1a-4f3b-adae-fc5b5a0a0a41","blendMode":0,"displayName":"film set","isLocked":false,"name":"ec51cde3-2d1a-4f3b-adae-fc5b5a0a0a41","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"f828ad79-b600-45b1-ab67-9a0acac50b27","blendMode":0,"displayName":"transparent wall","isLocked":false,"name":"f828ad79-b600-45b1-ab67-9a0acac50b27","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"969d70e3-7bc9-4915-ac94-454851cbacb9","blendMode":0,"displayName":"workshop+greenroom","isLocked":false,"name":"969d70e3-7bc9-4915-ac94-454851cbacb9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"b9f112fe-4ab4-48e5-a881-d00ba50c084e","blendMode":0,"displayName":"catwalk","isLocked":false,"name":"b9f112fe-4ab4-48e5-a881-d00ba50c084e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
