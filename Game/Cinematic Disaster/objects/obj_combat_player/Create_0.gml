@@ -174,6 +174,13 @@ get_hit = function(damage_taken, status_effect)
 		sprite_index = anim_hit
 		image_index = 0
 		
+		switch status_effect
+		{
+			case "stun":
+				is_stunned = true
+			break;
+		}
+		
 		if instance_exists(inst_actor)
 		{
 			inst_actor.sprite_index = inst_actor.anim_guard_hit

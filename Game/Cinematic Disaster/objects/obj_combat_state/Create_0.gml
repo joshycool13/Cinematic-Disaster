@@ -30,6 +30,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "dogcar":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_dogcar)
 		break;
+		
+		case "shield":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_shield)
+		break;
 	}
 }
 
@@ -270,8 +274,17 @@ finish_player_defend = function() // when player's defend is over
 	}
 	
 	layer_set_visible("Clipboard", true)
-	layer_set_visible("PlayerMenu", true)
-	is_player_turn = true
+	if inst_player_id.is_stunned
+	{
+		inst_player_id.is_stunned = false
+		finish_player_attack()
+	}
+	else
+	{
+		layer_set_visible("PlayerMenu", true)
+		is_player_turn = true
+	}
+	
 }
 
 check_if_player_dead = function() // end game if player dead
