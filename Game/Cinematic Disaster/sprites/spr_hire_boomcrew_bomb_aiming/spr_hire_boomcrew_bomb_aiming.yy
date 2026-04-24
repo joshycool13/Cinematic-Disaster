@@ -18,9 +18,6 @@
     {"$GMSpriteFrame":"v1","%Name":"06f523a1-9e29-458b-858e-67b54fdc0900","name":"06f523a1-9e29-458b-858e-67b54fdc0900","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"03c93084-957f-4099-84d9-42ccbbd0a47c","name":"03c93084-957f-4099-84d9-42ccbbd0a47c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"92973978-2049-4db1-aa1f-12d4a857936c","name":"92973978-2049-4db1-aa1f-12d4a857936c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"75511a98-c5a3-4e41-84f8-964fa933e1a8","name":"75511a98-c5a3-4e41-84f8-964fa933e1a8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"3d04cab7-654c-4f0e-a2c5-38c6606fe87d","name":"3d04cab7-654c-4f0e-a2c5-38c6606fe87d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"83392b43-260e-44a1-8e56-7b77fd0dcbc1","name":"83392b43-260e-44a1-8e56-7b77fd0dcbc1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -62,7 +59,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":9.0,
+    "length":6.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -99,15 +96,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"92973978-2049-4db1-aa1f-12d4a857936c","path":"sprites/spr_hire_boomcrew_bomb_aiming/spr_hire_boomcrew_bomb_aiming.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"cae3bade-da4a-41e2-b084-ccb89dc85b77","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"75511a98-c5a3-4e41-84f8-964fa933e1a8","path":"sprites/spr_hire_boomcrew_bomb_aiming/spr_hire_boomcrew_bomb_aiming.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e4a8cf73-cd0a-4333-bfc8-892f1a04143e","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d04cab7-654c-4f0e-a2c5-38c6606fe87d","path":"sprites/spr_hire_boomcrew_bomb_aiming/spr_hire_boomcrew_bomb_aiming.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0f28ea52-e340-45ad-98e5-e8b1b3f2afa0","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"83392b43-260e-44a1-8e56-7b77fd0dcbc1","path":"sprites/spr_hire_boomcrew_bomb_aiming/spr_hire_boomcrew_bomb_aiming.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"36cb61f6-13eb-4008-9cca-506413c41749","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

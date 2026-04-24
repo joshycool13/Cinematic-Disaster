@@ -13,12 +13,9 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"d2d4dfbe-e237-456a-8c34-4a47b2672ea8","name":"d2d4dfbe-e237-456a-8c34-4a47b2672ea8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"ed78b33d-d595-4990-889b-c3ca5077c145","name":"ed78b33d-d595-4990-889b-c3ca5077c145","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"c6f3cace-33ea-4653-936c-e2de53260552","name":"c6f3cace-33ea-4653-936c-e2de53260552","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"9fde4478-8cdc-4b33-8e1d-b087448c9f47","name":"9fde4478-8cdc-4b33-8e1d-b087448c9f47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"fda9fcab-a61b-44ae-a6d2-fe6bba5cdbb5","name":"fda9fcab-a61b-44ae-a6d2-fe6bba5cdbb5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"051c5f2f-bc6d-4538-b171-c70b0db40aab","name":"051c5f2f-bc6d-4538-b171-c70b0db40aab","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"cf275d1a-80b8-4231-9d4b-afc5335b70f3","name":"cf275d1a-80b8-4231-9d4b-afc5335b70f3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"18b9bf67-a6e9-47fe-825f-b735d38b5460","name":"18b9bf67-a6e9-47fe-825f-b735d38b5460","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fe84e798-ffe1-43ba-8f17-7074efe53cb5","name":"fe84e798-ffe1-43ba-8f17-7074efe53cb5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"351c0c4d-ab19-4039-9427-f96db769ef81","name":"351c0c4d-ab19-4039-9427-f96db769ef81","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -60,7 +57,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":7.0,
+    "length":4.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -70,7 +67,7 @@
     },
     "name":"spr_enemy_cyborg_run",
     "playback":1,
-    "playbackSpeed":12.0,
+    "playbackSpeed":4.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -83,23 +80,14 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d2d4dfbe-e237-456a-8c34-4a47b2672ea8","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"527d9259-e30a-4986-beb5-dfd1bcbfb47b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ed78b33d-d595-4990-889b-c3ca5077c145","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5183ae5b-ff41-41fa-8e25-a59e2f7db1eb","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"18b9bf67-a6e9-47fe-825f-b735d38b5460","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7bb2f793-4d21-4a91-a500-bec1981df39f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6f3cace-33ea-4653-936c-e2de53260552","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e0d9cba9-1dd5-4b7c-9d52-9d88104e764b","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe84e798-ffe1-43ba-8f17-7074efe53cb5","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9e53f79e-b24d-46d7-af84-f081bee4d417","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9fde4478-8cdc-4b33-8e1d-b087448c9f47","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"e8b7311f-c86c-4030-8ec4-4bfb0dbb382c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fda9fcab-a61b-44ae-a6d2-fe6bba5cdbb5","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"690b3206-f143-4af5-9b7b-f3f1c52574c4","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"051c5f2f-bc6d-4538-b171-c70b0db40aab","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"457b1088-c060-4a85-b152-5216be0d49c5","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cf275d1a-80b8-4231-9d4b-afc5335b70f3","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f0b89610-c81d-4273-a8de-382dc94f0cce","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"351c0c4d-ab19-4039-9427-f96db769ef81","path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"32b1e240-e83e-43d4-8f90-771e85124bd7","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

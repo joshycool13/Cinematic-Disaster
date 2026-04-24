@@ -30,6 +30,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "dogcar":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_dogcar)
 		break;
+		
+		case "shield":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_shield)
+		break;
 	}
 }
 
@@ -125,11 +129,18 @@ remove_selectors = function() // remove selectors
 	{
 		instance_destroy(inst_selector_id[i])
 	}
+	layer_set_visible("SelectMenu", false)
 }
 
 // Player Attacks
 player_attack = function(attack_name, tp_cost, target) // start player's attack
 {	
+	if temp_inst_button_id != noone
+	{
+		player_item(attack_name, target)
+		return
+	}
+	
 	if inst_player_id.tp_num - tp_cost < 0
 	{
 		player_menu()
@@ -166,6 +177,8 @@ finish_player_attack = function() // when player's attack is over
 	{
 		if instance_exists(inst_enemy_id[i])
 		{
+			inst_enemy_id[i].take_poison_damage()
+			
 			if inst_enemy_id[i].health_num <= 0
 			{
 				instance_create_layer(inst_enemy_id[i].x, inst_enemy_id[i].y, "Smoke", obj_combat_smokepuff)
@@ -209,29 +222,69 @@ enemy_attack = function() // start enemy attacks
 		return
 	}
 	
-	if (instance_exists(inst_enemy_id[current_enemy_attacking]))
+	current_enemy_attacking += 1
+	
+	if (instance_exists(inst_enemy_id[current_enemy_attacking-1]))
 	{
-		inst_enemy_id[current_enemy_attacking].start_attack(inst_player_id)
+		inst_enemy_id[current_enemy_attacking-1].start_attack(inst_player_id)
 	}
 	else
 	{
-		current_enemy_attacking += 1
 		enemy_attack()
 		return
 	}
-	
-	current_enemy_attacking += 1
 }
 
 finish_player_defend = function() // when player's defend is over
 {
+	inst_player_id.take_poison_damage()
+	inst_player_id.clear_bucket()
+	inst_player_id.kill_janewick()
+	
 	if check_if_player_dead()
 	{
 		return
 	}
+	
+	// in case enemies die from landmine
+	var is_there_enemies = false
+	
+	// delete enemies when 
+	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	{
+		if instance_exists(inst_enemy_id[i])
+		{
+			if inst_enemy_id[i].health_num <= 0
+			{
+				instance_create_layer(inst_enemy_id[i].x, inst_enemy_id[i].y, "Smoke", obj_combat_smokepuff)
+				inst_enemy_id[i].alarm[0] = 15
+			}
+			else
+			{
+				is_there_enemies = true
+			}
+		}
+	}
+	
+	if is_there_enemies == false
+	{
+		layer_set_visible("CombatVictory", true)
+		alarm[2] = 120
+		return
+	}
+	
 	layer_set_visible("Clipboard", true)
-	layer_set_visible("PlayerMenu", true)
-	is_player_turn = true
+	if inst_player_id.is_stunned
+	{
+		inst_player_id.is_stunned = false
+		finish_player_attack()
+	}
+	else
+	{
+		layer_set_visible("PlayerMenu", true)
+		is_player_turn = true
+	}
+	
 }
 
 check_if_player_dead = function() // end game if player dead
@@ -248,6 +301,8 @@ check_if_player_dead = function() // end game if player dead
 // Player Item
 player_item = function(item_name, target) // pressing item button
 {
+	temp_inst_button_id = noone
+	
 	layer_set_visible("ItemMenu", false)
 	layer_set_visible("Clipboard", false)
 	remove_selectors()
@@ -259,6 +314,14 @@ player_item = function(item_name, target) // pressing item button
 
 finish_player_item = function() // when player's item is over
 {
+	for (var i = 0; i < array_length(inst_enemy_id); i += 1)
+	{
+		if instance_exists(inst_enemy_id[i])
+		{
+			inst_enemy_id[i].take_poison_damage()
+		}
+	}
+	
 	update_hud_text()
 	
 	layer_set_visible("Clipboard", true)
@@ -305,7 +368,7 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // 
 		{
 			if instance_exists(inst_enemy_id[i])
 			{
-				inst_enemy_id.get_hit(damage, status_effect)
+				inst_enemy_id[i].get_hit(damage, status_effect)
 			}
 		}
 	}
@@ -315,6 +378,20 @@ attacked_is_hit = function(cur_attacked, damage, is_aoe, status_effect = "") // 
 	}
 	
 	update_hud_text()
+}
+
+attacked_is_hit_random = function(damage)
+{	
+	var attacked = irandom(array_length(inst_enemy_id)-1)
+	
+	if instance_exists(inst_enemy_id[attacked])
+	{
+		inst_enemy_id[attacked].get_hit(damage,"")
+	}
+	else
+	{
+		attacked_is_hit_random(damage)
+	}
 }
 
 update_hud_text = function() // updated hud numbers

@@ -29,6 +29,11 @@ inst_actor = noone
 actor_attack_name = ""
 actor_was_attack = true
 inst_smokepuff = noone
+has_poison_status_effect = 0
+is_stunned = false
+is_deafened = 0
+has_bucket = false
+inst_landmine = noone
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -61,23 +66,28 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 		break;
 		
 		case "broom":
-			
+			inst_smokepuff = instance_create_layer(inst_target_id.x - 48, inst_target_id.y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "flying_elbow":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "gun":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "disguise":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "bomb":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 	}
 }
@@ -107,19 +117,23 @@ start_defend = function(defend_name, tp_gain)
 		break;
 		
 		case "cleanse":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus + 45, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "protect":
-			
+			inst_smokepuff = instance_create_layer(x, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "imitate":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "landmine":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 		
 		case "blast_shield":
@@ -130,10 +144,25 @@ start_defend = function(defend_name, tp_gain)
 
 get_hit = function(damage_taken, status_effect)
 {
+	if instance_exists(inst_actor) and inst_actor.object_index == obj_hire_janewick
+	{
+		damage_taken -= inst_actor.defend_damage_reduction
+		if damage_taken < 0
+		{
+			damage_taken = 0
+		}
+	}
+	
 	if pressed_space != 0
 	{
 		sprite_index = anim_dodge
 		image_index = 0
+		
+		if instance_exists(inst_actor)
+		{
+			inst_actor.sprite_index = inst_actor.anim_guard_dodge
+			inst_actor.image_index = 0
+		}
 	}
 	else
 	{
@@ -144,6 +173,38 @@ get_hit = function(damage_taken, status_effect)
 		}
 		sprite_index = anim_hit
 		image_index = 0
+		
+		switch status_effect
+		{
+			case "stun":
+				is_stunned = true
+			break;
+		}
+		
+		if instance_exists(inst_actor)
+		{
+			inst_actor.sprite_index = inst_actor.anim_guard_hit
+			inst_actor.image_index = 0
+		}
+	}
+	
+	if instance_exists(inst_landmine)
+	{
+		inst_landmine.spawn_explosion()
+	}
+	
+	if not has_bucket
+	{
+		
+	}
+}
+
+take_poison_damage = function()
+{
+	if has_poison_status_effect > 0
+	{
+		has_poison_status_effect -= 1
+		get_hit(2,"")
 	}
 }
 
@@ -158,11 +219,31 @@ finish_defend = function()
 }
 
 
-kill_actor = function(is_attack)
-{
+kill_actor = function(is_attack, is_janewick_defend = false)
+{	
 	actor_was_attack = is_attack
-	instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
-	alarm[2] = 15
+	if not is_janewick_defend
+	{
+		instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
+		alarm[2] = 15
+	}
+	else
+	{
+		finish_defend()
+	}
+}
+
+kill_janewick = function()
+{
+	if instance_exists(inst_actor)
+	{
+		instance_create_layer(inst_actor.x, inst_actor.y, "Smoke", obj_combat_smokepuff)
+		alarm[3] = 15
+	}
+	if instance_exists(inst_landmine)
+	{
+		inst_landmine.kill_self()
+	}
 }
 
 use_item = function(inst_enemy_id, item_name)
@@ -178,4 +259,9 @@ use_item = function(inst_enemy_id, item_name)
 finish_using_item = function()
 {
 	obj_combat_state.finish_player_item()
+}
+
+clear_bucket = function()
+{
+	has_bucket = false
 }
