@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_cyborg_run",
-    "path":"sprites/spr_enemy_cyborg_run/spr_enemy_cyborg_run.yy",
+    "name":"spr_enemy_cyborg_idle",
+    "path":"sprites/spr_enemy_cyborg_idle/spr_enemy_cyborg_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

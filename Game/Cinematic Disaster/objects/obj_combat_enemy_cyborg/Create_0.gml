@@ -17,8 +17,8 @@ is_charged = false
 has_blocked = false
 
 // Animations
-anim_idle = spr_enemy_cyborg_idle
-anim_run = spr_enemy_cyborg_run
+anim_idle = spr_enemy_cyborg_run
+anim_run = spr_enemy_cyborg_idle
 anim_hit = spr_enemy_cyborg_hit
 anim_attack = spr_enemy_cyborg_attack
 anim_block = spr_enemy_cyborg_block
