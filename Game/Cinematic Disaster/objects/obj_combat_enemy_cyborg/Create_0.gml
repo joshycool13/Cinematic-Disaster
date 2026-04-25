@@ -4,10 +4,13 @@ starting_x = x
 starting_y = y
 attack_hit_frame = 8
 attack_damage = 12
+bullet_spawn_x = -105
+bullet_spawn_y = -80
+bullet_speed = -12
 
 // Variables
 inst_target_id = false
-has_already_hit = false
+has_already_fired = false
 health_num = 6
 health_reel = noone
 has_poison_status_effect = 0
@@ -15,10 +18,11 @@ is_stunned = false
 is_wet = 0
 is_charged = false
 has_blocked = false
+inst_bullet = noone
 
 // Animations
-anim_idle = spr_enemy_cyborg_run
-anim_run = spr_enemy_cyborg_idle
+anim_idle = spr_enemy_cyborg_idle
+anim_run = spr_enemy_cyborg_run
 anim_hit = spr_enemy_cyborg_hit
 anim_attack = spr_enemy_cyborg_attack
 anim_block = spr_enemy_cyborg_block

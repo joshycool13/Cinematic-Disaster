@@ -1,0 +1,2 @@
+instance_destroy(inst_bullet)
+obj_combat_state.enemy_attack()

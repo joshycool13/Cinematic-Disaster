@@ -1,15 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_combat_enemy_cyborg",
+  "%Name":"obj_bullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_combat_enemy_cyborg",
+  "name":"obj_bullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Combat",
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_enemy_cyborg_idle",
-    "path":"sprites/spr_enemy_cyborg_idle/spr_enemy_cyborg_idle.yy",
+    "name":"spr_cyborg_bullet",
+    "path":"sprites/spr_cyborg_bullet/spr_cyborg_bullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

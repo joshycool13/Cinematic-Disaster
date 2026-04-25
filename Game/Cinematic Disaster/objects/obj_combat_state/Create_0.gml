@@ -34,6 +34,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "shield":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_shield)
 		break;
+		
+		case "cyborg":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_cyborg)
+		break;
 	}
 }
 
