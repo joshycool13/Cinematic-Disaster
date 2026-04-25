@@ -38,6 +38,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "cyborg":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_cyborg)
 		break;
+		
+		case "thief_cat":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_cat)
+		break;
 	}
 }
 
@@ -402,4 +406,14 @@ update_hud_text = function() // updated hud numbers
 {
 	layer_text_text(player_hp_text, string(inst_player_id.health_num))
 	layer_text_text(player_tp_text, string(inst_player_id.tp_num))
+}
+
+lose_item = function()
+{
+	
+}
+
+gain_item = function()
+{
+	
 }

@@ -157,6 +157,8 @@ get_hit = function(damage_taken, status_effect)
 	{
 		sprite_index = anim_dodge
 		image_index = 0
+		lockout_space = 0
+		pressed_space = 0
 		
 		if instance_exists(inst_actor)
 		{
