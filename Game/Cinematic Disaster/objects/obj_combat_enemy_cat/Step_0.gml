@@ -37,6 +37,11 @@ if sprite_index = anim_attack and image_index >= attack_hit_frame and image_inde
 		health_num -= attack_damage
 	}
 	
+	if not has_stolen_item and inst_target_id.pressed_space == 0
+	{
+		obj_combat_state.lose_item()
+	}
+	
 	if is_wet
 	{
 		obj_combat_state.attacked_is_hit(inst_target_id, attack_damage-2, false)
