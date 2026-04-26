@@ -18,3 +18,11 @@ if sprite_index = anim_mine_place
 	image_index = image_number - 1
 	inst_player_id.kill_actor(false)
 }
+
+if sprite_index = anim_shield_place
+{
+	inst_player_id.inst_shield = instance_create_layer(x + shield_x, y + shield_y, "Instances", obj_shield)
+	image_speed = 0
+	image_index = image_number - 1
+	inst_player_id.kill_actor(false)
+}

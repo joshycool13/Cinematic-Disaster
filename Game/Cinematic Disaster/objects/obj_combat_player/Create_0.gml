@@ -34,6 +34,8 @@ is_stunned = false
 is_deafened = 0
 has_bucket = false
 inst_landmine = noone
+inst_shield = noone
+shield_max_damage = 3
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -137,7 +139,8 @@ start_defend = function(defend_name, tp_gain)
 		break;
 		
 		case "blast_shield":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 	}
 }
@@ -151,6 +154,11 @@ get_hit = function(damage_taken, status_effect)
 		{
 			damage_taken = 0
 		}
+	}
+	
+	if instance_exists(inst_shield) and damage_taken > shield_max_damage
+	{
+		damage_taken = shield_max_damage
 	}
 	
 	if pressed_space != 0
@@ -251,6 +259,10 @@ kill_janewick = function()
 	if instance_exists(inst_landmine)
 	{
 		inst_landmine.kill_self()
+	}
+	if instance_exists(inst_shield)
+	{
+		inst_shield.kill_self()
 	}
 }
 
