@@ -13,6 +13,6 @@ if instance_exists(inst_cursor)
 if not started_attack
 {
 	started_attack = true
-	inst_target = instance_create_layer(inst_target_id.x, inst_target_id.y, "Instances", obj_target)
-	inst_cursor = instance_create_layer(0, inst_target_id.y, "Instances", obj_cursor)
+	inst_target = instance_create_layer(inst_target_id.x, inst_target_id.y, "Selectors", obj_target)
+	inst_cursor = instance_create_layer(0, inst_target_id.y, "Selectors", obj_cursor)
 }

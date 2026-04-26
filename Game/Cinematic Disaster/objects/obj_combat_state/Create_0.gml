@@ -22,6 +22,10 @@ current_attack_names = []
 current_defend_names = []
 player_deafened = false
 
+// Global cause I'm tired
+global.status_effect_x = -16
+global.status_effect_y = [-128, -160, -192]
+
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
 {
@@ -231,6 +235,12 @@ player_defend = function(defend_name, tp_gain) // start player's defend
 	{
 		player_deafened = false
 		
+		inst_player_id.remove_status_effect(inst_player_id.inst_status_deafen)
+		if instance_exists(inst_player_id.inst_status_deafen)
+		{
+			instance_destroy(inst_player_id.inst_status_deafen)
+		}
+		
 		for (var i = 0; i < array_length(current_attack_names); i += 1)
 		{
 			attack_button_ids[i].button_name = current_attack_names[i]
@@ -311,6 +321,11 @@ finish_player_defend = function() // when player's defend is over
 	if inst_player_id.is_stunned
 	{
 		inst_player_id.is_stunned = false
+		inst_player_id.remove_status_effect(inst_player_id.inst_status_stun)
+		if instance_exists(inst_player_id.inst_status_stun)
+		{
+			instance_destroy(inst_player_id.inst_status_stun)
+		}
 		finish_player_attack()
 	}
 	else

@@ -20,7 +20,23 @@ switch current_item_name
 	
 	case "rag":
 		has_poison_status_effect = 0
+		
+		if has_poison_status_effect == 0
+		{
+			remove_status_effect(inst_status_poison)
+			if instance_exists(inst_status_poison)
+			{
+				instance_destroy(inst_status_poison)
+			}
+		}
+		
 		is_deafened = 0
+		
+		remove_status_effect(inst_status_deafen)
+		if instance_exists(inst_status_deafen)
+		{
+			instance_destroy(inst_status_deafen)
+		}
 	break;
 	
 	case "line_change":
