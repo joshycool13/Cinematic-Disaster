@@ -176,11 +176,14 @@ get_hit = function(damage_taken, status_effect)
 		sprite_index = anim_hit
 		image_index = 0
 		
-		switch status_effect
+		if not has_bucket
 		{
-			case "stun":
-				is_stunned = true
-			break;
+			switch status_effect
+			{
+				case "stun":
+					is_stunned = true
+				break;
+			}
 		}
 		
 		if instance_exists(inst_actor)
@@ -193,11 +196,6 @@ get_hit = function(damage_taken, status_effect)
 	if instance_exists(inst_landmine)
 	{
 		inst_landmine.spawn_explosion()
-	}
-	
-	if not has_bucket
-	{
-		
 	}
 }
 
