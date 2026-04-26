@@ -2,11 +2,12 @@
 // Constants
 starting_x = x
 starting_y = y
-run_speed = 6
 attack_hit_frames = [7, 9, 11]
+banana_speed = -12
 screech_hit_frame = 4
 screech_fired_frame = 3
-attack_damage = 2
+screech_damage = 2
+banana_damage = 2
 
 // Variables
 inst_target_id = false
@@ -74,7 +75,7 @@ start_attack = function(inst_player_id)
 		return
 	}
 	
-	var which_attack = 1 //irandom(1)
+	var which_attack = 0 //irandom(1)
 	
 	if which_attack == 0
 	{
@@ -82,6 +83,7 @@ start_attack = function(inst_player_id)
 		inst_target_id = inst_player_id
 		sprite_index = anim_attack
 		image_index = 0
+		alarm[1] = 180
 	}
 	else if which_attack == 1
 	{

@@ -28,6 +28,7 @@
   "name":"Cinematic Disaster",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"obj_banana","path":"objects/obj_banana/obj_banana.yy",},},
     {"id":{"name":"obj_bomb_explosion","path":"objects/obj_bomb_explosion/obj_bomb_explosion.yy",},},
     {"id":{"name":"obj_bomb","path":"objects/obj_bomb/obj_bomb.yy",},},
     {"id":{"name":"obj_bombbar","path":"objects/obj_bombbar/obj_bombbar.yy",},},
