@@ -75,7 +75,7 @@ start_attack = function(inst_player_id)
 		return
 	}
 	
-	var which_attack = 0 //irandom(1)
+	var which_attack = irandom(1)
 	
 	if which_attack == 0
 	{

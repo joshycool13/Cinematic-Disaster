@@ -187,6 +187,10 @@ get_hit = function(damage_taken, status_effect)
 				case "poison":
 					has_poison_status_effect = 3
 				break;
+				
+				case "deafen":
+					obj_combat_state.deafen_player()
+				break;
 			}
 		}
 		
