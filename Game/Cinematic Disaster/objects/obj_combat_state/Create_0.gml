@@ -17,6 +17,7 @@ inst_selector_id = []
 temp_inst_button_id = noone
 player_tp_cost = 0
 current_enemy_attacking = 0
+current_item_deleted = noone
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -410,10 +411,113 @@ update_hud_text = function() // updated hud numbers
 
 lose_item = function()
 {
+	var item_amount = 0
+	var item_number = 0
+	var item_id = noone
+	var item_name = ""
 	
+	for (var i = 0; i < array_length(item_button_ids); i += 1)
+	{
+		item_amount = i
+		if item_button_ids[i].button_name == ""
+		{
+			item_amount = i-1
+			break;
+		}
+	}
+	
+	if item_amount == -1
+	{
+		return;
+	}
+	else
+	{
+		item_number = irandom(item_amount)
+		item_id = item_button_ids[item_number]
+		item_name = item_id.button_name
+	}
+	
+	item_id.button_name = ""
+	
+	switch item_name
+	{
+		case "corp_drink":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_corporate_drink)
+		break;
+		
+		case "coffee":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_coffee)
+		break;
+		
+		case "rag":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_rag)
+		break;
+		
+		case "line_change":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_line_change)
+		break;
+		
+		case "rotten_tomato":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_rotten_tomato)
+		break;
+		
+		case "flashbang":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_flashbang)
+		break;
+	}
+	
+	reorganize_item_list()
+	alarm[3] = 60
 }
 
-gain_item = function()
+gain_item = function(item, enemy_cat)
 {
+	var item_number = 0
+	var has_item_slot_open = false
 	
+	for (var i = 0; i < array_length(item_button_ids); i += 1)
+	{
+		if item_button_ids[i].button_name == ""
+		{
+			item_number = i
+			has_item_slot_open = true
+			break;
+		}
+	}
+	
+	if not has_item_slot_open
+	{
+		return;
+	}
+	
+	switch item
+	{
+		case "corp_drink":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_corporate_drink)
+		break;
+		
+		case "coffee":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_coffee)
+		break;
+		
+		case "rag":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_rag)
+		break;
+		
+		case "line_change":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_line_change)
+		break;
+		
+		case "rotten_tomato":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_rotten_tomato)
+		break;
+		
+		case "flashbang":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_flashbang)
+		break;
+	}
+	
+	item_button_ids[item_number].button_name = item
+	reorganize_item_list()
+	alarm[3] = 60
 }

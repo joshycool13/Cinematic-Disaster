@@ -39,6 +39,7 @@ if sprite_index = anim_attack and image_index >= attack_hit_frame and image_inde
 	
 	if not has_stolen_item and inst_target_id.pressed_space == 0
 	{
+		has_stolen_item = true
 		obj_combat_state.lose_item()
 	}
 	
