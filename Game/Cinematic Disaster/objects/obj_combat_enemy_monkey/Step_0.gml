@@ -70,10 +70,16 @@ if sprite_index = anim_screech and image_index >= screech_hit_frame and image_in
 	if inst_target_id.input_buffer == 0 and is_wet
 	{
 		health_num -= screech_damage - 2
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = screech_damage - 2
 	}
 	else if inst_target_id.input_buffer == 0
 	{
 		health_num -= screech_damage
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = screech_damage
 	}
 	
 	if is_wet

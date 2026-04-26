@@ -184,6 +184,9 @@ get_hit = function(damage_taken, status_effect)
 		sprite_index = anim_hit
 		image_index = 0
 		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = damage_taken
+		
 		if not has_bucket
 		{
 			switch status_effect

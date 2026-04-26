@@ -31,10 +31,16 @@ if sprite_index = anim_attack and image_index >= attack_hit_frame and image_inde
 	if inst_target_id.input_buffer == 0 and is_wet
 	{
 		health_num -= attack_damage - 2
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = attack_damage - 2
 	}
 	else if inst_target_id.input_buffer == 0
 	{
 		health_num -= attack_damage
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = attack_damage
 	}
 	
 	if not has_stolen_item and inst_target_id.pressed_space == 0
@@ -66,10 +72,16 @@ if sprite_index = anim_attack and image_index >= attack_hit_frame_2 and image_in
 	if inst_target_id.input_buffer == 0 and is_wet
 	{
 		health_num -= attack_damage - 2
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = attack_damage - 2
 	}
 	else if inst_target_id.input_buffer == 0
 	{
 		health_num -= attack_damage
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = attack_damage
 	}
 	
 	if is_wet

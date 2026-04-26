@@ -35,18 +35,21 @@ get_hit = function(damage_taken, status_effect)
 {	
 	if has_blocked
 	{
-		health_num -= damage_taken
-		
 		if damage_taken > 0 and is_wet
 		{
-			health_num -= 2
+			damage_taken += 2
 		}
+	
+		health_num -= damage_taken
 	}
 	
 	if instance_exists(health_reel)
 	{
 		health_reel.health_num = health_num
 	}
+	
+	var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+	inst_damage.number = damage_taken
 	
 	switch (status_effect)
 	{

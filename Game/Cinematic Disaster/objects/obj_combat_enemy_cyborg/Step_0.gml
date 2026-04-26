@@ -21,10 +21,16 @@ if instance_exists(inst_bullet)
 		if inst_target_id.input_buffer == 0 and is_wet
 		{
 			health_num -= attack_damage - 2
+			
+			var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+			inst_damage.number = attack_damage - 2
 		}
 		else if inst_target_id.input_buffer == 0
 		{
 			health_num -= attack_damage
+			
+			var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+			inst_damage.number = attack_damage
 		}
 		
 		if is_wet
