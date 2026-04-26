@@ -43,6 +43,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "thief_cat":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_cat)
 		break;
+		
+		case "monkey":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_monkey)
+		break;
 	}
 }
 

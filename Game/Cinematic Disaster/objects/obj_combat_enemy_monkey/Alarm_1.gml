@@ -1,0 +1,1 @@
+obj_combat_state.enemy_attack()
