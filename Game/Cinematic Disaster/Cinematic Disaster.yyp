@@ -44,6 +44,7 @@
     {"id":{"name":"obj_combat_enemy","path":"objects/obj_combat_enemy/obj_combat_enemy.yy",},},
     {"id":{"name":"obj_combat_makeup_dogcar","path":"objects/obj_combat_makeup_dogcar/obj_combat_makeup_dogcar.yy",},},
     {"id":{"name":"obj_combat_makeup_rat","path":"objects/obj_combat_makeup_rat/obj_combat_makeup_rat.yy",},},
+    {"id":{"name":"obj_combat_makeup_shield","path":"objects/obj_combat_makeup_shield/obj_combat_makeup_shield.yy",},},
     {"id":{"name":"obj_combat_player","path":"objects/obj_combat_player/obj_combat_player.yy",},},
     {"id":{"name":"obj_combat_smokepuff","path":"objects/obj_combat_smokepuff/obj_combat_smokepuff.yy",},},
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
