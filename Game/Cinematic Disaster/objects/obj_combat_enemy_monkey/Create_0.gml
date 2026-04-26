@@ -107,4 +107,9 @@ take_poison_damage = function()
 	{
 		is_wet -= 1
 	}
+	
+	if instance_exists(health_reel)
+	{
+		health_reel.health_num = health_num
+	}
 }

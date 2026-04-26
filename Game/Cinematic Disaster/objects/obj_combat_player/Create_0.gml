@@ -183,6 +183,10 @@ get_hit = function(damage_taken, status_effect)
 				case "stun":
 					is_stunned = true
 				break;
+				
+				case "poison":
+					has_poison_status_effect = 3
+				break;
 			}
 		}
 		
