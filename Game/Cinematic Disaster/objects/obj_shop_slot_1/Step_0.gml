@@ -1,7 +1,7 @@
 //attempt buy if player clicks the buy button
 //this approach will not require a separate buy button
 // if buy button is clicked
-if (mouse_x >= x+17) && (mouse_x <= x+48) && (mouse_y >= y+33) && (mouse_y <= y+64) && 
+if (mouse_x >= x+65) && (mouse_x <= x+128) && (mouse_y >= y+49) && (mouse_y <= y+96) && 
 	(mouse_check_button_pressed(mb_left)) {
 		
 	if (item_or_actor = 1) { // buying an item

@@ -12,6 +12,8 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Combat","folderPath":"folders/Combat.yy","name":"Combat","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Roaming","folderPath":"folders/Roaming.yy","name":"Roaming","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Inventory","folderPath":"folders/Roaming/Inventory.yy","name":"Inventory","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Main Menu","folderPath":"folders/Roaming/Main Menu.yy","name":"Main Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shop","folderPath":"folders/Roaming/Shop.yy","name":"Shop","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NewJordanGroup","folderPath":"folders/Sprites/NewJordanGroup.yy","name":"NewJordanGroup","resourceType":"GMFolder","resourceVersion":"2.0",},
