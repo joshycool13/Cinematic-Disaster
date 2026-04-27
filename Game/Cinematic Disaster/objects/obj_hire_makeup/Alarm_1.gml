@@ -15,6 +15,10 @@ switch enemy_options[attack]
 	case "shield":
 		inst_enemy_id = instance_create_layer(x, y, "Instances", obj_combat_makeup_shield)
 	break
+	
+	case "cyborg":
+		inst_enemy_id = instance_create_layer(x, y, "Instances", obj_combat_makeup_cyborg)
+	break
 }
 
 inst_enemy_id.makeup_actor = self
