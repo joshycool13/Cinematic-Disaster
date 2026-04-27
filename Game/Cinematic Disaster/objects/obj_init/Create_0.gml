@@ -1,6 +1,6 @@
 // Set global variables
 
-global.combat_enemies = []
+// global.combat_enemies = []
 
 
 global.combat_player_employees = {
@@ -11,11 +11,12 @@ global.combat_player_employees = {
 	"janewick": false
 }
 
-global.combat_player_attacks = []
-global.combat_player_defends = []
+// global.combat_player_attacks = []
+// global.combat_player_defends = []
+// global.combat_player_items = []
 
 
-global.combat_player_items = {
+global.combat_player_items = { // needs to be renamed
 	"coffee": 0,
 	"drink": 0,
 	"flashbang": 0,
@@ -27,8 +28,8 @@ global.combat_player_items = {
 
 global.player_money = 1000
 
-global.combat_player_hp = 20
-global.combat_player_tp = 10
+// global.combat_player_hp = 20
+// global.combat_player_tp = 10
 
 item_list = ["coffee", "drink", "flashbang", "linechange", "rag", "reel", "tomato"]
 actor_list = ["castagent", "janitor", "makeup", "boomcrew", "janewick"]
