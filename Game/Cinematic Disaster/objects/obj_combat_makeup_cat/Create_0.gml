@@ -29,6 +29,8 @@ anim_run = spr_enemy_cat_run
 anim_hit = spr_enemy_cat_hit
 anim_attack = spr_enemy_cat_attack
 
+image_xscale = -1
+
 get_hit = function(damage_taken, status_effect)
 {	
 	if damage_taken > 0 and is_wet

@@ -7,7 +7,7 @@ if sprite_index == anim_hit
 
 if sprite_index == anim_attack
 {
-	image_xscale = -1
+	image_xscale = 1
 	sprite_index = anim_run
 	image_index = 0
 	move_towards_idle = true
