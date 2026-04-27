@@ -2,7 +2,6 @@
 
 // global.combat_enemies = []
 
-
 global.combat_player_employees = {
 	"castagent": false,
 	"janitor": false,
