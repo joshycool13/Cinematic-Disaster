@@ -1,7 +1,7 @@
 // Constants
 defend_options = ["default_defend", "prediction", "cleanse", "protect", "landmine", "blast_shield"]
 // Enemies "rat", "dogcar", "shield", "thief_cat", "cyborg", "monkey"
-enemy_options = ["thief_cat"]
+enemy_options = ["rat", "dogcar", "shield", "thief_cat", "cyborg", "monkey"]
 
 // Variables
 inst_target_id = noone

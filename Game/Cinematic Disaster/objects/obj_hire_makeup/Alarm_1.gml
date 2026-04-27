@@ -23,6 +23,10 @@ switch enemy_options[attack]
 	case "thief_cat":
 		inst_enemy_id = instance_create_layer(x, y, "Instances", obj_combat_makeup_cat)
 	break
+	
+	case "monkey":
+		inst_enemy_id = instance_create_layer(x, y, "Instances", obj_combat_makeup_monkey)
+	break
 }
 
 inst_enemy_id.makeup_actor = self
