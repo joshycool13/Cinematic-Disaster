@@ -1,5 +1,4 @@
-
-
+randomise()
 
 // initialize the variables
 product = ""

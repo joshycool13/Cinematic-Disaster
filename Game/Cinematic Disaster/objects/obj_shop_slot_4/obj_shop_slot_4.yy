@@ -1,11 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_shop_slot_4",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_shop_slot_4",
   "overriddenProperties":[],
@@ -14,8 +10,8 @@
     "path":"folders/Roaming/Shop.yy",
   },
   "parentObjectId":{
-    "name":"obj_shop_slot_0",
-    "path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",
+    "name":"obj_shop_slot_3",
+    "path":"objects/obj_shop_slot_3/obj_shop_slot_3.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

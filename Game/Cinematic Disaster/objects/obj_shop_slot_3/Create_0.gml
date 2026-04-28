@@ -1,4 +1,4 @@
-
+randomise()
 
 
 // initialize the variables
