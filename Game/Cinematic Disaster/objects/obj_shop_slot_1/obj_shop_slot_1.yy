@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_shop_slot_1",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_shop_slot_0","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},"propertyId":{"name":"slot_number","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"Shop",
     "path":"folders/Roaming/Shop.yy",

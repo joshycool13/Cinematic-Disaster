@@ -4,14 +4,16 @@
   "eventList":[],
   "managed":true,
   "name":"obj_shop_slot_4",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_shop_slot_0","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},"propertyId":{"name":"slot_number","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
+  ],
   "parent":{
     "name":"Shop",
     "path":"folders/Roaming/Shop.yy",
   },
   "parentObjectId":{
-    "name":"obj_shop_slot_3",
-    "path":"objects/obj_shop_slot_3/obj_shop_slot_3.yy",
+    "name":"obj_shop_slot_0",
+    "path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
