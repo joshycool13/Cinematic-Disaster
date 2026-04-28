@@ -1,3 +1,5 @@
+randomize()
+
 item_list = ["coffee", "drink", "flashbang", "linechange", "rag", "reel", "tomato"]
 actor_list = ["castagent", "janitor", "makeup", "boomcrew", "janewick"]
 

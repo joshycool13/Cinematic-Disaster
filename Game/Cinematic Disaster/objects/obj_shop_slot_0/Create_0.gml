@@ -1,8 +1,10 @@
-randomize();
+
+
 
 // initialize the variables
-product = "";
-price = 100;
+product = ""
+price = 100
+locked = false
 
 product_price = obj_shop_shop.product_price
 item_order = obj_shop_shop.item_order

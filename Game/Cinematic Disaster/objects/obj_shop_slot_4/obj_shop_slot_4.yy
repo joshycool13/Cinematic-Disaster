@@ -13,7 +13,10 @@
     "name":"Shop",
     "path":"folders/Roaming/Shop.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shop_slot_0",
+    "path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
