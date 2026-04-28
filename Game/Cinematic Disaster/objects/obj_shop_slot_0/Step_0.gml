@@ -21,7 +21,7 @@ if (mouse_x >= x+65) && (mouse_x <= x+128) && (mouse_y >= y+49) && (mouse_y <= y
 
 //visual
 //indicate that the button is pressed when it is being pressed
-if (mouse_x >= x+17) && (mouse_x <= x+48) && (mouse_y >= y+33) && (mouse_y <= y+64) && 
+if (mouse_x >= x+65) && (mouse_x <= x+128) && (mouse_y >= y+49) && (mouse_y <= y+96) && 
 	(mouse_check_button_pressed(mb_left)) { 
 	pressed = 1;	
 } 

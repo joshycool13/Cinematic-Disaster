@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_shop_bg",
+    "path":"sprites/spr_shop_bg/spr_shop_bg.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
