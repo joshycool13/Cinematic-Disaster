@@ -182,6 +182,8 @@
     {"name":"inst_2AE65047","path":"rooms/Roaming_Room/Roaming_Room.yy",},
     {"name":"inst_70B6EB19","path":"rooms/Roaming_Room/Roaming_Room.yy",},
     {"name":"inst_3B4B3CA2","path":"rooms/Roaming_Room/Roaming_Room.yy",},
+    {"name":"inst_6C672901","path":"rooms/Roaming_Room/Roaming_Room.yy",},
+    {"name":"inst_12E62EA","path":"rooms/Roaming_Room/Roaming_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -229,6 +231,8 @@
         {"$GMRInstance":"v4","%Name":"inst_2AE65047","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2AE65047","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":696.0,"y":951.0,},
         {"$GMRInstance":"v4","%Name":"inst_70B6EB19","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_70B6EB19","objectId":{"name":"obj_dayManager","path":"objects/obj_dayManager/obj_dayManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-364.0,"y":93.0,},
         {"$GMRInstance":"v4","%Name":"inst_3B4B3CA2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B4B3CA2","objectId":{"name":"obj_npcPranav","path":"objects/obj_npcPranav/obj_npcPranav.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":760.0,"y":832.0,},
+        {"$GMRInstance":"v4","%Name":"inst_6C672901","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C672901","objectId":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":992.0,},
+        {"$GMRInstance":"v4","%Name":"inst_12E62EA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12E62EA","objectId":{"name":"obj_enemy_parent2","path":"objects/obj_enemy_parent2/obj_enemy_parent2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":896.0,},
       ],"layers":[],"name":"Objects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"DecorativeSprites","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_73EC5CB9","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_73EC5CB9","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_traffic_cone","path":"sprites/spr_traffic_cone/spr_traffic_cone.yy",},"x":44.0,"y":363.0,},

@@ -11,7 +11,7 @@ if place_meeting(x, y, obj_roaming_player)
 if(obj_dayManager.day_data.game_day == 1)
 {
 
-enemy1 = irandom_range(1,2);
+enemy1 = irandom_range(1,2 + obj_dayManager.day_data.game_day);
 enemy2 = irandom_range(0,2);
 enemy3= 0;
 
