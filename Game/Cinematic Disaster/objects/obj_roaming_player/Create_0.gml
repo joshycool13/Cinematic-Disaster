@@ -26,4 +26,4 @@ active = true; // lock player movement when this is false
 go_to_item_shop = false // make the camera look at the item shop when this is true
 go_to_actor_shop = false //ditto for the actor shop
 
-
+enemies_left = 0;

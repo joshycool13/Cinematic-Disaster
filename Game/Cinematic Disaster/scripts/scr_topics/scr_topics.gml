@@ -96,8 +96,7 @@ TEXT("Try to make the audience BELIEVE you're having fun."),
 
 global.topics[$ "Neil3"] = [
 TEXT("I know how little you sleep at night."),
-TEXT("..."),
-TEXT("This camera's always rolling. So I'm basically Santa."),
+TEXT("...")
 ];
 
 
@@ -105,7 +104,7 @@ TEXT("This camera's always rolling. So I'm basically Santa."),
 
 global.topics[$ "Granny1"] = [
 TEXT("Baked goods are my specialty!"),
-TEXT("Pie or sword? I have recipes for both."),
+TEXT("Pie or sword? Makes no difference to me."),
 ];
 
 global.topics[$ "Granny2"] = [
@@ -129,6 +128,7 @@ TEXT("Keanu.... Leaves....")
 global.topics[$ "Keanu2"] = [
 TEXT("Keanu Leaves.."),
 TEXT("...Jane behind! ;.;"),
+TEXT("Jane sad. Jane resort to violence.")
 ];
 
 
@@ -179,7 +179,7 @@ TEXT("I was uh.. asked to record snoring sounds. For ambience purposes."),
 
 global.topics[$ "Motion"] = [
 TEXT("How did Jane Wick snipe the evil jetski driver?"),
-TEXT("Using a rotorscope!"),
+TEXT("Guess you'll never know. He was deemed too evil and got removed from the game."),
 ];
 
 global.topics[$ "Lights"] = [
@@ -215,12 +215,7 @@ TEXT("Soggy folks take more damage from physical attacks!"),
 
 global.topics[$ "Green"] = [
 TEXT("So this is the 'green room'."),
-TEXT("Why can't it be blue? I like blue much better."),
-];
-
-global.topics[$ "Riot"] = [
-TEXT("I bet those men with the riot shields have beautiful eyes."),
-TEXT("It's a shame they're too shy to show them!"),
+TEXT("Why can't it be blue? I like blue better."),
 ];
 
 global.topics[$ "Rat"] = [
@@ -232,11 +227,6 @@ TEXT("Watch out for evil monkey Henchmen."),
 TEXT("Their banana peels are as dirty as they are deadly."),
 ];
 
-
-global.topics[$ "Jane"] = [
-TEXT("I heard Jane has a soft spot for puppies."),
-TEXT("You should probably think twice before asking her to fight one!"),
-];
 
 
 global.topics[$ "Important"] = [
