@@ -73,6 +73,7 @@
     {"id":{"name":"obj_npcNeil","path":"objects/obj_npcNeil/obj_npcNeil.yy",},},
     {"id":{"name":"obj_npcPranav","path":"objects/obj_npcPranav/obj_npcPranav.yy",},},
     {"id":{"name":"obj_playermenu_button","path":"objects/obj_playermenu_button/obj_playermenu_button.yy",},},
+    {"id":{"name":"obj_ResultsCheck","path":"objects/obj_ResultsCheck/obj_ResultsCheck.yy",},},
     {"id":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},},
     {"id":{"name":"obj_selector","path":"objects/obj_selector/obj_selector.yy",},},
     {"id":{"name":"obj_shop_go_item","path":"objects/obj_shop_go_item/obj_shop_go_item.yy",},},

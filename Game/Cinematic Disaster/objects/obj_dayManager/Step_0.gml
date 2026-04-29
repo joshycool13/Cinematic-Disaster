@@ -1,5 +1,6 @@
 if (global.combat_player_hp == 0){
 //restart current day
+requiredEncounters =3;
 	
 	//refresh shop
 	obj_shop_shop.shop_refresh()
