@@ -10,4 +10,4 @@ for (var i = 0; i < array_length(item_button_ids); i += 1) // put correct items
 	global.combat_player_items[i] = item_button_ids[i].button_name
 }
 
-room_goto(0)
+room_goto(1)
