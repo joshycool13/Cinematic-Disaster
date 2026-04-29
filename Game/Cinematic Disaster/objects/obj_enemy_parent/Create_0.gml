@@ -1,6 +1,6 @@
 layer_set_visible("RoamingUI", true)
 layer_set_visible("TutorialRoaming", true)
-
+randomize();
 
 obj_roaming_player.enemies_left +=1;
 
