@@ -127,8 +127,8 @@ TEXT("Keanu.... Leaves....")
 
 global.topics[$ "Keanu2"] = [
 TEXT("Keanu Leaves.."),
-TEXT("...Jane behind! ;.;"),
-TEXT("Jane sad. Jane resort to violence.")
+TEXT("...Jane behind? ;.;"),
+TEXT("So sad!")
 ];
 
 

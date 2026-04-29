@@ -23,7 +23,7 @@ if place_meeting(x, y, obj_roaming_player)
 		startDialogue("Pranav4")
 		
 	}
-	else if(obj_dayManager.day_data.game_day == 4)
+	else if(obj_dayManager.day_data.game_day == 5)
 	{
 		startDialogue("Lights")
 		

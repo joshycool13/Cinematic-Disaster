@@ -1,4 +1,4 @@
-
+text_color = c_white;
 //Get the screen dimensions
 var _gui_w = display_get_gui_width();
 var _gui_h = display_get_gui_height();
@@ -17,3 +17,4 @@ draw_set_font(txt_font);
 
 // Adjust these offsets so the text sits inside the bar
 type(20, (_gui_h - _box_h) + 20, text, text_progress, _gui_w - 40);
+text_color = c_black;
