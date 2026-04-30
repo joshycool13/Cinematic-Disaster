@@ -2,10 +2,7 @@
 draw_self()
 
 if (locked = true) {
-	draw_set_colour(c_red)
-}
-if (item_or_actor == 0) and (global.combat_player_employees[$ actor_select] == true) {
-	draw_set_colour(c_red)
+	draw_set_colour(c_red) 
 }
 
 draw_set_font(Font1)
@@ -88,7 +85,7 @@ if (product = "coffee") {
 
 if (product = "castagent") {
 	draw_sprite_stretched(spr_shop_hire_castagent, 0, x-50, y-80, 96, 96)
-	if (locked = false) and (global.combat_player_employees[$ actor_select] == false) {
+	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
 		draw_text(x-84, y+24, "Casting Agent")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
@@ -96,7 +93,7 @@ if (product = "castagent") {
 	
 } else if (product = "janitor") {
 	draw_sprite_stretched(spr_shop_hire_janitor, 0, x-50, y-80, 96, 96)
-	if (locked = false) and (global.combat_player_employees[$ actor_select] == false) {
+	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
 		draw_text(x-84, y+24, "Custodian")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
@@ -104,7 +101,7 @@ if (product = "castagent") {
 	
 } else if (product = "makeup") {
 	draw_sprite_stretched(spr_shop_hire_makeup, 0, x-50, y-80, 96, 96)
-	if (locked = false) and (global.combat_player_employees[$ actor_select] == false) {
+	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
 		draw_text(x-84, y+24, "Makeup Artist")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
@@ -112,7 +109,7 @@ if (product = "castagent") {
 	
 } else if (product = "boomcrew") {
 	draw_sprite_stretched(spr_shop_hire_boomcrew, 0, x-50, y-80, 96, 96)
-	if (locked = false) and (global.combat_player_employees[$ actor_select] == false) {
+	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
 		draw_text(x-84, y+24, "Demolition Man")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
@@ -120,7 +117,7 @@ if (product = "castagent") {
 	
 } else if (product = "janewick") {
 	draw_sprite_stretched(spr_shop_hire_janewick, 0, x-50, y-80, 96, 96) 
-	if (locked = false) and (global.combat_player_employees[$ actor_select] == false) {
+	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
 		draw_text(x-84, y+24, "Actor Jane Wick")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")

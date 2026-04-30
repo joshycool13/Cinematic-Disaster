@@ -8,8 +8,8 @@
   "name":"obj_init",
   "overriddenProperties":[],
   "parent":{
-    "name":"Roaming",
-    "path":"folders/Roaming.yy",
+    "name":"Init",
+    "path":"folders/Init.yy",
   },
   "parentObjectId":null,
   "persistent":false,

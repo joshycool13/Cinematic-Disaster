@@ -3,7 +3,9 @@
 // if buy button is clicked
 if (global.player_money < price) {
 	locked = true
-} else if (item_or_actor == 0) and (global.combat_player_employees[$ actor_select] == true) {
+} else if (item_or_actor == 0) and (global.combat_player_employees[$ product] > 0) {
+	locked = true
+} else if (item_or_actor == 1) and (array_length(global.combat_player_items) >= 9) {
 	locked = true
 } else {
 	locked = false
@@ -17,13 +19,13 @@ if (locked = false) {
 			//check if exceeding item cap??? future addition
 			if (global.player_money >= price) {
 				global.player_money -= price
-				global.combat_player_items[$ item_select] += 1
+				array_push(global.combat_player_items, product)
 			}
 		} else { // buying an actor
-			if (global.combat_player_employees[$ actor_select] == false) && 
+			if (global.combat_player_employees[$ product] == 0) && 
 				(global.player_money >= price) { //does not already own actor and has enough money
 				global.player_money -= price
-				global.combat_player_employees[$ actor_select] = true
+				global.combat_player_employees[$ product] = 3
 			} 
 		}
 	}
