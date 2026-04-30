@@ -37,37 +37,49 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 	if (held = "coffee") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Coffee:")
-		draw_text(mouse_x + 10, mouse_y + 30, "Recovers up to 5 TP.")
+		draw_text(mouse_x + 10, mouse_y + 35, "Three shots expresso ")
+		draw_text(mouse_x + 10, mouse_y + 60, "and no sugar.")
+		draw_text(mouse_x + 10, mouse_y + 85, "Recovers up to 5 TP.")
 		
 	} else if (held = "drink") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Drinkerade:")
-		draw_text(mouse_x + 10, mouse_y + 30, "Recovers up to 10 HP.")
+		draw_text(mouse_x + 10, mouse_y + 35, "New and improved formula,")
+		draw_text(mouse_x + 10, mouse_y + 60, "in stores now!")
+		draw_text(mouse_x + 10, mouse_y + 85, "Recovers up to 10 HP.")
 		
 	} else if (held = "flashbang") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Flashbang:")
-		draw_text(mouse_x + 10, mouse_y + 30, "Stuns the enemy.")
+		draw_text(mouse_x + 10, mouse_y + 35, "Look away!")
+		draw_text(mouse_x + 10, mouse_y + 60, "Stuns the enemy.")
 		
 	} else if (held = "linechange") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Line Change:")
-		draw_text(mouse_x + 10, mouse_y + 30, "Do you feel changed?")
+		draw_text(mouse_x + 10, mouse_y + 35, "Let's get a little creative.")
+		draw_text(mouse_x + 10, mouse_y + 60, "Perform a random ")
+		draw_text(mouse_x + 10, mouse_y + 85, "attack skill.")
 		
 	} else if (held = "reel") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Reel:")
-		draw_text(mouse_x + 10, mouse_y + 30, "For reel!")
+		draw_text(mouse_x + 10, mouse_y + 35, "For reel!")
+		draw_text(mouse_x + 10, mouse_y + 60, "I have no clue what this ")
+		draw_text(mouse_x + 10, mouse_y + 85, "does. Fr fr.")
 		
 	} else if (held = "rag") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Rag:")
-		draw_text(mouse_x + 10, mouse_y + 30, "Cure all negative effects on yourself.")
+		draw_text(mouse_x + 10, mouse_y + 35, "Do you feel unclean?")
+		draw_text(mouse_x + 10, mouse_y + 60, "Cure all negative effects ")
+		draw_text(mouse_x + 10, mouse_y + 85, "on yourself.")
 		
 	} else if (held = "tomato") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Tomato")
-		draw_text(mouse_x + 10, mouse_y + 30, "Hurt and poison an enemy.")
+		draw_text(mouse_x + 25, mouse_y + 10, "Rotten Tomato:")
+		draw_text(mouse_x + 10, mouse_y + 35, "A scathing critique.")
+		draw_text(mouse_x + 10, mouse_y + 60, "Hurt and poison an enemy.")
 		
 	}
 }

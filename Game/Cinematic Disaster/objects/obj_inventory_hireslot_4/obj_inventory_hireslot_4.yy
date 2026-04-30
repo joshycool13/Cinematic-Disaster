@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inventory_hireslot_1",
+  "%Name":"obj_inventory_hireslot_4",
   "eventList":[],
   "managed":true,
-  "name":"obj_inventory_hireslot_1",
+  "name":"obj_inventory_hireslot_4",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inventory_hireslot_0","path":"objects/obj_inventory_hireslot_0/obj_inventory_hireslot_0.yy",},"propertyId":{"name":"slot_number","path":"objects/obj_inventory_hireslot_0/obj_inventory_hireslot_0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_inventory_hireslot_0","path":"objects/obj_inventory_hireslot_0/obj_inventory_hireslot_0.yy",},"propertyId":{"name":"slot_number","path":"objects/obj_inventory_hireslot_0/obj_inventory_hireslot_0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
   ],
   "parent":{
     "name":"Inventory",

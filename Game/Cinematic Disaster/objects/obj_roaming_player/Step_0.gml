@@ -3,30 +3,36 @@ if (go_to_actor_shop) {
 	camera_set_view_target(view_camera[0], obj_shop_shop)
 	layer_set_visible("RoamingUI", true)
 	layer_set_visible("TutorialRoaming", false)
+	layer_set_visible("TutorialRoaming_BG", false)
 }
 else if (go_to_item_shop) {
 	camera_set_view_target(view_camera[0], obj_shop_shop)
 	layer_set_visible("RoamingUI", true)
 	layer_set_visible("TutorialRoaming", false)
+	layer_set_visible("TutorialRoaming_BG", false)
 }
 else if (go_to_menu) {
 	camera_set_view_target(view_camera[0], obj_menu_look)
 	layer_set_visible("RoamingUI", false)
 	layer_set_visible("TutorialRoaming", false)
+	layer_set_visible("TutorialRoaming_BG", false)
 }
 else if (go_to_credits) {
 	camera_set_view_target(view_camera[0], obj_credits_look)
 	layer_set_visible("RoamingUI", false)
 	layer_set_visible("TutorialRoaming", false)
+	layer_set_visible("TutorialRoaming_BG", false)
 }
 else if (go_to_inventory) {
 	camera_set_view_target(view_camera[0], obj_inventory_look)
 	layer_set_visible("RoamingUI", true)
 	layer_set_visible("TutorialRoaming", false)
+	layer_set_visible("TutorialRoaming_BG", false)
 } 
 else {
 	layer_set_visible("RoamingUI", true)
 	layer_set_visible("TutorialRoaming", true)
+	layer_set_visible("TutorialRoaming_BG", true)
 }
 
 // switch to inventory and back

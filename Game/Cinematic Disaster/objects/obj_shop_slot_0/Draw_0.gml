@@ -110,7 +110,7 @@ if (product = "castagent") {
 } else if (product = "boomcrew") {
 	draw_sprite_stretched(spr_shop_hire_boomcrew, 0, x-50, y-80, 96, 96)
 	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
-		draw_text(x-84, y+24, "Demolition Man")
+		draw_text(x-88, y+24, "Demolition Man")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
 	}
@@ -118,7 +118,7 @@ if (product = "castagent") {
 } else if (product = "janewick") {
 	draw_sprite_stretched(spr_shop_hire_janewick, 0, x-50, y-80, 96, 96) 
 	if (locked = false) and (global.combat_player_employees[$ product] == 0) {
-		draw_text(x-84, y+24, "Actor Jane Wick")
+		draw_text(x-84, y+24, "Jane Wick")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
 	}
