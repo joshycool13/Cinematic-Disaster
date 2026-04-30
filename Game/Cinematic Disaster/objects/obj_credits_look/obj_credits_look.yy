@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_credits",
-    "path":"sprites/spr_credits/spr_credits.yy",
+    "name":"spr_background_roaming_credits",
+    "path":"sprites/spr_background_roaming_credits/spr_background_roaming_credits.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"842e3c46-fb09-4ecd-803a-ab945d22c8f7","blendMode":0,"displayName":"default","isLocked":false,"name":"842e3c46-fb09-4ecd-803a-ab945d22c8f7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8746f06a-8c80-42a9-ba56-467f360a8a49","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"8746f06a-8c80-42a9-ba56-467f360a8a49","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"bf00a9e6-2620-4f8c-850c-5ea8e1998900","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"bf00a9e6-2620-4f8c-850c-5ea8e1998900","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_inventory_slot",

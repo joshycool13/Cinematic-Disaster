@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_background_roaming_inventory",
+    "path":"sprites/spr_background_roaming_inventory/spr_background_roaming_inventory.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

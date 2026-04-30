@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shop_bg",
-    "path":"sprites/spr_shop_bg/spr_shop_bg.yy",
+    "name":"spr_background_roaming_shop",
+    "path":"sprites/spr_background_roaming_shop/spr_background_roaming_shop.yy",
   },
   "spriteMaskId":null,
   "visible":true,

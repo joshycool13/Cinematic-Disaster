@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_background_roaming_menu",
+    "path":"sprites/spr_background_roaming_menu/spr_background_roaming_menu.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
