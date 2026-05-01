@@ -2,7 +2,6 @@
 
 global.combat_enemies = []
 
-
 global.combat_player_employees = { // the number represents time remaining
 	"castagent" : 0, 
 	"janitor" : 0,

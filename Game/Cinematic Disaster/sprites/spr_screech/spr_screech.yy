@@ -28,7 +28,7 @@
   ],
   "name":"spr_screech",
   "nineSlice":null,
-  "origin":4,
+  "origin":3,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -95,7 +95,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":512,
+    "xorigin":0,
     "yorigin":32,
   },
   "swatchColours":null,

@@ -34,6 +34,12 @@ is_stunned = false
 is_deafened = 0
 has_bucket = false
 inst_landmine = noone
+inst_shield = noone
+shield_max_damage = 3
+inst_status_effects = []
+inst_status_stun = noone
+inst_status_poison = noone
+inst_status_deafen = noone
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -137,7 +143,8 @@ start_defend = function(defend_name, tp_gain)
 		break;
 		
 		case "blast_shield":
-			
+			inst_smokepuff = instance_create_layer(x + actor_x_plus, y, "Instances", obj_combat_smokepuff)
+			alarm[1] = 15
 		break;
 	}
 }
@@ -153,10 +160,17 @@ get_hit = function(damage_taken, status_effect)
 		}
 	}
 	
+	if instance_exists(inst_shield) and damage_taken > shield_max_damage
+	{
+		damage_taken = shield_max_damage
+	}
+	
 	if pressed_space != 0
 	{
 		sprite_index = anim_dodge
 		image_index = 0
+		lockout_space = 0
+		pressed_space = 0
 		
 		if instance_exists(inst_actor)
 		{
@@ -174,11 +188,45 @@ get_hit = function(damage_taken, status_effect)
 		sprite_index = anim_hit
 		image_index = 0
 		
-		switch status_effect
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = damage_taken
+		
+		if not has_bucket
 		{
-			case "stun":
-				is_stunned = true
-			break;
+			switch status_effect
+			{
+				case "stun":
+					is_stunned = true
+					if not instance_exists(inst_status_stun)
+					{
+						inst_status_stun = instance_create_layer(x + global.status_effect_x, y, "Front_Instances", obj_status_stun)
+						add_status_effect(inst_status_stun)
+					}
+				break;
+				
+				case "poison":
+					has_poison_status_effect = 3
+					if not instance_exists(inst_status_poison)
+					{
+						inst_status_poison = instance_create_layer(x + global.status_effect_x, y, "Front_Instances", obj_status_poison)
+						inst_status_poison.poison_number = has_poison_status_effect
+						add_status_effect(inst_status_poison)
+					}
+					else
+					{
+						inst_status_poison.poison_number = has_poison_status_effect
+					}
+				break;
+				
+				case "deafen":
+					obj_combat_state.deafen_player()
+					if not instance_exists(inst_status_deafen)
+					{
+						inst_status_deafen = instance_create_layer(x + global.status_effect_x, y, "Front_Instances", obj_status_deafen)
+						add_status_effect(inst_status_deafen)
+					}
+				break;
+			}
 		}
 		
 		if instance_exists(inst_actor)
@@ -192,11 +240,6 @@ get_hit = function(damage_taken, status_effect)
 	{
 		inst_landmine.spawn_explosion()
 	}
-	
-	if not has_bucket
-	{
-		
-	}
 }
 
 take_poison_damage = function()
@@ -205,6 +248,19 @@ take_poison_damage = function()
 	{
 		has_poison_status_effect -= 1
 		get_hit(2,"")
+		if instance_exists(inst_status_poison)
+		{
+			inst_status_poison.poison_number = has_poison_status_effect
+		}
+		
+		if has_poison_status_effect == 0
+		{
+			remove_status_effect(inst_status_poison)
+			if instance_exists(inst_status_poison)
+			{
+				instance_destroy(inst_status_poison)
+			}
+		}
 	}
 }
 
@@ -244,6 +300,10 @@ kill_janewick = function()
 	{
 		inst_landmine.kill_self()
 	}
+	if instance_exists(inst_shield)
+	{
+		inst_shield.kill_self()
+	}
 }
 
 use_item = function(inst_enemy_id, item_name)
@@ -265,3 +325,51 @@ clear_bucket = function()
 {
 	has_bucket = false
 }
+
+add_status_effect = function(inst_status_effect)
+{
+	array_push(inst_status_effects, inst_status_effect)
+	inst_status_effect.y = y + global.status_effect_y[array_length(inst_status_effects)-1]
+}
+
+remove_status_effect = function(inst_status_effect)
+{
+	for (var i = 0; i < array_length(inst_status_effects); i += 1)
+	{
+		if inst_status_effects[i] == inst_status_effect
+		{
+			array_delete(inst_status_effects, i, 1)
+			
+			for (var j = i; j < array_length(inst_status_effects); j += 1)
+			{
+				if instance_exists(inst_status_effects[j])
+				{
+					inst_status_effects[j].y = y + global.status_effect_y[j]
+				}
+			}
+			
+			i -= 1
+		}
+	}
+}
+
+/*reorder_status_effects = function()
+{
+	for (var i = 0; i < array_length(inst_status_effects); i += 1)
+	{
+		if not instance_exists(inst_status_effects[i])
+		{
+			array_delete(inst_status_effects, i, 1)
+			
+			for (var j = i; j < array_length(inst_status_effects); j += 1)
+			{
+				if instance_exists(inst_status_effects[j])
+				{
+					inst_status_effects[j].y = y + global.status_effect_y[j]
+				}
+			}
+			
+			i -= 1
+		}
+	}
+}*/

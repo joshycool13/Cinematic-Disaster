@@ -17,6 +17,14 @@ inst_selector_id = []
 temp_inst_button_id = noone
 player_tp_cost = 0
 current_enemy_attacking = 0
+current_item_deleted = noone
+current_attack_names = []
+current_defend_names = []
+player_deafened = false
+
+// Global cause I'm tired
+global.status_effect_x = -16
+global.status_effect_y = [-128, -160, -192]
 
 // On Room Start
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
@@ -34,17 +42,31 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "shield":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_shield)
 		break;
+		
+		case "cyborg":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_cyborg)
+		break;
+		
+		case "thief_cat":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_cat)
+		break;
+		
+		case "monkey":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_monkey)
+		break;
 	}
 }
 
 for (var i = 0; i < array_length(global.combat_player_attacks); i += 1) // put correct attacks as options
 {
 	attack_button_ids[i].button_name = global.combat_player_attacks[i]
+	current_attack_names[i] = global.combat_player_attacks[i]
 }
 
 for (var i = 0; i < array_length(global.combat_player_defends); i += 1) // put correct defends as options
 {
 	defend_button_ids[i].button_name = global.combat_player_defends[i]
+	current_defend_names[i] = global.combat_player_defends[i]
 }
 
 for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put correct items
@@ -169,7 +191,7 @@ player_attack = function(attack_name, tp_cost, target) // start player's attack
 }
 
 finish_player_attack = function() // when player's attack is over
-{
+{	
 	var is_there_enemies = false
 	
 	// delete enemies when 
@@ -208,6 +230,27 @@ player_defend = function(defend_name, tp_gain) // start player's defend
 	layer_set_visible("DefendMenu", false)
 	layer_set_visible("Clipboard", false)
 	
+	// bring back attacks and defends if deafened
+	if player_deafened
+	{
+		player_deafened = false
+		
+		inst_player_id.remove_status_effect(inst_player_id.inst_status_deafen)
+		if instance_exists(inst_player_id.inst_status_deafen)
+		{
+			instance_destroy(inst_player_id.inst_status_deafen)
+		}
+		
+		for (var i = 0; i < array_length(current_attack_names); i += 1)
+		{
+			attack_button_ids[i].button_name = current_attack_names[i]
+		}
+		for (var i = 0; i < array_length(current_defend_names); i += 1)
+		{
+			defend_button_ids[i].button_name = current_defend_names[i]
+		}
+	}
+	
 	inst_player_id.start_defend(defend_name, tp_gain)
 	
 	update_hud_text()
@@ -240,6 +283,7 @@ finish_player_defend = function() // when player's defend is over
 	inst_player_id.take_poison_damage()
 	inst_player_id.clear_bucket()
 	inst_player_id.kill_janewick()
+	update_hud_text()
 	
 	if check_if_player_dead()
 	{
@@ -277,6 +321,11 @@ finish_player_defend = function() // when player's defend is over
 	if inst_player_id.is_stunned
 	{
 		inst_player_id.is_stunned = false
+		inst_player_id.remove_status_effect(inst_player_id.inst_status_stun)
+		if instance_exists(inst_player_id.inst_status_stun)
+		{
+			instance_destroy(inst_player_id.inst_status_stun)
+		}
 		finish_player_attack()
 	}
 	else
@@ -398,4 +447,131 @@ update_hud_text = function() // updated hud numbers
 {
 	layer_text_text(player_hp_text, string(inst_player_id.health_num))
 	layer_text_text(player_tp_text, string(inst_player_id.tp_num))
+}
+
+lose_item = function()
+{
+	var item_amount = 0
+	var item_number = 0
+	var item_id = noone
+	var item_name = ""
+	
+	for (var i = 0; i < array_length(item_button_ids); i += 1)
+	{
+		item_amount = i
+		if item_button_ids[i].button_name == ""
+		{
+			item_amount = i-1
+			break;
+		}
+	}
+	
+	if item_amount == -1
+	{
+		return;
+	}
+	else
+	{
+		item_number = irandom(item_amount)
+		item_id = item_button_ids[item_number]
+		item_name = item_id.button_name
+	}
+	
+	item_id.button_name = ""
+	
+	switch item_name
+	{
+		case "corp_drink":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_corporate_drink)
+		break;
+		
+		case "coffee":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_coffee)
+		break;
+		
+		case "rag":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_rag)
+		break;
+		
+		case "line_change":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_line_change)
+		break;
+		
+		case "rotten_tomato":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_rotten_tomato)
+		break;
+		
+		case "flashbang":
+			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_flashbang)
+		break;
+	}
+	
+	reorganize_item_list()
+	alarm[3] = 60
+}
+
+gain_item = function(item, enemy_cat)
+{
+	var item_number = 0
+	var has_item_slot_open = false
+	
+	for (var i = 0; i < array_length(item_button_ids); i += 1)
+	{
+		if item_button_ids[i].button_name == ""
+		{
+			item_number = i
+			has_item_slot_open = true
+			break;
+		}
+	}
+	
+	if not has_item_slot_open
+	{
+		return;
+	}
+	
+	switch item
+	{
+		case "corp_drink":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_corporate_drink)
+		break;
+		
+		case "coffee":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_coffee)
+		break;
+		
+		case "rag":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_rag)
+		break;
+		
+		case "line_change":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_line_change)
+		break;
+		
+		case "rotten_tomato":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_rotten_tomato)
+		break;
+		
+		case "flashbang":
+			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_flashbang)
+		break;
+	}
+	
+	item_button_ids[item_number].button_name = item
+	reorganize_item_list()
+	alarm[3] = 60
+}
+
+deafen_player = function()
+{
+	player_deafened = true
+		
+	for (var i = 0; i < array_length(current_attack_names); i += 1)
+	{
+		attack_button_ids[i].button_name = ""
+	}
+	for (var i = 0; i < array_length(current_defend_names); i += 1)
+	{
+		defend_button_ids[i].button_name = ""
+	}
 }

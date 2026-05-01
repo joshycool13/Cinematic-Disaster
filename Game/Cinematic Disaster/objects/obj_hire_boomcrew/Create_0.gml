@@ -11,11 +11,14 @@ bomb_x = 50
 bomb_y = -140
 mine_x = 17
 mine_y = 3
+shield_x = 17
+shield_y = 16
 
 // Variables
 inst_target_id = noone
 inst_player_id = noone
 defend_input_buffer = 0
+shield_input_buffer = 25
 inst_slider = noone
 inst_bar = noone
 h_speed = 8
@@ -29,6 +32,7 @@ anim_bomb_aiming = spr_hire_boomcrew_bomb_aiming
 anim_bomb_miss = spr_hire_boomcrew_bomb_miss
 anim_bomb_throw = spr_hire_boomcrew_bomb_throw
 anim_mine_place = spr_hire_boomcrew_mine_place
+anim_shield_place = spr_hire_boomcrew_shield_place
 
 // Functions
 start_attack = function()
@@ -49,9 +53,9 @@ start_defend_mine = function()
 
 start_defend_blastshield = function()
 {
-	sprite_index = anim_clean
+	sprite_index = anim_shield_place
 	image_index = 0
-	inst_player_id.input_buffer = defend_input_buffer
+	inst_player_id.input_buffer = shield_input_buffer
 }
 
 finish_attack = function()
