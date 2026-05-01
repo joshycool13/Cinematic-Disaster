@@ -120,7 +120,6 @@
     {"id":{"name":"obj_selector","path":"objects/obj_selector/obj_selector.yy",},},
     {"id":{"name":"obj_shield","path":"objects/obj_shield/obj_shield.yy",},},
     {"id":{"name":"obj_shop_go_item","path":"objects/obj_shop_go_item/obj_shop_go_item.yy",},},
-    {"id":{"name":"obj_shop_leave_1","path":"objects/obj_shop_leave_1/obj_shop_leave_1.yy",},},
     {"id":{"name":"obj_shop_leave","path":"objects/obj_shop_leave/obj_shop_leave.yy",},},
     {"id":{"name":"obj_shop_shop","path":"objects/obj_shop_shop/obj_shop_shop.yy",},},
     {"id":{"name":"obj_shop_slot_0","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},},
