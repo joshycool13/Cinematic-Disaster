@@ -10,7 +10,7 @@ if sprite_index = anim_copy
 	}
 	else
 	{
-		var defend = irandom(array_length(defend_options))
+		var defend = irandom(array_length(defend_options)-1)
 		inst_player_id.start_defend(defend_options[defend],0)
 		instance_create_layer(x, y, "Smoke", obj_combat_smokepuff)
 		alarm[0] = 15
