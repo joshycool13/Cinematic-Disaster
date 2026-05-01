@@ -1,4 +1,4 @@
-if (distance_to_object(obj_roaming_player) <= 1) && (obj_roaming_player.go_to_item_shop == false) && (obj_roaming_player.go_to_actor_shop == false) {
+if (distance_to_object(obj_roaming_player) <= 1) && (obj_roaming_player.active = true){
 	camera_set_view_target(view_camera[0], id);
 	view_set_wport(0,frame_width);
 	view_set_hport(0,frame_height);

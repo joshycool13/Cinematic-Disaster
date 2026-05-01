@@ -1,0 +1,1 @@
+draw_text(x, y, "TP: " + string( global.combat_player_tp))

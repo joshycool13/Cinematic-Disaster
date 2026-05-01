@@ -10,8 +10,8 @@
   "name":"obj_gui_money",
   "overriddenProperties":[],
   "parent":{
-    "name":"Universal",
-    "path":"folders/Universal.yy",
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_background_roaming_shop",
+    "path":"sprites/spr_background_roaming_shop/spr_background_roaming_shop.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -24,15 +24,15 @@
   "name":"spr_guibg_green",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":4,
+    "bottom":2,
     "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,
-    "left":4,
+    "left":2,
     "resourceType":"GMNineSliceData",
     "resourceVersion":"2.0",
-    "right":4,
+    "right":2,
     "tileMode":[
       0,
       0,
@@ -40,7 +40,7 @@
       0,
       0,
     ],
-    "top":4,
+    "top":2,
   },
   "origin":0,
   "parent":{

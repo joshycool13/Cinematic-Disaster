@@ -1,0 +1,1 @@
+draw_text(x, y, "HP: " + string( global.combat_player_hp))

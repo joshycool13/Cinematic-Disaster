@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
   "%Name":"obj_shop_slot_3",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_shop_slot_3",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_shop_slot_0","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},"propertyId":{"name":"slot_number","path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
+  ],
   "parent":{
     "name":"Shop",
     "path":"folders/Roaming/Shop.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shop_slot_0",
+    "path":"objects/obj_shop_slot_0/obj_shop_slot_0.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
