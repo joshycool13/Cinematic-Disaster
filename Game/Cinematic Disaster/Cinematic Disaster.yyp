@@ -112,6 +112,8 @@
     {"id":{"name":"obj_npcPranav","path":"objects/obj_npcPranav/obj_npcPranav.yy",},},
     {"id":{"name":"obj_playermenu_button","path":"objects/obj_playermenu_button/obj_playermenu_button.yy",},},
     {"id":{"name":"obj_pranavs_bandaid_solution_1","path":"objects/obj_pranavs_bandaid_solution_1/obj_pranavs_bandaid_solution_1.yy",},},
+    {"id":{"name":"obj_pranavs_bandaid_solution_2","path":"objects/obj_pranavs_bandaid_solution_2/obj_pranavs_bandaid_solution_2.yy",},},
+    {"id":{"name":"obj_pranavs_bandaid_solution_3","path":"objects/obj_pranavs_bandaid_solution_3/obj_pranavs_bandaid_solution_3.yy",},},
     {"id":{"name":"obj_ResultsCheck","path":"objects/obj_ResultsCheck/obj_ResultsCheck.yy",},},
     {"id":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},},
     {"id":{"name":"obj_screech","path":"objects/obj_screech/obj_screech.yy",},},
