@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button",
-    "path":"sprites/spr_button/spr_button.yy",
+    "name":"spr_vending",
+    "path":"sprites/spr_vending/spr_vending.yy",
   },
   "spriteMaskId":null,
   "visible":true,
