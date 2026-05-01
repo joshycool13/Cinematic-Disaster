@@ -108,7 +108,7 @@ switch (button_name)
 	break;
 	
 	// Items
-	case "corp_drink":
+	case "drink":
 		button_text = "Corporate Drink"
 	break;
 	
@@ -120,11 +120,11 @@ switch (button_name)
 		button_text = "Cleaning Rag"
 	break;
 	
-	case "line_change":
+	case "linechange":
 		button_text = "Line Change"
 	break;
 	
-	case "rotten_tomato":
+	case "tomato":
 		button_text = "Rotten Tomato"
 	break;
 	
