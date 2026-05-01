@@ -29,4 +29,4 @@ go_to_menu = true // start the game looking at the start menu
 go_to_credits = false // look at credits screen
 go_to_inventory = false // look at inventory
 
-
+enemies_left = 0;

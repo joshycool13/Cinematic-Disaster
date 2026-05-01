@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_day_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_day_data",
+  "parent":{
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
