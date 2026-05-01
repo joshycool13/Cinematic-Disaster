@@ -2,7 +2,7 @@ instance_destroy(current_item)
 
 switch current_item_name
 {
-	case "corp_drink":
+	case "drink":
 		health_num += 10
 		if health_num > max_health_num
 		{
@@ -39,11 +39,11 @@ switch current_item_name
 		}
 	break;
 	
-	case "line_change":
+	case "linechange":
 		
 	break;
 	
-	case "rotten_tomato":
+	case "tomato":
 		obj_combat_state.attacked_is_hit(inst_target_id,0,false,"poison")
 	break;
 	
@@ -52,7 +52,7 @@ switch current_item_name
 	break;
 }
 
-if current_item_name = "line_change"
+if current_item_name = "linechange"
 {
 	sprite_index = anim_idle
 	image_index = 0

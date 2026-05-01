@@ -87,7 +87,7 @@ switch (button_name)
 	break;
 	
 	// Items
-	case "corp_drink":
+	case "drink":
 		temp_button_name = button_name
 		button_name = ""
 		obj_combat_state.player_item(temp_button_name, 0)
@@ -105,11 +105,11 @@ switch (button_name)
 		obj_combat_state.player_item(temp_button_name, 0)
 	break;
 	
-	case "line_change":
+	case "linechange":
 		obj_combat_state.select_menu(button_name, 0, self)
 	break;
 	
-	case "rotten_tomato":
+	case "tomato":
 		obj_combat_state.select_menu(button_name, 0, self)
 	break;
 	
