@@ -22,11 +22,16 @@ tp = global.combat_player_tp;
 
 
 //states var
-active = true; // lock player movement when this is false
+active = false; // lock player movement when this is false
 go_to_item_shop = false // make the camera look at the item shop when this is true
 go_to_actor_shop = false //ditto for the actor shop
 go_to_menu = true // start the game looking at the start menu
 go_to_credits = false // look at credits screen
 go_to_inventory = false // look at inventory
+
+if (array_length(global.combat_enemies) > 0) {
+	go_to_menu = false
+	active = true
+}
 
 enemies_left = 0;
