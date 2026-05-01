@@ -38,7 +38,7 @@ if sprite_index = anim_item
 {
 	switch current_item_name
 	{
-		case "corp_drink":
+		case "drink":
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_corporate_drink)
 		break;
 		
@@ -50,11 +50,11 @@ if sprite_index = anim_item
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_rag)
 		break;
 		
-		case "line_change":
+		case "linechange":
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_line_change)
 		break;
 		
-		case "rotten_tomato":
+		case "tomato":
 			current_item = instance_create_layer(x+50, y-145, "Items", obj_item_rotten_tomato)
 		break;
 		
