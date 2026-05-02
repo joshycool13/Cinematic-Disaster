@@ -14,10 +14,8 @@ snd_music_inventory
 snd_button_pressed
 snd_purchase
 snd_denied
-snd_enter_inventory
-snd_exit_inventory
-snd_enter_shop
-snd_exit_shop
+snd_enter_menu // for enter/exit shop/inventory
+snd_changeday
 
 // Debating
 snd_footstep_#
