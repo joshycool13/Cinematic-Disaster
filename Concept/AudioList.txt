@@ -21,3 +21,72 @@ snd_exit_shop
 
 // Debating
 snd_footstep_#
+snd_talking // could do voices for each of them maybe
+idk what the spy system is because I can't test it
+don't know if ending needs sound effects
+
+-- Combat Sounds --
+
+// Hurt Sounds
+snd_player_hurt
+snd_player_dodge
+snd_rat_hurt
+snd_dogcar_hurt
+snd_shield_hurt
+snd_thief_hurt
+snd_cyborg_block
+snd_cyborg_hurt
+snd_monkey_hurt
+snd_janewick_block
+snd_janewick_dodge
+snd_explosion
+snd_blast_shield_block
+
+// Attack Sounds
+snd_defaultattack_shine
+snd_defaultattack_attack
+snd_defaultattack_fail
+snd_janitor_broom_shine
+snd_janitor_broom_attack
+snd_castagent_laptop_idle
+snd_castagent_laptop_attack
+snd_castagent_laptop_fail
+snd_janewick_dive_jump
+snd_janewick_dive_fall
+snd_janewick_dive_hit
+snd_janewick_dive_fail
+snd_janewick_gun_shoot
+snd_makeup_copy
+snd_boomcrew_bomb_fuse
+
+// Defend Sounds
+snd_defaultdefend_yell
+snd_janitor_cleaner_clean
+snd_castagent_file_show
+snd_boomcrew_mine_place
+snd_boomcrew_shield_place
+
+// Item Sounds
+snd_item_show
+snd_tomato_use
+snd_flashbang_use
+snd_drink_use
+snd_rag_use
+snd_coffee_use
+
+// Enemy Attack Sounds
+snd_rat_attack
+snd_dogcar_drive
+snd_shield_attack
+snd_cat_attack
+snd_cyborg_charge
+snd_cyborg_attack
+snd_monkey_shooting
+snd_monkey_screech
+snd_banana_hit
+
+// Misc Sounds
+snd_smokepuff
+
+// Debating
+snd_footstep_#
