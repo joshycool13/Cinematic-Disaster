@@ -1,0 +1,23 @@
+-- Music --
+
+snd_music_title
+snd_music_roaming
+snd_music_combat
+snd_music_ending
+
+// Debating
+snd_music_shop
+snd_music_inventory
+
+-- Sound Effects --
+
+snd_button_pressed
+snd_purchase
+snd_denied
+snd_enter_inventory
+snd_exit_inventory
+snd_enter_shop
+snd_exit_shop
+
+// Debating
+snd_footstep_#
