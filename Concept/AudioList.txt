@@ -1,9 +1,9 @@
 -- Music --
 
-snd_music_title
-snd_music_roaming
-snd_music_combat
-snd_music_ending
+snd_music_title - done
+snd_music_roaming - done
+snd_music_combat - done
+snd_music_ending - done
 
 // Debating
 snd_music_shop
@@ -11,11 +11,11 @@ snd_music_inventory
 
 -- Sound Effects --
 
-snd_button_pressed
-snd_purchase
-snd_denied
-snd_enter_menu // for enter/exit shop/inventory
-snd_changeday
+snd_button_pressed - done
+snd_purchase - done
+snd_denied - done
+snd_enter_menu // for enter/exit shop/inventory - done
+snd_changeday - done
 
 // Debating
 snd_footstep_#
