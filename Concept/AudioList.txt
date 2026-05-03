@@ -41,21 +41,21 @@ snd_explosion - done
 snd_blast_shield_block - done
 
 // Attack Sounds
-snd_defaultattack_shine
-snd_defaultattack_attack
-snd_defaultattack_fail
-snd_janitor_broom_shine
-snd_janitor_broom_attack
-snd_castagent_laptop_idle
-snd_castagent_laptop_attack
-snd_castagent_laptop_fail
-snd_janewick_dive_jump
-snd_janewick_dive_fall
-snd_janewick_dive_hit
-snd_janewick_dive_fail
-snd_janewick_gun_shoot
-snd_makeup_copy
-snd_boomcrew_bomb_fuse
+snd_defaultattack_shine - done
+snd_defaultattack_attack - done
+snd_defaultattack_fail - done
+snd_janitor_broom_shine - done
+snd_janitor_broom_attack - done
+snd_castagent_laptop_idle - done
+snd_castagent_laptop_attack - done
+snd_castagent_laptop_fail - done
+snd_janewick_dive_jump - not
+snd_janewick_dive_fall - not
+snd_janewick_dive_hit - done
+snd_janewick_dive_fail - done
+snd_janewick_gun_shoot - done
+snd_makeup_copy - done
+snd_boomcrew_bomb_fuse - done
 
 // Defend Sounds
 snd_defaultdefend_yell
