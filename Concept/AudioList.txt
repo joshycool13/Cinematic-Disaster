@@ -26,19 +26,19 @@ don't know if ending needs sound effects
 -- Combat Sounds --
 
 // Hurt Sounds
-snd_player_hurt
-snd_player_dodge
-snd_rat_hurt
-snd_dogcar_hurt
-snd_shield_hurt
-snd_thief_hurt
-snd_cyborg_block
-snd_cyborg_hurt
-snd_monkey_hurt
-snd_janewick_block
-snd_janewick_dodge
-snd_explosion
-snd_blast_shield_block
+snd_player_hurt - done
+snd_player_dodge - done
+snd_rat_hurt - done
+snd_dogcar_hurt - done // bark or yelp?
+snd_shield_hurt - done
+snd_thief_hurt - done
+snd_cyborg_block - done
+snd_cyborg_hurt - done
+snd_monkey_hurt - done
+snd_janewick_block - done
+snd_janewick_dodge - done
+snd_explosion - done
+snd_blast_shield_block - done
 
 // Attack Sounds
 snd_defaultattack_shine
