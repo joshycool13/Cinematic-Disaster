@@ -58,8 +58,8 @@ snd_makeup_copy - done
 snd_boomcrew_bomb_fuse - done
 
 // Defend Sounds
-snd_defaultdefend_yell
-snd_janitor_cleaner_clean
+snd_defaultdefend_yell - done
+snd_janitor_cleaner_clean - done
 snd_castagent_file_show
 snd_boomcrew_mine_place
 snd_boomcrew_shield_place
