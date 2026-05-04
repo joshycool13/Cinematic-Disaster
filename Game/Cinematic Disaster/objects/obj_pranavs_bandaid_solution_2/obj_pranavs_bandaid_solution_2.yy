@@ -3,13 +3,14 @@
   "%Name":"obj_pranavs_bandaid_solution_2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_pranavs_bandaid_solution_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Combat",
-    "path":"folders/Combat.yy",
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
   },
   "parentObjectId":null,
   "persistent":false,

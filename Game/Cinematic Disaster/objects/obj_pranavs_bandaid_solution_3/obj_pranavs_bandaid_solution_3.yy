@@ -8,8 +8,8 @@
   "name":"obj_pranavs_bandaid_solution_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Combat",
-    "path":"folders/Combat.yy",
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
   },
   "parentObjectId":null,
   "persistent":false,

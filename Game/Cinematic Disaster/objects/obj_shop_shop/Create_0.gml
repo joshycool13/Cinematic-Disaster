@@ -1,5 +1,3 @@
-randomize()
-
 product_price = {
 	"castagent": 151,
 	"janitor": 152,

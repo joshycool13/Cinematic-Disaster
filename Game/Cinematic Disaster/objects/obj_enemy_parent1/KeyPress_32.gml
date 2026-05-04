@@ -1,5 +1,5 @@
 
-
+obj_pranavs_bandaid_solution_2.remove_reels()
 
 
 if place_meeting(x, y, obj_roaming_player)

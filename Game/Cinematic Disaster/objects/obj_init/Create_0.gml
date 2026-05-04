@@ -1,4 +1,5 @@
 // Set global variables
+randomize()
 
 global.combat_enemies = []
 
