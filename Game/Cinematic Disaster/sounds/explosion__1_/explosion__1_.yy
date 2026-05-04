@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"explosion__1_",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.7360091,
+  "exportDir":"",
+  "name":"explosion__1_",
+  "parent":{
+    "name":"Hurt Sounds",
+    "path":"folders/Sounds/Hurt Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"explosion__1_.wav",
+  "volume":0.2,
+}

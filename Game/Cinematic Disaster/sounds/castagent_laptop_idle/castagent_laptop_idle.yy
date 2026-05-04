@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"castagent_laptop_idle",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":4.9754877,
+  "exportDir":"",
+  "name":"castagent_laptop_idle",
+  "parent":{
+    "name":"Attack Sounds",
+    "path":"folders/Sounds/Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"castagent_laptop_idle.wav",
+  "volume":0.3,
+}

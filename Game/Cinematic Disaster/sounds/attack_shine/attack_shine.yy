@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"attack_shine",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.79380953,
+  "exportDir":"",
+  "name":"attack_shine",
+  "parent":{
+    "name":"Attack Sounds",
+    "path":"folders/Sounds/Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"attack_shine.wav",
+  "volume":0.45,
+}

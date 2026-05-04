@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"janewick_gun_shoot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.43201813,
+  "exportDir":"",
+  "name":"janewick_gun_shoot",
+  "parent":{
+    "name":"Attack Sounds",
+    "path":"folders/Sounds/Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"janewick_gun_shoot.wav",
+  "volume":0.1,
+}
