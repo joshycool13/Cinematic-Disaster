@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"denied_lowered",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.32965985,
+  "exportDir":"",
+  "name":"denied_lowered",
+  "parent":{
+    "name":"Sounds Effects",
+    "path":"folders/Sounds/Sounds Effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"denied_lowered.wav",
+  "volume":0.05,
+}
