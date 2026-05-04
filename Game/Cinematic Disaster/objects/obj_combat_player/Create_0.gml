@@ -177,6 +177,8 @@ get_hit = function(damage_taken, status_effect)
 			inst_actor.sprite_index = inst_actor.anim_guard_dodge
 			inst_actor.image_index = 0
 		}
+		
+		audio_play_sound(player_and_janewick_dodge_trim, 4, false)
 	}
 	else
 	{
@@ -233,6 +235,11 @@ get_hit = function(damage_taken, status_effect)
 		{
 			inst_actor.sprite_index = inst_actor.anim_guard_hit
 			inst_actor.image_index = 0
+			audio_play_sound(janewick_block_trim, 4, false)
+		}
+		else
+		{
+			audio_play_sound(player_hurt__2_, 4, false)
 		}
 	}
 	
