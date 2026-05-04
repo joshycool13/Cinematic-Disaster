@@ -10,7 +10,7 @@ var item_name = ""
 switch item_number
 {
 	case 0:
-		obj_combat_state.gain_item("corp_drink", self)
+		obj_combat_state.gain_item("drink", self)
 	break;
 	
 	case 1:
@@ -22,11 +22,11 @@ switch item_number
 	break;
 	
 	case 3:
-		obj_combat_state.gain_item("line_change", self)
+		obj_combat_state.gain_item("linechange", self)
 	break;
 	
 	case 4:
-		obj_combat_state.gain_item("rotten_tomato", self)
+		obj_combat_state.gain_item("tomato", self)
 	break;
 	
 	case 5:

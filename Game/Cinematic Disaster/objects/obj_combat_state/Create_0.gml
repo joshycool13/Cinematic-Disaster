@@ -481,7 +481,7 @@ lose_item = function()
 	
 	switch item_name
 	{
-		case "corp_drink":
+		case "drink":
 			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_corporate_drink)
 		break;
 		
@@ -493,11 +493,11 @@ lose_item = function()
 			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_rag)
 		break;
 		
-		case "line_change":
+		case "linechange":
 			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_line_change)
 		break;
 		
-		case "rotten_tomato":
+		case "tomato":
 			current_item_deleted = instance_create_layer(inst_player_id.x, inst_player_id.y - 145, "Items", obj_item_rotten_tomato)
 		break;
 		
@@ -532,7 +532,7 @@ gain_item = function(item, enemy_cat)
 	
 	switch item
 	{
-		case "corp_drink":
+		case "drink":
 			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_corporate_drink)
 		break;
 		
@@ -544,11 +544,11 @@ gain_item = function(item, enemy_cat)
 			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_rag)
 		break;
 		
-		case "line_change":
+		case "linechange":
 			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_line_change)
 		break;
 		
-		case "rotten_tomato":
+		case "tomato":
 			current_item_deleted = instance_create_layer(enemy_cat.x, enemy_cat.y - 145, "Items", obj_item_rotten_tomato)
 		break;
 		
