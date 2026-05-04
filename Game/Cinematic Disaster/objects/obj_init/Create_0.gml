@@ -24,5 +24,9 @@ global.actor_list = ["castagent", "janitor", "makeup", "boomcrew", "janewick"]
 array_shuffle_ext(global.item_list)
 array_shuffle_ext(global.actor_list)
 
+global.started_game = true
+
+global.current_music = noone
+
 // go to roaming room
 room_goto(1)

@@ -27,6 +27,9 @@ global.status_effect_x = -16
 global.status_effect_y = [-128, -160, -192]
 
 // On Room Start
+audio_stop_sound(global.current_music)
+global.current_music = audio_play_sound(combat_music_2_trim, 10, true)
+
 for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in each enemy
 {
 	switch global.combat_enemies[i]
