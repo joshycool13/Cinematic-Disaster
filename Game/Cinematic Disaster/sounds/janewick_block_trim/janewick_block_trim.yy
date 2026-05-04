@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"janewick_block_trim",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.75913835,
+  "exportDir":"",
+  "name":"janewick_block_trim",
+  "parent":{
+    "name":"Hurt Sounds",
+    "path":"folders/Sounds/Hurt Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"janewick_block_trim.wav",
+  "volume":0.3,
+}

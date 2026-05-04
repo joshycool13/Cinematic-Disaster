@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"janitor_cleaner_clean",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.8279592,
+  "exportDir":"",
+  "name":"janitor_cleaner_clean",
+  "parent":{
+    "name":"Defend Sounds",
+    "path":"folders/Sounds/Defend Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"janitor_cleaner_clean.wav",
+  "volume":0.25,
+}

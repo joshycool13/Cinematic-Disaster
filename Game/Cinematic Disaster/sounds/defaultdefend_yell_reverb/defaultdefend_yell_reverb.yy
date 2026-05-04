@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"defaultdefend_yell_reverb",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.5912699,
+  "exportDir":"",
+  "name":"defaultdefend_yell_reverb",
+  "parent":{
+    "name":"Defend Sounds",
+    "path":"folders/Sounds/Defend Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"defaultdefend_yell_reverb.wav",
+  "volume":0.9,
+}

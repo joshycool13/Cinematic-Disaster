@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"boomcrew_bomb_fuse",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":3.8880045,
+  "exportDir":"",
+  "name":"boomcrew_bomb_fuse",
+  "parent":{
+    "name":"Attack Sounds",
+    "path":"folders/Sounds/Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"boomcrew_bomb_fuse.wav",
+  "volume":0.05,
+}

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"cyborg_and_shield_block_attack",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.8265079,
+  "exportDir":"",
+  "name":"cyborg_and_shield_block_attack",
+  "parent":{
+    "name":"Hurt Sounds",
+    "path":"folders/Sounds/Hurt Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"cyborg_and_shield_block_attack.wav",
+  "volume":0.2,
+}

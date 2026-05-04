@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"enter_menu_trim",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.54861677,
+  "exportDir":"",
+  "name":"enter_menu_trim",
+  "parent":{
+    "name":"Sounds Effects",
+    "path":"folders/Sounds/Sounds Effects.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"enter_menu_trim.wav",
+  "volume":0.1,
+}

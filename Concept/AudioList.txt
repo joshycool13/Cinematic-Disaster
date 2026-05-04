@@ -1,0 +1,90 @@
+-- Music --
+
+snd_music_title - done
+snd_music_roaming - done
+snd_music_combat - done
+snd_music_ending - done
+
+// Debating
+snd_music_shop
+snd_music_inventory
+
+-- Sound Effects --
+
+snd_button_pressed - done
+snd_purchase - done
+snd_denied - done
+snd_enter_menu // for enter/exit shop/inventory - done
+snd_changeday - done
+
+// Debating
+snd_footstep_#
+snd_talking // could do voices for each of them maybe
+idk what the spy system is because I can't test it
+don't know if ending needs sound effects
+
+-- Combat Sounds --
+
+// Hurt Sounds
+snd_player_hurt - done
+snd_player_dodge - done
+snd_rat_hurt - done
+snd_dogcar_hurt - done // bark or yelp?
+snd_shield_hurt - done
+snd_thief_hurt - done
+snd_cyborg_block - done
+snd_cyborg_hurt - done
+snd_monkey_hurt - done
+snd_janewick_block - done
+snd_janewick_dodge - done
+snd_explosion - done
+snd_blast_shield_block - done
+
+// Attack Sounds
+snd_defaultattack_shine - done
+snd_defaultattack_attack - done
+snd_defaultattack_fail - done
+snd_janitor_broom_shine - done
+snd_janitor_broom_attack - done
+snd_castagent_laptop_idle - done
+snd_castagent_laptop_attack - done
+snd_castagent_laptop_fail - done
+snd_janewick_dive_jump - not
+snd_janewick_dive_fall - not
+snd_janewick_dive_hit - done
+snd_janewick_dive_fail - done
+snd_janewick_gun_shoot - done
+snd_makeup_copy - done
+snd_boomcrew_bomb_fuse - done
+
+// Defend Sounds
+snd_defaultdefend_yell - done
+snd_janitor_cleaner_clean - done
+snd_castagent_file_show - done
+snd_boomcrew_mine_place - done
+snd_boomcrew_shield_place - done
+
+// Item Sounds
+snd_item_show - done
+snd_tomato_use - done
+snd_flashbang_use - done
+snd_drink_use - done
+snd_rag_use - done
+snd_coffee_use - done
+
+// Enemy Attack Sounds
+snd_rat_attack - done
+snd_dogcar_drive - done
+snd_shield_attack - is blast shield block
+snd_cat_attack - done
+snd_cyborg_charge - done
+snd_cyborg_attack - done
+snd_monkey_shooting - done
+snd_monkey_screech - done
+snd_banana_hit - is tomato use
+
+// Misc Sounds
+snd_smokepuff - done
+
+// Debating
+snd_footstep_#

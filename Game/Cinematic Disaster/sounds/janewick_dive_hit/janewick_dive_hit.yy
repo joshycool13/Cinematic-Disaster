@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"janewick_dive_hit",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.75199544,
+  "exportDir":"",
+  "name":"janewick_dive_hit",
+  "parent":{
+    "name":"Attack Sounds",
+    "path":"folders/Sounds/Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"janewick_dive_hit.wav",
+  "volume":0.15,
+}

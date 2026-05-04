@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"cyborg_hurt",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.35968253,
+  "exportDir":"",
+  "name":"cyborg_hurt",
+  "parent":{
+    "name":"Hurt Sounds",
+    "path":"folders/Sounds/Hurt Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"cyborg_hurt.wav",
+  "volume":0.15,
+}
