@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"monkey_screech_reverb",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.1438549,
+  "exportDir":"",
+  "name":"monkey_screech_reverb",
+  "parent":{
+    "name":"Enemy Attack Sounds",
+    "path":"folders/Sounds/Enemy Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"monkey_screech_reverb.wav",
+  "volume":0.6,
+}

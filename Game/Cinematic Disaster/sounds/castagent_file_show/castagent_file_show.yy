@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"castagent_file_show",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.9,
+  "exportDir":"",
+  "name":"castagent_file_show",
+  "parent":{
+    "name":"Defend Sounds",
+    "path":"folders/Sounds/Defend Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"castagent_file_show.wav",
+  "volume":0.4,
+}

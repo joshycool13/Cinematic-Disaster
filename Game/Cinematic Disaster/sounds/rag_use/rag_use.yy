@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"rag_use",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.87163264,
+  "exportDir":"",
+  "name":"rag_use",
+  "parent":{
+    "name":"Item Sounds",
+    "path":"folders/Sounds/Item Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"rag_use.wav",
+  "volume":0.2,
+}

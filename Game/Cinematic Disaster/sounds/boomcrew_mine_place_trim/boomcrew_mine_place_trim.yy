@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"boomcrew_mine_place_trim",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.84106576,
+  "exportDir":"",
+  "name":"boomcrew_mine_place_trim",
+  "parent":{
+    "name":"Defend Sounds",
+    "path":"folders/Sounds/Defend Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"boomcrew_mine_place_trim.wav",
+  "volume":0.5,
+}

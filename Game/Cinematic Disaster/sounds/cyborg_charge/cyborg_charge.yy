@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"cyborg_charge",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.50419503,
+  "exportDir":"",
+  "name":"cyborg_charge",
+  "parent":{
+    "name":"Enemy Attack Sounds",
+    "path":"folders/Sounds/Enemy Attack Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"cyborg_charge.wav",
+  "volume":0.12,
+}
