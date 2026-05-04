@@ -24,5 +24,7 @@ if(_current_enemy_count == 0 && !day_data.is_cleared) and (global.combat_player_
 	
 	//Trigger progression
 	alarm[0] = (gamespeed_fps) * 2;
+	
+	audio_play_sound(changeday, 4, false)
 }
 
