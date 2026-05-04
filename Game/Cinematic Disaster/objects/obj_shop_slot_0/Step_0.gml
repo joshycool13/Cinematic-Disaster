@@ -42,12 +42,14 @@ if (locked = false) {
 			if (global.player_money >= price) {
 				global.player_money -= price
 				array_push(global.combat_player_items, product)
+				audio_play_sound(purchase__1_, 3, false)
 			}
 		} else { // buying an actor
 			if (global.combat_player_employees[$ product] == 0) && 
 				(global.player_money >= price) { //does not already own actor and has enough money
 				global.player_money -= price
 				global.combat_player_employees[$ product] = 3
+				audio_play_sound(purchase__1_, 3, false)
 			} 
 		}
 	}
