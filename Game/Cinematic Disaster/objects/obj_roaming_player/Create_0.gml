@@ -28,6 +28,7 @@ go_to_actor_shop = false //ditto for the actor shop
 go_to_menu = true // start the game looking at the start menu
 go_to_credits = false // look at credits screen
 go_to_inventory = false // look at inventory
+go_to_ending = false // look at ending screen
 
 if (array_length(global.combat_enemies) > 0) {
 	go_to_menu = false

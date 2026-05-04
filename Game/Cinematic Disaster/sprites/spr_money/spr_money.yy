@@ -19,7 +19,8 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"9cca6e7d-fded-42e6-8865-624ec1108687","blendMode":0,"displayName":"default","isLocked":false,"name":"9cca6e7d-fded-42e6-8865-624ec1108687","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"79b47327-a626-458b-8754-8a9a7ed162a7","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"79b47327-a626-458b-8754-8a9a7ed162a7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9cca6e7d-fded-42e6-8865-624ec1108687","blendMode":0,"displayName":"default","isLocked":false,"name":"9cca6e7d-fded-42e6-8865-624ec1108687","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"spr_money",
   "nineSlice":null,

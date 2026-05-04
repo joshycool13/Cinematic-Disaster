@@ -7,16 +7,14 @@ price = 100
 locked = false
 
 product_price = obj_shop_shop.product_price
-item_order = obj_shop_shop.item_order
-actor_order = obj_shop_shop.actor_order
 
 //sprite setting
 image_speed = 0
 pressed = 0;
 
 // set the item or employee this slot of the shop sells
-item_select = item_order[slot_number]
-actor_select = actor_order[slot_number]
+item_select = global.item_list[slot_number]
+actor_select = global.actor_list[slot_number]
 
 item_or_actor = 1 //if 1, sells items, if 0, sells employees
 if (slot_number > 2) {

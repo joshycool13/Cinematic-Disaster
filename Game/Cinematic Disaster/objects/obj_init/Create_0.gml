@@ -18,8 +18,10 @@ global.player_money = 1000
 global.combat_player_hp = 20
 global.combat_player_tp = 10
 
-item_list = ["coffee", "drink", "flashbang", "linechange", "rag", "reel", "tomato"]
-actor_list = ["castagent", "janitor", "makeup", "boomcrew", "janewick"]
+global.item_list = ["coffee", "drink", "flashbang", "linechange", "rag", "reel", "tomato"]
+global.actor_list = ["castagent", "janitor", "makeup", "boomcrew", "janewick"]
+array_shuffle_ext(global.item_list)
+array_shuffle_ext(global.actor_list)
 
 // go to roaming room
 room_goto(1)
