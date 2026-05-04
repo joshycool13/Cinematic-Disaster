@@ -29,6 +29,12 @@ else if (go_to_inventory) {
 	layer_set_visible("TutorialRoaming", false)
 	layer_set_visible("TutorialRoaming_BG", false)
 } 
+else if (go_to_inventory) {
+	camera_set_view_target(view_camera[0], obj_inventory_look)
+	layer_set_visible("RoamingUI", true)
+	layer_set_visible("TutorialRoaming", false)
+	layer_set_visible("TutorialRoaming_BG", false)
+} 
 else {
 	layer_set_visible("RoamingUI", true)
 	layer_set_visible("TutorialRoaming", true)
