@@ -1,5 +1,7 @@
 var temp_button_name = noone
 
+var button_was_pressed = true
+
 switch (button_name)
 {
 	// UI Buttons
@@ -116,4 +118,28 @@ switch (button_name)
 	case "flashbang":
 		obj_combat_state.select_menu(button_name, 0, self)
 	break;
+	
+	default:
+		button_was_pressed = false
+	break;
+}
+
+if button_was_pressed
+{
+	var num_thing = irandom(2)
+	
+	switch num_thing
+	{
+		case 0:
+			audio_play_sound(button_pressed__1_, 2, false)
+		break;
+		
+		case 1:
+			audio_play_sound(button_pressed__2_, 2, false)
+		break;
+		
+		case 2:
+			audio_play_sound(button_pressed__3_, 2, false)
+		break;
+	}
 }
