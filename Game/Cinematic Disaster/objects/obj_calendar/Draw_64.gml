@@ -7,7 +7,7 @@ if (layer_get_visible("RoamingUI")) {
 	
 	
 	//quest display
-	draw_text(20, 110, "Enemies left: \n" + string(3 - global.combats_complete[0] - global.combats_complete[1] - global.combats_complete[2]))
+	draw_text(20, 110, "Enemies left: \n  " + string(3 - global.combats_complete[0] - global.combats_complete[1] - global.combats_complete[2]))
 }
 
 /*
