@@ -18,6 +18,7 @@ start_attack = function()
 	sprite_index = anim_copy
 	image_index = 0
 	is_attack = true
+	audio_play_sound(makeup_copy, 4, false)
 }
 
 start_defend = function()
@@ -25,6 +26,7 @@ start_defend = function()
 	sprite_index = anim_copy
 	image_index = 0
 	is_attack = false
+	audio_play_sound(makeup_copy, 4, false)
 }
 
 finish_attack = function()

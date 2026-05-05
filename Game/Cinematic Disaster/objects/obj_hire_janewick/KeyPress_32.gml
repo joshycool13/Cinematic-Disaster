@@ -9,6 +9,7 @@ if sprite_index = anim_gun_idle and not finished_attacking_gun or sprite_index =
 	obj_combat_state.attacked_is_hit_random(attack_damage_gun)
 	sprite_index = anim_gun_shoot
 	image_index = 0
+	audio_play_sound(janewick_gun_shoot, 4, false)
 }
 
 current_lockout_time = lockout_time

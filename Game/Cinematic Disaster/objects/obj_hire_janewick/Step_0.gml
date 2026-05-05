@@ -9,11 +9,15 @@ if sprite_index = anim_punch_dive
 		if hit_timing_window
 		{
 			sprite_index = anim_punch_success
+			image_index = 0
+			audio_play_sound(janewick_dive_hit, 4, false)
 			obj_combat_state.attacked_is_hit(inst_target_id,attack_damage_punch,false)
 		}
 		else
 		{
 			sprite_index = anim_punch_fail
+			image_index = 0
+			audio_play_sound(janewick_dive_fail, 4, false)
 		}
 	}
 }

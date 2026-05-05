@@ -10,6 +10,7 @@ inst_cursor = noone
 current_lockout_time = 0
 inst_player_id = noone
 defend_input_buffer = 40
+inst_idle_sound = noone
 
 // Animations
 anim_idle = spr_hire_castagent_laptopidle
@@ -23,6 +24,7 @@ start_attack = function()
 	sprite_index = anim_idle
 	image_index = 0
 	started_attack = false
+	inst_idle_sound = audio_play_sound(castagent_laptop_idle, 3, true)
 }
 
 start_defend = function()

@@ -1,0 +1,1 @@
+audio_play_sound(smokepuff, 4, false)
