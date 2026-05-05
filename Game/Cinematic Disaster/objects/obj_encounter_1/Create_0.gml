@@ -1,5 +1,3 @@
-layer_set_visible("RoamingUI", true)
-layer_set_visible("TutorialRoaming", true)
 randomize();
 
 if (serial_number==3) and (global.day < 3 ) {
