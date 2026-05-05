@@ -1,4 +1,4 @@
-//debug
+//debug - testing to see if employee expiry works
 
 global.day += 1
 

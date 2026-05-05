@@ -1,3 +1,5 @@
+randomise()
+
 product_price = {
 	"castagent": irandom_range(145,155),
 	"janitor": irandom_range(145,155),

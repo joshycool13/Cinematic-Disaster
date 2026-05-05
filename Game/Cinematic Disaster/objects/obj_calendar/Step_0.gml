@@ -31,7 +31,6 @@ if (array_length(global.combat_enemies) > 0) {
 		global.player_money += 40 * array_length(global.combat_enemies) * (1 + (global.day - 1)*.10)
 		
 		//progress the day if all encounters are done
-		
 		if (global.combats_complete[0] == true) and (global.combats_complete[1] == true) and (global.combats_complete[2] == true) {
 			
 			//increment day
@@ -42,6 +41,9 @@ if (array_length(global.combat_enemies) > 0) {
 				obj_roaming_player.active = false
 				obj_roaming_player.go_to_ending = true
 			}
+			
+			//randomize the shop
+			obj_shop_shop.shop_refresh()
 			
 			//reset the spawns
 			global.combats_complete = [false, false, false]
@@ -55,9 +57,6 @@ if (array_length(global.combat_enemies) > 0) {
 			if not instance_exists(obj_encounter_3) {
 				instance_create_layer(400, 900, "Objects", obj_encounter_3)
 			}
-			
-			//randomize the shop
-			obj_shop_shop.shop_refresh()
 			
 			//update the player's current moveset
 			if (global.combat_player_employees[$ "castagent"] > 0) {
@@ -113,6 +112,9 @@ if (array_length(global.combat_enemies) > 0) {
 			
 			// heal the player to full? Joshua says no
 			// global.combat_player_hp = 20
+			
+			//randomize the shop
+			obj_shop_shop.shop_refresh()
 			
 		}
 		
