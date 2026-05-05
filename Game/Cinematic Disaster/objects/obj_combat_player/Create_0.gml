@@ -246,6 +246,17 @@ get_hit = function(damage_taken, status_effect)
 	if instance_exists(inst_landmine)
 	{
 		inst_landmine.spawn_explosion()
+		var num_something = irandom(1)
+		switch num_something
+		{
+			case 0:
+				audio_play_sound(explosion__1_, 3, false)
+			break;
+			
+			case 1:
+				audio_play_sound(explosion__2_, 3, false)
+			break;
+		}
 	}
 }
 
