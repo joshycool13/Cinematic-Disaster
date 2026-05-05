@@ -220,6 +220,8 @@ finish_player_attack = function() // when player's attack is over
 	{
 		layer_set_visible("CombatVictory", true)
 		alarm[2] = 120
+		audio_stop_sound(global.current_music)
+		global.current_music = audio_play_sound(victory_sound, 10, false)
 		return
 	}
 	layer_set_visible("Clipboard", true)
@@ -317,6 +319,8 @@ finish_player_defend = function() // when player's defend is over
 	{
 		layer_set_visible("CombatVictory", true)
 		alarm[2] = 120
+		audio_stop_sound(global.current_music)
+		global.current_music = audio_play_sound(victory_sound, 10, false)
 		return
 	}
 	
@@ -345,6 +349,8 @@ check_if_player_dead = function() // end game if player dead
 	{
 		layer_set_visible("CombatGameOver", true)
 		alarm[2] = 120
+		audio_stop_sound(global.current_music)
+		global.current_music = audio_play_sound(game_over_sound, 10, false)
 		return true
 	}
 	return false
