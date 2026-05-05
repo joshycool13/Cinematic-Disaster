@@ -161,6 +161,7 @@ start_attack = function(inst_player_id)
 		sprite_index = anim_attack
 		image_index = 0
 		is_charged = true
+		audio_play_sound(cyborg_charge, 4, false)
 	}
 	else
 	{

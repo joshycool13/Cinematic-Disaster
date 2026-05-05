@@ -119,6 +119,7 @@ start_attack = function(inst_player_id)
 	
 	sprite_index = anim_attack
 	image_index = 0
+	audio_play_sound(dogcar_drive_trim, 4, false);
 }
 
 take_poison_damage = function()
