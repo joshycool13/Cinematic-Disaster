@@ -241,6 +241,11 @@ get_hit = function(damage_taken, status_effect)
 		{
 			audio_play_sound(player_hurt__2_, 4, false)
 		}
+		
+		if instance_exists(inst_shield)
+		{
+			audio_play_sound(cyborg_and_shield_block_attack, 3, false)
+		}
 	}
 	
 	if instance_exists(inst_landmine)
