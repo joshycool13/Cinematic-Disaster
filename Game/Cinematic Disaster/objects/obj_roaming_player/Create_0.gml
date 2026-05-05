@@ -35,5 +35,3 @@ if (array_length(global.combat_enemies) > 0) {
 	go_to_menu = false
 	active = true
 }
-
-enemies_left = 0;

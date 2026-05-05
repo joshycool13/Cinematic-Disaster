@@ -56,6 +56,11 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		draw_text(mouse_x + 10, mouse_y + 85, "enemy's attacks herself.")
 		
 	}
+	
+	draw_text(mouse_x + 10, mouse_y + 150, "Days left: " + string(global.combat_player_employees[$ held]))
 }
+
+//reset held so that it updates correctly
+held = ""
 
 draw_set_font(Font1)

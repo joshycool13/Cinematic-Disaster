@@ -12,10 +12,11 @@ var list_of_owned = []
 for (var i = 0; i <= array_length(hires)-1; i++) {
 	if (global.combat_player_employees[$ hires[i]] > 0) {
 		array_push(list_of_owned, hires[i])
-	}
+	} 
 }
 
 if (array_length(list_of_owned) >= slot_number + 1) {
 	held = list_of_owned[slot_number]
 }
+
 

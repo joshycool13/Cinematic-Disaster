@@ -3,6 +3,8 @@ randomize()
 
 global.day = 1
 global.combat_enemies = []
+global.combats_complete = [false, false, false]
+
 
 global.combat_player_employees = { // the number represents time remaining
 	"castagent" : 0, 

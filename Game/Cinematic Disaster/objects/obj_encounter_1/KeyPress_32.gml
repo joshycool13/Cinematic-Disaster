@@ -108,7 +108,7 @@ if place_meeting(x, y, obj_roaming_player)
 			enemy3 = encounterScale[irandom_range(4, 6)];
 		}
 	}
-	
+	global.combats_complete[serial_number-1] = true 
 	global.combat_enemies = [enemy1, enemy2, enemy3];
 	room_goto_next()
 }
