@@ -9,3 +9,6 @@ else if (_msg == "defaultattack fail sound") {
 else if (_msg == "defaultattack attack sound") {
     audio_play_sound(defaultattack_attack, 4, false);
 }
+else if (_msg == "defaultdefend yell sound") {
+    audio_play_sound(defaultdefend_yell_reverb, 4, false);
+}

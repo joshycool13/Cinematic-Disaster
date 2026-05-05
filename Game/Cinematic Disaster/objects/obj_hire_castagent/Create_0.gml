@@ -32,4 +32,5 @@ start_defend = function()
 	sprite_index = anim_file
 	image_index = 0
 	inst_player_id.input_buffer = defend_input_buffer
+	audio_play_sound(castagent_file_show, 4, false);
 }

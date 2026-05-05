@@ -16,3 +16,9 @@ if (_msg == "explosion sound") {
 		break;
 	}
 }
+else if (_msg == "boomcrew mine place sound") {
+	audio_play_sound(boomcrew_mine_place_trim, 4, false)
+}
+else if (_msg == "boomcrew shield place sound") {
+	audio_play_sound(boomcrew_shield_place, 4, false)
+}
