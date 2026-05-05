@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy_parent1",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_encounter_2",
+  "eventList":[],
   "managed":true,
-  "name":"obj_enemy_parent1",
-  "overriddenProperties":[],
+  "name":"obj_encounter_2",
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_encounter_1","path":"objects/obj_encounter_1/obj_encounter_1.yy",},"propertyId":{"name":"serial_number","path":"objects/obj_encounter_1/obj_encounter_1.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"2",},
+  ],
   "parent":{
     "name":"Roaming",
     "path":"folders/Roaming.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_encounter_1",
+    "path":"objects/obj_encounter_1/obj_encounter_1.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

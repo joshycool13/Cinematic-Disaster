@@ -1,6 +1,7 @@
 // Set global variables
 randomize()
 
+global.day = 1
 global.combat_enemies = []
 
 global.combat_player_employees = { // the number represents time remaining

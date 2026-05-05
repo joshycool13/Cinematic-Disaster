@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ResultsCheck",
+  "%Name":"obj_encounter_1",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":69,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ResultsCheck",
+  "name":"obj_encounter_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"deprecated",
-    "path":"folders/deprecated.yy",
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,11 +26,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v2","%Name":"serial_number","filters":[],"listItems":[],"multiselect":false,"name":"serial_number","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_button",
+    "path":"sprites/spr_button/spr_button.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

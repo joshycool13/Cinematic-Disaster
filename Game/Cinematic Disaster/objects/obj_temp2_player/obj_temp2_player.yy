@@ -9,8 +9,8 @@
   "name":"obj_temp2_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Roaming",
-    "path":"folders/Roaming.yy",
+    "name":"deprecated",
+    "path":"folders/deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,
