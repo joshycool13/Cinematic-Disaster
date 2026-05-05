@@ -37,6 +37,8 @@ get_hit = function(damage_taken, status_effect)
 	
 	health_num -= damage_taken
 	
+	audio_play_sound(dogcar_hurt_2_trim, 4, false)
+	
 	if instance_exists(health_reel)
 	{
 		health_reel.health_num = health_num

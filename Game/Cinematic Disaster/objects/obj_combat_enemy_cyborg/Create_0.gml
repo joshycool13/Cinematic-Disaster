@@ -45,15 +45,24 @@ get_hit = function(damage_taken, status_effect)
 		}
 	
 		health_num -= damage_taken
+		
+		audio_play_sound(cyborg_hurt, 4, false)
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = damage_taken
+	}
+	else
+	{
+		audio_play_sound(cyborg_and_shield_block_attack, 4, false)
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = 0
 	}
 	
 	if instance_exists(health_reel)
 	{
 		health_reel.health_num = health_num
 	}
-	
-	var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
-	inst_damage.number = damage_taken
 	
 	switch (status_effect)
 	{
