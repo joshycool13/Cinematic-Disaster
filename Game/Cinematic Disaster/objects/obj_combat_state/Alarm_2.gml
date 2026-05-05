@@ -2,6 +2,11 @@ layer_set_visible("CombatVictory", false)
 layer_set_visible("CombatGameOver", false)
 layer_set_visible("CombatHP", false)
 
+layer_set_visible("TutorialCombat", false)
+layer_set_visible("TutorialCombat_BG", false)
+layer_set_visible("TutorialRoaming", true)
+layer_set_visible("TutorialRoaming_BG", true)
+
 global.combat_player_hp = inst_player_id.health_num
 global.combat_player_tp = inst_player_id.tp_num
 global.combat_player_items = []

@@ -79,6 +79,11 @@ for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put cor
 
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
 
+layer_set_visible("TutorialCombat", true)
+layer_set_visible("TutorialCombat_BG", true)
+layer_set_visible("TutorialRoaming", false)
+layer_set_visible("TutorialRoaming_BG", false)
+
 layer_set_visible("CombatHP", true)
 layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
