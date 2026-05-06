@@ -37,15 +37,18 @@ setText = function(newText) {
 next = function() {
     current_action++;
     if (current_action >= array_length(actions)) {
+		obj_roaming_player.active = true
         instance_destroy();
     } else {
         actions[current_action].act(id);
+		obj_roaming_player.active = false
     }
 };
 
 // 3. Define setTopic
-setTopic = function(topic) {
-    actions = global.topics[$ topic];
+setTopic = function(topic, npcCharacter = "") {
+	character = npcCharacter
+	actions = global.topics[$ topic];
     current_action = -1;
     next();
 };

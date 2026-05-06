@@ -26,7 +26,7 @@
   ],
   "name":"spr_dialogue_player",
   "nineSlice":null,
-  "origin":0,
+  "origin":6,
   "parent":{
     "name":"NewJordanGroup",
     "path":"folders/Sprites/NewJordanGroup.yy",
@@ -79,7 +79,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":0,
+    "yorigin":512,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

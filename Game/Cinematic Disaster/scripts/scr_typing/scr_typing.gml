@@ -2,12 +2,12 @@
 //Creates and starts a conversation.
 //param topic= what topic the dialogue box should use.
 
-function startDialogue(topic) {
+function startDialogue(topic, character = "") {
 	if(instance_exists(obj_textbox))
 	return;
 	
 	var inst = instance_create_depth(x,y, -999, obj_textbox);
-	inst.setTopic(topic);
+	inst.setTopic(topic, character);
 }
 
 
