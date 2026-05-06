@@ -135,7 +135,7 @@ TEXT("So sad!")
 // All of these execute in sequence. However, any time a different character speaks, the topic needs to increment.
 
 global.topics[$ "Ending1"] = [
-// no character
+// Director only
 TEXT("You finished the movie! Congratulations."),
 ]
 
@@ -164,7 +164,7 @@ TEXT("Jane Wick is the best!"),
 
 global.topics[$ "Ending5"] = [
 // Laurie
-TEXT("I shouuld arrest you for that emotional ending."),
+TEXT("I should arrest you for that emotional ending."),
 TEXT("Breaking my heart is a crime..."),
 TEXT("Get on moving before I change my mind."),
 ]
@@ -193,7 +193,7 @@ TEXT("Three out of five stars. I'll be eagerly awaiting your next film."),
 ]
 
 global.topics[$ "Ending9"] = [
-// Pranav
+// nobody
 TEXT("Credits:"),
 TEXT("Joshua Navarro: UI and Combat Design."),
 TEXT("Jordan Andrews: Story and Character Design."),
@@ -201,6 +201,11 @@ TEXT("Pranav Rumala: Art and Animation."),
 TEXT("The End!"),
 ]
 
+// this is a filler to make space between some of the characters in the ending
+global.topics[$ "Ending0"] = [
+// Director only
+TEXT(". . . . ."),
+]
 
 
 
