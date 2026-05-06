@@ -17,7 +17,7 @@ global.combat_player_attacks = []
 global.combat_player_defends = []
 global.combat_player_items = []
 
-global.player_money = 1000
+global.player_money = 120
 
 global.combat_player_hp = 20
 global.combat_player_tp = 10
