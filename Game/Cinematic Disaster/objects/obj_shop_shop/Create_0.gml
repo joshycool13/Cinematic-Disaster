@@ -1,19 +1,19 @@
 randomise()
 
 product_price = {
-	"castagent": irandom_range(145,155),
-	"janitor": irandom_range(145,155),
-	"makeup": irandom_range(145,155),
-	"boomcrew": irandom_range(145,155),
-	"janewick": irandom_range(145,155),
+	"castagent": irandom_range(60,100),
+	"janitor": irandom_range(80,120),
+	"makeup": irandom_range(100,140),
+	"boomcrew": irandom_range(120,160),
+	"janewick": irandom_range(140,180),
 	
-	"coffee": irandom_range(90,100),
-	"drink": irandom_range(90,100),
-	"flashbang": irandom_range(90,100),
-	"linechange": irandom_range(90,100),
-	"rag": irandom_range(90,100),
-	"reel": irandom_range(90,100),
-	"tomato": irandom_range(90,100)
+	"coffee": irandom_range(40,60),
+	"drink": irandom_range(40,60),
+	"flashbang": irandom_range(30,50),
+	"linechange": irandom_range(50,70),
+	"rag": irandom_range(45,65),
+	"reel": irandom_range(70,80),
+	"tomato": irandom_range(35,55)
 }
 
 function shop_refresh() {
