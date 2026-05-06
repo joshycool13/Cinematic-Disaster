@@ -6,11 +6,11 @@ run_speed = 6
 start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
-default_attack_damage = 4
+default_attack_damage = 2
 max_health_num = 20
 max_tp_num = 10
 input_lockout_time = 60
-default_input_buffer = 20
+default_input_buffer = 10
 actor_x_plus = 64
 
 // Variables

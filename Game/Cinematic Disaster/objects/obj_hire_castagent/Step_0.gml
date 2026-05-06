@@ -1,6 +1,6 @@
 if instance_exists(inst_cursor)
 {
-	inst_cursor.x += 6
+	inst_cursor.x += 8
 	if inst_cursor.x > window_get_width()
 	{
 		instance_destroy(inst_cursor)

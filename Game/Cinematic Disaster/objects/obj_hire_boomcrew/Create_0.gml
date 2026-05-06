@@ -1,10 +1,10 @@
 // Constants
-attack_damage = 6
+attack_damage = 5
 attack_hit_frame = 1
 bomb_gravity = 0.5
 bar_x = 896
 bar_y = 128
-slider_speed = 8
+slider_speed = 12
 green_bar_x_end = 78
 green_bar_x_begin = 182
 bomb_x = 50
@@ -18,7 +18,7 @@ shield_y = 16
 inst_target_id = noone
 inst_player_id = noone
 defend_input_buffer = 0
-shield_input_buffer = 25
+shield_input_buffer = 20
 inst_slider = noone
 inst_bar = noone
 h_speed = 8

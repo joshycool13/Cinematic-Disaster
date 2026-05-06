@@ -1,6 +1,6 @@
 // Constants
 lockout_time = 60
-attack_damage = 6
+attack_damage = 2
 
 // Variables
 inst_target_id = noone
