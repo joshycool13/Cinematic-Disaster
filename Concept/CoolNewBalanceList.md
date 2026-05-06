@@ -30,7 +30,7 @@ Health from Loss: 10
 
 
 
-Money Start: $??
+Money Start: $?? > $120
 
 Money Gained: $40 \* Enemies defeated - 10% more money for each day after first day
 
@@ -123,7 +123,7 @@ Default Defend - Megaphone:
 
 \[Casting Agent]
 
-* Price: $145 - $155
+* Price: $145 - $155 > $60 - $100
 
 
 
@@ -145,7 +145,7 @@ Prediction:
 
 \[Janitor]
 
-* Price: $145 - $155
+* Price: $145 - $155 > $80 - $120
 
 
 
@@ -168,7 +168,7 @@ Cleanse:
 
 \[Jane Wick]
 
-* Price: $145 - $155
+* Price: $145 - $155 > $140 - $180
 
 
 
@@ -197,7 +197,7 @@ Bodyguard:
 
 \[Makeup Artist]
 
-* Price: $145 - $155
+* Price: $145 - $155 > $100 - $140
 
 
 
@@ -217,7 +217,7 @@ Imitate:
 
 \[Boom Crew]
 
-* Price: $145 - $155
+* Price: $145 - $155 > $120 - $160
 
 
 
@@ -251,48 +251,48 @@ Blast Shield:
 
 Corporate Drink:
 
-* Price: $90 - $100
+* Price: $90 - $100 > $40 - $60
 * Heal: 10 HP
 
 
 
 Coffee:
 
-* Price: $90 - $100
+* Price: $90 - $100 > $40 - $60
 * Heal: 5 TP
 
 
 
 Cleaning Rag:
 
-* Price: $90 - $100
+* Price: $90 - $100 > $45 - $65
 * Cure: Poison and Deafen - Locked
 
 
 
 Line Change:
 
-* Price: $90 - $100
+* Price: $90 - $100 > $50 - $70
 * Note: Use a random Attack Skill for 0 TP Cost - Locked
 
 
 
 Rotten Tomato:
 
-* Price: $90 - $100
+* Price: $90 - $100 > $35 - $55
 * Status: Poison - Locked
 
 
 
 Flashbang:
 
-* Price: $90 - $100
+* Price: $90 - $100 > $30 - $50
 * Status: Stun - Locked
 
 
 
 Reel:
 
-* Price: $90 - $100
-* Sell: $70 - $110 (randomizer is in obj\_pranavs\_bandaid\_solution\_2)
+* Price: $90 - $100 > $70 - $80
+* Sell: $70 - $110 > $55 - $90 (randomizer is in obj\_pranavs\_bandaid\_solution\_2)
 
