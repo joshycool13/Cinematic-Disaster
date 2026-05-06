@@ -131,6 +131,75 @@ TEXT("...Jane behind? ;.;"),
 TEXT("So sad!")
 ];
 
+// Ending
+// All of these execute in sequence. However, any time a different character speaks, the topic needs to increment.
+
+global.topics[$ "Ending1"] = [
+// no character
+TEXT("You finished the movie! Congratulations."),
+]
+
+global.topics[$ "Ending2"] = [
+// Granny
+TEXT("Did you make good use of my Items? There are seven different ones."),
+TEXT("Here's an apple for your hard work."),
+TEXT("By the way,"),
+TEXT("My little brother wanted to ask if he could blow up your movie set."),
+TEXT("Be a dear?"),
+]
+
+global.topics[$ "Ending3"] = [
+// Buddy
+TEXT("I hear you banged up a few puppies' rides."),
+TEXT("This is a good movie, so you get half off."),
+TEXT("But you'll be painting cars for a year!"),
+]
+
+global.topics[$ "Ending4"] = [
+// Leaves
+TEXT("I've seen enough. I'm leafing..."),
+TEXT("... a positive review."),
+TEXT("Jane Wick is the best!"),
+]
+
+global.topics[$ "Ending5"] = [
+// Laurie
+TEXT("I shouuld arrest you for that emotional ending."),
+TEXT("Breaking my heart is a crime..."),
+TEXT("Get on moving before I change my mind."),
+]
+
+global.topics[$ "Ending6"] = [
+// Brooke
+TEXT("Wow! I'm so not jealous of Wick!"),
+TEXT("On a totally unrelated note, you should make a musical!"),
+TEXT("Here's my agency's number! Call me!"),
+]
+
+global.topics[$ "Ending7"] = [
+// Neil
+TEXT("Well, that's a wrap! Good work, boss!"),
+TEXT("I do have plenty of behind-the-scenes footage, if you want to see."),
+TEXT("This camera never stops rolling. And neither do any of the hidden-- Ahem."),
+TEXT("..."),
+TEXT("I'm not wiping hours of hidden camera footage. Really."),
+]
+
+global.topics[$ "Ending8"] = [
+// Pranav
+TEXT("I was very entertained by your movie. Everything about it was masterfully crafted."),
+TEXT("I did predict everything that was going to happen, though."),
+TEXT("Three out of five stars. I'll be eagerly awaiting your next film."),
+]
+
+global.topics[$ "Ending9"] = [
+// Pranav
+TEXT("Credits:"),
+TEXT("Joshua Navarro: UI and Combat Design."),
+TEXT("Jordan Andrews: Story and Character Design."),
+TEXT("Pranav Rumala: Art and Animation."),
+TEXT("The End!"),
+]
 
 
 

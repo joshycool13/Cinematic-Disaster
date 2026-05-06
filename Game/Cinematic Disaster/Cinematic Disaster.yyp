@@ -78,6 +78,7 @@
     {"id":{"name":"obj_encounter_2","path":"objects/obj_encounter_2/obj_encounter_2.yy",},},
     {"id":{"name":"obj_encounter_3","path":"objects/obj_encounter_3/obj_encounter_3.yy",},},
     {"id":{"name":"obj_ending_look","path":"objects/obj_ending_look/obj_ending_look.yy",},},
+    {"id":{"name":"obj_ending_type_1","path":"objects/obj_ending_type_1/obj_ending_type_1.yy",},},
     {"id":{"name":"obj_enemy_health","path":"objects/obj_enemy_health/obj_enemy_health.yy",},},
     {"id":{"name":"obj_frame","path":"objects/obj_frame/obj_frame.yy",},},
     {"id":{"name":"obj_gui_hp","path":"objects/obj_gui_hp/obj_gui_hp.yy",},},

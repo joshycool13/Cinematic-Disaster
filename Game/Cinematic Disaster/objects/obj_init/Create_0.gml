@@ -1,7 +1,7 @@
 // Set global variables
 randomize()
 
-global.day = 1
+global.day = 6
 global.combat_enemies = []
 global.combats_complete = [false, false, false]
 

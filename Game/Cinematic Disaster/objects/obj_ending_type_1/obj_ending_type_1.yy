@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ending_look",
+  "%Name":"obj_ending_type_1",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ending_look",
+  "name":"obj_ending_type_1",
   "overriddenProperties":[],
   "parent":{
     "name":"Ending",
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_background_roaming_ending",
-    "path":"sprites/spr_background_roaming_ending/spr_background_roaming_ending.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

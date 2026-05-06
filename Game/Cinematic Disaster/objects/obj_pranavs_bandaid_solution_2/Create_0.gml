@@ -4,6 +4,7 @@ function remove_reels() {
 		if (global.combat_player_items[i] == "reel") {
 			array_delete(global.combat_player_items, i, 1);
 			global.player_money += irandom_range(70,110);
+			audio_play_sound(purchase__1_, 3, false)
 		}
 	}
 }
