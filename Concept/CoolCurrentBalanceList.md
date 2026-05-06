@@ -10,6 +10,8 @@ obj\_shop\_shop = adjust the prices in the shop
 
 obj\_playermenu\_button = adjust the skill names
 
+obj\_calendar = adjust health from day and loss, and money gained from battles
+
 
 
 Player HP: 20 - Locked
@@ -23,6 +25,12 @@ Max Item Amount: 9 - Locked
 
 
 Heal from Day: 10
+
+Health from Loss: 10
+
+
+
+Money Gained: $40 \* Enemies defeated - 10% more money for each day after first day
 
 
 
@@ -113,7 +121,7 @@ Default Defend - Megaphone:
 
 \[Casting Agent]
 
-* Price: $151
+* Price: $145 - $155
 
 
 
@@ -135,7 +143,7 @@ Prediction:
 
 \[Janitor]
 
-* Price: $152
+* Price: $145 - $155
 
 
 
@@ -158,7 +166,7 @@ Cleanse:
 
 \[Jane Wick]
 
-* Price: $155
+* Price: $145 - $155
 
 
 
@@ -187,7 +195,7 @@ Bodyguard:
 
 \[Makeup Artist]
 
-* Price: $153
+* Price: $145 - $155
 
 
 
@@ -207,7 +215,7 @@ Imitate:
 
 \[Boom Crew]
 
-* Price: $154
+* Price: $145 - $155
 
 
 
@@ -241,42 +249,42 @@ Blast Shield:
 
 Corporate Drink:
 
-* Price: $92
+* Price: $90 - $100
 * Heal: 10 HP
 
 
 
 Coffee:
 
-* Price: $91
+* Price: $90 - $100
 * Heal: 5 TP
 
 
 
 Cleaning Rag:
 
-* Price: $95
+* Price: $90 - $100
 * Cure: Poison and Deafen - Locked
 
 
 
 Line Change:
 
-* Price: $94
+* Price: $90 - $100
 * Note: Use a random Attack Skill for 0 TP Cost - Locked
 
 
 
 Rotten Tomato:
 
-* Price: $97
+* Price: $90 - $100
 * Status: Poison - Locked
 
 
 
 Flashbang:
 
-* Price: $93
+* Price: $90 - $100
 * Status: Stun - Locked
 
 
