@@ -49,13 +49,13 @@ if (array_length(global.combat_enemies) > 0) {
 			global.combats_complete = [false, false, false]
 		
 			if not instance_exists(obj_encounter_1) {
-				instance_create_layer(200, 900, "Objects", obj_encounter_1)
+				instance_create_layer(200, 900, "Room_Objects", obj_encounter_1)
 			}
 			if not instance_exists(obj_encounter_2) {
-				instance_create_layer(300, 900, "Objects", obj_encounter_2)
+				instance_create_layer(300, 900, "Room_Objects", obj_encounter_2)
 			}
 			if not instance_exists(obj_encounter_3) {
-				instance_create_layer(400, 900, "Objects", obj_encounter_3)
+				instance_create_layer(400, 900, "Room_Objects", obj_encounter_3)
 			}
 			
 			//update the player's current moveset
