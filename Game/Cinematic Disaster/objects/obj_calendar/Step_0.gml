@@ -110,8 +110,11 @@ if (array_length(global.combat_enemies) > 0) {
 				array_push(global.combat_player_defends, "blast_shield")
 			}
 			
-			// heal the player to full? Joshua says no
-			// global.combat_player_hp = 20
+			// heal the player to full? Joshua says yes a little bit
+			global.combat_player_hp += 10
+			if (global.combat_player_hp >= 20) {
+				global.combat_player_hp = 20
+			}
 			
 			//randomize the shop
 			obj_shop_shop.shop_refresh()
