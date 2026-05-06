@@ -225,7 +225,7 @@ Explosive Test:
 
 * TP Cost: 5 > 4
 * DMG: 6 to all > 5 to all (all - Locked)
-* Difficulty: Easy
+* Difficulty: Easy > Medium
 
 
 

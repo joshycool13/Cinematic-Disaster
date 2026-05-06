@@ -2,14 +2,14 @@
 starting_x = x
 starting_y = y
 attack_speed = 60
-attack_damage = 3
+attack_damage = 4
 attack_speed_frame = 5
 max_screen_awayness = 150
 
 // Variables
 inst_target_id = false
 has_already_hit = false
-health_num = 8
+health_num = 6
 is_go_speed = false
 finished_round_trip = false
 player_attacked = false
