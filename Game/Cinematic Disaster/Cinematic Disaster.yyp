@@ -254,6 +254,7 @@
     {"id":{"name":"spr_dialogue_npc_5","path":"sprites/spr_dialogue_npc_5/spr_dialogue_npc_5.yy",},},
     {"id":{"name":"spr_dialogue_npc_6","path":"sprites/spr_dialogue_npc_6/spr_dialogue_npc_6.yy",},},
     {"id":{"name":"spr_dialogue_npc_7","path":"sprites/spr_dialogue_npc_7/spr_dialogue_npc_7.yy",},},
+    {"id":{"name":"spr_dialogue_npc_8","path":"sprites/spr_dialogue_npc_8/spr_dialogue_npc_8.yy",},},
     {"id":{"name":"spr_dialogue_player","path":"sprites/spr_dialogue_player/spr_dialogue_player.yy",},},
     {"id":{"name":"spr_dialogue_textbox","path":"sprites/spr_dialogue_textbox/spr_dialogue_textbox.yy",},},
     {"id":{"name":"spr_drone","path":"sprites/spr_drone/spr_drone.yy",},},
