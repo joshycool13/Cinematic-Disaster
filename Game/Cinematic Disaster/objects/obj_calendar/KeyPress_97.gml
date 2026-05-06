@@ -1,7 +1,8 @@
-//debug - testing to see if employee expiry works
+//debug - testing various things
 
 global.day += 1
 
+/*
 //update the player's current moveset
 if (global.combat_player_employees[$ "castagent"] > 0) {
 	global.combat_player_employees[$ "castagent"] -= 1
@@ -53,3 +54,4 @@ if (global.combat_player_employees[$ "boomcrew"] > 0) {
 	array_push(global.combat_player_defends, "landmine")
 	array_push(global.combat_player_defends, "blast_shield")
 }
+*/

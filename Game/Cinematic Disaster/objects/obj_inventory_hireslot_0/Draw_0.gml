@@ -33,7 +33,7 @@ Her attack reveals the enemy's HP.
 Her defense doesn't do anything,
 but it will heal 1 TP.
 
-Days left: {0}", global.combat_player_employees[$ held]))
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "janewick") {
 		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
@@ -44,7 +44,7 @@ high and elbow drop an enemy.
 Her defense lets her step in
 for you during the defense stage.
 
-Days left: {0}", global.combat_player_employees[$ held]))
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "janitor") {
 		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
@@ -56,7 +56,7 @@ His defense blocks status effects
 that would have applied this turn,
 and heals 1 TP.
 
-Days left: {0}", global.combat_player_employees[$ held]))
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "boomcrew") {
 		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
@@ -68,7 +68,7 @@ and heals 4 TP.
 His blast shield caps the damage
 you take, and heals 1 TP.
 
-Days left: {0}", global.combat_player_employees[$ held]))
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "makeup") {
 		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
@@ -79,7 +79,7 @@ attack as her own attack.
 She uses a random defense as 
 her own defense.
 
-Days left: {0}", global.combat_player_employees[$ held]))
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	}
 	

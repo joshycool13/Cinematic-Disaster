@@ -48,7 +48,7 @@ if (locked = false) {
 			if (global.combat_player_employees[$ product] == 0) && 
 				(global.player_money >= price) { //does not already own actor and has enough money
 				global.player_money -= price
-				global.combat_player_employees[$ product] = 3
+				global.combat_player_employees[$ product] = 5
 				audio_play_sound(purchase__1_, 3, false)
 			} 
 		}
