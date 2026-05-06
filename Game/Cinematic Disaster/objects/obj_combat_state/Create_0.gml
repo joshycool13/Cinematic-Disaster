@@ -79,7 +79,7 @@ for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put cor
 
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
 
-layer_set_visible("TutorialCombat", true)
+layer_set_visible("TutorialCombatAttack", true)
 layer_set_visible("TutorialCombat_BG", true)
 layer_set_visible("TutorialRoaming", false)
 layer_set_visible("TutorialRoaming_BG", false)
@@ -231,6 +231,8 @@ finish_player_attack = function() // when player's attack is over
 	}
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("EnemyMenu", true)
+	layer_set_visible("TutorialCombatAttack", false)
+	layer_set_visible("TutorialCombatDodge", true)
 	is_player_turn = false
 }
 
@@ -330,6 +332,8 @@ finish_player_defend = function() // when player's defend is over
 	}
 	
 	layer_set_visible("Clipboard", true)
+	layer_set_visible("TutorialCombatAttack", true)
+	layer_set_visible("TutorialCombatDodge", false)
 	if inst_player_id.is_stunned
 	{
 		inst_player_id.is_stunned = false

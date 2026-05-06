@@ -28,6 +28,7 @@ if attacking_timer <= 0 and not finished_attacking_gun
 	sprite_index = anim_gun_idle
 	image_speed = 0
 	image_index = image_number - 1
+	draw_mash_text = false
 	inst_player_id.kill_actor(true)
 }
 

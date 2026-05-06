@@ -14,6 +14,7 @@ hit_timing_window = false
 attacking_timer = 60
 started_attacking_gun = false
 finished_attacking_gun = false
+draw_mash_text = false
 
 // Animations
 anim_guard_dodge = spr_hire_janewick_guard_dodge
@@ -31,6 +32,7 @@ start_attack_gun = function()
 {
 	sprite_index = anim_gun_idle
 	image_index = 0
+	draw_mash_text = true
 }
 
 start_attack_punch = function()
