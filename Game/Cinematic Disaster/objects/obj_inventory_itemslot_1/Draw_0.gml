@@ -68,7 +68,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 	} else if (held = "reel") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Reel:")
-		draw_text(mouse_x + 10, mouse_y + 35, "Spare B-roll from another movie.")
+		draw_text(mouse_x + 10, mouse_y + 35, "B-roll from another movie.")
 		draw_text(mouse_x + 10, mouse_y + 60, "We could sell it for easy")
 		draw_text(mouse_x + 10, mouse_y + 85, "money. Fr fr.")
 		draw_text(mouse_x + 10, mouse_y + 110, "(Press Space!)")
