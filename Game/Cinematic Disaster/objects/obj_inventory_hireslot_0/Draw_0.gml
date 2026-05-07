@@ -30,8 +30,8 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Casting Agent: 
 Tirelessly rejecting applications.
 Her attack reveals the enemy's HP.
-Her defense doesn't do anything,
-but it will heal 1 TP.
+Her defense assists your dodging
+ability greatly.
 
 Fights left: {0}", global.combat_player_employees[$ held]))
 		
@@ -42,7 +42,8 @@ A virtuoso of martial arts cinema.
 She can shoot rapidly, or jump
 high and elbow drop an enemy.
 Her defense lets her step in
-for you during the defense stage.
+for you during the defense stage,
+and heals 3 TP.
 
 Fights left: {0}", global.combat_player_employees[$ held]))
 		
@@ -51,7 +52,8 @@ Fights left: {0}", global.combat_player_employees[$ held]))
 		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Janitor: 
 His hobby is painting.
 His attack applies Wet, which
-amplifies damage dealt next turn.
+amplifies damage dealt this
+and next turn.
 His defense blocks status effects
 that would have applied this turn,
 and heals 1 TP.
