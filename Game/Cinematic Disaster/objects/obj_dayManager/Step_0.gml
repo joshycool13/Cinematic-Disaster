@@ -9,7 +9,7 @@ requiredEncounters =3;
 
 //check number of enemies
 
-var _current_enemy_count = instance_number(obj_enemy_parent1);
+var _current_enemy_count = instance_number(obj_encounter_1);
 
 //Progress the day
 

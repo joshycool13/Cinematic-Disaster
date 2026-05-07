@@ -36,8 +36,8 @@ TEXT("All crimes commited here... real or fake. Must be reported to me!"),
 ];
 
 global.topics[$ "Laurie3"] = [
-TEXT("I'm a short queen."),
-TEXT("Instead of telling crooks to put their hands up where I can see them, I prefer they pop a squat."),
+TEXT("I'm a short queen. But I still get plenty of respect in these parts."),
+TEXT("Crooks put their hands on the GROUND at the sight of me!"),
 ];
 
 
@@ -131,7 +131,129 @@ TEXT("...Jane behind? ;.;"),
 TEXT("So sad!")
 ];
 
+global.topics[$ "Keanu3"] = [
+TEXT("I work for an insurance fern."),
+TEXT("If one of your actors gets injured in a wreck, leaf the paperwork to me!"),
+];
 
+
+global.topics[$ "Keanu4"] = [
+TEXT("Sad endings are on the rise, lately. And that's the worst kind for a sappy guy like me to sit through..."),
+TEXT("My mama let me borrow these kick-ass shades to preserve my dignity!"),
+];
+
+
+global.topics[$ "Keanu5"] = [
+TEXT("Once this movie is finished, you should branch out to new genres."),
+TEXT("What will you make? My excitement is conifereous!"),
+
+];
+
+
+
+
+//Taxi
+
+global.topics[$ "Taxi1"] = [
+TEXT("The wheels on the bus go round and round.... Until I pop them all. >:)"),
+];
+
+global.topics[$ "Taxi2"] = [
+TEXT("Would you like a ride between takes?"),
+TEXT("Just sit on the hood and I'll take off. It's totally safe!"),
+
+];
+
+global.topics[$ "Taxi3"] = [
+TEXT("I swear I'm not a bad driver!"),
+TEXT("I've got a 'black belt' right here! I just don't like to flex by wearing it all the time."),
+
+];
+
+global.topics[$ "Taxi4"] = [
+TEXT("I'm afraid of monkeys."),
+TEXT("My yellow cab is one big banana, and I'm the vulnerable feast inside."),
+];
+
+
+
+
+
+// Ending
+// All of these execute in sequence. However, any time a different character speaks, the topic needs to increment.
+
+global.topics[$ "Ending1"] = [
+// Director only
+TEXT("You finished the movie! Congratulations."),
+]
+
+global.topics[$ "Ending2"] = [
+// Granny
+TEXT("Did you make good use of my Items? There are seven different ones."),
+TEXT("Here's an apple for your hard work."),
+TEXT("By the way,"),
+TEXT("My little brother wanted to ask if he could blow up your movie set."),
+TEXT("Be a dear?"),
+]
+
+global.topics[$ "Ending3"] = [
+// Buddy
+TEXT("I hear you banged up a few puppies' rides."),
+TEXT("This is a good movie, so you get half off."),
+TEXT("But you'll be painting cars for a year!"),
+]
+
+global.topics[$ "Ending4"] = [
+// Leaves
+TEXT("I've seen enough. I'm leafing..."),
+TEXT("... a positive review."),
+TEXT("Jane Wick is the best!"),
+]
+
+global.topics[$ "Ending5"] = [
+// Laurie
+TEXT("I should arrest you for that emotional ending."),
+TEXT("Breaking my heart is a crime..."),
+TEXT("Get on moving before I change my mind."),
+]
+
+global.topics[$ "Ending6"] = [
+// Brooke
+TEXT("Wow! I'm so not jealous of Wick!"),
+TEXT("On a totally unrelated note, you should make a musical!"),
+TEXT("Here's my agency's number! Call me!"),
+]
+
+global.topics[$ "Ending7"] = [
+// Neil
+TEXT("Well, that's a wrap! Good work, boss!"),
+TEXT("I do have plenty of behind-the-scenes footage, if you want to see."),
+TEXT("This camera never stops rolling. And neither do any of the hidden-- Ahem."),
+TEXT("..."),
+TEXT("I'm not wiping hours of hidden camera footage. Really."),
+]
+
+global.topics[$ "Ending8"] = [
+// Pranav
+TEXT("I was very entertained by your movie. Everything about it was masterfully crafted."),
+TEXT("I did predict everything that was going to happen, though."),
+TEXT("Three out of five stars. I'll be eagerly awaiting your next film."),
+]
+
+global.topics[$ "Ending9"] = [
+// nobody
+TEXT("Credits:"),
+TEXT("Joshua Navarro: UI and Combat Design."),
+TEXT("Jordan Andrews: Story and Character Design."),
+TEXT("Pranav Rumala: Art and Animation."),
+TEXT("The End!"),
+]
+
+// this is a filler to make space between some of the characters in the ending
+global.topics[$ "Ending0"] = [
+// Director only
+TEXT(". . . . ."),
+]
 
 
 

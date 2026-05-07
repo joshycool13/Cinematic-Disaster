@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_day_data",
   "parent":{
-    "name":"Roaming",
-    "path":"folders/Roaming.yy",
+    "name":"deprecated",
+    "path":"folders/deprecated.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

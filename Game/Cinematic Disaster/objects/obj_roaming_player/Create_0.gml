@@ -30,9 +30,8 @@ go_to_credits = false // look at credits screen
 go_to_inventory = false // look at inventory
 go_to_ending = false // look at ending screen
 
+// don't go to to menu upon returning
 if (array_length(global.combat_enemies) > 0) {
 	go_to_menu = false
 	active = true
 }
-
-enemies_left = 0;

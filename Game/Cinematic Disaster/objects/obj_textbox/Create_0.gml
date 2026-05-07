@@ -37,15 +37,26 @@ setText = function(newText) {
 next = function() {
     current_action++;
     if (current_action >= array_length(actions)) {
+		
+		//unlocks the player movement when dialogue ends
+		obj_roaming_player.active = true
+		
+		//tells certain objects when dialogue is finished
+		obj_ending_look.dialogue_complete = true
+		
         instance_destroy();
     } else {
         actions[current_action].act(id);
+		
+		//locks the player movement when dialogue is happening
+		obj_roaming_player.active = false
     }
 };
 
 // 3. Define setTopic
-setTopic = function(topic) {
-    actions = global.topics[$ topic];
+setTopic = function(topic, npcCharacter = "") {
+	character = npcCharacter
+	actions = global.topics[$ topic];
     current_action = -1;
     next();
 };

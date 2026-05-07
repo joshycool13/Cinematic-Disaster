@@ -1,15 +1,21 @@
-	if(obj_dayManager.day_data.game_day == 1)
+if (distance_to_object(obj_roaming_player) <= 32)
+{
+	
+
+	if(global.day == 1)
 	{
-		startDialogue("Granny1")
+		startDialogue("Granny1", "Granny")
 		
 	}
-	else if(obj_dayManager.day_data.game_day == 3)
+	else if(global.day == 3)
 	{
-		startDialogue("Granny2")
+		startDialogue("Granny2", "Granny")
 		
 	}
-		else if(obj_dayManager.day_data.game_day == 4)
+		else if(global.day == 4)
 	{
-		startDialogue("Granny3")
+		startDialogue("Granny3", "Granny")
 		
 	}
+	
+}

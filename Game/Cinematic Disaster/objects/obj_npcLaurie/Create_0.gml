@@ -1,4 +1,4 @@
-	if(obj_dayManager.day_data.game_day == 3 or obj_dayManager.day_data.game_day == 5){
+	if(global.day == 3 or global.day == 5){
 		
 	instance_destroy()
 		

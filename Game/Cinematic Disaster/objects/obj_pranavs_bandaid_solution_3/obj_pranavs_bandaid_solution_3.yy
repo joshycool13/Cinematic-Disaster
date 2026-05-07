@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_pranavs_bandaid_solution_3",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_pranavs_bandaid_solution_3",
   "overriddenProperties":[],
   "parent":{
-    "name":"Combat",
-    "path":"folders/Combat.yy",
+    "name":"Roaming",
+    "path":"folders/Roaming.yy",
   },
   "parentObjectId":null,
   "persistent":false,

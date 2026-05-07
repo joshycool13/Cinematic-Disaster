@@ -10,8 +10,8 @@
   "name":"obj_ResultsCheck",
   "overriddenProperties":[],
   "parent":{
-    "name":"Roaming",
-    "path":"folders/Roaming.yy",
+    "name":"deprecated",
+    "path":"folders/deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

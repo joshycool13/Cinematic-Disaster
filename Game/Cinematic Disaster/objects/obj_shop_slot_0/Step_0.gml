@@ -1,3 +1,25 @@
+
+
+// set the item or employee this slot of the shop sells
+//this is now in the step event because of obj_calendar's refresh also having to be in the step event
+item_select = global.item_list[slot_number]
+actor_select = global.actor_list[slot_number]
+
+item_or_actor = 1 //if 1, sells items, if 0, sells employees
+if (slot_number > 2) {
+	item_or_actor = 0
+}
+
+if (item_or_actor == 1) {
+	product = item_select
+	price = product_price[$ item_select]
+} else {
+	product = actor_select
+	price = product_price[$ actor_select]
+}
+
+
+
 //attempt buy if player clicks the buy button
 //this approach will not require a separate buy button
 // if buy button is clicked
@@ -26,7 +48,7 @@ if (locked = false) {
 			if (global.combat_player_employees[$ product] == 0) && 
 				(global.player_money >= price) { //does not already own actor and has enough money
 				global.player_money -= price
-				global.combat_player_employees[$ product] = 3
+				global.combat_player_employees[$ product] = 5
 				audio_play_sound(purchase__1_, 3, false)
 			} 
 		}

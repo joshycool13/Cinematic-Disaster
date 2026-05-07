@@ -3,12 +3,14 @@ if (distance_to_point(mouse_x, mouse_y)<=1) && (mouse_check_button_released(mb_l
 	obj_roaming_player.go_to_item_shop = false
 	obj_roaming_player.active = true
 	
+	global.combat_player_attacks = []
+	global.combat_player_defends = []
 	
 	if (global.combat_player_employees[$ "castagent"] > 0) {
 		array_push(global.combat_player_attacks, "identify")
 		array_push(global.combat_player_defends, "prediction")
 			
-	}
+	} 
 	if (global.combat_player_employees[$ "janitor"] > 0) {
 		array_push(global.combat_player_attacks, "broom")
 		array_push(global.combat_player_defends, "cleanse")

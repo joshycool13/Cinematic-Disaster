@@ -9,8 +9,8 @@
   "name":"obj_test_combat_trigger",
   "overriddenProperties":[],
   "parent":{
-    "name":"Roaming",
-    "path":"folders/Roaming.yy",
+    "name":"deprecated",
+    "path":"folders/deprecated.yy",
   },
   "parentObjectId":null,
   "persistent":false,

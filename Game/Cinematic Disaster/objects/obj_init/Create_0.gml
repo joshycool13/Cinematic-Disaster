@@ -1,6 +1,10 @@
 // Set global variables
+randomize()
 
+global.day = 1
 global.combat_enemies = []
+global.combats_complete = [false, false, false]
+
 
 global.combat_player_employees = { // the number represents time remaining
 	"castagent" : 0, 
@@ -13,7 +17,7 @@ global.combat_player_attacks = []
 global.combat_player_defends = []
 global.combat_player_items = []
 
-global.player_money = 1000
+global.player_money = 120
 
 global.combat_player_hp = 20
 global.combat_player_tp = 10

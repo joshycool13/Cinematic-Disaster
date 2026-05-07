@@ -1,3 +1,7 @@
+
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
+
 draw_self()
 
 if (held = "castagent") {
@@ -18,44 +22,72 @@ if (held = "castagent") {
 }
 
 draw_set_font(font_shop2)
+draw_set_colour(c_black)
 
 if (distance_to_point(mouse_x, mouse_y) <= 1) {
 	if (held = "castagent") {
-		draw_sprite_stretched(spr_guibg_purple, 0, mouse_x, mouse_y, 300, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Casting Agent:")
-		draw_text(mouse_x + 10, mouse_y + 35, "Tirelessly rejecting applications.")
-		draw_text(mouse_x + 10, mouse_y + 60, "Her attack reveals the")
-		draw_text(mouse_x + 10, mouse_y + 85, "enemy's HP.")
+		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
+		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Casting Agent: 
+Tirelessly rejecting applications.
+Her attack reveals the enemy's HP.
+Her defense doesn't do anything,
+but it will heal 1 TP.
+
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "janewick") {
-		draw_sprite_stretched(spr_guibg_purple, 0, mouse_x, mouse_y, 300, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Jane Wick:")
-		draw_text(mouse_x + 10, mouse_y + 35, "A virtuoso of martial arts.")
-		draw_text(mouse_x + 10, mouse_y + 60, "She can protect, attack,")
-		draw_text(mouse_x + 10, mouse_y + 85, "or jump on them flat.")
+		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
+		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Jane Wick: 
+A virtuoso of martial arts cinema.
+She can shoot rapidly, or jump
+high and elbow drop an enemy.
+Her defense lets her step in
+for you during the defense stage.
+
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "janitor") {
-		draw_sprite_stretched(spr_guibg_purple, 0, mouse_x, mouse_y, 300, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Custodian:")
-		draw_text(mouse_x + 10, mouse_y + 35, "Caution: Wet Floor.")
-		draw_text(mouse_x + 10, mouse_y + 60, "Can make the enemy wet")
-		draw_text(mouse_x + 10, mouse_y + 85, "or block a nasty debuff.")
+		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
+		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Janitor: 
+His hobby is painting.
+His attack applies Wet, which
+amplifies damage dealt next turn.
+His defense blocks status effects
+that would have applied this turn,
+and heals 1 TP.
+
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "boomcrew") {
-		draw_sprite_stretched(spr_guibg_purple, 0, mouse_x, mouse_y, 300, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Demolition Man:")
-		draw_text(mouse_x + 10, mouse_y + 35, "He doesn't have a permit.")
-		draw_text(mouse_x + 10, mouse_y + 60, "He can lob bombs, plant mines,")
-		draw_text(mouse_x + 10, mouse_y + 85, "or block with his shield.")
+		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
+		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Demolition Man: 
+May or may not be licensed.
+His bombs damage all enemies.
+His landmine hurts enemies back,
+and heals 4 TP.
+His blast shield caps the damage
+you take, and heals 1 TP.
+
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "makeup") {
-		draw_sprite_stretched(spr_guibg_purple, 0, mouse_x, mouse_y, 300, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Makeup Artist:")
-		draw_text(mouse_x + 10, mouse_y + 35, "She's very flexible.")
-		draw_text(mouse_x + 10, mouse_y + 60, "Can copy one of the ")
-		draw_text(mouse_x + 10, mouse_y + 85, "enemy's attacks herself.")
+		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
+		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Makeup Artist: 
+Former star of silent cinema.
+She uses a random enemy's
+attack as her own attack.
+She uses a random defense as 
+her own defense.
+
+Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	}
+	
+	
 }
 
+//reset held so that it updates correctly
+held = ""
+
 draw_set_font(Font1)
+draw_set_colour(c_white)
