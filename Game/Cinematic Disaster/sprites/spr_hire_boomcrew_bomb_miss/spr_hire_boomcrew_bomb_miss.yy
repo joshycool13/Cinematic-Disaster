@@ -56,7 +56,13 @@
     "backdropYOffset":0.0,
     "events":{
       "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
+      "Keyframes":[
+        {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+            "0":{"$MessageEventKeyframe":"","Events":[
+                "explosion sound",
+              ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+          },"Disabled":false,"id":"54d6200b-c34d-4089-867a-a3d3dd5d718f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+      ],
       "resourceType":"KeyframeStore<MessageEventKeyframe>",
       "resourceVersion":"2.0",
     },

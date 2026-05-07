@@ -52,7 +52,18 @@
     "backdropYOffset":0.0,
     "events":{
       "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
+      "Keyframes":[
+        {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+            "0":{"$MessageEventKeyframe":"","Events":[
+                "cat attack sound",
+              ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+          },"Disabled":false,"id":"3e779e7c-b1a3-4e56-86af-8af7d7f8cabe","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+        {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+            "0":{"$MessageEventKeyframe":"","Events":[
+                "cat attack sound",
+              ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+          },"Disabled":false,"id":"f9cac207-b41d-4ce9-bfcb-9f5638e5577c","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+      ],
       "resourceType":"KeyframeStore<MessageEventKeyframe>",
       "resourceVersion":"2.0",
     },

@@ -56,7 +56,13 @@
     "backdropYOffset":0.0,
     "events":{
       "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
+      "Keyframes":[
+        {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+            "0":{"$MessageEventKeyframe":"","Events":[
+                "monkey screech sound",
+              ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+          },"Disabled":false,"id":"16cc7a9a-426b-4084-b6ed-774bf48346e1","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+      ],
       "resourceType":"KeyframeStore<MessageEventKeyframe>",
       "resourceVersion":"2.0",
     },

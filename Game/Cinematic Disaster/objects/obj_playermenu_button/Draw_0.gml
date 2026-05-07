@@ -17,6 +17,7 @@ switch (button_name)
 	break;
 	
 	case "default_defend":
+		tp_cost = 1
 		button_text = "Megaphone"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
@@ -24,42 +25,42 @@ switch (button_name)
 	
 	// Attacks
 	case "identify":
-		tp_cost = 2
+		tp_cost = 1
 		button_text = "Identify"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "broom":
-		tp_cost = 3
+		tp_cost = 2
 		button_text = "Sweeping"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "flying_elbow":
-		tp_cost = 5
+		tp_cost = 4
 		button_text = "Falling Elbow"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "gun":
-		tp_cost = 5
+		tp_cost = 4
 		button_text = "Gun"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "disguise":
-		tp_cost = 5
+		tp_cost = 2
 		button_text = "Disguise"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "bomb":
-		tp_cost = 5
+		tp_cost = 4
 		button_text = "Explosive Test"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
@@ -67,7 +68,6 @@ switch (button_name)
 	
 	// Defends
 	case "prediction":
-		tp_cost = 1
 		button_text = "Prediction"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
@@ -81,13 +81,14 @@ switch (button_name)
 	break;
 	
 	case "protect":
+		tp_cost = 3
 		button_text = "Bodyguard"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "imitate":
-		tp_cost = 3
+		tp_cost = 4
 		button_text = "Imitate"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))

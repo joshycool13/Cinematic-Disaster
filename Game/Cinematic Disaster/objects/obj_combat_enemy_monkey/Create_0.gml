@@ -6,7 +6,7 @@ attack_hit_frames = [7, 9, 11]
 banana_speed = -12
 screech_hit_frame = 4
 screech_fired_frame = 3
-screech_damage = 2
+screech_damage = 3
 banana_damage = 2
 
 // Variables
@@ -37,6 +37,8 @@ get_hit = function(damage_taken, status_effect)
 	}
 	
 	health_num -= damage_taken
+	
+	audio_play_sound(monkey_hurt, 4, false)
 	
 	if instance_exists(health_reel)
 	{

@@ -79,6 +79,11 @@ for (var i = 0; i < array_length(global.combat_player_items); i += 1) // put cor
 
 inst_player_id = instance_create_layer(player_x, player_y, "Instances", obj_combat_player)
 
+layer_set_visible("TutorialCombatAttack", true)
+layer_set_visible("TutorialCombat_BG", true)
+layer_set_visible("TutorialRoaming", false)
+layer_set_visible("TutorialRoaming_BG", false)
+
 layer_set_visible("CombatHP", true)
 layer_set_visible("Clipboard", true)
 layer_set_visible("PlayerMenu", true)
@@ -220,10 +225,14 @@ finish_player_attack = function() // when player's attack is over
 	{
 		layer_set_visible("CombatVictory", true)
 		alarm[2] = 120
+		audio_stop_sound(global.current_music)
+		global.current_music = audio_play_sound(victory_sound, 10, false)
 		return
 	}
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("EnemyMenu", true)
+	layer_set_visible("TutorialCombatAttack", false)
+	layer_set_visible("TutorialCombatDodge", true)
 	is_player_turn = false
 }
 
@@ -317,10 +326,14 @@ finish_player_defend = function() // when player's defend is over
 	{
 		layer_set_visible("CombatVictory", true)
 		alarm[2] = 120
+		audio_stop_sound(global.current_music)
+		global.current_music = audio_play_sound(victory_sound, 10, false)
 		return
 	}
 	
 	layer_set_visible("Clipboard", true)
+	layer_set_visible("TutorialCombatAttack", true)
+	layer_set_visible("TutorialCombatDodge", false)
 	if inst_player_id.is_stunned
 	{
 		inst_player_id.is_stunned = false
@@ -345,6 +358,8 @@ check_if_player_dead = function() // end game if player dead
 	{
 		layer_set_visible("CombatGameOver", true)
 		alarm[2] = 120
+		audio_stop_sound(global.current_music)
+		global.current_music = audio_play_sound(game_over_sound, 10, false)
 		return true
 	}
 	return false

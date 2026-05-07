@@ -59,7 +59,13 @@
     "backdropYOffset":0.0,
     "events":{
       "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
+      "Keyframes":[
+        {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+            "0":{"$MessageEventKeyframe":"","Events":[
+                "janitor shine sound",
+              ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+          },"Disabled":false,"id":"3f15d2b9-dec2-473d-a1e0-6caffac840f8","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+      ],
       "resourceType":"KeyframeStore<MessageEventKeyframe>",
       "resourceVersion":"2.0",
     },

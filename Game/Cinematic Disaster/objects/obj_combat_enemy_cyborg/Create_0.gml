@@ -11,7 +11,7 @@ bullet_speed = -12
 // Variables
 inst_target_id = false
 has_already_fired = false
-health_num = 6
+health_num = 12
 health_reel = noone
 has_poison_status_effect = 0
 is_stunned = false
@@ -45,15 +45,24 @@ get_hit = function(damage_taken, status_effect)
 		}
 	
 		health_num -= damage_taken
+		
+		audio_play_sound(cyborg_hurt, 4, false)
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = damage_taken
+	}
+	else
+	{
+		audio_play_sound(cyborg_and_shield_block_attack, 4, false)
+		
+		var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
+		inst_damage.number = 0
 	}
 	
 	if instance_exists(health_reel)
 	{
 		health_reel.health_num = health_num
 	}
-	
-	var inst_damage = instance_create_layer(x, y - 128, "Damage", obj_damage)
-	inst_damage.number = damage_taken
 	
 	switch (status_effect)
 	{
@@ -152,6 +161,7 @@ start_attack = function(inst_player_id)
 		sprite_index = anim_attack
 		image_index = 0
 		is_charged = true
+		audio_play_sound(cyborg_charge, 4, false)
 	}
 	else
 	{

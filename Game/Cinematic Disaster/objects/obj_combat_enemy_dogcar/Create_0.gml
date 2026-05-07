@@ -2,14 +2,14 @@
 starting_x = x
 starting_y = y
 attack_speed = 60
-attack_damage = 3
+attack_damage = 4
 attack_speed_frame = 5
 max_screen_awayness = 150
 
 // Variables
 inst_target_id = false
 has_already_hit = false
-health_num = 8
+health_num = 6
 is_go_speed = false
 finished_round_trip = false
 player_attacked = false
@@ -36,6 +36,8 @@ get_hit = function(damage_taken, status_effect)
 	}
 	
 	health_num -= damage_taken
+	
+	audio_play_sound(dogcar_hurt_2_trim, 4, false)
 	
 	if instance_exists(health_reel)
 	{
@@ -117,6 +119,7 @@ start_attack = function(inst_player_id)
 	
 	sprite_index = anim_attack
 	image_index = 0
+	audio_play_sound(dogcar_drive_trim, 4, false);
 }
 
 take_poison_damage = function()

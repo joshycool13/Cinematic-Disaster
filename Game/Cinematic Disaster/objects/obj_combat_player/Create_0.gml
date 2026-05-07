@@ -6,11 +6,11 @@ run_speed = 6
 start_attack_frame = 12
 end_attack_frame = 14
 attack_hit_frame = 3
-default_attack_damage = 4
+default_attack_damage = 2
 max_health_num = 20
 max_tp_num = 10
 input_lockout_time = 60
-default_input_buffer = 20
+default_input_buffer = 10
 actor_x_plus = 64
 
 // Variables
@@ -177,6 +177,8 @@ get_hit = function(damage_taken, status_effect)
 			inst_actor.sprite_index = inst_actor.anim_guard_dodge
 			inst_actor.image_index = 0
 		}
+		
+		audio_play_sound(player_and_janewick_dodge_trim, 4, false)
 	}
 	else
 	{
@@ -233,12 +235,33 @@ get_hit = function(damage_taken, status_effect)
 		{
 			inst_actor.sprite_index = inst_actor.anim_guard_hit
 			inst_actor.image_index = 0
+			audio_play_sound(janewick_block_trim, 4, false)
+		}
+		else
+		{
+			audio_play_sound(player_hurt__2_, 4, false)
+		}
+		
+		if instance_exists(inst_shield)
+		{
+			audio_play_sound(cyborg_and_shield_block_attack, 3, false)
 		}
 	}
 	
 	if instance_exists(inst_landmine)
 	{
 		inst_landmine.spawn_explosion()
+		var num_something = irandom(1)
+		switch num_something
+		{
+			case 0:
+				audio_play_sound(explosion__1_, 3, false)
+			break;
+			
+			case 1:
+				audio_play_sound(explosion__2_, 3, false)
+			break;
+		}
 	}
 }
 

@@ -11,7 +11,7 @@ bullet_speed = -12
 // Variables
 inst_target_id = false
 has_already_fired = false
-health_num = 6
+health_num = 12
 health_reel = noone
 has_poison_status_effect = 0
 is_stunned = false

@@ -36,6 +36,8 @@ if sprite_index = anim_dodge
 
 if sprite_index = anim_item
 {
+	audio_play_sound(attack_shine, 4, false)
+	
 	switch current_item_name
 	{
 		case "drink":

@@ -1,6 +1,6 @@
 // Constants
 lockout_time = 60
-attack_damage = 8
+attack_damage = 4
 start_attack_frame = 8
 end_attack_frame = 11
 attack_hit_frame = 3

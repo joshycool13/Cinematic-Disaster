@@ -8,6 +8,7 @@ switch current_item_name
 		{
 			health_num = max_health_num
 		}
+		audio_play_sound(drink_and_coffee_use, 4, false)
 	break;
 	
 	case "coffee":
@@ -16,6 +17,7 @@ switch current_item_name
 		{
 			tp_num = max_tp_num
 		}
+		audio_play_sound(drink_and_coffee_use, 4, false)
 	break;
 	
 	case "rag":
@@ -37,6 +39,8 @@ switch current_item_name
 		{
 			instance_destroy(inst_status_deafen)
 		}
+		
+		audio_play_sound(rag_use, 4, false)
 	break;
 	
 	case "linechange":
@@ -45,10 +49,12 @@ switch current_item_name
 	
 	case "tomato":
 		obj_combat_state.attacked_is_hit(inst_target_id,0,false,"poison")
+		audio_play_sound(tomato_use_and_banana, 4, false)
 	break;
 	
 	case "flashbang":
 		obj_combat_state.attacked_is_hit(inst_target_id,0,false,"stun")
+		audio_play_sound(flashbang_use, 4, false)
 	break;
 }
 

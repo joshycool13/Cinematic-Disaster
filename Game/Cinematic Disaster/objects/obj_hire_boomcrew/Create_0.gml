@@ -1,10 +1,10 @@
 // Constants
-attack_damage = 6
+attack_damage = 5
 attack_hit_frame = 1
 bomb_gravity = 0.5
 bar_x = 896
 bar_y = 128
-slider_speed = 8
+slider_speed = 12
 green_bar_x_end = 78
 green_bar_x_begin = 182
 bomb_x = 50
@@ -18,7 +18,7 @@ shield_y = 16
 inst_target_id = noone
 inst_player_id = noone
 defend_input_buffer = 0
-shield_input_buffer = 25
+shield_input_buffer = 20
 inst_slider = noone
 inst_bar = noone
 h_speed = 8
@@ -26,6 +26,7 @@ v_speed = -12
 has_already_hit = false
 inst_bomb = noone
 inst_bomb_explosion = noone
+inst_fuse_sound = noone
 
 // Animations
 anim_bomb_aiming = spr_hire_boomcrew_bomb_aiming
@@ -37,9 +38,9 @@ anim_shield_place = spr_hire_boomcrew_shield_place
 // Functions
 start_attack = function()
 {
-	show_debug_message("hello")
 	sprite_index = anim_bomb_aiming
 	image_index = 0
+	inst_fuse_sound = audio_play_sound(boomcrew_bomb_fuse, 3, true)
 	inst_bar = instance_create_layer(bar_x, bar_y, "Items", obj_bombbar)
 	inst_slider = instance_create_layer(bar_x - inst_bar.sprite_width, bar_y, "Selectors", obj_bombslider)
 }

@@ -4,14 +4,14 @@ starting_x = x
 starting_y = y
 run_speed = 6
 attack_hit_frame = 4
-attack_damage = 5
+attack_damage = 4
 
 // Variables
 inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
 has_already_hit = false
-health_num = 6
+health_num = 10
 health_reel = noone
 has_poison_status_effect = 0
 is_stunned = false
@@ -35,6 +35,8 @@ get_hit = function(damage_taken, status_effect)
 	}
 	
 	health_num -= damage_taken
+	
+	audio_play_sound(shield_hurt, 4, false)
 	
 	if instance_exists(health_reel)
 	{
