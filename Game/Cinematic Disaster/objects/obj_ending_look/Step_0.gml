@@ -100,7 +100,7 @@ if (obj_roaming_player.go_to_ending == true) {
 		
 		case 15:
 			//do nothing, or close the game?
-			game_end()
+			game_restart()
 		break
 		
 		default:
