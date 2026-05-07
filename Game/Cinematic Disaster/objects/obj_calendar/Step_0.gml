@@ -7,6 +7,9 @@ if (progress_checked) exit
 if (array_length(global.combat_enemies) > 0) {
 	//player has just returned from combat
 	
+	//fade in screen
+	obj_screenfade.timer = 120
+	
 	//tick down the duration on employee contracts
 	if (global.combat_player_employees[$ "castagent"] > 0) {
 		global.combat_player_employees[$ "castagent"] -= 1
