@@ -4,6 +4,32 @@ if (progress_checked) exit
 
 // everything after this runs only once
 
+		if not instance_exists(obj_encounter_1) and (global.combats_complete[0] == false) {
+			if (global.day == 1) or (global.day == 4)
+				instance_create_layer(200, 900, "Room_Objects", obj_encounter_1)
+			if (global.day == 2) or (global.day == 5)
+				instance_create_layer(1792, 320, "Room_Objects", obj_encounter_1)
+			if (global.day == 3)
+				instance_create_layer(2400, 1536, "Room_Objects", obj_encounter_1)
+		}
+		if not instance_exists(obj_encounter_2) and (global.combats_complete[1] == false) {
+			if (global.day == 1) or (global.day == 4)
+				instance_create_layer(1726, 1504, "Room_Objects", obj_encounter_2)
+			if (global.day == 2) or (global.day == 5)
+				instance_create_layer(1312, 960, "Room_Objects", obj_encounter_2)
+			if (global.day == 3)
+				instance_create_layer(640, 1472, "Room_Objects", obj_encounter_2)
+		}
+		if not instance_exists(obj_encounter_3) and (global.combats_complete[2] == false) {
+			if (global.day == 1) or (global.day == 4)
+				instance_create_layer(288, 288, "Room_Objects", obj_encounter_3)
+			if (global.day == 2) or (global.day == 5)
+				instance_create_layer(2304, 896, "Room_Objects", obj_encounter_3)
+			if (global.day == 3)
+				instance_create_layer(896, 1056, "Room_Objects", obj_encounter_3)
+		}
+
+
 if (array_length(global.combat_enemies) > 0) {
 	//player has just returned from combat
 	
@@ -68,13 +94,28 @@ if (array_length(global.combat_enemies) > 0) {
 		global.combats_complete = [false, false, false]
 		
 		if not instance_exists(obj_encounter_1) {
-			instance_create_layer(200, 900, "Objects", obj_encounter_1)
+			if (global.day == 1) or (global.day == 4)
+				instance_create_layer(200, 900, "Room_Objects", obj_encounter_1)
+			if (global.day == 2) or (global.day == 5)
+				instance_create_layer(1792, 320, "Room_Objects", obj_encounter_1)
+			if (global.day == 3)
+				instance_create_layer(2400, 1536, "Room_Objects", obj_encounter_1)
 		}
 		if not instance_exists(obj_encounter_2) {
-			instance_create_layer(300, 900, "Objects", obj_encounter_2)
+			if (global.day == 1) or (global.day == 4)
+				instance_create_layer(1726, 1504, "Room_Objects", obj_encounter_2)
+			if (global.day == 2) or (global.day == 5)
+				instance_create_layer(1312, 960, "Room_Objects", obj_encounter_2)
+			if (global.day == 3)
+				instance_create_layer(640, 1472, "Room_Objects", obj_encounter_2)
 		}
 		if not instance_exists(obj_encounter_3) {
-			instance_create_layer(400, 900, "Objects", obj_encounter_3)
+			if (global.day == 1) or (global.day == 4)
+				instance_create_layer(288, 288, "Room_Objects", obj_encounter_3)
+			if (global.day == 2) or (global.day == 5)
+				instance_create_layer(2304, 896, "Room_Objects", obj_encounter_3)
+			if (global.day == 3)
+				instance_create_layer(896, 1056, "Room_Objects", obj_encounter_3)
 		}
 		
 		// heal the player for X amount so they can continue the game
@@ -106,13 +147,28 @@ if (array_length(global.combat_enemies) > 0) {
 			global.combats_complete = [false, false, false]
 		
 			if not instance_exists(obj_encounter_1) {
-				instance_create_layer(200, 900, "Room_Objects", obj_encounter_1)
+				if (global.day == 1) or (global.day == 4)
+					instance_create_layer(200, 900, "Room_Objects", obj_encounter_1)
+				if (global.day == 2) or (global.day == 5)
+					instance_create_layer(1792, 320, "Room_Objects", obj_encounter_1)
+				if (global.day == 3)
+					instance_create_layer(2400, 1536, "Room_Objects", obj_encounter_1)
 			}
 			if not instance_exists(obj_encounter_2) {
-				instance_create_layer(300, 900, "Room_Objects", obj_encounter_2)
+				if (global.day == 1) or (global.day == 4)
+					instance_create_layer(1726, 1504, "Room_Objects", obj_encounter_2)
+				if (global.day == 2) or (global.day == 5)
+					instance_create_layer(1312, 960, "Room_Objects", obj_encounter_2)
+				if (global.day == 3)
+					instance_create_layer(640, 1472, "Room_Objects", obj_encounter_2)
 			}
 			if not instance_exists(obj_encounter_3) {
-				instance_create_layer(400, 900, "Room_Objects", obj_encounter_3)
+				if (global.day == 1) or (global.day == 4)
+					instance_create_layer(288, 288, "Room_Objects", obj_encounter_3)
+				if (global.day == 2) or (global.day == 5)
+					instance_create_layer(2304, 896, "Room_Objects", obj_encounter_3)
+				if (global.day == 3)
+					instance_create_layer(896, 1056, "Room_Objects", obj_encounter_3) 
 			}
 			
 			
