@@ -3,12 +3,9 @@ if place_meeting(x, y, obj_roaming_player)
 	
 
 	
-	if(global.day == 1)
-	{
-		instance_destroy();
+	
 		
-	}
-	else if(global.day == 2)
+	 if(global.day == 2)
 	{
 		startDialogue("Taxi1", "Taxi")
 		

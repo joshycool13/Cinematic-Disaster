@@ -227,6 +227,8 @@
     {"id":{"name":"spr_bombslider","path":"sprites/spr_bombslider/spr_bombslider.yy",},},
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
+    {"id":{"name":"spr_cabinet","path":"sprites/spr_cabinet/spr_cabinet.yy",},},
+    {"id":{"name":"spr_chairback","path":"sprites/spr_chairback/spr_chairback.yy",},},
     {"id":{"name":"spr_clothes","path":"sprites/spr_clothes/spr_clothes.yy",},},
     {"id":{"name":"spr_combat_explode","path":"sprites/spr_combat_explode/spr_combat_explode.yy",},},
     {"id":{"name":"spr_combat_player_clapperboard_attack","path":"sprites/spr_combat_player_clapperboard_attack/spr_combat_player_clapperboard_attack.yy",},},
