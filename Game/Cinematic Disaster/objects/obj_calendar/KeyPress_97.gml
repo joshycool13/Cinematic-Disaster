@@ -2,6 +2,8 @@
 
 global.day += 1
 
+obj_screenfade.timer = 120
+
 /*
 //update the player's current moveset
 if (global.combat_player_employees[$ "castagent"] > 0) {
