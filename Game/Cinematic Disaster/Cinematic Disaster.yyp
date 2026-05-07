@@ -382,6 +382,7 @@
     {"id":{"name":"spr_shop_hire_janitor","path":"sprites/spr_shop_hire_janitor/spr_shop_hire_janitor.yy",},},
     {"id":{"name":"spr_shop_hire_makeup","path":"sprites/spr_shop_hire_makeup/spr_shop_hire_makeup.yy",},},
     {"id":{"name":"spr_shop_leave","path":"sprites/spr_shop_leave/spr_shop_leave.yy",},},
+    {"id":{"name":"spr_shop_sign","path":"sprites/spr_shop_sign/spr_shop_sign.yy",},},
     {"id":{"name":"spr_shop_slot","path":"sprites/spr_shop_slot/spr_shop_slot.yy",},},
     {"id":{"name":"spr_sinklarge","path":"sprites/spr_sinklarge/spr_sinklarge.yy",},},
     {"id":{"name":"spr_sinksmall","path":"sprites/spr_sinksmall/spr_sinksmall.yy",},},
