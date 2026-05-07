@@ -122,6 +122,7 @@
     {"id":{"name":"obj_npcLeaves","path":"objects/obj_npcLeaves/obj_npcLeaves.yy",},},
     {"id":{"name":"obj_npcNeil","path":"objects/obj_npcNeil/obj_npcNeil.yy",},},
     {"id":{"name":"obj_npcPranav","path":"objects/obj_npcPranav/obj_npcPranav.yy",},},
+    {"id":{"name":"obj_npcTaxi","path":"objects/obj_npcTaxi/obj_npcTaxi.yy",},},
     {"id":{"name":"obj_playermenu_button","path":"objects/obj_playermenu_button/obj_playermenu_button.yy",},},
     {"id":{"name":"obj_pranavs_bandaid_solution_1","path":"objects/obj_pranavs_bandaid_solution_1/obj_pranavs_bandaid_solution_1.yy",},},
     {"id":{"name":"obj_pranavs_bandaid_solution_2","path":"objects/obj_pranavs_bandaid_solution_2/obj_pranavs_bandaid_solution_2.yy",},},
