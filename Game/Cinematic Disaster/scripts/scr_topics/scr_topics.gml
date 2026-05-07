@@ -36,8 +36,8 @@ TEXT("All crimes commited here... real or fake. Must be reported to me!"),
 ];
 
 global.topics[$ "Laurie3"] = [
-TEXT("I'm a short queen."),
-TEXT("Instead of telling crooks to put their hands up where I can see them, I prefer they pop a squat."),
+TEXT("I'm a short queen. But I still get plenty of respect in these parts."),
+TEXT("Crooks put their hands on the GROUND at the sight of me!"),
 ];
 
 
@@ -130,6 +130,54 @@ TEXT("Keanu Leaves.."),
 TEXT("...Jane behind? ;.;"),
 TEXT("So sad!")
 ];
+
+global.topics[$ "Keanu3"] = [
+TEXT("I work for an insurance fern."),
+TEXT("If one of your actors gets injured in a wreck, leaf the paperwork to me!"),
+];
+
+
+global.topics[$ "Keanu4"] = [
+TEXT("Sad endings are on the rise, lately. And that's the worst kind for a sappy guy like me to sit through..."),
+
+];
+
+
+global.topics[$ "Keanu5"] = [
+TEXT("Once this movie is finished, you should branch out to new genres."),
+TEXT("What will you make? My excitement is conifereous!"),
+
+];
+
+
+
+
+//Taxi
+
+global.topics[$ "Taxi1"] = [
+TEXT("The wheels on the bus go round and round.... Until I pop them all. >:)"),
+];
+
+global.topics[$ "Taxi2"] = [
+TEXT("Would you like a ride between takes?"),
+TEXT("Just sit on the hood and I'll take off. It's totally safe!"),
+
+];
+
+global.topics[$ "Taxi3"] = [
+TEXT("I swear I'm not a bad driver!"),
+TEXT("I've got a 'black belt' right here! I just don't like to flex by wearing it all the time."),
+
+];
+
+global.topics[$ "Taxi4"] = [
+TEXT("I'm afraid of monkeys."),
+TEXT("My yellow cab is one big banana, and I'm the vulnerable feast inside."),
+];
+
+
+
+
 
 // Ending
 // All of these execute in sequence. However, any time a different character speaks, the topic needs to increment.
