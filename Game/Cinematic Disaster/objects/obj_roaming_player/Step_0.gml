@@ -45,10 +45,12 @@ else {
 if (keyboard_check_pressed(vk_escape)) && (active = true) {
     active = false
 	go_to_inventory = true
+	audio_play_sound(enter_menu_trim, 4, false)
 }
 else if (keyboard_check_pressed(vk_escape)) && (go_to_inventory = true) {
     active = true
 	go_to_inventory = false
+	audio_play_sound(enter_menu_trim, 4, false)
 }
 
 // movement

@@ -31,5 +31,6 @@ if (distance_to_point(mouse_x, mouse_y)<=1) && (mouse_check_button_released(mb_l
 		array_push(global.combat_player_defends, "blast_shield")
 	}
 	
+	audio_play_sound(enter_menu_trim, 4, false)
 }
 
