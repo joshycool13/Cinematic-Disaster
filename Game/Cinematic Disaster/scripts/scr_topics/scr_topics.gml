@@ -139,7 +139,7 @@ TEXT("If one of your actors gets injured in a wreck, leaf the paperwork to me!")
 
 global.topics[$ "Keanu4"] = [
 TEXT("Sad endings are on the rise, lately. And that's the worst kind for a sappy guy like me to sit through..."),
-
+TEXT("My mama let me borrow these kick-ass shades to preserve my dignity!"),
 ];
 
 
