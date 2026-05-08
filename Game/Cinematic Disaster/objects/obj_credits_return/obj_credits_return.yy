@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_credits_return",
-    "path":"sprites/spr_credits_return/spr_credits_return.yy",
+    "name":"spr_shop_leave",
+    "path":"sprites/spr_shop_leave/spr_shop_leave.yy",
   },
   "spriteMaskId":null,
   "visible":true,
