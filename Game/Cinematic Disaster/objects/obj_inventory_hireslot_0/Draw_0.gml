@@ -30,8 +30,8 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Casting Agent: 
 Tirelessly rejecting applications.
 Her attack reveals the enemy's HP.
-Her defense greatly improves your
-dodging ability.
+Her defense assists your dodging
+ability greatly.
 
 Fights left: {0}", global.combat_player_employees[$ held]))
 		
@@ -52,7 +52,8 @@ Fights left: {0}", global.combat_player_employees[$ held]))
 		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Janitor: 
 His hobby is painting.
 His attack applies Wet, which
-increases damage taken.
+amplifies damage dealt this
+and next turn.
 His defense blocks status effects
 that would have applied this turn,
 and heals 1 TP.
