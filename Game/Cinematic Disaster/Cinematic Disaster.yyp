@@ -71,6 +71,7 @@
     {"id":{"name":"obj_combat_state","path":"objects/obj_combat_state/obj_combat_state.yy",},},
     {"id":{"name":"obj_credits_look","path":"objects/obj_credits_look/obj_credits_look.yy",},},
     {"id":{"name":"obj_credits_return","path":"objects/obj_credits_return/obj_credits_return.yy",},},
+    {"id":{"name":"obj_credits","path":"objects/obj_credits/obj_credits.yy",},},
     {"id":{"name":"obj_cursor","path":"objects/obj_cursor/obj_cursor.yy",},},
     {"id":{"name":"obj_damage","path":"objects/obj_damage/obj_damage.yy",},},
     {"id":{"name":"obj_dayManager","path":"objects/obj_dayManager/obj_dayManager.yy",},},
