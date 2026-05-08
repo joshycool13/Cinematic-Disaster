@@ -243,9 +243,16 @@ TEXT("Three out of five stars. I'll be eagerly awaiting your next film."),
 global.topics[$ "Ending9"] = [
 // nobody
 TEXT("Credits:"),
-TEXT("Joshua Navarro: UI and Combat Design."),
-TEXT("Jordan Andrews: Story and Character Design."),
-TEXT("Pranav Rumala: Art and Animation."),
+TEXT("Programming: Joshua Navarro, Pranav Rumala, Jordan Andrews"),
+TEXT("Lead Programmer: Joshua Navarro"),
+TEXT("Design and Concept: Jordan Andrews"),
+TEXT("Dialogue and Story: Jordan Andrews"),
+TEXT("Art: Pranav Rumala, Jordan Andrews"),
+TEXT("Combat Design: Joshua Navarro"),
+TEXT("UI Design: Joshua Navarro, Pranav Rumala"),
+TEXT("Character Design: Jordan Andrews, Pranav Rumala"),
+TEXT("Animation: Pranav Rumala"),
+TEXT("All sounds were sourced from https://www.zapsplat.com"),
 TEXT("The End!"),
 ]
 
