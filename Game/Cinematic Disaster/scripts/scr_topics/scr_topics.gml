@@ -286,7 +286,7 @@ TEXT("Why did you spend half the budget on scratch offs?")
 
 global.topics[$ "Critic"] = [
 TEXT("The Hogfather was once the peak of American Cinema."),
-TEXT("Unfortunately, its reputation was muddied by a series of sloppy sequels!"),
+TEXT("Unfortunately, its reputation was muddied by a series of sloppy sequels."),
 ];
 
 
@@ -312,7 +312,7 @@ TEXT("Guess you'll never know. He was deemed too evil and got removed from the g
 ];
 
 global.topics[$ "Lights"] = [
-TEXT("The lights are so hot up here."),
+TEXT("The lights are so hot on the Catwalk."),
 TEXT("I wonder if I could cook a pizza or something?"),
 ];
 
@@ -323,7 +323,7 @@ TEXT("Would I retain my voting rights if I commited a fake felony within its bor
 
 global.topics[$ "13"] = [
 TEXT("This film is projected for a PG13 rating."),
-TEXT("Generally, I am hoping more than 13 people see it. But that seems unlikely."),
+TEXT("Hopefully more than 13 people see it."),
 ];
 
 
