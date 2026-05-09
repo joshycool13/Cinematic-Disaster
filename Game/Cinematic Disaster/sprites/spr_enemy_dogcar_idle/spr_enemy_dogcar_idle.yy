@@ -32,8 +32,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"d42dc09e-5da3-482d-858e-9f59111c712b","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"d42dc09e-5da3-482d-858e-9f59111c712b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"427c6a2e-b338-4da9-a95e-92d8c141847c","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"427c6a2e-b338-4da9-a95e-92d8c141847c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"44438023-0095-40cb-8d81-6c51d97abf63","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"44438023-0095-40cb-8d81-6c51d97abf63","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"f8d3e230-f22f-4d4d-ba1c-e227aa4ca3da","blendMode":0,"displayName":"default","isLocked":false,"name":"f8d3e230-f22f-4d4d-ba1c-e227aa4ca3da","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a4dca841-a883-4492-aabd-194156dc9abe","blendMode":0,"displayName":"default","isLocked":false,"name":"a4dca841-a883-4492-aabd-194156dc9abe","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_enemy_dogcar_idle",
   "nineSlice":null,
