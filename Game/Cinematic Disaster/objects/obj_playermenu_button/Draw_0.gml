@@ -33,14 +33,14 @@ switch (button_name)
 	
 	case "broom":
 		tp_cost = 2
-		button_text = "Sweeping"
+		button_text = "Sweeping Blow"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
 	
 	case "flying_elbow":
 		tp_cost = 4
-		button_text = "Falling Elbow"
+		button_text = "Elbow Drop"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
@@ -61,7 +61,7 @@ switch (button_name)
 	
 	case "bomb":
 		tp_cost = 4
-		button_text = "Explosive Test"
+		button_text = "Bomb Throw"
 		draw_sprite(spr_tp_icon, 0, x - 120, y)
 		draw_text(x - 120, y, string(tp_cost))
 	break;
@@ -110,7 +110,7 @@ switch (button_name)
 	
 	// Items
 	case "drink":
-		button_text = "Corporate Drink"
+		button_text = "Energy Drink"
 	break;
 	
 	case "coffee":
@@ -118,7 +118,7 @@ switch (button_name)
 	break;
 	
 	case "rag":
-		button_text = "Cleaning Rag"
+		button_text = "Towel"
 	break;
 	
 	case "linechange":

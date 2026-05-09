@@ -149,7 +149,7 @@ Prediction:
 
 
 
-Sweeping > Mopping:
+Sweeping > Sweeping Blow:
 
 * TP Cost: 3 > 2
 * DMG: 8 > 4 (note: wet applies BEFORE damage, so this damage is +2, I think)
@@ -249,7 +249,7 @@ Blast Shield:
 
 
 
-Corporate Drink > Drinkerade:
+Corporate Drink > Energy Drink:
 
 * Price: $90 - $100 > $40 - $60
 * Heal: 10 HP

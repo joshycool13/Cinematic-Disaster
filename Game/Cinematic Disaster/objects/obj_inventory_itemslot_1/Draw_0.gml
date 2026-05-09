@@ -47,7 +47,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		
 	} else if (held = "drink") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Drinkerade:")
+		draw_text(mouse_x + 25, mouse_y + 10, "Energy Drink:")
 		draw_text(mouse_x + 10, mouse_y + 35, "New and improved formula,")
 		draw_text(mouse_x + 10, mouse_y + 60, "in stores now!")
 		draw_text(mouse_x + 10, mouse_y + 85, "Recovers up to 10 HP.")
@@ -75,7 +75,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		
 	} else if (held = "rag") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
-		draw_text(mouse_x + 25, mouse_y + 10, "Rag:")
+		draw_text(mouse_x + 25, mouse_y + 10, "Towel:")
 		draw_text(mouse_x + 10, mouse_y + 35, "Do you feel unclean?")
 		draw_text(mouse_x + 10, mouse_y + 60, "Cure all negative effects ")
 		draw_text(mouse_x + 10, mouse_y + 85, "on yourself.")
