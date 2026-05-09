@@ -19,8 +19,7 @@
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1b84956b-3090-4b1c-9fe5-331e4b87d658","blendMode":0,"displayName":"Layer 4","isLocked":false,"name":"1b84956b-3090-4b1c-9fe5-331e4b87d658","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
-    {"$GMImageLayer":"","%Name":"d4fb794c-2df7-4c29-8d1e-827ada150da0","blendMode":0,"displayName":"Layer 5","isLocked":false,"name":"d4fb794c-2df7-4c29-8d1e-827ada150da0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"f8b6eaa1-62d6-4ce6-9b7a-6b0430ed4d2a","blendMode":0,"displayName":"Layer 8","isLocked":false,"name":"f8b6eaa1-62d6-4ce6-9b7a-6b0430ed4d2a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"21821ab8-9798-4697-9d2d-c2e4e32b0bab","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"21821ab8-9798-4697-9d2d-c2e4e32b0bab","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"a65f7f00-6822-49ed-be80-0de2b59f5065","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"a65f7f00-6822-49ed-be80-0de2b59f5065","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"6e96fbc0-0e4c-4c2f-8084-145183af6c58","blendMode":0,"displayName":"Layer 3","isLocked":false,"name":"6e96fbc0-0e4c-4c2f-8084-145183af6c58","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
