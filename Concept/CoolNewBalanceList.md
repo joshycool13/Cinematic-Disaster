@@ -143,13 +143,13 @@ Prediction:
 
 
 
-\[Janitor]
+\[Janitor] > \[Custodian]
 
 * Price: $145 - $155 > $80 - $120
 
 
 
-Sweeping:
+Sweeping > Mopping:
 
 * TP Cost: 3 > 2
 * DMG: 8 > 4 (note: wet applies BEFORE damage, so this damage is +2, I think)
@@ -172,7 +172,7 @@ Cleanse:
 
 
 
-Falling Elbow:
+Falling Elbow > Elbow Drop:
 
 * TP Cost: 5 > 4
 * DMG: 10
@@ -215,13 +215,13 @@ Imitate:
 
 
 
-\[Boom Crew]
+\[Boom Crew] > \[Demolition Man]
 
 * Price: $145 - $155 > $120 - $160
 
 
 
-Explosive Test:
+Explosive Test > Bomb Throw:
 
 * TP Cost: 5 > 4
 * DMG: 6 to all > 5 to all (all - Locked)
@@ -249,7 +249,7 @@ Blast Shield:
 
 
 
-Corporate Drink:
+Corporate Drink > Drinkerade:
 
 * Price: $90 - $100 > $40 - $60
 * Heal: 10 HP
@@ -263,7 +263,7 @@ Coffee:
 
 
 
-Cleaning Rag:
+Cleaning Rag > Towel:
 
 * Price: $90 - $100 > $45 - $65
 * Cure: Poison and Deafen - Locked
