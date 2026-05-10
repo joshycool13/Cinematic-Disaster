@@ -49,7 +49,7 @@ Fights left: {0}", global.combat_player_employees[$ held]))
 		
 	} else if (held = "janitor") {
 		draw_sprite_stretched(spr_guibg_white, 0, x + 48, y - 32 - 96*slot_number, 300, 400)
-		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Janitor: 
+		draw_text(x + 55, y - 20 - 96*slot_number, string(@"Custodian: 
 His hobby is painting.
 His attack applies Wet, which
 amplifies damage dealt this

@@ -37,7 +37,7 @@ if (product = "coffee") {
 } else if (product = "drink") {
 	draw_sprite_stretched(spr_item_corporate_drink, 0,  x-50, y-80, 96, 96)
 	if (locked = false){
-		draw_text(x-84, y+24, "Drinkerade")
+		draw_text(x-84, y+24, "Energy Drink")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
 	}
@@ -61,7 +61,7 @@ if (product = "coffee") {
 } else if (product = "rag") {
 	draw_sprite_stretched(spr_item_rag, 0,   x-50, y-80, 96, 96)
 	if (locked = false){
-		draw_text(x-84, y+24, "Rag")
+		draw_text(x-84, y+24, "Towel")
 	} else {
 		draw_text(x-84, y+24, "Can't Buy")
 	}
