@@ -14,9 +14,9 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"348f752a-5fa0-418b-98fb-1869a77d3b6b","name":"348f752a-5fa0-418b-98fb-1869a77d3b6b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":32,
-  "gridY":32,
-  "height":512,
+  "gridX":8,
+  "gridY":8,
+  "height":640,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"ec51cde3-2d1a-4f3b-adae-fc5b5a0a0a41","blendMode":0,"displayName":"film set","isLocked":false,"name":"ec51cde3-2d1a-4f3b-adae-fc5b5a0a0a41","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
