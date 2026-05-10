@@ -53,6 +53,7 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_cafe_sign","path":"objects/obj_cafe_sign/obj_cafe_sign.yy",},},
+    {"id":{"name":"obj_calendar_ui","path":"objects/obj_calendar_ui/obj_calendar_ui.yy",},},
     {"id":{"name":"obj_calendar","path":"objects/obj_calendar/obj_calendar.yy",},},
     {"id":{"name":"obj_combat_enemy_cat","path":"objects/obj_combat_enemy_cat/obj_combat_enemy_cat.yy",},},
     {"id":{"name":"obj_combat_enemy_cyborg","path":"objects/obj_combat_enemy_cyborg/obj_combat_enemy_cyborg.yy",},},
