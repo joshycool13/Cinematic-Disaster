@@ -19,3 +19,4 @@ if (distance_to_object(obj_roaming_player) < 32)
 	}
 	
 }
+
