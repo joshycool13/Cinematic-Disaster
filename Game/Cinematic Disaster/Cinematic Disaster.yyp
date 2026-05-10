@@ -479,6 +479,7 @@
     {"id":{"name":"spr_woodfloor_1","path":"sprites/spr_woodfloor_1/spr_woodfloor_1.yy",},},
     {"id":{"name":"spr_woodfloor","path":"sprites/spr_woodfloor/spr_woodfloor.yy",},},
     {"id":{"name":"spr_woodplank","path":"sprites/spr_woodplank/spr_woodplank.yy",},},
+    {"id":{"name":"spr_workshop_table","path":"sprites/spr_workshop_table/spr_workshop_table.yy",},},
     {"id":{"name":"Sprite122","path":"sprites/Sprite122/Sprite122.yy",},},
     {"id":{"name":"Sprite212","path":"sprites/Sprite212/Sprite212.yy",},},
     {"id":{"name":"Sprite224_1","path":"sprites/Sprite224_1/Sprite224_1.yy",},},
