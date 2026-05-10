@@ -14,7 +14,7 @@ if (progress_checked) exit
 		}
 		if not instance_exists(obj_encounter_2) and (global.combats_complete[1] == false) {
 			if (global.day == 1) or (global.day == 4)
-				instance_create_layer(1726, 1504, "Room_Objects", obj_encounter_2)
+				instance_create_layer(1662, 1488, "Room_Objects", obj_encounter_2)
 			if (global.day == 2) or (global.day == 5)
 				instance_create_layer(1312, 960, "Room_Objects", obj_encounter_2)
 			if (global.day == 3)
@@ -103,7 +103,7 @@ if (array_length(global.combat_enemies) > 0) {
 		}
 		if not instance_exists(obj_encounter_2) {
 			if (global.day == 1) or (global.day == 4)
-				instance_create_layer(1726, 1504, "Room_Objects", obj_encounter_2)
+				instance_create_layer(1662, 1488, "Room_Objects", obj_encounter_2)
 			if (global.day == 2) or (global.day == 5)
 				instance_create_layer(1312, 960, "Room_Objects", obj_encounter_2)
 			if (global.day == 3)
@@ -156,7 +156,7 @@ if (array_length(global.combat_enemies) > 0) {
 			}
 			if not instance_exists(obj_encounter_2) {
 				if (global.day == 1) or (global.day == 4)
-					instance_create_layer(1726, 1504, "Room_Objects", obj_encounter_2)
+					instance_create_layer(1662, 1488, "Room_Objects", obj_encounter_2)
 				if (global.day == 2) or (global.day == 5)
 					instance_create_layer(1312, 960, "Room_Objects", obj_encounter_2)
 				if (global.day == 3)
