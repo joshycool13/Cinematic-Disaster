@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_encounter_1",
-    "path":"sprites/spr_encounter_1/spr_encounter_1.yy",
+    "name":"spr_encounter_3",
+    "path":"sprites/spr_encounter_3/spr_encounter_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,

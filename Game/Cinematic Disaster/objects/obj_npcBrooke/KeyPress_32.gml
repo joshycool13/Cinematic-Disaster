@@ -1,6 +1,6 @@
 
 
-if place_meeting(x, y, obj_roaming_player)
+if (distance_to_object(obj_roaming_player) < 32)
 {
 	
 	if(global.day == 1)

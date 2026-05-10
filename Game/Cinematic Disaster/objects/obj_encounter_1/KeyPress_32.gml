@@ -2,7 +2,7 @@
 obj_pranavs_bandaid_solution_2.remove_reels()
 
 
-if place_meeting(x, y, obj_roaming_player)
+if (distance_to_object(obj_roaming_player) < 32)
 {
 	layer_set_visible("RoamingUI", false)
 	layer_set_visible("TutorialRoaming", false)

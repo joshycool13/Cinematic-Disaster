@@ -455,6 +455,7 @@
     {"id":{"name":"spr_temp_player","path":"sprites/spr_temp_player/spr_temp_player.yy",},},
     {"id":{"name":"spr_temp2_player","path":"sprites/spr_temp2_player/spr_temp2_player.yy",},},
     {"id":{"name":"spr_tileset_master","path":"sprites/spr_tileset_master/spr_tileset_master.yy",},},
+    {"id":{"name":"spr_tires","path":"sprites/spr_tires/spr_tires.yy",},},
     {"id":{"name":"spr_tp_icon","path":"sprites/spr_tp_icon/spr_tp_icon.yy",},},
     {"id":{"name":"spr_traffic_cone","path":"sprites/spr_traffic_cone/spr_traffic_cone.yy",},},
     {"id":{"name":"spr_trafficlight","path":"sprites/spr_trafficlight/spr_trafficlight.yy",},},
