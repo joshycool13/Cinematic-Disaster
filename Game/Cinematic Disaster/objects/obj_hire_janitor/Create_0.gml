@@ -20,6 +20,9 @@ anim_clean = spr_hire_janitor_cleaning
 // Functions
 start_attack = function()
 {
+	obj_tutorialtext.tutorial_text = "Press when you see a sparkle."
+	obj_tutorialtext.is_visible = true
+	
 	sprite_index = anim_ready
 	image_index = 0
 }

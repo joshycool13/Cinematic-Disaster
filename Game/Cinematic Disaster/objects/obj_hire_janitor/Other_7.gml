@@ -1,5 +1,7 @@
 if sprite_index = anim_ready or sprite_index = anim_attack
 {
+	obj_tutorialtext.is_visible = false
+	
 	sprite_index = anim_ready
 	image_speed = 0
 	image_index = 0

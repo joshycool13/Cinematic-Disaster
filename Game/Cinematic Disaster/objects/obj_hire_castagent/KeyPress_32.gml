@@ -1,5 +1,7 @@
 if instance_exists(inst_cursor)
 {
+	obj_tutorialtext.is_visible = false
+	
 	var target_half_width = inst_target.sprite_width/2
 	audio_stop_sound(inst_idle_sound)
 	

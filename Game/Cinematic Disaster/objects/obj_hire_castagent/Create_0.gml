@@ -21,6 +21,9 @@ anim_file = spr_hire_castagent_file
 // Functions
 start_attack = function()
 {
+	obj_tutorialtext.tutorial_text = "Press when the plus is inside the crosshair."
+	obj_tutorialtext.is_visible = true
+	
 	sprite_index = anim_idle
 	image_index = 0
 	started_attack = false

@@ -4,6 +4,8 @@ if instance_exists(inst_slider)
 	
 	if inst_slider.x > inst_bar.x
 	{
+		obj_tutorialtext.is_visible = false
+		
 		instance_destroy(inst_slider)
 		instance_destroy(inst_bar)
 		sprite_index = anim_bomb_miss

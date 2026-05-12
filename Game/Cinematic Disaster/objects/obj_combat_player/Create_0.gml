@@ -61,6 +61,9 @@ start_attack = function(inst_enemy_id, attack_name, tp_cost)
 	switch attack_name
 	{
 		case "default_attack":
+			obj_tutorialtext.tutorial_text = "Press when you see a sparkle."
+			obj_tutorialtext.is_visible = true
+		
 			sprite_index = anim_run
 			image_index = 0
 			move_towards_target = true

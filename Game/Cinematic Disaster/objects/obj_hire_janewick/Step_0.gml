@@ -4,6 +4,8 @@ if sprite_index = anim_punch_dive
 	
 	if y >= inst_target_id.y + sprite_height / 2
 	{
+		obj_tutorialtext.is_visible = false
+		
 		y = inst_target_id.y + sprite_height / 2
 		
 		if hit_timing_window
@@ -25,6 +27,9 @@ if sprite_index = anim_punch_dive
 if attacking_timer <= 0 and not finished_attacking_gun
 {
 	finished_attacking_gun = true
+	
+	obj_tutorialtext.is_visible = false
+	
 	sprite_index = anim_gun_idle
 	image_speed = 0
 	image_index = image_number - 1

@@ -30,6 +30,9 @@ anim_punch_success = spr_hire_janewick_punch_success
 // Functions
 start_attack_gun = function()
 {
+	obj_tutorialtext.tutorial_text = "MASH THE BUTTON!"
+	obj_tutorialtext.is_visible = true
+	
 	sprite_index = anim_gun_idle
 	image_index = 0
 	draw_mash_text = true
@@ -37,6 +40,9 @@ start_attack_gun = function()
 
 start_attack_punch = function()
 {
+	obj_tutorialtext.tutorial_text = "Press the button while she's falling."
+	obj_tutorialtext.is_visible = true
+	
 	sprite_index = anim_punch_jump
 	image_index = 0
 }

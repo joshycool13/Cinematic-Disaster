@@ -38,6 +38,9 @@ anim_shield_place = spr_hire_boomcrew_shield_place
 // Functions
 start_attack = function()
 {
+	obj_tutorialtext.tutorial_text = "Press when the slider hits the green."
+	obj_tutorialtext.is_visible = true
+	
 	sprite_index = anim_bomb_aiming
 	image_index = 0
 	inst_fuse_sound = audio_play_sound(boomcrew_bomb_fuse, 3, true)

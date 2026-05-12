@@ -15,6 +15,8 @@ if move_towards_idle
 	x = x - run_speed
 	if x <= starting_x
 	{
+		obj_tutorialtext.is_visible = false
+		
 		move_towards_idle = false
 		image_xscale = 1
 		sprite_index = anim_idle
