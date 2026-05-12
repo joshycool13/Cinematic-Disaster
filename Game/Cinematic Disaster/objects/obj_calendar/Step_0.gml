@@ -72,6 +72,8 @@ if (array_length(global.combat_enemies) > 0) {
 		
 		spawn_encounters()
 		
+		obj_shop_shop.shop_refresh()
+		
 		// heal the player for X amount so they can continue the game
 		global.combat_player_hp = 10
 		
