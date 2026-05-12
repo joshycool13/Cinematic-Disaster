@@ -36,7 +36,7 @@
   ],
   "name":"spr_encounter_2",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"NewJordanGroup",
     "path":"folders/Sprites/NewJordanGroup.yy",
@@ -127,7 +127,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":64,
+    "xorigin":61,
     "yorigin":64,
   },
   "swatchColours":null,

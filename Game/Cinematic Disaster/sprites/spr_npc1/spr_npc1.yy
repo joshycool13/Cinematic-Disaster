@@ -33,7 +33,7 @@
   ],
   "name":"spr_npc1",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"NewJordanGroup",
     "path":"folders/Sprites/NewJordanGroup.yy",
@@ -100,7 +100,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":32,
+    "xorigin":31,
     "yorigin":32,
   },
   "swatchColours":null,

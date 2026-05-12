@@ -12,7 +12,10 @@
     "name":"Roaming",
     "path":"folders/Roaming.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_npcBrooke",
+    "path":"objects/obj_npcBrooke/obj_npcBrooke.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
