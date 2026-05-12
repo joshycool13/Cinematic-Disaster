@@ -270,6 +270,9 @@ player_defend = function(defend_name, tp_gain) // start player's defend
 
 enemy_attack = function() // start enemy attacks
 {
+	obj_tutorialtext.tutorial_text = "Press right before the attacks hit you."
+	obj_tutorialtext.is_visible = true
+	
 	if current_enemy_attacking >= array_length(inst_enemy_id)
 	{
 		current_enemy_attacking = 0
@@ -292,6 +295,7 @@ enemy_attack = function() // start enemy attacks
 
 finish_player_defend = function() // when player's defend is over
 {
+	obj_tutorialtext.is_visible = false
 	inst_player_id.take_poison_damage()
 	inst_player_id.clear_bucket()
 	inst_player_id.kill_janewick()
