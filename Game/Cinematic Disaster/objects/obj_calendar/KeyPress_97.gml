@@ -1,6 +1,6 @@
 //debug - testing various things
 
-/*
+
 global.day += 1
 
 obj_screenfade.timer = 120
