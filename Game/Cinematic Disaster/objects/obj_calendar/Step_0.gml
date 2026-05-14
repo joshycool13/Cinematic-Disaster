@@ -69,14 +69,16 @@ if (array_length(global.combat_enemies) > 0) {
 	if (global.combat_player_hp == 0) {
 		//player died, reset the spawns
 		global.combats_complete = [false, false, false]
-		
 		spawn_encounters()
+		
+		won_or_lost = true
 		
 		obj_shop_shop.shop_refresh()
 		
 		//pity money
 		//10 per enemy, plus 10% for each day after the first
-		global.player_money += 10 * array_length(global.combat_enemies) * (1 + (global.day - 1)*.10)
+		money_awarded = 10 * array_length(global.combat_enemies) * (1 + (global.day - 1)*.10)
+		global.player_money += money_awarded
 		
 		// heal the player for X amount so they can continue the game
 		global.combat_player_hp = 10
@@ -86,13 +88,15 @@ if (array_length(global.combat_enemies) > 0) {
 		//player won
 		//reward money
 		//40 per enemy, plus 10% for each day after the first
-		global.player_money += 40 * array_length(global.combat_enemies) * (1 + (global.day - 1)*.10)
+		money_awarded = 40 * array_length(global.combat_enemies) * (1 + (global.day - 1)*.10)
+		global.player_money += money_awarded
 		
 		//progress the day if all encounters are done
 		if (global.combats_complete[0] == true) and (global.combats_complete[1] == true) and (global.combats_complete[2] == true) {
 			
 			//increment day
 			global.day += 1
+			new_day = true
 			
 			// go to ending if previous day was 5
 			if (global.day == 6) {

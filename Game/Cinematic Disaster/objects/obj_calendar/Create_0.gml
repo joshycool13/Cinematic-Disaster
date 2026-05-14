@@ -5,6 +5,7 @@ progress_checked = false
 
 money_awarded = 0
 won_or_lost = false
+new_day = false
 
 function spawn_encounters(){
 

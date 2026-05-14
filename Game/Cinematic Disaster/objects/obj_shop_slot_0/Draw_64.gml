@@ -5,7 +5,7 @@ draw_set_font(font_shop2)
 
 if (distance_to_point(mouse_x, mouse_y) <= 1) {
 	if (product = "castagent") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Casting Agent: 
 Tirelessly rejecting applications.
 Her attack reveals the enemy's HP.
@@ -15,7 +15,7 @@ ability greatly.
 "))
 		
 	} else if (product = "janewick") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Jane Wick: 
 A virtuoso of martial arts cinema.
 She can shoot rapidly, or jump
@@ -27,7 +27,7 @@ and heals 3 TP.
 "))
 		
 	} else if (product = "janitor") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Custodian: 
 His hobby is painting.
 His attack applies Wet, which
@@ -40,7 +40,7 @@ and heals 1 TP.
 "))
 		
 	} else if (product = "boomcrew") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Demolition Man: 
 May or may not be licensed.
 His bombs damage all enemies.
@@ -52,7 +52,7 @@ you take and heals 1 TP.
 "))
 		
 	} else if (product = "makeup") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Makeup Artist: 
 Former star of silent cinema.
 She uses a random enemy's
@@ -64,7 +64,7 @@ her own defense.
 		
 		
 	} else if (product = "coffee") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Coffee: 
 Three shots expresso 
 and no sugar.
@@ -75,7 +75,7 @@ Can be used out of combat.
 	
 		
 	} else if (product = "drink") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Energy Drink: 
 New and improved formula
 in stores now!
@@ -86,7 +86,7 @@ Can be used out of combat.
 	
 		
 	} else if (product = "flashbang") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Flashbang: 
 Look away!
 Stuns an enemy for 1 turn.
@@ -95,7 +95,7 @@ Stuns an enemy for 1 turn.
 	
 		
 	} else if (product = "rag") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Towel: 
 Do you feel unclean?
 Clears all negative effects
@@ -105,7 +105,7 @@ on yourself.
 	
 		
 	} else if (product = "reel") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Reel: 
 B-roll from another movie.
 Can be resold for a 
@@ -114,7 +114,7 @@ random amount of money.
 	
 		
 	} else if (product = "tomato") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Rotten Tomato: 
 A scathing critique.
 Deals 2 damage and 
@@ -124,7 +124,7 @@ poisons an enemy.
 	
 		
 	} else if (product = "linechange") {
-		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100, 300, 400)
+		draw_sprite_stretched(spr_guibg_black_thick, 0, 250, 100,  350, 400)
 		draw_text(270, 120, string(@"Line Change: 
 Let's get a little creative.
 Perform a random

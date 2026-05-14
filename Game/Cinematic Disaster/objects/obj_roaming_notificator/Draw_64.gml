@@ -18,10 +18,11 @@ All encounters have respawned.
 } else {
 	// on win
 	
-	if (global.combats_complete = [false, false, false]) {
+	if (obj_calendar.new_day) {
 	//new day
 	draw_text(x, y + 20 - selfheight/2, string(@"You won and gained ${0}.
 Shop has been refreshed.
+It's a new day!
 There are {1} encounters today.
 (Click here to dismiss.)
 ", obj_calendar.money_awarded, (3 - global.combats_complete[0] - global.combats_complete[1] - global.combats_complete[2])))
