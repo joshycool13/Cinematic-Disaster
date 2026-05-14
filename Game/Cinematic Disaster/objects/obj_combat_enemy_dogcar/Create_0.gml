@@ -2,7 +2,7 @@
 starting_x = x
 starting_y = y
 attack_speed = 60
-attack_damage = 4
+attack_damage = 3
 attack_speed_frame = 5
 max_screen_awayness = 150
 

@@ -1,6 +1,6 @@
 // Constants
 lockout_time = 60
-attack_damage_punch = 10
+attack_damage_punch = 8
 attack_damage_gun = 1
 dive_fall_speed = 24
 defend_damage_reduction = 2
@@ -11,7 +11,7 @@ current_lockout_time = 0
 inst_player_id = noone
 defend_input_buffer = 10
 hit_timing_window = false
-attacking_timer = 60
+attacking_timer = 45
 started_attacking_gun = false
 finished_attacking_gun = false
 draw_mash_text = false

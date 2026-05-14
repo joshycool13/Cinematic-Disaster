@@ -62,7 +62,7 @@ Rat:
 Dog in Car:
 
 * HP: 8 > 6
-* DMG: 3 > 4
+* DMG: 3
 
 
 
@@ -175,7 +175,7 @@ Cleanse:
 Falling Elbow > Elbow Drop:
 
 * TP Cost: 5 > 4
-* DMG: 10
+* DMG: 8
 * Difficulty: Press Space while Jane Wick is on screen falling (medium)
 
 
@@ -183,7 +183,7 @@ Falling Elbow > Elbow Drop:
 Gun:
 
 * TP Cost: 5 > 4
-* DMG: 1 x MASH for 60 frames (1 second) (hit all volley - Locked)
+* DMG: 1 x MASH for 45 frames (0.75 second) (hit all volley - Locked)
 
 
 

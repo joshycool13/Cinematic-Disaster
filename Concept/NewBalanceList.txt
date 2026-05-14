@@ -31,7 +31,7 @@ DMG: 4 > 2
 
 Dog in Car:
 HP: 8 > 6
-DMG: 3 > 4
+DMG: 3
 
 Shield Guy:
 HP: 6 > 10
@@ -98,12 +98,12 @@ Price: $145 - $155 > $140 - $180
 
 Falling Elbow > Elbow Drop:
 TP Cost: 5 > 4
-DMG: 10
+DMG: 8
 Difficulty: Press Space while Jane Wick is on screen falling (medium)
 
 Gun:
 TP Cost: 5 > 4
-DMG: 1 x MASH for 60 frames (1 second) (hit all volley - Locked)
+DMG: 1 x MASH for 45 frames (0.75 second) (hit all volley - Locked)
 
 Bodyguard:
 TP Gain: 0 > 3
