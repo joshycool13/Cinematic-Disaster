@@ -52,3 +52,24 @@ function spawn_encounters(){
 		}
 	}
 }
+
+function spawn_npcs() {
+	instance_create_layer(2800, 1360, "Room_Objects", obj_npcBrooke, {image_xscale : 1.5, image_yscale: 1.5})
+	instance_create_layer(1309, 750, "Room_Objects", obj_npcBuddy)
+	instance_create_layer(1277, 1376, "Room_Objects", obj_npcGranny)
+	instance_create_layer(2196, 1048, "Room_Objects", obj_npcLaurie)
+	instance_create_layer(384, 236, "Room_Objects", obj_npcLeaves)
+	instance_create_layer(160, 864, "Room_Objects", obj_npcNeil)
+	instance_create_layer(593, 1357, "Room_Objects", obj_npcPranav)
+	instance_create_layer(636, 1018, "Room_Objects", obj_npcTaxi)
+	
+}
+
+
+
+
+
+
+
+
+

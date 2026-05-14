@@ -6,6 +6,9 @@ if (progress_checked) exit
 
 spawn_encounters()
 
+spawn_npcs()
+
+
 
 if (array_length(global.combat_enemies) > 0) {
 	//player has just returned from combat
