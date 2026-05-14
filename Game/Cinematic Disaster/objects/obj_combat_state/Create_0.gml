@@ -23,7 +23,7 @@ current_defend_names = []
 player_deafened = false
 
 // Global cause I'm tired
-global.status_effect_x = -16
+global.status_effect_x = 16
 global.status_effect_y = [-128, -160, -192]
 
 // On Room Start

@@ -7,6 +7,9 @@ if (progress_checked) exit
 spawn_encounters()
 
 
+
+
+
 if (array_length(global.combat_enemies) > 0) {
 	//player has just returned from combat
 	
@@ -127,6 +130,8 @@ if (array_length(global.combat_enemies) > 0) {
 	
 	//spawn notificator
 	instance_create_layer(683, 288, "ForegroundObjects", obj_roaming_notificator)
+	
+	spawn_npcs()
 	
 } else {
 	// game has just started

@@ -399,7 +399,6 @@
     {"id":{"name":"spr_npc3","path":"sprites/spr_npc3/spr_npc3.yy",},},
     {"id":{"name":"spr_npc4","path":"sprites/spr_npc4/spr_npc4.yy",},},
     {"id":{"name":"spr_npc5","path":"sprites/spr_npc5/spr_npc5.yy",},},
-    {"id":{"name":"spr_npcMarker","path":"sprites/spr_npcMarker/spr_npcMarker.yy",},},
     {"id":{"name":"spr_oil","path":"sprites/spr_oil/spr_oil.yy",},},
     {"id":{"name":"spr_oilslick","path":"sprites/spr_oilslick/spr_oilslick.yy",},},
     {"id":{"name":"spr_paint_cans","path":"sprites/spr_paint_cans/spr_paint_cans.yy",},},

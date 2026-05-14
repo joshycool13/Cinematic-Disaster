@@ -170,7 +170,7 @@ take_poison_damage = function()
 add_status_effect = function(inst_status_effect)
 {
 	array_push(inst_status_effects, inst_status_effect)
-	inst_status_effect.y = y + global.status_effect_y[array_length(inst_status_effects)-1]
+	inst_status_effect.y = y + global.status_effect_y[array_length(inst_status_effects)-1] + 48
 }
 
 remove_status_effect = function(inst_status_effect)
