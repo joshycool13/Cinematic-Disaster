@@ -38,12 +38,19 @@ if (held = "coffee") {
 draw_set_font(font_shop2)
 
 if (distance_to_point(mouse_x, mouse_y) <= 1) {
+	if (can_use = true) {
+		draw_circle(x-2, y, 40, 1)
+		draw_circle(x-2, y, 41, 1)
+		draw_circle(x-2, y, 42, 1)
+	}
+	
 	if (held = "coffee") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Coffee:")
 		draw_text(mouse_x + 10, mouse_y + 35, "Three shots expresso ")
 		draw_text(mouse_x + 10, mouse_y + 60, "and no sugar.")
 		draw_text(mouse_x + 10, mouse_y + 85, "Recovers up to 5 TP.")
+		draw_text(mouse_x + 10, mouse_y + 110, "Click to use.")
 		
 	} else if (held = "drink") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
@@ -51,6 +58,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		draw_text(mouse_x + 10, mouse_y + 35, "New and improved formula,")
 		draw_text(mouse_x + 10, mouse_y + 60, "in stores now!")
 		draw_text(mouse_x + 10, mouse_y + 85, "Recovers up to 10 HP.")
+		draw_text(mouse_x + 10, mouse_y + 110, "Click to use.")
 		
 	} else if (held = "flashbang") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
@@ -71,7 +79,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		draw_text(mouse_x + 10, mouse_y + 35, "B-roll from another movie.")
 		draw_text(mouse_x + 10, mouse_y + 60, "We could sell it for easy")
 		draw_text(mouse_x + 10, mouse_y + 85, "money. Fr fr.")
-		draw_text(mouse_x + 10, mouse_y + 110, "(Press Space!)")
+		draw_text(mouse_x + 10, mouse_y + 110, "Press Space to use.")
 		
 	} else if (held = "rag") {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
