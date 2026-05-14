@@ -3,6 +3,9 @@
 //this variable will allow us to run Step only once
 progress_checked = false
 
+money_awarded = 0
+won_or_lost = false
+
 function spawn_encounters(){
 
 	if not instance_exists(obj_encounter_1) and (global.combats_complete[0] == false) {

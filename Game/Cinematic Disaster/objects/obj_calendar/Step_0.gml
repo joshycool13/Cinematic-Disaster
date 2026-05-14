@@ -74,6 +74,10 @@ if (array_length(global.combat_enemies) > 0) {
 		
 		obj_shop_shop.shop_refresh()
 		
+		//pity money
+		//10 per enemy, plus 10% for each day after the first
+		global.player_money += 10 * array_length(global.combat_enemies) * (1 + (global.day - 1)*.10)
+		
 		// heal the player for X amount so they can continue the game
 		global.combat_player_hp = 10
 		
@@ -117,8 +121,13 @@ if (array_length(global.combat_enemies) > 0) {
 		
 	}
 	
+	//spawn notificator
+	instance_create_layer(683, 288, "ForegroundObjects", obj_roaming_notificator)
+	
 } else {
-	// game has just started, do nothing else
+	// game has just started
 }
+
+
 
 progress_checked = true
