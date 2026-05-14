@@ -286,6 +286,7 @@
     {"name":"inst_50DD6EEE","path":"rooms/Roaming_Room/Roaming_Room.yy",},
     {"name":"inst_199C350D","path":"rooms/Roaming_Room/Roaming_Room.yy",},
     {"name":"inst_3D40BCEE","path":"rooms/Roaming_Room/Roaming_Room.yy",},
+    {"name":"inst_60D10131","path":"rooms/Roaming_Room/Roaming_Room.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -355,6 +356,7 @@
         ],"TileDataFormat":1,},"tilesetId":{"name":"tl_tileset_master","path":"tilesets/tl_tileset_master/tl_tileset_master.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Player","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_6C7C3555","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6C7C3555","objectId":{"name":"obj_roaming_player","path":"objects/obj_roaming_player/obj_roaming_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1472.0,"y":1504.0,},
+        {"$GMRInstance":"v4","%Name":"inst_60D10131","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_60D10131","objectId":{"name":"obj_test_combat_trigger","path":"objects/obj_test_combat_trigger/obj_test_combat_trigger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3200.0,"y":2240.0,},
       ],"layers":[],"name":"Player","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Decorative_Sprites_3","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_1713330E","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_1713330E","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_desk","path":"sprites/spr_desk/spr_desk.yy",},"x":1280.0,"y":1408.0,},

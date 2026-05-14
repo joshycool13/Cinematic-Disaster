@@ -92,7 +92,7 @@ if (distance_to_point(mouse_x, mouse_y) <= 1) {
 		draw_sprite_stretched(spr_guibg_red, 0, mouse_x, mouse_y, 250, 200)
 		draw_text(mouse_x + 25, mouse_y + 10, "Rotten Tomato:")
 		draw_text(mouse_x + 10, mouse_y + 35, "A scathing critique.")
-		draw_text(mouse_x + 10, mouse_y + 60, "Hurt and poison an enemy.")
+		draw_text(mouse_x + 10, mouse_y + 60, "Poison an enemy.")
 		
 	}
 }
