@@ -29,6 +29,8 @@ array_shuffle_ext(global.actor_list)
 
 global.started_game = true
 
+global.roaming_tutorial_played = false
+
 global.current_music = noone
 
 // go to roaming room

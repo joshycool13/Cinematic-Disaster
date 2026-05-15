@@ -167,3 +167,8 @@ if (horizontal_speed == 0) and (vertical_speed == 0) {
 	}
 }
 
+//trigger tutorial
+if not global.roaming_tutorial_played and active {
+	alarm[0] = 30
+	global.roaming_tutorial_played = true
+}

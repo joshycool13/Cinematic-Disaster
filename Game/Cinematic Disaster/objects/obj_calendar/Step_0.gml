@@ -135,6 +135,7 @@ if (array_length(global.combat_enemies) > 0) {
 	
 } else {
 	// game has just started
+	spawn_npcs()
 }
 
 

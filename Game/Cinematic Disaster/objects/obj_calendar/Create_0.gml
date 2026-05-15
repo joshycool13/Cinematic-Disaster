@@ -27,8 +27,8 @@ function spawn_encounters(){
 	
 	if not instance_exists(obj_encounter_2) and (global.combats_complete[1] == false) {
 		if (global.day == 1) or (global.day == 4){
-			instance_create_layer(1662, 1488, "Room_Objects", obj_encounter_2)
-			instance_create_layer(1662, 1488, "Walls", obj_wall, {image_xscale : 2.5, image_yscale: 3})
+			instance_create_layer(2528, 1504, "Room_Objects", obj_encounter_2)
+			instance_create_layer(2528, 1504, "Walls", obj_wall, {image_xscale : 2.5, image_yscale: 3})
 		} else if (global.day == 2) or (global.day == 5){
 			instance_create_layer(1550, 960, "Room_Objects", obj_encounter_2)
 			instance_create_layer(1550, 960, "Walls", obj_wall, {image_xscale : 2.5, image_yscale: 3})

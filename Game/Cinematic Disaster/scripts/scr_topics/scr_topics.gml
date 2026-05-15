@@ -262,7 +262,16 @@ global.topics[$ "Ending0"] = [
 TEXT(". . . . ."),
 ]
 
-
+global.topics[$ "Tutorial"] = [
+TEXT("Welcome to the studio, Director! I'll give you a quick rundown of your job."),
+TEXT("You can buy items and employees from the vending machine in front of you."),
+TEXT("Items are single-use and employees are only hired for 5 battles."),
+TEXT("You can get money from battles. Look out for unseemly glitchy figures around the studio."),
+TEXT("Clearing the map of encounters will progress you to the next day."),
+TEXT("If you lose a fight the encounters for the day all respawn."),
+TEXT("Finish all five days to win the game!"),
+TEXT(""),
+]
 
 
 
