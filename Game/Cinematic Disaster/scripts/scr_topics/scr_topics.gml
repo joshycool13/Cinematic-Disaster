@@ -268,9 +268,8 @@ TEXT("You can buy items and employees from the vending machine in front of you."
 TEXT("Items are single-use and employees are only hired for 5 battles."),
 TEXT("You can get money from battles. Look out for unseemly glitchy figures around the studio."),
 TEXT("Clearing the map of encounters will progress you to the next day."),
-TEXT("If you lose a fight the encounters for the day all respawn."),
+TEXT("If you lose a fight the encounters for the day all of them respawn."),
 TEXT("Finish all five days to win the game!"),
-TEXT(""),
 ]
 
 
