@@ -33,4 +33,21 @@ for (var i = 0; i < array_length(item_button_ids); i += 1)
 audio_stop_sound(global.current_music)
 global.current_music = audio_play_sound(roaming_music, 10, true)
 
+for (var i = 0; i < array_length(global.combat_enemies); i += 1)
+{
+	if global.combat_enemies[i] == ""
+	{
+		array_delete(global.combat_enemies, i, 1)
+		i -= 1
+	}
+}
+
+if global.combat_tutorial
+{
+	global.combat_tutorial = false
+	global.player_money -= 40
+	global.combat_player_hp = 20
+	global.combat_player_tp = 10
+}
+
 room_goto(1)
