@@ -28,7 +28,7 @@ if (distance_to_point(mouse_x,mouse_y) <= 1) and mouse_check_button_pressed(mb_l
 	layer_set_visible("TutorialRoaming", false)
 	layer_set_visible("TutorialRoaming_BG", false)
 	
-	global.combat_enemies = ["rat", "", ""]
+	global.combat_enemies = ["tutorialrat", "", ""]
 	global.combat_player_items = ["drink"]
 	
 	var sound_num = irandom(2)

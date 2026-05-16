@@ -48,6 +48,7 @@ if global.combat_tutorial
 	global.player_money -= 40
 	global.combat_player_hp = 20
 	global.combat_player_tp = 10
+	global.combat_player_items = []
 }
 
 room_goto(1)

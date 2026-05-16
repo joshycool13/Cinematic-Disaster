@@ -21,6 +21,8 @@ current_item_deleted = noone
 current_attack_names = []
 current_defend_names = []
 player_deafened = false
+tutorial_part = 0
+inst_tutorial_text = noone
 
 // Global cause I'm tired
 global.status_effect_x = 16
@@ -57,6 +59,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "monkey":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_monkey)
 		break;
+		
+		case "tutorialrat":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_tutorialrat)
+		break;
 	}
 }
 
@@ -85,13 +91,27 @@ layer_set_visible("TutorialRoaming", false)
 layer_set_visible("TutorialRoaming_BG", false)
 
 layer_set_visible("CombatHP", true)
-layer_set_visible("Clipboard", true)
-layer_set_visible("PlayerMenu", true)
+if not global.combat_tutorial
+{
+	layer_set_visible("Clipboard", true)
+	layer_set_visible("PlayerMenu", true)
+}
 
 inst_player_id.health_num = global.combat_player_hp
 inst_player_id.tp_num = global.combat_player_tp
 layer_text_text(player_hp_text, string(inst_player_id.health_num))
 layer_text_text(player_tp_text, string(inst_player_id.tp_num))
+
+// If we are in combat tutorial
+if global.combat_tutorial
+{
+	tutorial_part += 1
+	instance_destroy(inst_tutorial_text)
+	inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+	inst_tutorial_text.image_xscale = 11.5
+	inst_tutorial_text.image_yscale = 1.5
+	inst_tutorial_text.tutorial_text = "Hello World!"
+}
 
 // ---------- Functions ----------
 

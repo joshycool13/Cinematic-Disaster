@@ -1,12 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interactivetutorialtext",
+  "%Name":"obj_combat_enemy_tutorialrat",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":76,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interactivetutorialtext",
+  "name":"obj_combat_enemy_tutorialrat",
   "overriddenProperties":[],
   "parent":{
     "name":"Combat",
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_interactivetutorial_textbox",
-    "path":"sprites/spr_interactivetutorial_textbox/spr_interactivetutorial_textbox.yy",
+    "name":"spr_enemy_rat_idle",
+    "path":"sprites/spr_enemy_rat_idle/spr_enemy_rat_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
