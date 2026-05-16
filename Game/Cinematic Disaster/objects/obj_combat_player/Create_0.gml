@@ -40,6 +40,7 @@ inst_status_effects = []
 inst_status_stun = noone
 inst_status_poison = noone
 inst_status_deafen = noone
+tutorial_got_hit = true
 
 // Animations
 anim_idle = spr_combat_player_idle
@@ -170,6 +171,8 @@ get_hit = function(damage_taken, status_effect)
 	
 	if pressed_space != 0
 	{
+		tutorial_got_hit = false
+		
 		sprite_index = anim_dodge
 		image_index = 0
 		lockout_space = 0
@@ -185,6 +188,8 @@ get_hit = function(damage_taken, status_effect)
 	}
 	else
 	{
+		tutorial_got_hit = true
+		
 		health_num -= damage_taken
 		if health_num < 0
 		{

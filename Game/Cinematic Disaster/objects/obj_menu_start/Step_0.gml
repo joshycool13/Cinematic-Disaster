@@ -30,6 +30,7 @@ if (distance_to_point(mouse_x,mouse_y) <= 1) and mouse_check_button_pressed(mb_l
 	
 	global.combat_enemies = ["tutorialrat", "", ""]
 	global.combat_player_items = ["drink"]
+	global.combat_player_hp = 10
 	
 	var sound_num = irandom(2)
 	

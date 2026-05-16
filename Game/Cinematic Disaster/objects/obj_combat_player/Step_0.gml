@@ -45,3 +45,9 @@ if lockout_space != 0
 {
 	lockout_space -= 1
 }
+
+if sprite_index == anim_ready and image_index >= start_attack_frame + 1 and image_index <= end_attack_frame and global.combat_tutorial and obj_combat_state.tutorial_part == 6
+{
+	image_speed = 0
+	obj_combat_state.make_tutorial_text()
+}

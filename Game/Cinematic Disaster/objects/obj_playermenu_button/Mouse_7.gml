@@ -6,10 +6,20 @@ switch (button_name)
 {
 	// UI Buttons
 	case "Attack":
+		if global.combat_tutorial and obj_combat_state.tutorial_part > 12 and obj_combat_state.tutorial_part < 24
+		{
+			return
+		}
+	
 		obj_combat_state.attack_menu()
 	break;
 	
 	case "Item":
+		if global.combat_tutorial and obj_combat_state.tutorial_part < 12
+		{
+			return
+		}
+	
 		obj_combat_state.item_menu()
 	break;
 	

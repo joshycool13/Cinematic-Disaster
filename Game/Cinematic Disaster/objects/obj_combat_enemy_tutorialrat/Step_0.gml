@@ -57,3 +57,9 @@ if sprite_index = anim_attack and image_index >= attack_hit_frame + 1 and image_
 {
 	has_already_hit = false
 }
+
+if sprite_index = anim_attack and image_index >= attack_hit_frame - 1 and image_index < attack_hit_frame and not has_already_hit and global.combat_tutorial and obj_combat_state.tutorial_part == 13
+{
+	image_speed = 0
+	obj_combat_state.make_tutorial_text_2()
+}

@@ -4,14 +4,14 @@ starting_x = x
 starting_y = y
 run_speed = 6
 attack_hit_frame = 4
-attack_damage = 2
+attack_damage = 0
 
 // Variables
 inst_target_id = false
 move_towards_target = false
 move_towards_idle = false
 has_already_hit = false
-health_num = 4
+health_num = 6
 health_reel = noone
 has_poison_status_effect = 0
 is_stunned = false
