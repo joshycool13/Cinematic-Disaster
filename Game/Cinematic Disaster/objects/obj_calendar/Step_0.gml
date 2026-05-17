@@ -129,7 +129,14 @@ if (array_length(global.combat_enemies) > 0) {
 	}
 	
 	//spawn notificator
-	instance_create_layer(683, 288, "ForegroundObjects", obj_roaming_notificator)
+	if global.show_notification
+	{
+		instance_create_layer(683, 288, "ForegroundObjects", obj_roaming_notificator)
+	}
+	else
+	{
+		global.show_notification = true
+	}
 	
 	spawn_npcs()
 	

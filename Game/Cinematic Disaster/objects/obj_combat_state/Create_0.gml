@@ -21,6 +21,8 @@ current_item_deleted = noone
 current_attack_names = []
 current_defend_names = []
 player_deafened = false
+tutorial_part = 0
+inst_tutorial_text = noone
 
 // Global cause I'm tired
 global.status_effect_x = 16
@@ -57,6 +59,10 @@ for (var i = 0; i < array_length(global.combat_enemies); i += 1) // spawn in eac
 		case "monkey":
 			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_monkey)
 		break;
+		
+		case "tutorialrat":
+			inst_enemy_id[i] = instance_create_layer(enemy_x[i], enemy_y, "Instances", obj_combat_enemy_tutorialrat)
+		break;
 	}
 }
 
@@ -85,13 +91,27 @@ layer_set_visible("TutorialRoaming", false)
 layer_set_visible("TutorialRoaming_BG", false)
 
 layer_set_visible("CombatHP", true)
-layer_set_visible("Clipboard", true)
-layer_set_visible("PlayerMenu", true)
+if not global.combat_tutorial
+{
+	layer_set_visible("Clipboard", true)
+	layer_set_visible("PlayerMenu", true)
+}
 
 inst_player_id.health_num = global.combat_player_hp
 inst_player_id.tp_num = global.combat_player_tp
 layer_text_text(player_hp_text, string(inst_player_id.health_num))
 layer_text_text(player_tp_text, string(inst_player_id.tp_num))
+
+// If we are in combat tutorial
+if global.combat_tutorial
+{
+	tutorial_part += 1
+	instance_destroy(inst_tutorial_text)
+	inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+	inst_tutorial_text.image_xscale = 11.5
+	inst_tutorial_text.image_yscale = 1.6
+	inst_tutorial_text.tutorial_text = "Hello. I am the director. I'll teach you the basics of combat.\n*Press Space to continue, Press P to skip tutorial*"
+}
 
 // ---------- Functions ----------
 
@@ -116,6 +136,7 @@ player_menu = function() // go to player menu
 
 enemy_menu = function() // go to enemy menu
 {
+	layer_set_visible("Clipboard", true)
 	layer_set_visible("DefendMenu", false)
 	layer_set_visible("EnemyMenu", true)
 }
@@ -229,11 +250,56 @@ finish_player_attack = function() // when player's attack is over
 		global.current_music = audio_play_sound(victory_sound, 10, false)
 		return
 	}
+	
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("EnemyMenu", true)
 	layer_set_visible("TutorialCombatAttack", false)
 	layer_set_visible("TutorialCombatDodge", true)
 	is_player_turn = false
+	
+	if global.combat_tutorial and tutorial_part == 7
+	{
+		layer_set_visible("Clipboard", false)
+		layer_set_visible("EnemyMenu", false)
+		layer_set_visible("TutorialCombatAttack", true)
+		layer_set_visible("TutorialCombatDodge", false)
+		is_player_turn = true
+		instance_destroy(inst_tutorial_text)
+		inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+		inst_tutorial_text.image_xscale = 11.5
+		inst_tutorial_text.image_yscale = 1.6
+		inst_tutorial_text.tutorial_text = "Good job. Different attacks may do different things, and they may\nhave a different skill check to deal damage. Hover over the skill to\nlearn more about them."
+		tutorial_part += 1
+	}
+	
+	if global.combat_tutorial and tutorial_part == 10
+	{
+		if obj_combat_enemy_tutorialrat.health_num == 2
+		{
+			layer_set_visible("Clipboard", false)
+			layer_set_visible("EnemyMenu", false)
+			instance_destroy(inst_tutorial_text)
+			inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+			inst_tutorial_text.image_xscale = 11.5
+			inst_tutorial_text.image_yscale = 1.6
+			inst_tutorial_text.tutorial_text = "Good job. Now, after you attack, you will need to defend the\nincoming enemy attacks."
+			tutorial_part += 1
+		}
+		else
+		{
+			layer_set_visible("Clipboard", false)
+			layer_set_visible("EnemyMenu", false)
+			layer_set_visible("TutorialCombatAttack", true)
+			layer_set_visible("TutorialCombatDodge", false)
+			is_player_turn = true
+			instance_destroy(inst_tutorial_text)
+			inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+			inst_tutorial_text.image_xscale = 11.5
+			inst_tutorial_text.image_yscale = 1.6
+			inst_tutorial_text.tutorial_text = "Oops, try again."
+			tutorial_part -= 1
+		}
+	}
 }
 
 // Player Defend
@@ -354,6 +420,49 @@ finish_player_defend = function() // when player's defend is over
 		is_player_turn = true
 	}
 	
+	if global.combat_tutorial and tutorial_part == 14
+	{
+		layer_set_visible("Clipboard", false)
+		layer_set_visible("PlayerMenu", false)
+		layer_set_visible("TutorialCombatAttack", false)
+		layer_set_visible("TutorialCombatDodge", true)
+		is_player_turn = false
+		instance_destroy(inst_tutorial_text)
+		inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+		inst_tutorial_text.image_xscale = 11.5
+		inst_tutorial_text.image_yscale = 1.6
+		inst_tutorial_text.tutorial_text = "Good job. Similar to attacks, defend skills can also do many\ndifferent things, including changing the difficulty of dodging\nattacks. Hover over the skill to learn more about them."
+		tutorial_part += 1
+	}
+	
+	if global.combat_tutorial and tutorial_part == 18
+	{
+		if obj_combat_player.tutorial_got_hit == false
+		{
+			layer_set_visible("Clipboard", false)
+			layer_set_visible("PlayerMenu", false)
+			instance_destroy(inst_tutorial_text)
+			inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+			inst_tutorial_text.image_xscale = 11.5
+			inst_tutorial_text.image_yscale = 1.6
+			inst_tutorial_text.tutorial_text = "Good job. Now, there is one more thing you can do in place of\nattacking."
+			tutorial_part += 1
+		}
+		else
+		{
+			layer_set_visible("Clipboard", false)
+			layer_set_visible("PlayerMenu", false)
+			layer_set_visible("TutorialCombatAttack", false)
+			layer_set_visible("TutorialCombatDodge", true)
+			is_player_turn = false
+			instance_destroy(inst_tutorial_text)
+			inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+			inst_tutorial_text.image_xscale = 11.5
+			inst_tutorial_text.image_yscale = 1.6
+			inst_tutorial_text.tutorial_text = "Oops, try again. Remember, dodge *before* the attack hits, not\nafter."
+			tutorial_part -= 1
+		}
+	}
 }
 
 check_if_player_dead = function() // end game if player dead
@@ -397,7 +506,24 @@ finish_player_item = function() // when player's item is over
 	
 	layer_set_visible("Clipboard", true)
 	layer_set_visible("EnemyMenu", true)
+	layer_set_visible("TutorialCombatAttack", false)
+	layer_set_visible("TutorialCombatDodge", true)
 	is_player_turn = false
+	
+	if global.combat_tutorial and tutorial_part == 21
+	{
+		layer_set_visible("Clipboard", false)
+		layer_set_visible("EnemyMenu", false)
+		layer_set_visible("TutorialCombatAttack", true)
+		layer_set_visible("TutorialCombatDodge", false)
+		is_player_turn = true
+		instance_destroy(inst_tutorial_text)
+		inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+		inst_tutorial_text.image_xscale = 11.5
+		inst_tutorial_text.image_yscale = 1.6
+		inst_tutorial_text.tutorial_text = "Good job. Every item does something different. Hover over them\nto learn more about them."
+		tutorial_part += 1
+	}
 }
 
 reorganize_item_list = function() // moves up any items when an item button is pressed
@@ -596,4 +722,30 @@ deafen_player = function()
 	{
 		defend_button_ids[i].button_name = ""
 	}
+}
+
+// Tutorial Stuff
+make_tutorial_text = function()
+{
+	instance_destroy(inst_tutorial_text)
+	inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+	inst_tutorial_text.image_xscale = 11.5
+	inst_tutorial_text.image_yscale = 1.6
+	inst_tutorial_text.tutorial_text = "STOP! Press Space now to attack the rat."
+}
+
+destroy_tutorial_text = function()
+{
+	instance_destroy(inst_tutorial_text)	
+	tutorial_part += 1
+	obj_combat_enemy_tutorialrat.image_speed = 1
+}
+
+make_tutorial_text_2 = function()
+{
+	instance_destroy(inst_tutorial_text)
+	inst_tutorial_text = instance_create_layer(256, 464, "TutorialText", obj_interactivetutorialtext)
+	inst_tutorial_text.image_xscale = 11.5
+	inst_tutorial_text.image_yscale = 1.6
+	inst_tutorial_text.tutorial_text = "STOP! Press Space now to dodge the rat."
 }

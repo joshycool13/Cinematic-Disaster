@@ -33,5 +33,8 @@ global.roaming_tutorial_played = false
 
 global.current_music = noone
 
+global.combat_tutorial = true
+global.show_notification = false
+
 // go to roaming room
 room_goto(1)
